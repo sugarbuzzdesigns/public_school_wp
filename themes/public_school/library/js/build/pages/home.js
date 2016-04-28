@@ -1,0 +1,2 @@
+// homepage
+var home = {};
