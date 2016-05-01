@@ -94,7 +94,11 @@
 		
 		<section id="passion">
 			<header>
-				<h2 class="highlighter">reach <em>your greatest</em> potential</h2>
+				<h2 class="highlighter">
+					<span>reach</span> 
+					<span><span class="highlight-text">your greatest</span><em></em></span>
+					<span>potential</span>
+				</h2>
 			</header>
 			<img class="centered full-width" src="<?php bloginfo('template_url'); ?>/library/images/passion-paak.png" />
 				<p>Sure, if we need to be technical, we’re a brand engagement agency that’s hell-bent on building a brand’s value with ideas that stand up to the rigors of the real world.</p>
@@ -162,7 +166,10 @@
 		
 		<section class="full-height" id="jobs">
 			<header>
-				<h2 class="centered highlighter">are you <em>always a student?</em></h2>
+				<h2 class="centered highlighter">
+					<span>are you</span>
+					<span><span class="highlight-text">always a student?</span><em></em></span>
+				</h2>
 			</header>
 			<div class="jobs-info">
 				<div class="middle">

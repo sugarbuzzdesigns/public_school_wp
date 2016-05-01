@@ -111,6 +111,18 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
 }
 
 @font-face {
+    font-family: 'GaramondFBText-Regular';
+    src: url('../../fonts/GaramondFBText-Regular.eot');
+    src: url('../../fonts/GaramondFBText-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/GaramondFBText-Regular.woff2') format('woff2'),
+         url('../../fonts/GaramondFBText-Regular.woff') format('woff'),
+         url('../../fonts/GaramondFBText-Regular.ttf') format('truetype'),
+         url('../../fonts/GaramondFBText-Regular.svg#octin_collegeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'GaramondFBText-Light';
     src: url('../../fonts/GaramondFBText-Light.eot');
     src: url('../../fonts/GaramondFBText-Light.eot?#iefix') format('embedded-opentype'),

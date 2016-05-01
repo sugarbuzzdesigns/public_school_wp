@@ -260,9 +260,25 @@ h2,
         line-height: 1.17em;
         padding: 0 50px;
 
-        em {
-            font-style: normal;
+        span {
             display: block;
+            position: relative;
+
+			em {
+				display: block;
+				width: 78%;
+				height: 6px;
+				background-color: #FEE430;
+				position: absolute;
+				top: 9px;
+				left: 0;
+				z-index: 1;
+			}
+        }
+
+        .highlight-text {
+        	position: relative;
+        	z-index: 2;
         }
     }
 }
@@ -599,12 +615,13 @@ Section Specific styles
         font-family: 'blender_pro_boldbold';
         font-size: .938em;
         line-height: 1em;
-        margin-bottom: 17px;
+        margin-bottom: 19px;
     }
 
     p {
         font-size: 1.813em;
         line-height: 1.1em;
+        letter-spacing: 1.38px;
         width: 75%;
         margin: 0 auto;
         text-align: center;
@@ -647,17 +664,21 @@ Section Specific styles
     h2 {
         font-family: 'blender_pro_boldbold';
         color: #727272;
+        margin-bottom: 22px;
     }
 
     ul {
+    	margin: 0;
+
         li {
             font-family: 'sfns_displayregular';
             font-size: 1.875em;
-            line-height: 2em;
+            line-height: 1em;
             text-align: center;
             letter-spacing: 3.87px;
             text-transform: uppercase;
             border-top: solid 2px #222;
+            padding: 17px 0 12px 0;
 
             &:last-child {
                 border-bottom: solid 2px #222;
@@ -841,17 +862,29 @@ Section Specific styles
     }
 
     h2 {
-        font-size: 1.563em;
-        line-height: 29px;
         position: absolute;
         top: 50%;
         left: 50%;
         width: 100%;
         padding: 0 25px;
         transform: translate(-50%, -50%);
-        letter-spacing: 3.6px;
         color: #2c2b2b;
-    }
+        letter-spacing: 3.94px;
+
+		&.highlighter {
+	        span {
+				em {
+					width: 89%;
+					left: 14px;
+				}
+	        }
+
+	        .highlight-text {
+	        	position: relative;
+	        	z-index: 2;
+	        }
+	    }        
+    }     
 
     .jobs-info {
         position: relative;
@@ -868,28 +901,33 @@ Section Specific styles
         }
 
         h3 {
+        	font-family: 'blender_pro_boldbold';
             font-size: .938em;
-            margin-bottom: 5px;
+            margin-bottom: 7px;
             letter-spacing: 1.9px;
             color: #000;
         }
 
         a {
-            font-family: $serif;
+            font-family: 'GaramondFBText-Regular';
             font-size: .938em;
             text-decoration: none;
             color: #6e6e6e;
+            letter-spacing: 0.83px;
         }
 
         p {
+        	font-family: 'GaramondFBText-Regular';
             font-size: .938em;
             margin: 0;
+            letter-spacing: 0.83px;
         }
 
         ul {
-            font-family: $serif;
+            font-family: 'GaramondFBText-Regular';
             font-size: .938em;
             margin: 0;
+            letter-spacing: 0.83px;
 
             li {
                 margin-bottom: 12px;

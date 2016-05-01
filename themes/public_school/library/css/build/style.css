@@ -583,6 +583,13 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-style: normal;
 }
 @font-face {
+  font-family: 'GaramondFBText-Regular';
+  src: url("../../fonts/GaramondFBText-Regular.eot");
+  src: url("../../fonts/GaramondFBText-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/GaramondFBText-Regular.woff2") format("woff2"), url("../../fonts/GaramondFBText-Regular.woff") format("woff"), url("../../fonts/GaramondFBText-Regular.ttf") format("truetype"), url("../../fonts/GaramondFBText-Regular.svg#octin_collegeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'GaramondFBText-Light';
   src: url("../../fonts/GaramondFBText-Light.eot");
   src: url("../../fonts/GaramondFBText-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/GaramondFBText-Light.woff2") format("woff2"), url("../../fonts/GaramondFBText-Light.woff") format("woff"), url("../../fonts/GaramondFBText-Light.ttf") format("truetype"), url("../../fonts/GaramondFBText-Light.svg#octin_collegeregular") format("svg");
@@ -1619,10 +1626,26 @@ h2.highlighter,
   line-height: 1.17em;
   padding: 0 50px;
 }
-h2.highlighter em,
-.h2.highlighter em {
-  font-style: normal;
+h2.highlighter span,
+.h2.highlighter span {
   display: block;
+  position: relative;
+}
+h2.highlighter span em,
+.h2.highlighter span em {
+  display: block;
+  width: 78%;
+  height: 6px;
+  background-color: #FEE430;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  z-index: 1;
+}
+h2.highlighter .highlight-text,
+.h2.highlighter .highlight-text {
+  position: relative;
+  z-index: 2;
 }
 
 h3,
@@ -1932,11 +1955,12 @@ Section Specific styles
   font-family: 'blender_pro_boldbold';
   font-size: .938em;
   line-height: 1em;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
 }
 #overview p {
   font-size: 1.813em;
   line-height: 1.1em;
+  letter-spacing: 1.38px;
   width: 75%;
   margin: 0 auto;
   text-align: center;
@@ -1970,15 +1994,20 @@ Section Specific styles
 #services h2 {
   font-family: 'blender_pro_boldbold';
   color: #727272;
+  margin-bottom: 22px;
+}
+#services ul {
+  margin: 0;
 }
 #services ul li {
   font-family: 'sfns_displayregular';
   font-size: 1.875em;
-  line-height: 2em;
+  line-height: 1em;
   text-align: center;
   letter-spacing: 3.87px;
   text-transform: uppercase;
   border-top: solid 2px #222;
+  padding: 17px 0 12px 0;
 }
 #services ul li:last-child {
   border-bottom: solid 2px #222;
@@ -2131,16 +2160,22 @@ Section Specific styles
   height: 28%;
 }
 #jobs h2 {
-  font-size: 1.563em;
-  line-height: 29px;
   position: absolute;
   top: 50%;
   left: 50%;
   width: 100%;
   padding: 0 25px;
   transform: translate(-50%, -50%);
-  letter-spacing: 3.6px;
   color: #2c2b2b;
+  letter-spacing: 3.94px;
+}
+#jobs h2.highlighter span em {
+  width: 89%;
+  left: 14px;
+}
+#jobs h2.highlighter .highlight-text {
+  position: relative;
+  z-index: 2;
 }
 #jobs .jobs-info {
   position: relative;
@@ -2155,25 +2190,30 @@ Section Specific styles
   margin-bottom: 45px;
 }
 #jobs .jobs-info h3 {
+  font-family: 'blender_pro_boldbold';
   font-size: .938em;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   letter-spacing: 1.9px;
   color: #000;
 }
 #jobs .jobs-info a {
-  font-family: "GaramondFBText-Light", "Georgia", Cambria, Times New Roman, Times, serif;
+  font-family: 'GaramondFBText-Regular';
   font-size: .938em;
   text-decoration: none;
   color: #6e6e6e;
+  letter-spacing: 0.83px;
 }
 #jobs .jobs-info p {
+  font-family: 'GaramondFBText-Regular';
   font-size: .938em;
   margin: 0;
+  letter-spacing: 0.83px;
 }
 #jobs .jobs-info ul {
-  font-family: "GaramondFBText-Light", "Georgia", Cambria, Times New Roman, Times, serif;
+  font-family: 'GaramondFBText-Regular';
   font-size: .938em;
   margin: 0;
+  letter-spacing: 0.83px;
 }
 #jobs .jobs-info ul li {
   margin-bottom: 12px;
