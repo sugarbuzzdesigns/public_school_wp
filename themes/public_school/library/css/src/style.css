@@ -1670,6 +1670,8 @@ mark {
 
 mark em {
   font-style: normal;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .paper-wrap {
