@@ -1542,7 +1542,7 @@ Generic Classes
   width: 100%;
 }
 
-.full-height {
+.full-height-mobile {
   height: 100vh;
 }
 
@@ -1615,13 +1615,14 @@ h1,
 
 h2,
 .h2 {
+  font-family: 'blender_pro_boldbold';
   font-size: .935em;
   line-height: 1.2em;
   letter-spacing: 1.67px;
 }
 h2.highlighter,
 .h2.highlighter {
-  font-family: 'sfns_displayregular';
+  font-family: 'octin_collegeregular';
   font-size: 1.563em;
   line-height: 1.17em;
   padding: 0 50px;
@@ -1734,15 +1735,15 @@ mark em {
 
 .paper {
   font-family: 'blender_prothin';
-  font-size: 1.8em;
+  font-size: 22px;
   line-height: 50px;
   z-index: 1;
   display: none;
   clear: both;
   width: 100%;
-  padding: 15px 10px;
+  padding: 15px 45px;
   text-align: center;
-  letter-spacing: 4px;
+  letter-spacing: 2.36px;
   text-transform: uppercase;
   background-color: #080808;
   background-image: url(../../images/paper-line.svg);
@@ -1789,11 +1790,11 @@ mark em {
   left: 0;
   display: block;
   width: 100%;
-  height: 21px;
+  height: 7px;
   content: '';
   transition: opacity .5s;
   transform: translate(0, -50%);
-  background: yellow;
+  background: #FEE430;
 }
 
 .paper .highlight,
@@ -1974,8 +1975,11 @@ Section Specific styles
   position: relative;
   height: 85%;
   background-color: #fff;
-  background-image: url(../../images/placeholders/instgram-grid.png);
+  background-image: url(../../images/placeholders/instagram-grid.png);
   background-size: cover;
+}
+#instagram .image-grid .tablet-placeholder {
+  display: none;
 }
 #instagram .image-grid .img {
   display: none;
@@ -2000,7 +2004,7 @@ Section Specific styles
   margin: 0;
 }
 #services ul li {
-  font-family: 'sfns_displayregular';
+  font-family: 'octin_collegeregular';
   font-size: 1.875em;
   line-height: 1em;
   text-align: center;
@@ -2023,6 +2027,11 @@ Section Specific styles
   line-height: 29px;
   letter-spacing: 3.6px;
   color: #2c2b2b;
+}
+#passion img.passion-paak {
+  width: 193px;
+  display: block;
+  margin: 60px auto 45px;
 }
 #passion p {
   font-family: "GaramondFBText-Light", "Georgia", Cambria, Times New Roman, Times, serif;
@@ -2322,9 +2331,20 @@ you can add resource intensive styles.
   Stylesheet: Tablet & Small Desktop Stylesheet
   
   ******************************************************************/
-  .full-height {
+  /**************************
+  Coloumns
+  ***************************/
+  .t-col-1of2 {
+    width: 50%;
+    float: left;
+  }
+
+  .full-height-mobile {
     height: auto;
-    min-height: 100vh;
+  }
+
+  h2, .h2 {
+    font-size: 1.125em;
   }
 
   /**************************
@@ -2336,16 +2356,27 @@ you can add resource intensive styles.
   }
 
   .paper {
+    font-size: 20px;
     display: block;
-    opacity: 0;
-    transition: opacity 0.7s ease-in;
-    text-align: left;
     padding: 15px 40px;
+    transition: opacity .7s ease-in;
+    text-align: left;
+    letter-spacing: 2.27px;
+    opacity: 0;
   }
 
   /**************************
   Section Specific styles
   ***************************/
+  #overview .middle,
+  #services .middle,
+  #instagram .middle,
+  #contact .middle,
+  #jobs .middle {
+    position: static;
+    transform: translate(0, 0);
+  }
+
   #header {
     padding-top: 130px;
   }
@@ -2353,16 +2384,89 @@ you can add resource intensive styles.
     display: none;
   }
   #header .highlighter-sessions-toolbar {
-    opacity: 0;
     pointer-events: none;
+    opacity: 0;
   }
   #header .highlighter-sessions-label {
+    font-size: 11px;
     display: block;
-    text-transform: uppercase;
+    margin-top: 58px;
     text-align: center;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    color: #ccc;
   }
 
   #header-logo {
+    position: static;
+    transform: translate(0, 0);
+  }
+
+  #instagram header {
+    padding: 35px 0 27px;
+  }
+  #instagram header h2 {
+    line-height: 1em;
+    letter-spacing: 2px;
+  }
+  #instagram .image-grid {
+    background-image: none;
+  }
+  #instagram .image-grid .tablet-placeholder {
+    display: block;
+  }
+  #instagram .image-grid img {
+    display: block;
+    width: 100%;
+  }
+
+  #services {
+    padding: 125px 0 130px;
+  }
+  #services ul li {
+    font-size: 2.125em;
+    line-height: 1em;
+    letter-spacing: 4.39px;
+    padding: 21px 0 15px 0;
+  }
+
+  #passion {
+    overflow: auto;
+  }
+  #passion header {
+    margin-bottom: 47px;
+  }
+  #passion h2 {
+    font-size: 27px;
+    line-height: 33px;
+    letter-spacing: 4px;
+  }
+  #passion h2 span em {
+    width: 240px;
+    top: 14px;
+    left: -6px;
+  }
+  #passion .image-wrap {
+    float: right;
+  }
+  #passion .image-wrap img {
+    width: 220px;
+    margin: 0 auto;
+  }
+  #passion .copy p {
+    font-size: 1em;
+    line-height: 27px;
+    letter-spacing: 0.8px;
+  }
+
+  #contact {
+    overflow: auto;
+  }
+  #contact .city {
+    width: 50%;
+  }
+
+  #jobs h2 {
     position: static;
     transform: translate(0, 0);
   }

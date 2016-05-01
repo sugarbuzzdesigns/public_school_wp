@@ -266,9 +266,20 @@ do they need tweaking?
 Stylesheet: Tablet & Small Desktop Stylesheet
 
 ******************************************************************/
-.full-height {
+/**************************
+Coloumns
+***************************/
+.t-col-1of2 {
+  width: 50%;
+  float: left;
+}
+
+.full-height-mobile {
   height: auto;
-  min-height: 100vh;
+}
+
+h2, .h2 {
+  font-size: 1.125em;
 }
 
 /**************************
@@ -280,16 +291,27 @@ Highlighter Sessions Styles
 }
 
 .paper {
+  font-size: 20px;
   display: block;
-  opacity: 0;
-  transition: opacity 0.7s ease-in;
-  text-align: left;
   padding: 15px 40px;
+  transition: opacity .7s ease-in;
+  text-align: left;
+  letter-spacing: 2.27px;
+  opacity: 0;
 }
 
 /**************************
 Section Specific styles
 ***************************/
+#overview .middle,
+#services .middle,
+#instagram .middle,
+#contact .middle,
+#jobs .middle {
+  position: static;
+  transform: translate(0, 0);
+}
+
 #header {
   padding-top: 130px;
 }
@@ -297,16 +319,89 @@ Section Specific styles
   display: none;
 }
 #header .highlighter-sessions-toolbar {
-  opacity: 0;
   pointer-events: none;
+  opacity: 0;
 }
 #header .highlighter-sessions-label {
+  font-size: 11px;
   display: block;
-  text-transform: uppercase;
+  margin-top: 58px;
   text-align: center;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  color: #ccc;
 }
 
 #header-logo {
+  position: static;
+  transform: translate(0, 0);
+}
+
+#instagram header {
+  padding: 35px 0 27px;
+}
+#instagram header h2 {
+  line-height: 1em;
+  letter-spacing: 2px;
+}
+#instagram .image-grid {
+  background-image: none;
+}
+#instagram .image-grid .tablet-placeholder {
+  display: block;
+}
+#instagram .image-grid img {
+  display: block;
+  width: 100%;
+}
+
+#services {
+  padding: 125px 0 130px;
+}
+#services ul li {
+  font-size: 2.125em;
+  line-height: 1em;
+  letter-spacing: 4.39px;
+  padding: 21px 0 15px 0;
+}
+
+#passion {
+  overflow: auto;
+}
+#passion header {
+  margin-bottom: 47px;
+}
+#passion h2 {
+  font-size: 27px;
+  line-height: 33px;
+  letter-spacing: 4px;
+}
+#passion h2 span em {
+  width: 240px;
+  top: 14px;
+  left: -6px;
+}
+#passion .image-wrap {
+  float: right;
+}
+#passion .image-wrap img {
+  width: 220px;
+  margin: 0 auto;
+}
+#passion .copy p {
+  font-size: 1em;
+  line-height: 27px;
+  letter-spacing: 0.8px;
+}
+
+#contact {
+  overflow: auto;
+}
+#contact .city {
+  width: 50%;
+}
+
+#jobs h2 {
   position: static;
   transform: translate(0, 0);
 }

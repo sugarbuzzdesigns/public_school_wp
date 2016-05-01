@@ -3,49 +3,173 @@
 Stylesheet: Tablet & Small Desktop Stylesheet
 
 ******************************************************************/
-.full-height {
-	height: auto;
-	min-height: 100vh;
+/**************************
+Coloumns
+***************************/		
+.t-col-1of2 {
+	width: 50%;
+	float: left;
+}
+
+.full-height-mobile {
+    height: auto;
+}
+
+h2, .h2 {
+	font-size: 1.125em;
 }
 
 /**************************
 Highlighter Sessions Styles
 ***************************/
 .paper-wrap {
-	position: static;
-	padding-top: 85px;
+    position: static;
+    padding-top: 85px;
 }
 
 .paper {
-	display: block;
-	opacity: 0;
-	transition: opacity 0.7s ease-in;
-	text-align: left;
-	padding: 15px 40px;
+    font-size: 20px;
+    display: block;
+    padding: 15px 40px;
+    transition: opacity .7s ease-in;
+    text-align: left;
+    letter-spacing: 2.27px;
+    opacity: 0;
 }
 
 /**************************
 Section Specific styles
 ***************************/
+// .middle class resets
+#overview .middle,
+#services .middle,
+#instagram .middle,
+#contact .middle,
+#jobs .middle {
+	position: static;
+	transform: translate(0,0);
+}
+
 #header {
-	padding-top: 130px;
+    padding-top: 130px;
 
-	.cover {
-		display: none;
-	}
-	.highlighter-sessions-toolbar {
-		opacity: 0;
-		pointer-events: none;
-	}
+    .cover {
+        display: none;
+    }
 
-	.highlighter-sessions-label {
-		display: block;
-		text-transform: uppercase;
-		text-align: center;
-	}	
+    .highlighter-sessions-toolbar {
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    .highlighter-sessions-label {
+        font-size: 11px;
+        display: block;
+        margin-top: 58px;
+        text-align: center;
+        letter-spacing: 2.2px;
+        text-transform: uppercase;
+        color: #ccc;
+    }
 }
 
 #header-logo {
     position: static;
     transform: translate(0, 0);
+}
+
+#overview {
+
+}
+
+#instagram {
+	header {
+		padding: 35px 0 27px;
+
+		h2 {
+			line-height: 1em;
+			letter-spacing: 2px;
+		}
+	}
+	
+	.image-grid {
+		.tablet-placeholder {
+			display: block;
+		}
+
+		background-image: none;
+        
+        img {
+        	display: block;
+        	width: 100%;
+     	} 	
+	}	
+}
+
+#services {
+	padding: 125px 0 130px;
+
+    ul {
+
+        li {
+            font-size: 2.125em;
+            line-height: 1em;
+            letter-spacing: 4.39px;
+            padding: 21px 0 15px 0;
+        }
+    }	
+}
+
+#passion {
+	overflow: auto;
+
+	header {
+		margin-bottom: 47px;
+	}
+
+	h2 {
+		font-size: 27px;
+		line-height: 33px;
+		letter-spacing: 4px;
+
+		span {
+			em {
+				width: 240px;
+				top: 14px;
+    			left: -6px;
+			}
+		}
+	}
+
+	.image-wrap {
+		float: right;
+
+		img {
+			width: 220px;
+			margin: 0 auto;
+		}
+	}
+
+	.copy {
+		p {
+			font-size: 1em;
+			line-height: 27px;
+			letter-spacing: 0.8px;
+		}
+	}
+}
+
+#contact {
+	overflow: auto;
+
+	.city {
+		width: 50%;
+	}
+}
+
+#jobs {
+	h2 {
+		position: static;
+		transform: translate(0,0);
+	}
 }

@@ -2,7 +2,7 @@
 
 	<div id="container">
 
-		<section class="header full-height" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+		<section class="header full-height-mobile" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 			<a id="header-logo" href="<?php echo home_url(); ?>" rel="nofollow">
 				<img class="centered" height="34" width="236" src="<?php bloginfo('template_url'); ?>/library/images/logos/header-logo.png" />
 			</a>
@@ -50,7 +50,7 @@
 			</div>
 		</section>
 
-		<section class="full-height" id="overview">
+		<section class="full-height-mobile" id="overview">
 			<div class="middle">
 				<header>
 					<h2 class="centered">we are public school</h2>
@@ -59,12 +59,13 @@
 			</div>
 		</section>
 		
-		<section class="full-height" id="instagram">
+		<section class="full-height-mobile" id="instagram">
 			<header>
 				<h2 class="middle centered">@bythepublic</h2>
 			</header>
 			<div class="image-grid">
-				<div class="img"></div>
+				<img class="tablet-placeholder" src="<?php bloginfo('template_url'); ?>/library/images/placeholders/instagram-grid-tablet.jpg" alt="">			
+<!-- 				<div class="img"></div>
 				<div class="img light"></div>
 				<div class="img light"></div>
 				<div class="img"></div>
@@ -73,11 +74,11 @@
 				<div class="pentagon yellow">
 					<div class="top"></div>				
 					<div class="bottom"></div>
-				</div>
+				</div> -->
 			</div>	
 		</section>
 		
-		<section class="full-height" id="services">
+		<section class="full-height-mobile" id="services">
 			<div class="middle">	
 				<header>
 					<h2 class="centered">creative services</h2>
@@ -100,13 +101,17 @@
 					<span>potential</span>
 				</h2>
 			</header>
-			<img class="centered full-width" src="<?php bloginfo('template_url'); ?>/library/images/passion-paak.png" />
+			<div class="image-wrap t-col-1of2 d-col-1of2">
+				<img class="passion-paak" src="<?php bloginfo('template_url'); ?>/library/images/placeholders/passion-paak-tablet.jpg" alt="">
+			</div>
+			<div class="copy t-col-1of2 d-col-1of2">
 				<p>Sure, if we need to be technical, we’re a brand engagement agency that’s hell-bent on building a brand’s value with ideas that stand up to the rigors of the real world.</p>
-				<p>But dig a little deeper and you’ll see a place where all walks of creative life gather & collaborate, create & curate, and strive to learn something new every day. We do all this with one common goal: to create something bigger, better and braver. You’ll have to excuse us for being presumptuous, but we happen to think brands may find something like that useful.			</p>
+				<p>But dig a little deeper and you’ll see a place where all walks of creative life gather & collaborate, create & curate, and strive to learn something new every day. We do all this with one common goal: to create something bigger, better and braver. You’ll have to excuse us for being presumptuous, but we happen to think brands may find something like that useful.</p>
+			</div>		
 		</section>
 		
-		<section class="full-height" id="contact">
-			<div class="atl city">
+		<section class="full-height-mobile" id="contact">
+			<div class="atl city t-col-1of2 d-col-1of2">
 				<div class="city-box-wrap middle">
 					<div class="city-box">
 						<ul class="letters middle">
@@ -135,7 +140,7 @@
 					</div>					
 				</div>
 			</div>
-			<div class="la city">
+			<div class="la city t-col-1of2 d-col-1of2">
 				<div class="city-box-wrap middle">
 					<div class="city-box">
 						<ul class="letters middle">
@@ -164,7 +169,7 @@
 			</div>
 		</section>
 		
-		<section class="full-height" id="jobs">
+		<section class="full-height-mobile" id="jobs">
 			<header>
 				<h2 class="centered highlighter">
 					<span>are you</span>
