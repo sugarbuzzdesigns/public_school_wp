@@ -468,14 +468,14 @@ table {
   overflow: hidden;
 }
 
-.clearfix, .cf, .comment-respond {
+.clearfix, .cf {
   zoom: 1;
 }
-.clearfix:before, .clearfix:after, .cf:before, .comment-respond:before, .cf:after, .comment-respond:after {
+.clearfix:before, .clearfix:after, .cf:before, .cf:after {
   content: "";
   display: table;
 }
-.clearfix:after, .cf:after, .comment-respond:after {
+.clearfix:after, .cf:after {
   clear: both;
 }
 
@@ -526,57 +526,62 @@ http://ia.net/blog/responsive-typography-the-basics/
 http://alistapart.com/column/responsive-typography-is-a-physical-discipline
 
 ******************************************************************/
-/*********************
-FONT FACE (IN YOUR FACE)
-*********************/
-/*  To embed your own fonts, use this syntax
-  and place your fonts inside the
-  library/fonts folder. For more information
-  on embedding fonts, go to:
-  http://www.fontsquirrel.com/
-  Be sure to remove the comment brackets.
-*/
-/*  @font-face {
-      font-family: 'Font Name';
-      src: url('library/fonts/font-name.eot');
-      src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
-             url('library/fonts/font-name.woff') format('woff'),
-             url('library/fonts/font-name.ttf') format('truetype'),
-             url('library/fonts/font-name.svg#font-name') format('svg');
-      font-weight: normal;
-      font-style: normal;
-  }
-*/
-/*
-The following is based of Typebase:
-https://github.com/devinhunt/typebase.css
-I've edited it a bit, but it's a nice starting point.
-*/
-/*
- i imported this one in the functions file so bones would look sweet.
- don't forget to remove it for your site.
-*/
-/*
-some nice typographical defaults
-more here: http://www.newnet-soft.com/blog/csstypography
-*/
-p {
-  -ms-word-wrap: break-word;
-  word-break: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  -webkit-hyphenate-before: 2;
-  -webkit-hyphenate-after: 3;
-  hyphenate-lines: 3;
-  -webkit-font-feature-settings: "liga", "dlig";
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -ms-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
-  font-feature-settings: "liga", "dlig";
+@font-face {
+  font-family: 'sfns_displayregular';
+  src: url("../../fonts/system_san_francisco_display_regular-webfont.eot");
+  src: url("../../fonts/system_san_francisco_display_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/system_san_francisco_display_regular-webfont.woff") format("woff"), url("../../fonts/system_san_francisco_display_regular-webfont.ttf") format("truetype"), url("../../fonts/system_san_francisco_display_regular-webfont.svg#sfns_displayregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-
+@font-face {
+  font-family: 'blender_pro_boldbold';
+  src: url("../../fonts/blenderpro-bold-webfont.eot");
+  src: url("../../fonts/blenderpro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/blenderpro-bold-webfont.woff2") format("woff2"), url("../../fonts/blenderpro-bold-webfont.woff") format("woff"), url("../../fonts/blenderpro-bold-webfont.ttf") format("truetype"), url("../../fonts/blenderpro-bold-webfont.svg#blender_pro_boldbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'blender_promedium';
+  src: url("../../fonts/blenderpro-medium-webfont.eot");
+  src: url("../../fonts/blenderpro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/blenderpro-medium-webfont.woff2") format("woff2"), url("../../fonts/blenderpro-medium-webfont.woff") format("woff"), url("../../fonts/blenderpro-medium-webfont.ttf") format("truetype"), url("../../fonts/blenderpro-medium-webfont.svg#blender_promedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'blender_prothin';
+  src: url("../../fonts/blenderpro-thin-webfont.eot");
+  src: url("../../fonts/blenderpro-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/blenderpro-thin-webfont.woff2") format("woff2"), url("../../fonts/blenderpro-thin-webfont.woff") format("woff"), url("../../fonts/blenderpro-thin-webfont.ttf") format("truetype"), url("../../fonts/blenderpro-thin-webfont.svg#blender_prothin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'blender_probook';
+  src: url("../../fonts/blenderpro-book-webfont.eot");
+  src: url("../../fonts/blenderpro-book-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/blenderpro-book-webfont.woff2") format("woff2"), url("../../fonts/blenderpro-book-webfont.woff") format("woff"), url("../../fonts/blenderpro-book-webfont.ttf") format("truetype"), url("../../fonts/blenderpro-book-webfont.svg#blender_probook") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'tall_filmsregular';
+  src: url("../../fonts/tall_film-webfont.eot");
+  src: url("../../fonts/tall_film-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/tall_film-webfont.woff2") format("woff2"), url("../../fonts/tall_film-webfont.woff") format("woff"), url("../../fonts/tall_film-webfont.ttf") format("truetype"), url("../../fonts/tall_film-webfont.svg#tall_filmsregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'eb_garamond12_italic';
+  src: url("../../fonts/ebgaramond12-italic-webfont.eot");
+  src: url("../../fonts/ebgaramond12-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/ebgaramond12-italic-webfont.woff2") format("woff2"), url("../../fonts/ebgaramond12-italic-webfont.woff") format("woff"), url("../../fonts/ebgaramond12-italic-webfont.ttf") format("truetype"), url("../../fonts/ebgaramond12-italic-webfont.svg#eb_garamond12_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'octin_collegeregular';
+  src: url("../../fonts/octin_college_rg-webfont.eot");
+  src: url("../../fonts/octin_college_rg-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/octin_college_rg-webfont.woff2") format("woff2"), url("../../fonts/octin_college_rg-webfont.woff") format("woff"), url("../../fonts/octin_college_rg-webfont.ttf") format("truetype"), url("../../fonts/octin_college_rg-webfont.svg#octin_collegeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /******************************************************************
 Site Name:
 Author:
@@ -1003,10 +1008,10 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.blue-btn, .comment-reply-link, #submit {
+.blue-btn {
   display: inline-block;
   position: relative;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "blender_promedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   color: #fff;
   font-size: 0.9em;
@@ -1020,12 +1025,12 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out;
 }
-.blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
+.blue-btn:hover, .blue-btn:focus {
   color: #fff;
   text-decoration: none;
   outline: none;
 }
-.blue-btn:active, .comment-reply-link:active, #submit:active {
+.blue-btn:active {
   top: 1px;
 }
 
@@ -1034,13 +1039,13 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
-.blue-btn, .comment-reply-link, #submit {
+.blue-btn {
   background-color: #2980b9;
 }
-.blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
+.blue-btn:hover, .blue-btn:focus {
   background-color: #2574a8;
 }
-.blue-btn:active, .comment-reply-link:active, #submit:active {
+.blue-btn:active {
   background-color: #2472a4;
 }
 
@@ -1094,7 +1099,7 @@ textarea,
   border: 0;
   width: 100%;
   max-width: 400px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "blender_promedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #eaedf2;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out;
@@ -1364,54 +1369,112 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "blender_promedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #5c6b80;
-  background-color: #eaedf2;
+  color: #fff;
+  background-color: #080808;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/********************
-WORDPRESS BODY CLASSES
-style a page via class
-********************/
-/* for sites that are read right to left (i.e. hebrew) */
-/* home page */
-/* blog template page */
-/* archive page */
-/* date archive page */
-/* replace the number to the corresponding page number */
-/* search page */
-/* search result page */
-/* no results search page */
-/* individual paged search (i.e. body.search-paged-3) */
-/* 404 page */
-/* single post page */
-/* individual post page by id (i.e. body.postid-73) */
-/* individual paged single (i.e. body.single-paged-3) */
-/* attatchment page */
-/* individual attatchment page (i.e. body.attachmentid-763) */
-/* style mime type pages */
-/* author page */
-/* user nicename (i.e. body.author-samueladams) */
-/* paged author archives (i.e. body.author-paged-4) for page 4 */
-/* category page */
-/* individual category page (i.e. body.category-6) */
-/* replace the number to the corresponding page number */
-/* tag page */
-/* individual tag page (i.e. body.tag-news) */
-/* replace the number to the corresponding page number */
-/* custom page template page */
-/* individual page template (i.e. body.page-template-contact-php */
-/* replace the number to the corresponding page number */
-/* parent page template */
-/* child page template */
-/* replace the number to the corresponding page number */
-/* if user is logged in */
-/* paged items like search results or archives */
-/* individual paged (i.e. body.paged-3) */
+p {
+  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**************************
+Icons
+***************************/
+.down-arrow-white {
+  display: inline-block;
+  width: 24px;
+  height: 14px;
+  transition: all .5s;
+  background-image: url(../../images/icons/down-arrow-white.png);
+  background-size: 100%;
+}
+
+.close-icon-white {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  transition: all .5s;
+  background-image: url(../../images/icons/close-icon-white.png);
+  background-size: 100%;
+}
+
+.pentagon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  opacity: .7;
+  background-image: url(../../images/icons/pentagon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+
+.social {
+  margin: 0;
+  text-align: center;
+}
+.social li {
+  display: inline-block;
+  margin-right: 17%;
+}
+.social li:last-child {
+  margin-right: 0;
+}
+.social li a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+  background-image: url(../../images/icons/social-sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 270px 19px;
+}
+.social li a.spotify {
+  background-position: 0 0;
+}
+.social li a.instagram {
+  background-position: -83px 0;
+}
+.social li a.twitter {
+  background-position: -168px 0;
+}
+.social li a.linkedin {
+  background-position: -252px 0;
+}
+
+i.address,
+i.email,
+i.phone {
+  display: inline-block;
+  width: 17px;
+  height: 20px;
+  background-image: url(../../images/icons/contact-sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: calc(193px/2) calc(33px/2);
+}
+
+i.email {
+  background-position: -40px 0;
+}
+
+i.phone {
+  background-position: -79px 0;
+}
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -1420,19 +1483,52 @@ LAYOUT & GRID STYLES
   margin: 0 auto;
 }
 
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  position: relative;
+}
+
+/**************************
+Generic Classes
+***************************/
+.centered {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100vh;
+}
+
 /*********************
 LINK STYLES
 *********************/
-a, a:visited {
-  color: #f01d4f;
+a,
+a:visited {
+  color: #fff;
   /* on hover */
   /* on click */
   /* mobile tap color */
 }
-a:hover, a:focus, a:visited:hover, a:visited:focus {
-  color: #d10e3c;
+a:hover, a:focus,
+a:visited:hover,
+a:visited:focus {
+  color: #e8e8e8;
 }
-a:link, a:visited:link {
+a:link,
+a:visited:link {
   /*
   this highlights links on iPhones/iPads.
   so it basically works like the :hover selector
@@ -1444,495 +1540,94 @@ a:link, a:visited:link {
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  text-rendering: optimizelegibility;
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
   font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+  text-rendering: optimizelegibility;
   /*
   if you're going to use webfonts, be sure to check your weights
   http://css-tricks.com/watch-your-font-weight/
   */
   /* removing text decoration from all headline links */
 }
-h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
+h1 a,
+.h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h4 a,
+h5 a,
+.h5 a {
   text-decoration: none;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 2.5em;
   line-height: 1.333em;
 }
 
-h2, .h2 {
-  font-size: 1.75em;
-  line-height: 1.4em;
-  margin-bottom: 0.375em;
+h2,
+.h2 {
+  font-size: .935em;
+  line-height: 1.2em;
+  letter-spacing: 1.67px;
+}
+h2.highlighter,
+.h2.highlighter {
+  font-family: 'sfns_displayregular';
+  font-size: 1.563em;
+  line-height: 1.17em;
+  padding: 0 50px;
+}
+h2.highlighter em,
+.h2.highlighter em {
+  font-style: normal;
+  display: block;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 1.125em;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 1.1em;
   font-weight: 700;
 }
 
-h5, .h5 {
-  font-size: 0.846em;
+h5,
+.h5 {
+  font-size: .846em;
   line-height: 2.09em;
-  text-transform: uppercase;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 /*********************
 HEADER STYLES
 *********************/
-.header {
-  background-color: #323944;
-}
-
-#logo {
-  margin: 0.75em 0;
-}
-#logo a {
-  color: #fff;
-}
-
-/*********************
-NAVIGATION STYLES
-*********************/
-/*
-all navs have a .nav class applied via
-the wp_menu function; this is so we can
-easily write one group of styles for
-the navs on the site so our css is cleaner
-and more scalable.
-*/
-.nav {
-  border-bottom: 0;
-  margin: 0;
-  /* end .menu li */
-  /* highlight current page */
-  /* end current highlighters */
-}
-.nav li {
-  /*
-  so you really have to rethink your dropdowns for mobile.
-  you don't want to have it expand too much because the
-  screen is so small. How you manage your menu should
-  depend on the project. Here's some great info on it:
-  http://www.alistapart.com/articles/organizing-mobile/
-  */
-}
-.nav li a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  padding: 0.75em;
-  /*
-  remember this is for mobile ONLY, so there's no need
-  to even declare hover styles here, you can do it in
-  the style.scss file where it's relevant. We want to
-  keep this file as small as possible!
-  */
-}
-.nav li ul.sub-menu li a,
-.nav li ul.children li a {
-  padding-left: 30px;
-}
-
-/* end .nav */
-/*********************
-POSTS & CONTENT STYLES
-*********************/
-#content {
-  margin-top: 1.5em;
-}
-
-.hentry {
-  background-color: #fff;
-  border-radius: 3px;
-  margin-bottom: 1.5em;
-  border: 1px solid #ccc;
-}
-.hentry header {
-  border-bottom: 1px solid #f8f9fa;
-  padding: 1.5em;
-}
-.hentry footer {
-  padding: 1.5em;
-  border-top: 1px solid #f8f9fa;
-}
-.hentry footer p {
-  margin: 0;
-}
-
-/* end .hentry */
-.single-title,
-.page-title,
-.entry-title {
-  margin: 0;
-}
-
-/* want to style individual post classes? Booya! */
-/* post by id (i.e. post-3) */
-/* general post style */
-/* general article on a page style */
-/* general style on an attatchment */
-/* sticky post style */
-/* hentry class */
-/* style by category (i.e. category-videos) */
-/* style by tag (i.e. tag-news) */
-/* post meta */
-.byline {
-  color: #9fa6b4;
-  font-style: italic;
-  margin: 0;
-}
-
-/* entry content */
-.entry-content {
-  padding: 1.5em 1.5em 0;
-  /*
-  image alignment on a screen this size may be
-  a bit difficult. It's set to start aligning
-  and floating images at the next breakpoint,
-  but it's up to you. Feel free to change it up.
-  */
-}
-.entry-content p {
-  margin: 0 0 1.5em;
-}
-.entry-content table {
-  width: 100%;
-  border: 1px solid #eaedf2;
-  margin-bottom: 1.5em;
-}
-.entry-content table caption {
-  margin: 0 0 7px;
-  font-size: 0.75em;
-  color: #9fa6b4;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.entry-content tr {
-  border-bottom: 1px solid #eaedf2;
-}
-.entry-content tr:nth-child(even) {
-  background-color: #f8f9fa;
-}
-.entry-content td {
-  padding: 7px;
-  border-right: 1px solid #eaedf2;
-}
-.entry-content td:last-child {
-  border-right: 0;
-}
-.entry-content th {
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #eaedf2;
-  border-right: 1px solid #eaedf2;
-}
-.entry-content th:last-child {
-  border-right: 0;
-}
-.entry-content blockquote {
-  margin: 0 0 1.5em 0.75em;
-  padding: 0 0 0 0.75em;
-  border-left: 3px solid #2980b9;
-  font-style: italic;
-  color: #9fa6b4;
-}
-.entry-content dd {
-  margin-left: 0;
-  font-size: 0.9em;
-  color: #787878;
-  margin-bottom: 1.5em;
-}
-.entry-content img {
-  margin: 0 0 1.5em 0;
-  max-width: 100%;
-  height: auto;
-}
-.entry-content .size-auto,
-.entry-content .size-full,
-.entry-content .size-large,
-.entry-content .size-medium,
-.entry-content .size-thumbnail {
-  max-width: 100%;
-  height: auto;
-}
-.entry-content pre {
-  background: #323944;
-  color: #f8f9fa;
-  font-size: 0.9em;
-  padding: 1.5em;
-  margin: 0 0 1.5em;
-  border-radius: 3px;
-}
-
-/* end .entry-content */
-.wp-caption {
-  max-width: 100%;
-  background: #eee;
-  padding: 5px;
-  /* images inside wp-caption */
-}
-.wp-caption img {
-  max-width: 100%;
-  margin-bottom: 0;
-  width: 100%;
-}
-.wp-caption p.wp-caption-text {
-  font-size: 0.85em;
-  margin: 4px 0 7px;
-  text-align: center;
-}
-
-/* end .wp-caption */
-/* image gallery styles */
-/* end .gallery */
-/* gallery caption styles */
-.tags {
-  margin: 0;
-}
-
-/******************************************************************
-PAGE NAVI STYLES
-******************************************************************/
-.pagination,
-.wp-prev-next {
-  margin: 1.5em 0;
-}
-
-.pagination {
-  text-align: center;
-}
-.pagination ul {
-  display: inline-block;
-  background-color: #fff;
-  white-space: nowrap;
-  padding: 0;
-  clear: both;
-  border-radius: 3px;
-}
-.pagination li {
-  padding: 0;
-  margin: 0;
-  float: left;
-  display: inline;
-  overflow: hidden;
-  border-right: 1px solid #eaedf2;
-}
-.pagination a, .pagination span {
-  margin: 0;
-  text-decoration: none;
-  padding: 0;
-  line-height: 1em;
-  font-size: 1em;
-  font-weight: normal;
-  padding: 0.75em;
-  min-width: 1em;
-  display: block;
-  color: #2980b9;
-}
-.pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-  background-color: #2980b9;
-  color: #fff;
-}
-.pagination .current {
-  cursor: default;
-  color: #5c6b80;
-}
-.pagination .current:hover, .pagination .current:focus {
-  background-color: #fff;
-  color: #5c6b80;
-}
-
-/* end .bones_page_navi */
-/* fallback previous & next links */
-.wp-prev-next .prev-link {
-  float: left;
-}
-.wp-prev-next .next-link {
-  float: right;
-}
-
-/* end .wp-prev-next */
-/******************************************************************
-COMMENT STYLES
-******************************************************************/
-/* h3 comment title */
-#comments-title {
-  padding: 0.75em;
-  margin: 0;
-  border-top: 1px solid #f8f9fa;
-  /* number of comments span */
-}
-
-.commentlist {
-  margin: 0;
-  list-style-type: none;
-}
-
-.comment {
-  position: relative;
-  clear: both;
-  overflow: hidden;
-  padding: 1.5em;
-  border-bottom: 1px solid #f8f9fa;
-  /* vcard */
-  /* end .commentlist .vcard */
-  /* end children */
-  /* general comment classes */
-}
-.comment .comment-author {
-  padding: 7px;
-  border: 0;
-}
-.comment .vcard {
-  margin-left: 50px;
-}
-.comment .vcard cite.fn {
-  font-weight: 700;
-  font-style: normal;
-}
-.comment .vcard time {
-  display: block;
-  font-size: 0.9em;
-  font-style: italic;
-}
-.comment .vcard time a {
-  color: #9fa6b4;
-  text-decoration: none;
-}
-.comment .vcard time a:hover {
-  text-decoration: underline;
-}
-.comment .vcard .avatar {
+#header-logo {
   position: absolute;
-  left: 16px;
-  border-radius: 50%;
-}
-.comment:last-child {
-  margin-bottom: 0;
-}
-.comment .children {
-  margin: 0;
-  /* variations */
-  /* change number for different depth */
-}
-.comment[class*=depth-] {
-  margin-top: 1.1em;
-}
-.comment.depth-1 {
-  margin-left: 0;
-  margin-top: 0;
-}
-.comment:not(.depth-1) {
-  margin-top: 0;
-  margin-left: 7px;
-  padding: 7px;
-}
-.comment.odd {
-  background-color: #fff;
-}
-.comment.even {
-  background: #f8f9fa;
-}
-
-/* comment meta */
-/* comment content */
-.comment_content p {
-  margin: 0.7335em 0 1.5em;
-  font-size: 1em;
-  line-height: 1.5em;
-}
-
-/* end .commentlist .comment_content */
-/* comment reply link */
-.comment-reply-link {
-  font-size: 0.9em;
-  float: right;
-}
-
-/* end .commentlist .comment-reply-link */
-/* edit comment link */
-.comment-edit-link {
-  font-style: italic;
-  margin: 0 7px;
-  text-decoration: none;
-  font-size: 0.9em;
-}
-
-/******************************************************************
-COMMENT FORM STYLES
-******************************************************************/
-.comment-respond {
-  padding: 1.5em;
-  border-top: 1px solid #f8f9fa;
-}
-
-#reply-title {
-  margin: 0;
-}
-
-.logged-in-as {
-  color: #9fa6b4;
-  font-style: italic;
-  margin: 0;
-}
-.logged-in-as a {
-  color: #5c6b80;
-}
-
-.comment-form-comment {
-  margin: 1.5em 0 0.75em;
-}
-
-.form-allowed-tags {
-  padding: 1.5em;
-  background-color: #f8f9fa;
-  font-size: 0.9em;
-}
-
-/* comment submit button */
-#submit {
-  float: right;
-  font-size: 1em;
-}
-
-/* comment form title */
-#comment-form-title {
-  margin: 0 0 1.1em;
-}
-
-/* cancel comment reply link */
-/* logged in comments */
-/* allowed tags */
-#allowed_tags {
-  margin: 1.5em 10px 0.7335em 0;
-}
-
-/* no comments */
-.nocomments {
-  margin: 0 20px 1.1em;
-}
-
-/*********************
-SIDEBARS & ASIDES
-*********************/
-.widget ul li {
-  /* deep nesting */
-}
-
-.no-widgets {
-  background-color: #fff;
-  padding: 1.5em;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -140%);
   text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  margin-bottom: 1.5em;
 }
 
 /*********************
@@ -1940,20 +1635,509 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  background-color: #323944;
+  padding: 70px 0 100px;
+  text-align: center;
   color: #f8f9fa;
+  background: #0b0a0a;
+}
+.footer .footer-contact {
+  font-family: 'blender_pro_boldbold';
+  width: 78%;
+  margin: 44px auto 0;
+  margin-bottom: 50px;
+  padding: 37px 0;
+  letter-spacing: 2.75px;
+  text-transform: uppercase;
+  border-top: solid 1px #636363;
+  border-bottom: solid 1px #636363;
+}
+.footer .footer-contact a {
+  text-decoration: none;
+  color: #fff;
 }
 
-/*
-if you checked out the link above:
-http://www.alistapart.com/articles/organizing-mobile/
-you'll want to style the footer nav
-a bit more in-depth. Remember to keep
-it simple because you'll have to
-override these styles for the desktop
-view.
-*/
-/* end .footer-links */
+/**************************
+
+***************************/
+i {
+  font-style: normal;
+}
+
+mark {
+  color: #fff;
+  background: transparent;
+}
+
+mark em {
+  font-style: normal;
+}
+
+.paper-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 30px;
+  background-color: #080808;
+}
+
+.paper {
+  font-family: 'blender_prothin';
+  font-size: 1.8em;
+  line-height: 50px;
+  z-index: 1;
+  display: none;
+  clear: both;
+  width: 100%;
+  padding: 15px 10px;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  background-color: #080808;
+  background-image: url(../../images/paper-line.svg);
+  background-repeat: repeat, repeat-y;
+  background-position: 0 0, 76px 0;
+  background-size: 100vw 50px, 32px 32px;
+}
+.paper.show-me {
+  display: block;
+}
+
+.paper .highlight,
+.paper mark,
+.paper .highlighter,
+.paper .text {
+  transition: all .5s;
+}
+
+.paper.example .highlight,
+.paper.example mark,
+.paper.example .highlighter,
+.paper.example .text {
+  transition: all 1.5s;
+}
+
+.paper .text {
+  /*opacity: 0;*/
+  /*white-space: nowrap;*/
+}
+
+.paper .text span {
+  position: relative;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.paper .nospace .text span {
+  padding-right: 0;
+}
+
+.paper .text span:after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 21px;
+  content: '';
+  transition: opacity .5s;
+  transform: translate(0, -50%);
+  background: yellow;
+}
+
+.paper .highlight,
+.paper mark {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+}
+
+.paper .highlight.flicker,
+.paper mark.flicker {
+  animation-name: flicker;
+  animation-duration: 4s;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  34% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.paper .highlighter {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 17px;
+  transform: translateY(-50%);
+  background: #ffe700;
+}
+
+.paper mark.show-phrase span:after {
+  opacity: 0;
+}
+
+.paper mark.show-phrase em {
+  opacity: 1;
+}
+
+.paper .highlight.show-phrase .text,
+.paper mark.show-phrase .text {
+  opacity: 1;
+  color: #fff;
+}
+
+/**************************
+Mobile Contact Butter Bar
+***************************/
+.contact-butter-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 55px;
+  width: 100%;
+  opacity: 0;
+  background-color: #171717;
+  transition: opacity 0.5s;
+}
+.contact-butter-bar a {
+  font-size: 0.688em;
+  letter-spacing: 1.65px;
+  text-transform: uppercase;
+  font-family: 'blender_promedium';
+  display: block;
+  text-align: center;
+}
+.contact-butter-bar.show {
+  opacity: 1;
+}
+
+/**************************
+Section Specific styles
+***************************/
+#header {
+  position: relative;
+  z-index: 2;
+}
+#header .cover {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #080808;
+}
+#header .highlighter-sessions-label {
+  display: none;
+}
+#header .highlighter-sessions-toolbar {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  display: table;
+  width: 100%;
+  transition: opacity 0.7s;
+  background-color: #212121;
+  text-transform: uppercase;
+}
+#header .highlighter-sessions-toolbar div {
+  position: relative;
+  display: table-cell;
+  width: 80%;
+  margin: 0;
+  padding: 9% 12%;
+  vertical-align: middle;
+}
+#header .highlighter-sessions-toolbar div + div {
+  width: 20%;
+  background: #1b1b1b;
+}
+#header .highlighter-sessions-toolbar h2 {
+  text-align: left;
+}
+#header .highlighter-sessions-toolbar h2 span {
+  display: block;
+}
+#header .highlighter-sessions-toolbar .down-arrow-white {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+}
+#header .highlighter-sessions-toolbar .close-icon-white {
+  position: absolute;
+  top: 50%;
+  right: -50%;
+  display: block;
+  transform: translate(50%, -50%);
+  opacity: 0;
+}
+#header .highlighter-sessions-toolbar .toggle-paper {
+  overflow: hidden;
+}
+#header .highlighter-sessions-toolbar .toggle-paper.open .down-arrow-white {
+  top: -50%;
+  opacity: 0;
+}
+#header .highlighter-sessions-toolbar .toggle-paper.open .close-icon-white {
+  right: 50%;
+  opacity: 1;
+}
+
+#overview {
+  position: relative;
+  color: #000;
+  background-color: #fff;
+}
+#overview h2 {
+  font-family: 'blender_pro_boldbold';
+  font-size: .938em;
+  line-height: 1em;
+  margin-bottom: 17px;
+}
+#overview p {
+  font-size: 1.813em;
+  line-height: 1.1em;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  color: #717171;
+}
+
+#instagram header {
+  height: 15%;
+}
+#instagram .image-grid {
+  position: relative;
+  height: 85%;
+  background-color: #fff;
+}
+#instagram .image-grid .img {
+  float: left;
+  width: 50%;
+  height: calc(100%/3);
+  background-color: grey;
+}
+#instagram .image-grid .img.light {
+  background-color: #eee;
+}
+
+#services {
+  position: relative;
+}
+#services h2 {
+  font-family: 'blender_pro_boldbold';
+  color: #727272;
+}
+#services ul li {
+  font-family: 'sfns_displayregular';
+  font-size: 1.875em;
+  line-height: 2em;
+  text-align: center;
+  letter-spacing: 3.87px;
+  text-transform: uppercase;
+  border-top: solid 2px #222;
+}
+#services ul li:last-child {
+  border-bottom: solid 2px #222;
+}
+
+#passion {
+  padding: 90px 0 100px;
+  color: #7b7b7b;
+  background-color: #fff;
+}
+#passion h2 {
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 3.6px;
+  color: #2c2b2b;
+}
+#passion p {
+  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 24px;
+  width: 75%;
+  margin: 0 auto 30px;
+}
+#passion p:last-child {
+  margin-bottom: 0;
+}
+
+#contact .la {
+  position: relative;
+  background-image: url(../../images/contact-la.jpg);
+  background-size: cover;
+}
+#contact .atl {
+  position: relative;
+  background-image: url(../../images/contact-atl.jpg);
+  background-size: cover;
+}
+#contact > div {
+  width: 100%;
+  height: 50%;
+  background-color: red;
+}
+#contact > div + div {
+  background-color: blue;
+}
+#contact .city-box-wrap {
+  position: relative;
+  width: 126px;
+  height: 126px;
+}
+#contact p {
+  font-family: 'octin_collegeregular';
+  font-size: 1.563em;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 10px;
+}
+#contact .city-box {
+  width: 118px;
+  height: 118px;
+  background-color: #0e0e0e;
+}
+#contact .city-box-border {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  display: block;
+  box-sizing: border-box;
+  width: 118px;
+  height: 118px;
+  border: solid 2px #000;
+}
+#contact .hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.5s;
+  background-color: transparent;
+}
+#contact .contact-details {
+  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+  margin: 0;
+  width: 76%;
+  float: left;
+  opacity: 0;
+  transform: translate(0, -100%);
+  transition: transform 0.5s, opacity 0.5s;
+}
+#contact .contact-details li {
+  position: relative;
+  padding-left: 34px;
+  margin-bottom: 15px;
+  color: #E0E0E0;
+}
+#contact .contact-details li i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#contact .contact-details span {
+  display: block;
+  line-height: 18px;
+}
+#contact .hover-city {
+  margin: 0;
+  width: 24%;
+  float: left;
+  text-align: center;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s;
+}
+#contact .hover-city li {
+  font-family: 'octin_collegeregular';
+  font-size: 1.500em;
+  display: block;
+  margin: 0 0 4px 0;
+}
+#contact .city:hover .hover-content {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#contact .city:hover .contact-details {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+#contact .city:hover .hover-city {
+  transform: translate(0, 0);
+}
+
+#jobs {
+  background-color: #fff;
+}
+#jobs header {
+  position: relative;
+  height: 28%;
+}
+#jobs h2 {
+  font-size: 1.563em;
+  line-height: 29px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  padding: 0 25px;
+  transform: translate(-50%, -50%);
+  letter-spacing: 3.6px;
+  color: #2c2b2b;
+}
+#jobs .jobs-info {
+  position: relative;
+  height: 72%;
+  color: #6e6e6e;
+  background: #f8f8f8;
+}
+#jobs .jobs-info .middle {
+  padding: 0 13%;
+}
+#jobs .jobs-info .jobs-contact {
+  margin-bottom: 45px;
+}
+#jobs .jobs-info h3 {
+  font-size: .938em;
+  margin-bottom: 5px;
+  letter-spacing: 1.9px;
+  color: #000;
+}
+#jobs .jobs-info a {
+  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+  font-size: .938em;
+  text-decoration: none;
+  color: #6e6e6e;
+}
+#jobs .jobs-info p {
+  font-size: .938em;
+  margin: 0;
+}
+#jobs .jobs-info ul {
+  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+  font-size: .938em;
+  margin: 0;
+}
+#jobs .jobs-info ul li {
+  margin-bottom: 12px;
+}
+#jobs .jobs-info ul li:last-child {
+  margin-bottom: 0;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -2050,157 +2234,54 @@ you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 768px) {
   /******************************************************************
-  Site Name:
-  Author:
   
   Stylesheet: Tablet & Small Desktop Stylesheet
   
-  Here's where you can start getting into the good stuff.
-  This size will work on iPads, other tablets, and desktops.
-  So you can start working with more styles, background images,
-  and other resources. You'll also notice the grid starts to
-  come into play. Have fun!
-  
   ******************************************************************/
-  /*********************
-  GENERAL STYLES
-  *********************/
-  /*********************
-  LAYOUT & GRID STYLES
-  *********************/
-  .wrap {
-    width: 760px;
+  .full-height {
+    height: auto;
+    min-height: 100vh;
   }
 
-  /*********************
-  HEADER STYLES
-  *********************/
-  /*********************
-  NAVIGATION STYLES
-  *********************/
-  .nav {
-    border: 0;
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */
+  /**************************
+  Highlighter Sessions Styles
+  ***************************/
+  .paper-wrap {
+    position: static;
+    padding-top: 85px;
   }
-  .nav ul {
-    background: #323944;
-    margin-top: 0;
-  }
-  .nav li {
-    float: left;
-    position: relative;
-    /*
-    plan your menus and drop-downs wisely.
-    */
-    /* showing sub-menus */
-  }
-  .nav li a {
-    border-bottom: 0;
-    /*
-    you can use hover styles here even though this size
-    has the possibility of being a mobile device.
-    */
-  }
-  .nav li a:hover, .nav li a:focus {
-    color: #fff;
-    text-decoration: underline;
-  }
-  .nav li ul.sub-menu,
-  .nav li ul.children {
-    margin-top: 0;
-    border: 1px solid #ccc;
-    border-top: 0;
-    position: absolute;
-    visibility: hidden;
-    z-index: 8999;
-    /* highlight sub-menu current page */
-  }
-  .nav li ul.sub-menu li,
-  .nav li ul.children li {
-    /*
-    if you need to go deeper, go nuts
-    just remember deeper menus suck
-    for usability. k, bai.
-    */
-  }
-  .nav li ul.sub-menu li a,
-  .nav li ul.children li a {
-    padding-left: 10px;
-    border-right: 0;
+
+  .paper {
     display: block;
-    width: 180px;
-    border-bottom: 1px solid #ccc;
-  }
-  .nav li ul.sub-menu li:last-child a,
-  .nav li ul.children li:last-child a {
-    border-bottom: 0;
-  }
-  .nav li ul.sub-menu li ul,
-  .nav li ul.children li ul {
-    top: 0;
-    left: 100%;
-  }
-  .nav li:hover > ul {
-    top: auto;
-    visibility: visible;
+    opacity: 0;
+    transition: opacity 0.7s ease-in;
+    text-align: left;
+    padding: 15px 40px;
   }
 
-  /* end .nav */
-  /*********************
-  SIDEBARS & ASIDES
-  *********************/
-  .sidebar {
-    margin-top: 2.2em;
+  /**************************
+  Section Specific styles
+  ***************************/
+  #header {
+    padding-top: 130px;
+  }
+  #header .cover {
+    display: none;
+  }
+  #header .highlighter-sessions-toolbar {
+    opacity: 0;
+    pointer-events: none;
+  }
+  #header .highlighter-sessions-label {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
   }
 
-  .widgettitle {
-    border-bottom: 2px solid #444;
-    margin-bottom: 0.75em;
+  #header-logo {
+    position: static;
+    transform: translate(0, 0);
   }
-
-  .widget {
-    padding: 0 10px;
-    margin: 2.2em 0;
-  }
-  .widget ul li {
-    margin-bottom: 0.75em;
-    /* deep nesting */
-  }
-  .widget ul li ul {
-    margin-top: 0.75em;
-    padding-left: 1em;
-  }
-
-  /* links widget */
-  /* meta widget */
-  /* pages widget */
-  /* recent-posts widget */
-  /* archives widget */
-  /* tag-cloud widget */
-  /* calendar widget */
-  /* category widget */
-  /* recent-comments widget */
-  /* search widget */
-  /* text widget */
-  /*********************
-  FOOTER STYLES
-  *********************/
-  /*
-  you'll probably need to do quite a bit
-  of overriding here if you styled them for
-  mobile. Make sure to double check these!
-  */
-  .footer-links ul li {
-    /*
-    be careful with the depth of your menus.
-    it's very rare to have multi-depth menus in
-    the footer.
-    */
-  }
-
-  /* end .footer-links */
 }
 /*********************
 DESKTOP

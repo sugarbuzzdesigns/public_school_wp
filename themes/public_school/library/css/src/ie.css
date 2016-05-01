@@ -55,57 +55,62 @@ http://ia.net/blog/responsive-typography-the-basics/
 http://alistapart.com/column/responsive-typography-is-a-physical-discipline
 
 ******************************************************************/
-/*********************
-FONT FACE (IN YOUR FACE)
-*********************/
-/*  To embed your own fonts, use this syntax
-  and place your fonts inside the
-  library/fonts folder. For more information
-  on embedding fonts, go to:
-  http://www.fontsquirrel.com/
-  Be sure to remove the comment brackets.
-*/
-/*  @font-face {
-      font-family: 'Font Name';
-      src: url('library/fonts/font-name.eot');
-      src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
-             url('library/fonts/font-name.woff') format('woff'),
-             url('library/fonts/font-name.ttf') format('truetype'),
-             url('library/fonts/font-name.svg#font-name') format('svg');
-      font-weight: normal;
-      font-style: normal;
-  }
-*/
-/*
-The following is based of Typebase:
-https://github.com/devinhunt/typebase.css
-I've edited it a bit, but it's a nice starting point.
-*/
-/*
- i imported this one in the functions file so bones would look sweet.
- don't forget to remove it for your site.
-*/
-/*
-some nice typographical defaults
-more here: http://www.newnet-soft.com/blog/csstypography
-*/
-p {
-  -ms-word-wrap: break-word;
-  word-break: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  -webkit-hyphenate-before: 2;
-  -webkit-hyphenate-after: 3;
-  hyphenate-lines: 3;
-  -webkit-font-feature-settings: "liga", "dlig";
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -ms-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
-  font-feature-settings: "liga", "dlig";
+@font-face {
+  font-family: 'sfns_displayregular';
+  src: url("../../fonts/system_san_francisco_display_regular-webfont.eot");
+  src: url("../../fonts/system_san_francisco_display_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/system_san_francisco_display_regular-webfont.woff") format("woff"), url("../../fonts/system_san_francisco_display_regular-webfont.ttf") format("truetype"), url("../../fonts/system_san_francisco_display_regular-webfont.svg#sfns_displayregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-
+@font-face {
+  font-family: 'blender_pro_boldbold';
+  src: url("../../fonts/blenderpro-bold-webfont.eot");
+  src: url("../../fonts/blenderpro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/blenderpro-bold-webfont.woff2") format("woff2"), url("../../fonts/blenderpro-bold-webfont.woff") format("woff"), url("../../fonts/blenderpro-bold-webfont.ttf") format("truetype"), url("../../fonts/blenderpro-bold-webfont.svg#blender_pro_boldbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'blender_promedium';
+  src: url("../../fonts/blenderpro-medium-webfont.eot");
+  src: url("../../fonts/blenderpro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/blenderpro-medium-webfont.woff2") format("woff2"), url("../../fonts/blenderpro-medium-webfont.woff") format("woff"), url("../../fonts/blenderpro-medium-webfont.ttf") format("truetype"), url("../../fonts/blenderpro-medium-webfont.svg#blender_promedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'blender_prothin';
+  src: url("../../fonts/blenderpro-thin-webfont.eot");
+  src: url("../../fonts/blenderpro-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/blenderpro-thin-webfont.woff2") format("woff2"), url("../../fonts/blenderpro-thin-webfont.woff") format("woff"), url("../../fonts/blenderpro-thin-webfont.ttf") format("truetype"), url("../../fonts/blenderpro-thin-webfont.svg#blender_prothin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'blender_probook';
+  src: url("../../fonts/blenderpro-book-webfont.eot");
+  src: url("../../fonts/blenderpro-book-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/blenderpro-book-webfont.woff2") format("woff2"), url("../../fonts/blenderpro-book-webfont.woff") format("woff"), url("../../fonts/blenderpro-book-webfont.ttf") format("truetype"), url("../../fonts/blenderpro-book-webfont.svg#blender_probook") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'tall_filmsregular';
+  src: url("../../fonts/tall_film-webfont.eot");
+  src: url("../../fonts/tall_film-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/tall_film-webfont.woff2") format("woff2"), url("../../fonts/tall_film-webfont.woff") format("woff"), url("../../fonts/tall_film-webfont.ttf") format("truetype"), url("../../fonts/tall_film-webfont.svg#tall_filmsregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'eb_garamond12_italic';
+  src: url("../../fonts/ebgaramond12-italic-webfont.eot");
+  src: url("../../fonts/ebgaramond12-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/ebgaramond12-italic-webfont.woff2") format("woff2"), url("../../fonts/ebgaramond12-italic-webfont.woff") format("woff"), url("../../fonts/ebgaramond12-italic-webfont.ttf") format("truetype"), url("../../fonts/ebgaramond12-italic-webfont.svg#eb_garamond12_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'octin_collegeregular';
+  src: url("../../fonts/octin_college_rg-webfont.eot");
+  src: url("../../fonts/octin_college_rg-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/octin_college_rg-webfont.woff2") format("woff2"), url("../../fonts/octin_college_rg-webfont.woff") format("woff"), url("../../fonts/octin_college_rg-webfont.ttf") format("truetype"), url("../../fonts/octin_college_rg-webfont.svg#octin_collegeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /******************************************************************
 Site Name:
 Author:
@@ -243,157 +248,55 @@ do they need tweaking?
 */
 /* end .footer-links */
 /******************************************************************
-Site Name:
-Author:
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
-Here's where you can start getting into the good stuff.
-This size will work on iPads, other tablets, and desktops.
-So you can start working with more styles, background images,
-and other resources. You'll also notice the grid starts to
-come into play. Have fun!
-
 ******************************************************************/
-/*********************
-GENERAL STYLES
-*********************/
-/*********************
-LAYOUT & GRID STYLES
-*********************/
-.wrap {
-  width: 760px;
+.full-height {
+  height: auto;
+  min-height: 100vh;
 }
 
-/*********************
-HEADER STYLES
-*********************/
-/*********************
-NAVIGATION STYLES
-*********************/
-.nav {
-  border: 0;
-  /* end .menu ul li */
-  /* highlight current page */
-  /* end current highlighters */
+/**************************
+Highlighter Sessions Styles
+***************************/
+.paper-wrap {
+  position: static;
+  padding-top: 85px;
 }
-.nav ul {
-  background: #323944;
-  margin-top: 0;
-}
-.nav li {
-  float: left;
-  position: relative;
-  /*
-  plan your menus and drop-downs wisely.
-  */
-  /* showing sub-menus */
-}
-.nav li a {
-  border-bottom: 0;
-  /*
-  you can use hover styles here even though this size
-  has the possibility of being a mobile device.
-  */
-}
-.nav li a:hover, .nav li a:focus {
-  color: #fff;
-  text-decoration: underline;
-}
-.nav li ul.sub-menu,
-.nav li ul.children {
-  margin-top: 0;
-  border: 1px solid #ccc;
-  border-top: 0;
-  position: absolute;
-  visibility: hidden;
-  z-index: 8999;
-  /* highlight sub-menu current page */
-}
-.nav li ul.sub-menu li,
-.nav li ul.children li {
-  /*
-  if you need to go deeper, go nuts
-  just remember deeper menus suck
-  for usability. k, bai.
-  */
-}
-.nav li ul.sub-menu li a,
-.nav li ul.children li a {
-  padding-left: 10px;
-  border-right: 0;
+
+.paper {
   display: block;
-  width: 180px;
-  border-bottom: 1px solid #ccc;
-}
-.nav li ul.sub-menu li:last-child a,
-.nav li ul.children li:last-child a {
-  border-bottom: 0;
-}
-.nav li ul.sub-menu li ul,
-.nav li ul.children li ul {
-  top: 0;
-  left: 100%;
-}
-.nav li:hover > ul {
-  top: auto;
-  visibility: visible;
+  opacity: 0;
+  transition: opacity 0.7s ease-in;
+  text-align: left;
+  padding: 15px 40px;
 }
 
-/* end .nav */
-/*********************
-SIDEBARS & ASIDES
-*********************/
-.sidebar {
-  margin-top: 2.2em;
+/**************************
+Section Specific styles
+***************************/
+#header {
+  padding-top: 130px;
+}
+#header .cover {
+  display: none;
+}
+#header .highlighter-sessions-toolbar {
+  opacity: 0;
+  pointer-events: none;
+}
+#header .highlighter-sessions-label {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.widgettitle {
-  border-bottom: 2px solid #444;
-  margin-bottom: 0.75em;
+#header-logo {
+  position: static;
+  transform: translate(0, 0);
 }
 
-.widget {
-  padding: 0 10px;
-  margin: 2.2em 0;
-}
-.widget ul li {
-  margin-bottom: 0.75em;
-  /* deep nesting */
-}
-.widget ul li ul {
-  margin-top: 0.75em;
-  padding-left: 1em;
-}
-
-/* links widget */
-/* meta widget */
-/* pages widget */
-/* recent-posts widget */
-/* archives widget */
-/* tag-cloud widget */
-/* calendar widget */
-/* category widget */
-/* recent-comments widget */
-/* search widget */
-/* text widget */
-/*********************
-FOOTER STYLES
-*********************/
-/*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-.footer-links ul li {
-  /*
-  be careful with the depth of your menus.
-  it's very rare to have multi-depth menus in
-  the footer.
-  */
-}
-
-/* end .footer-links */
 /******************************************************************
 Site Name:
 Author:

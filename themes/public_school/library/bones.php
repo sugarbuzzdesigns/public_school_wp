@@ -67,6 +67,9 @@ switch ($currenthost) {
         break;
 }
 
+// hide wordpress admin bar that shows when logged in
+show_admin_bar( false );
+
 // A better title
 // http://www.deluxeblogtips.com/2012/03/better-title-meta-tag.html
 function rw_title( $title, $sep, $seplocation ) {
@@ -153,26 +156,30 @@ function bones_scripts_and_styles() {
 	}
 
   	if (!is_admin()) {
+  		// de-register jquery so we can use our own in the libs folder
+  		wp_deregister_script('jquery');
 
 		// modernizr (without media query polyfill)
 		wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
-
+		// register our version of jquery in the libs folder
+		wp_register_script( 'jquery', get_stylesheet_directory_uri() . '/library/js/libs/jquery-2.2.3.min.js', array(), '', true );		
+		// register our version of jquery in the libs folder
+		wp_register_script( 'wurfl', get_stylesheet_directory_uri() . '/library/js/libs/wurfl.min.js', array('jquery'), '', true );		
+		// Waypoints for section on screen detection
+		wp_register_script( 'waypoints', get_stylesheet_directory_uri() . '/library/js/libs/jquery.waypoints.min.js', array('jquery'), '', true );			
 		// register main stylesheet
 		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/'. $dir .'/style'. $ext .'.css', array(), '', 'all' );
 
 		// ie-only style sheet
 		wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/'. $dir .'/ie'. $ext .'.css', array(), '' );
 
-    // comment reply script for threaded comments
-    if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
-		wp_enqueue_script( 'comment-reply' );
-    }
-
 		//adding scripts file in the footer
 		wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/'. $dir .'/scripts'. $ext .'.js', array( 'jquery' ), '', true );
 
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
+		wp_enqueue_script( 'wurfl' );
+		wp_enqueue_script( 'waypoints' );
 		wp_enqueue_style( 'bones-stylesheet' );
 		wp_enqueue_style( 'bones-ie-only' );
 
@@ -183,12 +190,10 @@ function bones_scripts_and_styles() {
 		using the google cdn. That way it stays cached
 		and your site will load faster.
 		*/
-		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'bones-js' );
 
 	}
 }
-
 /*********************
 THEME SUPPORT
 *********************/

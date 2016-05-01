@@ -17,7 +17,21 @@ module.exports = function(grunt) {
 				'Gruntfile.js',
 				'library/js/src/*.js'
 			]
-		},	
+		},
+		concat: {
+			options: {
+				separator: ';',
+			},
+			js: {
+				src: [
+						'library/js/src/scripts.js',
+						'library/js/src/modules/highlighter.js', 
+						'library/js/src/modules/contact-city.js',
+						'library/js/src/waypoints-setup.js',
+					],
+				dest: 'library/js/build/scripts.js',
+			}
+		},
 		uglify: {
 			dist: {
 				options: {
@@ -73,7 +87,7 @@ module.exports = function(grunt) {
 			}
 		},
 		cssmin: {
-			target: {
+			all: {
 				files: [{
 					expand: true,
 					ext: '.min.css',
@@ -84,15 +98,25 @@ module.exports = function(grunt) {
 			}
 		},
 		watch: {
-			scripts: {
+			sass: {
 				files: ['library/scss/**/*.scss'],
-				tasks: ['default'],
+				tasks: ['css'],
 				options: {
 					spawn: false,
 				}
-			}
+			},
+			js: {
+				files: ['library/js/src/**/*.js'],
+				tasks: ['js'],
+				options: {
+					spawn: false,
+				}
+			}			
 		}			
 	});
 
-	grunt.registerTask('default', ['clean', 'jshint', 'sass', 'copy', 'cssmin', 'uglify']);
+	grunt.registerTask('js', ['jshint', 'copy:js', 'concat', 'uglify']);
+	grunt.registerTask('css', ['sass', 'copy:css', 'cssmin']);
+
+	grunt.registerTask('default', ['clean', 'js', 'css']);
 };

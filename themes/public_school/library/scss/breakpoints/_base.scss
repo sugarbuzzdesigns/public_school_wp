@@ -16,874 +16,853 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $lato;
-	font-size: 100%;
-	line-height: 1.5;
-	color: $text-color;
-	background-color: $gray;
-  	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
+    font-family: $sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #080808;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/********************
-WORDPRESS BODY CLASSES
-style a page via class
-********************/
+p {
+    font-family: $serif;
+}
 
-.rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
-.home {}                          /* home page */
-.blog {}                          /* blog template page */
-.archive {}                       /* archive page */
-.date {}                          /* date archive page */
-	.date-paged-1 {}                /* replace the number to the corresponding page number */
-.search {}                        /* search page */
-	.search-results {}              /* search result page */
-	.search-no-results {}           /* no results search page */
-	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
-.error404 {}                      /* 404 page */
-.single {}                        /* single post page */
-	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
-	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
-.attachment {}                    /* attatchment page */
-	.attachmentid-1 {}              /* individual attatchment page (i.e. body.attachmentid-763) */
-	.attachment-mime-type {}        /* style mime type pages */
-.author {}                        /* author page */
-	.author-nicename {}             /* user nicename (i.e. body.author-samueladams) */
-	.author-paged-1 {}              /* paged author archives (i.e. body.author-paged-4) for page 4 */
-.category {}                      /* category page */
-	.category-1 {}                  /* individual category page (i.e. body.category-6) */
-	.category-paged-1 {}            /* replace the number to the corresponding page number */
-.tag {}                           /* tag page */
-	.tag-slug {}                    /* individual tag page (i.e. body.tag-news) */
-	.tag-paged-1 {}                 /* replace the number to the corresponding page number */
-.page-template {}                 /* custom page template page */
-	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
-	.page-paged-1 {}                /* replace the number to the corresponding page number */
-	.page-parent {}                 /* parent page template */
-	.page-child {}                  /* child page template */
-	.parent-pageid-1 {}             /* replace the number to the corresponding page number */
-.logged-in {}                     /* if user is logged in */
-.paged {}                         /* paged items like search results or archives */
-	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
+a {
+	text-decoration: none;
+}
+
+/**************************
+Icons
+***************************/
+.down-arrow-white {
+    display: inline-block;
+    width: 24px;
+    height: 14px;
+    transition: all .5s;
+    background-image: url(../../images/icons/down-arrow-white.png);
+    background-size: 100%;
+}
+
+.close-icon-white {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    transition: all .5s;
+    background-image: url(../../images/icons/close-icon-white.png);
+    background-size: 100%;
+}
+
+.pentagon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    opacity: .7;
+    background-image: url(../../images/icons/pentagon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+
+.social {
+    margin: 0;
+    text-align: center;
+
+    li {
+        display: inline-block;
+
+        margin-right: 17%;
+
+        &:last-child {
+            margin-right: 0;
+        }
+		
+		a {
+			display: block;
+		    width: 20px;
+		    height: 20px;
+		    text-decoration: none;
+	        background-image: url(../../images/icons/social-sprite.png);
+	        background-repeat: no-repeat;
+	        background-position: 0 0;
+	        background-size: 270px 19px;
+
+	        &.spotify {
+	            background-position: 0 0;
+	        }
+
+	        &.instagram {
+	            background-position: -83px 0;
+	        }
+
+	        &.twitter {
+	            background-position: -168px 0;
+	        }
+
+	        &.linkedin {
+	            background-position: -252px 0;
+	        }	        
+		}
+    }
+}
+
+i.address,
+i.email,
+i.phone {
+    display: inline-block;
+    width: 17px;
+    height: 20px;
+    background-image: url(../../images/icons/contact-sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: calc(193px/2) calc(33px/2);
+}
+
+i.email {
+	background-position: -40px 0;
+}
+i.phone {
+	background-position: -79px 0;
+}
 
 /*********************
 LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 96%;
-	margin: 0 auto;
+    width: 96%;
+    margin: 0 auto;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    position: relative;
+}
+
+/**************************
+Generic Classes
+***************************/
+.centered {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100vh;
 }
 
 /*********************
 LINK STYLES
 *********************/
 
-a, a:visited {
-	color: $link-color;
+a,
+a:visited {
+    color: $link-color;
 
-	/* on hover */
-	&:hover, &:focus {
-		color: $link-hover;
-	}
+    /* on hover */
+    &:hover,
+    &:focus {
+        color: $link-hover;
+    }
 
-	/* on click */
-	&:active {
-
-	}
-
-	/* mobile tap color */
-	&:link {
-		/*
-		this highlights links on iPhones/iPads.
-		so it basically works like the :hover selector
-		for mobile devices.
-		*/
-		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
-	}
+    /* on click */
+    /* mobile tap color */
+    &:link {
+        /*
+        this highlights links on iPhones/iPads.
+        so it basically works like the :hover selector
+        for mobile devices.
+        */
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+    }
 }
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	text-rendering: optimizelegibility;
-	font-weight: 500;
-	/*
-	if you're going to use webfonts, be sure to check your weights
-	http://css-tricks.com/watch-your-font-weight/
-	*/
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+    text-rendering: optimizelegibility;
 
-	/* removing text decoration from all headline links */
-	a {
-		text-decoration: none;
-	}
+    /*
+    if you're going to use webfonts, be sure to check your weights
+    http://css-tricks.com/watch-your-font-weight/
+    */
+    /* removing text decoration from all headline links */
+    a {
+        text-decoration: none;
+    }
 }
 
-h1, .h1 {
-	font-size: 2.5em;
-	line-height: 1.333em;
+h1,
+.h1 {
+    font-size: 2.5em;
+    line-height: 1.333em;
 }
 
-h2, .h2 {
-	font-size: 1.75em;
-	line-height: 1.4em;
-	margin-bottom: 0.375em;
+h2,
+.h2 {
+    font-size: .935em;
+    line-height: 1.2em;
+    letter-spacing: 1.67px;
+
+    &.highlighter {
+        font-family: 'sfns_displayregular';
+        font-size: 1.563em;
+        line-height: 1.17em;
+        padding: 0 50px;
+
+        em {
+            font-style: normal;
+            display: block;
+        }
+    }
 }
 
-h3, .h3 {
-	font-size: 1.125em;
+h3,
+.h3 {
+    font-size: 1.125em;
 }
 
-h4, .h4 {
-	font-size: 1.1em;
-	font-weight: 700;
+h4,
+.h4 {
+    font-size: 1.1em;
+    font-weight: 700;
 }
 
-h5, .h5 {
-	font-size: 0.846em;
-	line-height: 2.09em;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+h5,
+.h5 {
+    font-size: .846em;
+    line-height: 2.09em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 /*********************
 HEADER STYLES
 *********************/
-
-.header {
-	background-color: $black;
-}
-
-	#logo {
-		margin: 0.75em 0;
-
-		a {
-			color: $white;
-		}
-	}
-
-/*********************
-NAVIGATION STYLES
-*********************/
-
-/*
-all navs have a .nav class applied via
-the wp_menu function; this is so we can
-easily write one group of styles for
-the navs on the site so our css is cleaner
-and more scalable.
-*/
-
-.nav {
-	border-bottom: 0;
-	margin: 0;
-
-	li {
-
-		a {
-			display: block;
-			color: $white;
-			text-decoration: none;
-			padding: 0.75em;
-
-			/*
-			remember this is for mobile ONLY, so there's no need
-			to even declare hover styles here, you can do it in
-			the style.scss file where it's relevant. We want to
-			keep this file as small as possible!
-			*/
-			&:hover, &:focus {
-
-			}
-		}
-
-		&:first-child {}
-
-		&:last-child {}
-
-		/*
-		so you really have to rethink your dropdowns for mobile.
-		you don't want to have it expand too much because the
-		screen is so small. How you manage your menu should
-		depend on the project. Here's some great info on it:
-		http://www.alistapart.com/articles/organizing-mobile/
-		*/
-		ul.sub-menu,
-		ul.children {
-
-			li {
-
-				a {
-					padding-left: 30px;
-
-					&:hover,
-					&:focus {}
-
-					&:link {}
-
-				}
-
-				&:first-child {}
-
-				&:last-child {}
-
-			}
-
-		}
-
-	} /* end .menu li */
-
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current_page_ancestor {
-
-		a {}
-
-	}  /* end current highlighters */
-
-} /* end .nav */
-
-
-/*********************
-POSTS & CONTENT STYLES
-*********************/
-
-#content {
-	margin-top: 1.5em;
-}
-
-		.hentry {
-			background-color: $white;
-			border-radius: 3px;
-			margin-bottom: 1.5em;
-			border: 1px solid $border-color;
-
-			header {
-				border-bottom: 1px solid $light-gray;
-				padding: 1.5em;
-			}
-
-			footer {
-				padding: 1.5em;
-				border-top: 1px solid $light-gray;
-
-				p {
-					margin: 0;
-				}
-			}
-
-		} /* end .hentry */
-
-		.single-title,
-		.page-title,
-		.entry-title {
-			margin: 0;
-		}
-
-		.single-title {}
-
-		.page-title {}
-
-		.entry-title {}
-
-		.archive-title {}
-
-		/* want to style individual post classes? Booya! */
-		.post-id {}         /* post by id (i.e. post-3) */
-		.post {}            /* general post style */
-		.page {}            /* general article on a page style */
-		.attachment {}      /* general style on an attatchment */
-		.sticky {}          /* sticky post style */
-		.hentry {}          /* hentry class */
-		.category-slug {}   /* style by category (i.e. category-videos) */
-		.tag-slug {}        /* style by tag (i.e. tag-news) */
-
-		/* post meta */
-		.byline {
-			color: $meta-gray;
-			font-style: italic;
-			margin: 0;
-
-			time {}
-		}
-
-		/* entry content */
-		.entry-content {
-			padding: 1.5em 1.5em 0;
-
-			p {
-				margin: 0 0 1.5em;
-			}
-
-
-			ul, ol, table, dl {}
-
-			ul, ol {
-
-				li {}
-
-			}
-
-			ul {
-
-				li {}
-
-			}
-
-			ol {
-
-				li {}
-
-			}
-
-			table {
-				width: 100%;
-				border: 1px solid $gray;
-				margin-bottom: 1.5em;
-
-				caption {
-					margin: 0 0 7px;
-					font-size: 0.75em;
-					color: $meta-gray;
-					text-transform: uppercase;
-					letter-spacing: 1px;
-				}
-			}
-
-			tr {
-				border-bottom: 1px solid $gray;
-
-				&:nth-child(even) {
-					background-color: $light-gray;
-				}
-			}
-
-			td {
-				padding: 7px;
-				border-right: 1px solid $gray;
-
-				&:last-child {
-					border-right: 0;
-				}
-			}
-
-			th {
-				background-color: $light-gray;
-				border-bottom: 1px solid $gray;
-				border-right: 1px solid $gray;
-
-				&:last-child {
-					border-right: 0;
-				}
-			}
-
-			blockquote {
-				margin: 0 0 1.5em 0.75em;
-				padding: 0 0 0 0.75em;
-				border-left: 3px solid $blue;
-				font-style: italic;
-				color: $meta-gray;
-
-				&:before {}
-
-			}
-
-			dl {}
-
-			dt {}
-
-			dd {
-				margin-left: 0;
-				font-size: 0.9em;
-				color: #787878;
-				margin-bottom: 1.5em;
-			}
-
-			img {
-				margin: 0 0 1.5em 0;
-				max-width: 100%;
-				height: auto;
-			}
-
-			/*
-			image alignment on a screen this size may be
-			a bit difficult. It's set to start aligning
-			and floating images at the next breakpoint,
-			but it's up to you. Feel free to change it up.
-			*/
-			.alignleft, img.alignleft {}
-			.alignright, img.alignright {}
-			.aligncenter, img.aligncenter {}
-
-			.size-auto,
-			.size-full,
-			.size-large,
-			.size-medium,
-			.size-thumbnail {
-				max-width: 100%;
-				height: auto;
-			}
-
-			pre {
-				background: $black;
-				color: $light-gray;
-				font-size: 0.9em;
-				padding: 1.5em;
-				margin: 0 0 1.5em;
-				border-radius: 3px;
-			}
-
-		} /* end .entry-content */
-
-		.wp-caption {
-			max-width: 100%;
-			background: #eee;
-			padding: 5px;
-
-			/* images inside wp-caption */
-			img {
-				max-width: 100%;
-				margin-bottom: 0;
-				width: 100%;
-			}
-
-			p.wp-caption-text {
-				font-size: 0.85em;
-				margin: 4px 0 7px;
-				text-align: center;
-			}
-
-		} /* end .wp-caption */
-
-		/* image gallery styles */
-		.gallery {
-
-			dl {
-
-				a {}
-
-				img {}
-
-			}
-
-			dt {}
-
-			dd {}
-
-		} /* end .gallery */
-
-		/* gallery caption styles */
-		.gallery-caption {}
-
-		.size-full {}
-		.size-large {}
-		.size-medium {}
-		.size-thumbnail {}
-
-	// the tag output
-	.tags {
-		margin: 0;
-	}
-
-/******************************************************************
-PAGE NAVI STYLES
-******************************************************************/
-
-.pagination,
-.wp-prev-next {
-	margin: 1.5em 0;
-}
-	.pagination{
+#header-logo {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -140%);
     text-align: center;
-
-    ul {
-      display: inline-block;
-      background-color: $white;
-      white-space: nowrap;
-      padding: 0;
-      clear: both;
-      border-radius: 3px;
-    }
-
-    li {
-      padding: 0;
-      margin: 0;
-      float: left;
-      display: inline;
-      overflow: hidden;
-      border-right: 1px solid $gray;
-    }
-
-    a, span {
-      margin: 0;
-      text-decoration: none;
-      padding: 0;
-      line-height: 1em;
-      font-size: 1em;
-      font-weight: normal;
-      padding: 0.75em;
-      min-width: 1em;
-      display: block;
-      color: $blue;
-
-      &:hover, &:focus {
-      	background-color: $blue;
-      	color: $white;
-      }
-    }
-
-    .current{
-    	cursor: default;
-    	color: $text-color;
-
-    	&:hover, &:focus {
-    		background-color: $white;
-    		color: $text-color;
-    	}
-    }
-
-  } /* end .bones_page_navi */
-
-	/* fallback previous & next links */
-	.wp-prev-next {
-
-		ul {}
-
-		.prev-link {
-			float: left;
-		}
-
-		.next-link {
-			float: right;
-		}
-
-	} /* end .wp-prev-next */
-
-/******************************************************************
-COMMENT STYLES
-******************************************************************/
-
-/* h3 comment title */
-#comments-title {
-	padding: 0.75em;
-	margin: 0;
-	border-top: 1px solid $light-gray;
-
-	/* number of comments span */
-	span {}
-
 }
-
-.comment-nav {
-
-	ul {
-
-		li {}
-
-	}
-}
-
-
-.commentlist {
-	margin: 0;
-	list-style-type: none;
-}
-
-.comment {
-	position: relative;
-	clear: both;
-	overflow: hidden;
-	padding: 1.5em;
-	border-bottom: 1px solid $light-gray;
-
-	.comment-author {
-		padding: 7px;
-		border: 0;
-	}
-
-	/* vcard */
-	.vcard {
-		margin-left: 50px;
-
-		cite.fn {
-			font-weight: 700;
-			font-style: normal;
-
-			a.url {}
-
-		}
-
-		time {
-			display: block;
-			font-size: 0.9em;
-			font-style: italic;
-
-			a {
-				color: $meta-gray;
-				text-decoration: none;
-
-				&:hover {
-					text-decoration: underline;
-				}
-
-			}
-
-		}
-
-		.photo {}
-
-		.avatar {
-			position: absolute;
-			left: 16px;
-			border-radius: 50%;
-		}
-
-	} /* end .commentlist .vcard */
-
-	&:last-child {
-		margin-bottom: 0;
-	}
-
-	.children {
-		margin: 0;
-
-		li {}
-
-			/* variations */
-			.comment {}
-			.alt {}
-			.odd {}
-			.even {}
-			.depth-1 {}           /* change number for different depth */
-			.byuser {}
-			.bypostauthor {}
-			.comment-author-admin {}
-
-	} /* end children */
-
-
-	&[class*=depth-] {
-		margin-top: 1.1em;
-	}
-
-	&.depth-1 {
-		margin-left: 0;
-		margin-top: 0;
-	}
-
-	&:not(.depth-1) {
-		margin-top: 0;
-		margin-left: 7px;
-		padding: 7px;
-	}
-
-	&.depth-2 {}
-	&.depth-3 {}
-	&.depth-4 {}
-	&.depth-5 {}
-
-	/* general comment classes */
-	&.alt {}
-	&.odd {
-		background-color: $white;
-	}
-	&.even {
-		background: $light-gray;
-	}
-	&.parent {}
-	&.comment {}
-	&.children {}
-	&.pingback {}
-	&.bypostauthor {}
-	&.comment-author {}
-	&.comment-author-admin {}
-	&.thread-alt {}
-	&.thread-odd {}
-	&.thread-even {}
-}
-
-
-
-
-	/* comment meta */
-	.comment-meta {
-
-		a {}
-
-	}
-
-	.commentmetadata {
-
-		a {}
-
-	}
-
-	/* comment content */
-	.comment_content {
-
-		p {
-			margin: 0.7335em 0 1.5em;
-			font-size: 1em;
-			line-height: 1.5em;
-		}
-
-	} /* end .commentlist .comment_content */
-
-	/* comment reply link */
-	.comment-reply-link {
-		@extend .blue-btn;
-		font-size: 0.9em;
-		float: right;
-
-		&:hover,
-		&:focus {
-		}
-
-	} /* end .commentlist .comment-reply-link */
-
-	/* edit comment link */
-	.comment-edit-link {
-		font-style: italic;
-		margin: 0 7px;
-		text-decoration: none;
-		font-size: 0.9em;
-	}
-
-
-
-/******************************************************************
-COMMENT FORM STYLES
-******************************************************************/
-
-.comment-respond {
-	@extend .cf;
-	padding: 1.5em;
-	border-top: 1px solid $light-gray;
-}
-
-	#reply-title {
-		margin: 0;
-	}
-
-	.logged-in-as {
-		color: $meta-gray;
-		font-style: italic;
-		margin: 0;
-
-		a {
-			color: $text-color;
-		}
-	}
-
-	.comment-form-comment {
-		margin: 1.5em 0 0.75em;
-	}
-
-	.form-allowed-tags {
-		padding: 1.5em;
-		background-color: $light-gray;
-		font-size: 0.9em;
-	}
-
-	/* comment submit button */
-	#submit {
-		@extend .blue-btn;
-		float: right;
-		font-size: 1em;
-	}
-
-	/* comment form title */
-	#comment-form-title {
-		margin: 0 0 1.1em;
-	}
-
-	/* cancel comment reply link */
-	#cancel-comment-reply {
-		a {}
-	}
-
-	/* logged in comments */
-	.comments-logged-in-as {}
-
-	/* allowed tags */
-	#allowed_tags {
-		margin: 1.5em 10px 0.7335em 0;
-	}
-
-	/* no comments */
-	.nocomments {
-		margin: 0 20px 1.1em;
-	}
-
-/*********************
-SIDEBARS & ASIDES
-*********************/
-
-.sidebar {}
-
-	.widgettitle {}
-
-	.widget {
-
-		ul {
-
-			li {
-
-				&:first-child {}
-
-				&:last-child {}
-
-				a {}
-
-				/* deep nesting */
-				ul {}
-
-			}
-
-		}
-
-	}
-
-	.no-widgets {
-		background-color: $white;
-		padding: 1.5em;
-		text-align: center;
-		border: 1px solid $border-color;
-		border-radius: 2px;
-		margin-bottom: 1.5em;
-	}
 
 /*********************
 FOOTER STYLES
 *********************/
 
 .footer {
-	clear: both;
-	background-color: $black;
-	color: $light-gray;
+    clear: both;
+    padding: 70px 0 100px;
+    text-align: center;
+    color: $light-gray;
+    background: #0b0a0a;
+
+    .footer-contact {
+        font-family: 'blender_pro_boldbold';
+        width: 78%;
+        margin: 44px auto 0;
+        margin-bottom: 50px;
+        padding: 37px 0;
+        letter-spacing: 2.75px;
+        text-transform: uppercase;
+        border-top: solid 1px #636363;
+        border-bottom: solid 1px #636363;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
 }
 
-	/*
-	if you checked out the link above:
-	http://www.alistapart.com/articles/organizing-mobile/
-	you'll want to style the footer nav
-	a bit more in-depth. Remember to keep
-	it simple because you'll have to
-	override these styles for the desktop
-	view.
-	*/
-	.footer-links {
+/**************************
 
-		ul {
+***************************/
 
-			li {}
+i {
+    font-style: normal;
+}
 
-		}
+mark {
+    color: #fff;
+    background: transparent;
+}
 
-	} /* end .footer-links */
+mark em {
+    font-style: normal;
 
+    // opacity: 0;
+    // transition: opacity 0.5s;
+}
 
-	.copyright {}
+.paper-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    background-color: #080808;
+}
+
+.paper {
+    font-family: 'blender_prothin';
+    font-size: 1.8em;
+    line-height: 50px;
+    z-index: 1;
+    display: none;
+    clear: both;
+    width: 100%;
+    padding: 15px 10px;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background-color: #080808;
+    background-image: url(../../images/paper-line.svg);
+    background-repeat: repeat, repeat-y;
+    background-position: 0 0, 76px 0;
+    background-size: 100vw 50px, 32px 32px;
+
+    &.show-me {
+        display: block;
+    }
+}
+
+.paper .highlight,
+.paper mark,
+.paper .highlighter,
+.paper .text {
+    transition: all .5s;
+}
+
+.paper.example .highlight,
+.paper.example mark,
+.paper.example .highlighter,
+.paper.example .text {
+    transition: all 1.5s;
+}
+
+.paper .text {
+    /*opacity: 0;*/
+    /*white-space: nowrap;*/
+}
+
+.paper .text span {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.paper .nospace .text span {
+    padding-right: 0;
+}
+
+.paper .text span:after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 21px;
+    content: '';
+    transition: opacity .5s;
+    transform: translate(0, -50%);
+    background: yellow;
+}
+
+.paper .highlight,
+.paper mark {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+}
+
+.paper .highlight.flicker,
+.paper mark.flicker {
+    animation-name: flicker;
+    animation-duration: 4s;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    34% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.paper .highlighter {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 17px;
+    transform: translateY(-50%);
+    background: #ffe700;
+}
+
+.paper mark.show-phrase span:after {
+    opacity: 0;
+}
+
+.paper mark.show-phrase em {
+    opacity: 1;
+}
+
+.paper .highlight.show-phrase .text,
+.paper mark.show-phrase .text {
+    opacity: 1;
+    color: #fff;
+}
+
+/**************************
+Mobile Contact Butter Bar
+***************************/		
+.contact-butter-bar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 55px;
+	width: 100%;
+	opacity: 0;
+	background-color: #171717;
+	transition: opacity 0.5s;
+
+	a {
+		font-size: 0.688em;
+		letter-spacing: 1.65px;
+		text-transform: uppercase;
+		font-family: 'blender_promedium';
+		display: block;
+		text-align: center;
+	}
+
+	&.show {
+		opacity: 1;
+	}
+}
+
+/**************************
+Section Specific styles
+***************************/
+#header {
+    position: relative;
+    z-index: 2;
+
+    .cover {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #080808;
+    }
+
+	.highlighter-sessions-label {
+		display: none;
+	}
+
+    .highlighter-sessions-toolbar {
+        position: absolute;
+        z-index: 3;
+        bottom: 0;
+        left: 0;
+        display: table;
+        width: 100%;
+        transition: opacity 0.7s;
+        background-color: #212121;
+        text-transform: uppercase;
+
+        div {
+            position: relative;
+            display: table-cell;
+            width: 80%;
+            margin: 0;
+            padding: 9% 12%;
+            vertical-align: middle;
+        }
+
+        div + div {
+            width: 20%;
+            background: #1b1b1b;
+        }
+
+        h2 {
+            text-align: left;
+
+            span {
+                display: block;
+            }
+        }
+
+        .down-arrow-white {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: block;
+            transform: translate(-50%, -50%);
+        }
+
+        .close-icon-white {
+            position: absolute;
+            top: 50%;
+            right: -50%;
+            display: block;
+            transform: translate(50%, -50%);
+            opacity: 0;
+        }
+
+        .toggle-paper {
+            overflow: hidden;
+        }
+
+        .toggle-paper.open {
+            .down-arrow-white {
+                top: -50%;
+                opacity: 0;
+            }
+
+            .close-icon-white {
+                right: 50%;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+#overview {
+    position: relative;
+    color: #000;
+    background-color: #fff;
+
+    h2 {
+        font-family: 'blender_pro_boldbold';
+        font-size: .938em;
+        line-height: 1em;
+        margin-bottom: 17px;
+    }
+
+    p {
+        font-size: 1.813em;
+        line-height: 1.1em;
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        color: #717171;
+
+        // letter-spacing: 1.38px;
+   
+    }
+}
+
+#instagram {
+    header {
+        height: 15%;
+    }
+
+    .image-grid {
+        position: relative;
+        height: 85%;
+        background-color: #fff;
+
+        .img {
+            float: left;
+            width: 50%;
+            height: calc(100%/3);
+            background-color: grey;
+
+            &.light {
+                background-color: #eee;
+            }
+        }
+    }
+}
+
+#services {
+    position: relative;
+
+    h2 {
+        font-family: 'blender_pro_boldbold';
+        color: #727272;
+    }
+
+    ul {
+        li {
+            font-family: 'sfns_displayregular';
+            font-size: 1.875em;
+            line-height: 2em;
+            text-align: center;
+            letter-spacing: 3.87px;
+            text-transform: uppercase;
+            border-top: solid 2px #222;
+
+            &:last-child {
+                border-bottom: solid 2px #222;
+            }
+        }
+    }
+}
+
+#passion {
+    padding: 90px 0 100px;
+    color: #7b7b7b;
+    background-color: #fff;
+
+    h2 {
+        font-size: 25px;
+        line-height: 29px;
+        letter-spacing: 3.6px;
+        color: #2c2b2b;
+    }
+
+    p {
+        font-family: $serif;
+        font-size: 15px;
+        font-weight: lighter;
+        line-height: 24px;
+        width: 75%;
+        margin: 0 auto 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+#contact {
+    .la {
+        position: relative;
+        background-image: url(../../images/contact-la.jpg);
+        background-size: cover;
+    }
+
+    .atl {
+        position: relative;
+        background-image: url(../../images/contact-atl.jpg);
+        background-size: cover;
+    }
+
+    & > div {
+        width: 100%;
+        height: 50%;
+        background-color: red;
+
+        & + div {
+            background-color: blue;
+        }
+    }
+
+    .city-box-wrap {
+        position: relative;
+        width: 126px;
+        height: 126px;
+    }
+
+    p {
+        font-family: 'octin_collegeregular';
+        font-size: 1.563em;
+        margin: 0;
+        text-align: center;
+        letter-spacing: 10px;
+    }
+
+    .city-box {
+        width: 118px;
+        height: 118px;
+        background-color: #0e0e0e;
+    }
+
+    .city-box-border {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        display: block;
+        box-sizing: border-box;
+        width: 118px;
+        height: 118px;
+        border: solid 2px #000;
+    }
+
+    .hover-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: background-color 0.5s;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .contact-details {
+        font-family: $serif;
+        margin: 0;
+        width: 76%;
+        float: left;
+        opacity: 0;
+        transform: translate(0, -100%);
+        transition: transform 0.5s, opacity 0.5s;
+
+        li {
+        	position: relative;
+        	padding-left: 34px;
+        	margin-bottom: 15px;
+        	color: #E0E0E0;
+
+        	i {
+        		position: absolute;
+        		left: 0;
+        		top: 50%;
+        		transform: translateY(-50%);
+        	}
+        }
+
+        span {
+            display: block;
+            line-height: 18px;
+        }
+    }    
+
+    .hover-city {
+        margin: 0;
+        width: 24%;
+        float: left;
+        text-align: center;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s;
+
+        li {
+            font-family: 'octin_collegeregular';
+            font-size: 1.500em;
+            display: block;
+            margin: 0 0 4px 0;
+
+            // visibility: hidden;
+       
+        }
+    }    
+
+    .city:hover {
+    	.hover-content {
+    		background-color: rgba(0, 0, 0, 0.9);
+    	}
+
+    	.contact-details {
+	        opacity: 1;
+	        transform: translate(0, 0);    		
+    	}
+
+    	.hover-city {
+    		transform: translate(0, 0);
+    	}
+    }    
+}
+
+#jobs {
+    background-color: #fff;
+
+    header {
+        position: relative;
+        height: 28%;
+    }
+
+    h2 {
+        font-size: 1.563em;
+        line-height: 29px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        padding: 0 25px;
+        transform: translate(-50%, -50%);
+        letter-spacing: 3.6px;
+        color: #2c2b2b;
+    }
+
+    .jobs-info {
+        position: relative;
+        height: 72%;
+        color: #6e6e6e;
+        background: #f8f8f8;
+
+        .middle {
+            padding: 0 13%;
+        }
+
+        .jobs-contact {
+            margin-bottom: 45px;
+        }
+
+        h3 {
+            font-size: .938em;
+            margin-bottom: 5px;
+            letter-spacing: 1.9px;
+            color: #000;
+        }
+
+        a {
+            font-family: $serif;
+            font-size: .938em;
+            text-decoration: none;
+            color: #6e6e6e;
+        }
+
+        p {
+            font-size: .938em;
+            margin: 0;
+        }
+
+        ul {
+            font-family: $serif;
+            font-size: .938em;
+            margin: 0;
+
+            li {
+                margin-bottom: 12px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
