@@ -55,6 +55,7 @@ Icons
 }
 
 .pentagon {
+	display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -604,8 +605,11 @@ Section Specific styles
         position: relative;
         height: 85%;
         background-color: #fff;
+        background-image: url(../../images/placeholders/instgram-grid.png);
+        background-size: cover;
 
         .img {
+        	display: none;
             float: left;
             width: 50%;
             height: calc(100%/3);
@@ -698,18 +702,29 @@ Section Specific styles
         height: 126px;
     }
 
-    p {
-        font-family: 'octin_collegeregular';
-        font-size: 1.563em;
-        margin: 0;
-        text-align: center;
-        letter-spacing: 10px;
+    .letters {
+    	margin: 0;
+    	text-align: center;
+
+    	li {
+			font-family: 'octin_collegeregular';
+			font-size: 1.563em;
+			margin: 0;
+			text-align: center;
+			display: inline;
+			margin-right: 4px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+        }
     }
 
     .city-box {
         width: 118px;
         height: 118px;
         background-color: #0e0e0e;
+        position: relative;
     }
 
     .city-box-border {
@@ -781,7 +796,8 @@ Section Specific styles
         }
     }    
 
-    .city:hover {
+    .city:hover,
+    .city:focus {
     	.hover-content {
     		background-color: rgba(0, 0, 0, 0.9);
     	}

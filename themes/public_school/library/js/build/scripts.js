@@ -271,11 +271,12 @@ var PS = {};
             this.endLetters = $('.letters-hover li');
 
             this.setLetterPositions();
-
-
+            this.bindEvents();
         },
         bindEvents: function() {
-           
+            $('.city').mouseover(function(){
+                
+            });
         },
         setLetterPositions: function() {
              this.startLetters.each(function(i, letter){

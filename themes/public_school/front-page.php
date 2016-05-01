@@ -104,18 +104,19 @@
 		<section class="full-height" id="contact">
 			<div class="atl city">
 				<div class="city-box-wrap middle">
-					<p class="letters middle">
-						<span id="aaa">a</span>
-						<span>t</span>
-						<span>l</span>
-					</p>
-					<div class="city-box"></div>
+					<div class="city-box">
+						<ul class="letters middle">
+							<li>a</li>
+							<li>t</li>
+							<li>l</li>
+						</ul>						
+					</div>
 					<div class="city-box-border"></div>
 				</div>
 				<div class="hover-content">
 					<div class="inner middle">
 						<ul class="hover-city letters-hover">
-							<li id="bbb">a</li>
+							<li>a</li>
 							<li>t</li>
 							<li>l</li>
 						</ul>
@@ -132,8 +133,12 @@
 			</div>
 			<div class="la city">
 				<div class="city-box-wrap middle">
-					<p class="letters middle"><span>l</span><span>a</span></p>
-					<div class="city-box"></div>
+					<div class="city-box">
+						<ul class="letters middle">
+							<li>l</li>
+							<li>a</li>
+						</ul>						
+					</div>
 					<div class="city-box-border"></div>
 				</div>
 				<div class="hover-content">

@@ -1408,6 +1408,7 @@ Icons
 }
 
 .pentagon {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1923,8 +1924,11 @@ Section Specific styles
   position: relative;
   height: 85%;
   background-color: #fff;
+  background-image: url(../../images/placeholders/instgram-grid.png);
+  background-size: cover;
 }
 #instagram .image-grid .img {
+  display: none;
   float: left;
   width: 50%;
   height: calc(100%/3);
@@ -2000,17 +2004,26 @@ Section Specific styles
   width: 126px;
   height: 126px;
 }
-#contact p {
+#contact .letters {
+  margin: 0;
+  text-align: center;
+}
+#contact .letters li {
   font-family: 'octin_collegeregular';
   font-size: 1.563em;
   margin: 0;
   text-align: center;
-  letter-spacing: 10px;
+  display: inline;
+  margin-right: 4px;
+}
+#contact .letters li:last-child {
+  margin-right: 0;
 }
 #contact .city-box {
   width: 118px;
   height: 118px;
   background-color: #0e0e0e;
+  position: relative;
 }
 #contact .city-box-border {
   position: absolute;
@@ -2070,14 +2083,17 @@ Section Specific styles
   display: block;
   margin: 0 0 4px 0;
 }
-#contact .city:hover .hover-content {
+#contact .city:hover .hover-content,
+#contact .city:focus .hover-content {
   background-color: rgba(0, 0, 0, 0.9);
 }
-#contact .city:hover .contact-details {
+#contact .city:hover .contact-details,
+#contact .city:focus .contact-details {
   opacity: 1;
   transform: translate(0, 0);
 }
-#contact .city:hover .hover-city {
+#contact .city:hover .hover-city,
+#contact .city:focus .hover-city {
   transform: translate(0, 0);
 }
 
