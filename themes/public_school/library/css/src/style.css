@@ -582,6 +582,13 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'GaramondFBText-Light';
+  src: url("../../fonts/GaramondFBText-Light.eot");
+  src: url("../../fonts/GaramondFBText-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/GaramondFBText-Light.woff2") format("woff2"), url("../../fonts/GaramondFBText-Light.woff") format("woff"), url("../../fonts/GaramondFBText-Light.ttf") format("truetype"), url("../../fonts/GaramondFBText-Light.svg#octin_collegeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /******************************************************************
 Site Name:
 Author:
@@ -1379,7 +1386,7 @@ body {
 }
 
 p {
-  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+  font-family: "GaramondFBText-Light", "Georgia", Cambria, Times New Roman, Times, serif;
 }
 
 a {
@@ -1989,7 +1996,7 @@ Section Specific styles
   color: #2c2b2b;
 }
 #passion p {
-  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+  font-family: "GaramondFBText-Light", "Georgia", Cambria, Times New Roman, Times, serif;
   font-size: 15px;
   font-weight: lighter;
   line-height: 24px;
@@ -2064,7 +2071,7 @@ Section Specific styles
   background-color: transparent;
 }
 #contact .contact-details {
-  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+  font-family: "GaramondFBText-Light", "Georgia", Cambria, Times New Roman, Times, serif;
   margin: 0;
   width: 76%;
   float: left;
@@ -2154,7 +2161,7 @@ Section Specific styles
   color: #000;
 }
 #jobs .jobs-info a {
-  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+  font-family: "GaramondFBText-Light", "Georgia", Cambria, Times New Roman, Times, serif;
   font-size: .938em;
   text-decoration: none;
   color: #6e6e6e;
@@ -2164,7 +2171,7 @@ Section Specific styles
   margin: 0;
 }
 #jobs .jobs-info ul {
-  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+  font-family: "GaramondFBText-Light", "Georgia", Cambria, Times New Roman, Times, serif;
   font-size: .938em;
   margin: 0;
 }

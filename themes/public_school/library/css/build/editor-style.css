@@ -573,6 +573,13 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'GaramondFBText-Light';
+  src: url("../../fonts/GaramondFBText-Light.eot");
+  src: url("../../fonts/GaramondFBText-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/GaramondFBText-Light.woff2") format("woff2"), url("../../fonts/GaramondFBText-Light.woff") format("woff"), url("../../fonts/GaramondFBText-Light.ttf") format("truetype"), url("../../fonts/GaramondFBText-Light.svg#octin_collegeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /******************************************************************
 Site Name:
 Author:
