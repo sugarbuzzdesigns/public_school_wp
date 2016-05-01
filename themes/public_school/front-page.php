@@ -212,6 +212,8 @@
 		<div class="contact-butter-bar">
 			<a class="middle" href="mailto:hello@publicschool.com" target="_blank">hello@publicschool.com</a>
 		</div>
-	</div>		
+	</div>	
+
+	<div id="loader"></div>	
 
 <?php get_footer(); ?>

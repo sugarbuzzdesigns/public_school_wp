@@ -1387,6 +1387,25 @@ a {
 }
 
 /**************************
+Site Loader
+***************************/
+#loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../../images/PublicSchool_B.2.gif);
+  background-color: #080808;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 100;
+}
+
+/**************************
 Icons
 ***************************/
 .down-arrow-white {

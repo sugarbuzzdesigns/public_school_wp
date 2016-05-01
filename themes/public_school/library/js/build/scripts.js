@@ -78,8 +78,9 @@ $(window).on('resize', function(){
 
 var PS = {};
 
-
-;var PS = PS || {};
+setTimeout(function(){
+    $('#loader').fadeOut();
+}, 2000);;var PS = PS || {};
 
 (function($) {
     PS.Highlighter = {

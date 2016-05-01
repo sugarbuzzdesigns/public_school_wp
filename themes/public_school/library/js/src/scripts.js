@@ -78,4 +78,6 @@ $(window).on('resize', function(){
 
 var PS = {};
 
-
+setTimeout(function(){
+    $('#loader').fadeOut();
+}, 2000);
