@@ -72,6 +72,10 @@ var waitForFinalEvent = (function() {
 // how long to wait before deciding the resize has stopped, in ms. Around 50-100 should work ok.
 var timeToWaitForLast = 100;
 
+$(window).on('resize', function(){
+    console.log('resized');
+});
+
 var PS = {};
 
 
@@ -203,7 +207,7 @@ var PS = {};
                 $('section').not('#header').hide();
 
                 this.$paperWrap.css({
-                    'top': this.winHeight
+                    'top': $('.highlighter-sessions-toolbar').offset().top + $('.highlighter-sessions-toolbar').height() 
                 });            
 
                 $('body, html').animate({

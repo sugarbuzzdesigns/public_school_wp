@@ -126,7 +126,7 @@ var PS = PS || {};
                 $('section').not('#header').hide();
 
                 this.$paperWrap.css({
-                    'top': this.winHeight
+                    'top': $('.highlighter-sessions-toolbar').offset().top + $('.highlighter-sessions-toolbar').height() 
                 });            
 
                 $('body, html').animate({
