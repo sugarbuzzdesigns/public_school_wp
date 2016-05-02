@@ -178,12 +178,12 @@
 			</header>
 			<div class="jobs-info">
 				<div class="middle">
-					<div class="jobs-contact">
+					<div class="jobs-contact t-col-1of2 d-col-1of2">
 						<h3>join public school</h3>
 						<p>Send skillz to <a href="mailto:jobs@public-school.com">jobs@public-school.com</a></p>
 					</div>	
 					
-					<div class="jobs-open-roles">
+					<div class="jobs-open-roles t-col-1of2 d-col-1of2">
 						<h3>open roles</h3>
 						<ul>
 							<li>Associate Creative Director</li>

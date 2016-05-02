@@ -326,6 +326,7 @@ Section Specific styles
   font-size: 11px;
   display: block;
   margin-top: 58px;
+  margin-bottom: 167px;
   text-align: center;
   letter-spacing: 2.2px;
   text-transform: uppercase;
@@ -335,6 +336,16 @@ Section Specific styles
 #header-logo {
   position: static;
   transform: translate(0, 0);
+}
+
+#overview {
+  padding-top: 170px;
+  padding-bottom: 130px;
+}
+#overview p {
+  font-size: 1.750em;
+  line-height: 33px;
+  letter-spacing: 1.33px;
 }
 
 #instagram header {
@@ -399,11 +410,84 @@ Section Specific styles
 }
 #contact .city {
   width: 50%;
+  padding: 100px 0;
+}
+#contact .city .city-box {
+  width: 92px;
+  height: 92px;
+}
+#contact .city .city-box .letters {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#contact .city .city-box-border {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: block;
+  box-sizing: border-box;
+  width: 92px;
+  height: 92px;
+  border: solid 2px #000;
+}
+#contact .city .city-box-wrap {
+  margin: 0 auto;
+}
+#contact .city .hover-content {
+  overflow: hidden;
+}
+#contact .city .hover-content .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+#jobs {
+  overflow: auto;
+  padding-bottom: 79px;
+}
+#jobs .jobs-info .middle {
+  padding: 0;
+}
+#jobs .jobs-info .jobs-contact {
+  padding-left: 5%;
+}
+#jobs .jobs-info .jobs-contact h3 {
+  font-size: 1.250em;
+  letter-spacing: 2.58px;
+}
+#jobs .jobs-info .jobs-open-roles {
+  padding-left: 5%;
+}
+#jobs .jobs-info .jobs-open-roles h3 {
+  font-size: 1.125em;
+  letter-spacing: 2px;
+}
+#jobs .jobs-info p {
+  font-size: 1em;
+  letter-spacing: 0.89px;
+}
 #jobs h2 {
+  font-size: 1.688em;
+  letter-spacing: 4.26px;
   position: static;
   transform: translate(0, 0);
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+#jobs h2 span {
+  display: inline;
+}
+#jobs h2 span em {
+  width: 104%;
+  left: -5px;
+  top: 12px;
+}
+
+#footer-logo {
+  width: 40%;
 }
 
 /******************************************************************
