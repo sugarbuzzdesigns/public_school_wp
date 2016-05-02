@@ -1,14 +1,89 @@
 /******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Desktop Stylsheet
 
 This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
+.d-col-1of2 {
+	width: 50%;
+	float: left;
+}
 
-.wrap {
-  width: 1040px;
+/**************************
+Section Specific styles
+***************************/
+#header {
+    padding-top: 114px;
+
+    .highlighter-sessions-label {
+        font-size: 13px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }    
+}
+
+/**************************
+Highlighter Sessions Styles
+***************************/
+.paper-wrap {
+    padding-top: 70px;
+}
+
+.paper {
+	font-size: 1.625em;
+	padding: 15px 9.5%;
+}
+
+/**************************
+Section Specific styles
+***************************/
+#overview {
+	h2 {
+		font-size: 1.125em;
+	}
+
+	p {
+		font-size: 2.250em;
+		width: 100%;
+		line-height: 1em;
+		padding: 0 25%;
+		letter-spacing: 1.71px;
+	}
+}
+
+#instagram {
+	header {
+		padding: 45px 0 37px; 
+	}
+
+	.image-grid {
+		.desktop-placeholder {
+			display: block;
+		}
+		.tablet-placeholder {
+			display: none;
+		}	
+	}		
+}
+
+.footer {
+	padding-bottom: 25px;
+
+	.footer-contact,
+	.social {
+		width: 50%;
+		float: left;
+	}
+
+	.footer-contact {
+		margin: 0;
+		padding: 0 0 0 15px;
+		border: none;
+		text-align: left;
+	}
+
+	.social {
+		text-align: right;
+		padding-right: 14px;
+	}
 }

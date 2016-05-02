@@ -2348,6 +2348,13 @@ you can add resource intensive styles.
   }
 
   /**************************
+  Mobile Contact Butter Bar
+  ***************************/
+  .contact-butter-bar {
+    display: none;
+  }
+
+  /**************************
   Highlighter Sessions Styles
   ***************************/
   .paper-wrap {
@@ -2407,6 +2414,9 @@ you can add resource intensive styles.
     padding-top: 170px;
     padding-bottom: 130px;
   }
+  #overview h2 {
+    font-size: 1em;
+  }
   #overview p {
     font-size: 1.750em;
     line-height: 33px;
@@ -2422,6 +2432,9 @@ you can add resource intensive styles.
   }
   #instagram .image-grid {
     background-image: none;
+  }
+  #instagram .image-grid .desktop-placeholder {
+    display: none;
   }
   #instagram .image-grid .tablet-placeholder {
     display: block;
@@ -2552,7 +2565,7 @@ you can add resource intensive styles.
   }
 
   #footer-logo {
-    width: 40%;
+    width: 370px;
   }
 }
 /*********************
@@ -2563,17 +2576,81 @@ you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 1030px) {
   /******************************************************************
-  Site Name:
-  Author:
-  
-  Stylesheet: Desktop Stylsheet
   
   This is the desktop size. It's larger than an iPad so it will only
   be seen on the Desktop.
   
   ******************************************************************/
-  .wrap {
-    width: 1040px;
+  .d-col-1of2 {
+    width: 50%;
+    float: left;
+  }
+
+  /**************************
+  Section Specific styles
+  ***************************/
+  #header {
+    padding-top: 114px;
+  }
+  #header .highlighter-sessions-label {
+    font-size: 13px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  /**************************
+  Highlighter Sessions Styles
+  ***************************/
+  .paper-wrap {
+    padding-top: 70px;
+  }
+
+  .paper {
+    font-size: 1.625em;
+    padding: 15px 9.5%;
+  }
+
+  /**************************
+  Section Specific styles
+  ***************************/
+  #overview h2 {
+    font-size: 1.125em;
+  }
+  #overview p {
+    font-size: 2.250em;
+    width: 100%;
+    line-height: 1em;
+    padding: 0 25%;
+    letter-spacing: 1.71px;
+  }
+
+  #instagram header {
+    padding: 45px 0 37px;
+  }
+  #instagram .image-grid .desktop-placeholder {
+    display: block;
+  }
+  #instagram .image-grid .tablet-placeholder {
+    display: none;
+  }
+
+  .footer {
+    padding-bottom: 25px;
+  }
+  .footer .footer-contact,
+  .footer .social {
+    width: 50%;
+    float: left;
+  }
+  .footer .footer-contact {
+    margin: 0;
+    padding: 0 0 0 15px;
+    border: none;
+    text-align: left;
+  }
+  .footer .social {
+    text-align: right;
+    padding-right: 14px;
   }
 }
 /*********************

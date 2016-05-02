@@ -20,6 +20,13 @@ h2, .h2 {
 }
 
 /**************************
+Mobile Contact Butter Bar
+***************************/		
+.contact-butter-bar {
+	display: none;
+}
+
+/**************************
 Highlighter Sessions Styles
 ***************************/
 .paper-wrap {
@@ -83,6 +90,10 @@ Section Specific styles
 	padding-top: 170px;
 	padding-bottom: 130px;
 
+	h2 {
+		font-size: 1em;
+	}
+
 	p {
 		font-size: 1.750em;
 		line-height: 33px;
@@ -101,6 +112,9 @@ Section Specific styles
 	}
 	
 	.image-grid {
+		.desktop-placeholder {
+			display: none;
+		}
 		.tablet-placeholder {
 			display: block;
 		}
@@ -267,9 +281,9 @@ Section Specific styles
 }
 
 #footer {
-	
+
 }
 
 #footer-logo {
-	width: 40%;
+	width: 370px;
 }

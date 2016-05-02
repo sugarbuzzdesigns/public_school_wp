@@ -65,6 +65,7 @@
 			</header>
 			<div class="image-grid">
 				<img class="tablet-placeholder" src="<?php bloginfo('template_url'); ?>/library/images/placeholders/instagram-grid-tablet.jpg" alt="">			
+				<img class="desktop-placeholder" src="<?php bloginfo('template_url'); ?>/library/images/placeholders/instagram-grid-desktop.jpg" alt="">			
 <!-- 				<div class="img"></div>
 				<div class="img light"></div>
 				<div class="img light"></div>
@@ -200,24 +201,26 @@
 			<div id="inner-footer" class="wrap cf">
 				<img class="centered full-width" id="footer-logo" src="<?php bloginfo('template_url'); ?>/library/images/logos/footer-logo.png" />
 
-				<div class="footer-contact">
-					<a href="mailto:hello@public-school.com" target="_blank">hello@public-school.com</a>
-				</div>
+				<div class="footer-bottom">
+					<div class="footer-contact d-col-1of2">
+						<a href="mailto:hello@public-school.com" target="_blank">hello@public-school.com</a>
+					</div>
 
-				<ul class="social">
-					<li>
-						<a class="spotify" href="" target="_blank"></a>
-					</li>
-					<li>
-						<a class="instagram" href="" target="_blank"></a>
-					</li>
-					<li>
-						<a class="twitter" href="" target="_blank"></a>
-					</li>
-					<li>
-						<a class="linkedin" href="" target="_blank"></a>
-					</li>
-				</ul>
+					<ul class="social d-col-1of2">
+						<li>
+							<a class="spotify" href="" target="_blank"></a>
+						</li>
+						<li>
+							<a class="instagram" href="" target="_blank"></a>
+						</li>
+						<li>
+							<a class="twitter" href="" target="_blank"></a>
+						</li>
+						<li>
+							<a class="linkedin" href="" target="_blank"></a>
+						</li>
+					</ul>
+				</div>	
 			</div>
 		</footer>
 		
