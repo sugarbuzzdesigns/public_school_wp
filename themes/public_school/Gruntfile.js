@@ -19,15 +19,17 @@ module.exports = function(grunt) {
 			]
 		},
 		concat: {
-			options: {
-				separator: ';',
-			},
 			js: {
+				options: {
+					separator: '\n;',
+				},				
 				src: [
 						'library/js/src/scripts.js',
 						'library/js/src/modules/highlighter.js', 
 						'library/js/src/modules/contact-city.js',
 						'library/js/src/waypoints-setup.js',
+						'library/js/src/modules/slider.js'
+
 					],
 				dest: 'library/js/build/scripts.js',
 			}
@@ -62,7 +64,8 @@ module.exports = function(grunt) {
 					'library/css/src/login.css': 'library/scss/login.scss',
 					'library/css/src/ie.css': 'library/scss/ie.scss',
 					'library/css/src/editor-style.css': 'library/scss/editor-style.scss',
-					'library/css/src/admin.css': 'library/scss/admin.scss'
+					'library/css/src/admin.css': 'library/scss/admin.scss',
+					'library/css/src/bxslider.css': 'library/scss/bxslider.scss'
 				}
 			}
 		},
@@ -75,16 +78,17 @@ module.exports = function(grunt) {
 					dest: 'library/css/build', 
 					filter: 'isFile'
 				}]
-			},
-			js: {
-				files: [{
-					expand: true, 
-					cwd: 'library/js/src',
-					src: ['**/*.js'], 
-					dest: 'library/js/build', 
-					filter: 'isFile'
-				}]				
 			}
+			// ,
+			// js: {
+			// 	files: [{
+			// 		expand: true, 
+			// 		cwd: 'library/js/src',
+			// 		src: ['**/*.js'], 
+			// 		dest: 'library/js/build', 
+			// 		filter: 'isFile'
+			// 	}]				
+			// }
 		},
 		cssmin: {
 			all: {
@@ -115,7 +119,7 @@ module.exports = function(grunt) {
 		}			
 	});
 
-	grunt.registerTask('js', ['jshint', 'copy:js', 'concat', 'uglify']);
+	grunt.registerTask('js', ['jshint', 'concat', 'uglify']);
 	grunt.registerTask('css', ['sass', 'copy:css', 'cssmin']);
 
 	grunt.registerTask('default', ['clean', 'js', 'css']);

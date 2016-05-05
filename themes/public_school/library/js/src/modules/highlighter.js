@@ -179,6 +179,6 @@ var PS = PS || {};
     };
 
     $(function() {
-        PS.Highlighter.init();
+        PS.Highlighter.init();      
     });
 })(jQuery);

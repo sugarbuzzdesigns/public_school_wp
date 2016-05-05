@@ -110,6 +110,107 @@
 				<p>But dig a little deeper and you’ll see a place where all walks of creative life gather & collaborate, create & curate, and strive to learn something new every day. We do all this with one common goal: to create something bigger, better and braver. You’ll have to excuse us for being presumptuous, but we happen to think brands may find something like that useful.</p>
 			</div>		
 		</section>
+
+		<section id="team">
+			<div class="team-slider-nav">
+			  <span id="slider-prev"></span><span id="slider-next"></span>
+			</div>		
+			<ul class="team-slider">
+			  	<li class="team-member" id="matt-berger">
+				  	<header>
+				  		<h4 class="team-member-name">Matt Berger</h4>
+				  		<p class="job-title">Creative Director</p>
+				  	</header>
+				  	<div class="team-member-photo">
+				  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/matt-berger.jpg" alt="">
+				  	</div>
+				  	<div class="content">
+				  		<div class="inner" data-nav-id="team-member-about">
+					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/matt-berger-type.png" atl="">
+					  		<div class="copy">
+					  			<p>Once had to pitch an idea to a creative director during a ride to LaGuardia airport. The comical part: He wasn’t even traveling and had to hail a 
+								cab back to the ad agency in Manhattan.</p>
+					  		</div>
+						</div>	
+				  		<div class="inner" data-nav-id="team-member-pro-experience">
+					  		<div class="copy">
+					  			<h4>Previous Clients</h4>
+					  			<ul class="m-1of2">
+									<li>Turner Network</li>
+									<li>Coca-Cola</li>
+									<li>Red Bull</li>
+									<li>XM Satellite Radio</li>
+									<li>Baskin Robbins</li>
+									<li>Greenlaw.org</li>
+									<li>Reebok</li>
+								</ul>
+
+								<ul class="m-1of2">
+									<li>The Macallan</li>
+									<li>Toyota</li>
+									<li>Mercedes-Benz</li>
+								</ul>								
+					  		</div>
+						</div>	
+				  		<div class="inner" data-nav-id="team-member-side-hustle">
+					  		<div class="copy">
+					  			<p>Once had to pitch an idea to a creative director during a ride to LaGuardia airport. The comical part: He wasn’t even traveling and had to hail a cab back to the ad agency in Manhattan.</p>
+					  		</div>
+						</div>														  		
+				  	</div>			  	
+			  	</li>		  
+			  	<li class="team-member" id="nat-bergers">
+				  	<header>
+				  		<h4 class="team-member-name">Matt Berger</h4>
+				  		<p class="job-title">Creative Director</p>
+				  	</header>
+				  	<div class="team-member-photo">
+				  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/matt-berger.jpg" alt="">
+				  	</div>
+				  	<div class="content">
+				  		<div class="inner" data-nav-id="team-member-about">
+					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/matt-berger-type.png" atl="">
+					  		<div class="copy">
+					  			<p>Once had to pitch an idea to a creative director during a ride to LaGuardia airport. The comical part: He wasn’t even traveling and had to hail a 
+								cab back to the ad agency in Manhattan.</p>
+					  		</div>
+						</div>	
+				  		<div class="inner" data-nav-id="team-member-pro-experience">
+					  		<div class="copy">
+					  			<h4>Previous Clients</h4>
+					  			<ul class="m-1of2">
+									<li>Turner Network</li>
+									<li>Coca-Cola</li>
+									<li>Red Bull</li>
+									<li>XM Satellite Radio</li>
+									<li>Baskin Robbins</li>
+									<li>Greenlaw.org</li>
+									<li>Reebok</li>
+								</ul>
+
+								<ul class="m-1of2">
+									<li>The Macallan</li>
+									<li>Toyota</li>
+									<li>Mercedes-Benz</li>
+								</ul>								
+					  		</div>
+						</div>	
+				  		<div class="inner" data-nav-id="team-member-side-hustle">
+					  		<div class="copy">
+					  			<p>Once had to pitch an idea to a creative director during a ride to LaGuardia airport. The comical part: He wasn’t even traveling and had to hail a cab back to the ad agency in Manhattan.</p>
+					  		</div>
+						</div>														  		
+				  	</div>	
+			  	</li>				  	
+			</ul>
+	  		<nav class="content-nav">
+	  			<ul>
+					<li class="about active" data-about-navitem="team-member-about">about</li>
+					<li class="pro-experience" data-about-navitem="team-member-pro-experience">pro experience</li>
+					<li class="side-hustle" data-about-navitem="team-member-side-hustle">side hustle</li>
+	  			</ul>
+	  		</nav>							
+		</section>
 		
 		<section class="full-height-mobile" id="contact">
 			<div class="atl city t-col-1of2 d-col-1of2">

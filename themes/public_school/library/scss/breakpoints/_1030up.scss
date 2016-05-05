@@ -10,6 +10,59 @@ be seen on the Desktop.
 }
 
 /**************************
+Icons
+***************************/		
+i.address,
+i.email,
+i.phone {
+    display: inline-block;
+    width: 24px;
+    height: 22px;
+    background-image: url(../../images/icons/contact-sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: calc(193px/1.5) calc(33px/1.5);
+}
+
+i.email {
+	background-position: -53px 0;
+}
+i.phone {
+	background-position: -104px 0;
+}
+
+.social {
+    li {	
+        margin-right: 13%;
+
+		a {
+		    width: 25px;
+		    height: 25px;
+	        background-size: calc(540px/1.5) calc(38px/1.5);
+
+	        &.spotify {
+	            background-position: 0 0;
+	        }
+
+	        &.instagram {
+			    background-size: calc(540px/1.2) calc(38px/1.2);
+			    background-position: -143px -3px;
+			    height: 26px;
+			    width: 26px;
+	        }
+
+	        &.twitter {
+	            background-position: -226px 0;
+	        }
+
+	        &.linkedin {
+	            background-position: -338px 0;
+	        }	        
+		}
+    }
+}
+
+/**************************
 Section Specific styles
 ***************************/
 #header {
@@ -66,7 +119,139 @@ Section Specific styles
 	}		
 }
 
+#passion {
+	h2.highlighter {
+		font-size: 34px;
+		letter-spacing: 5px;
+		line-height: 41px;
+
+		em {
+			left: -5px;
+			height: 8px;
+		    top: 16px;
+		    width: 290px;			
+		}	
+	}
+
+	.image-wrap {
+		img {
+			width: 360px;
+			margin-top: -100px;
+		}
+	}
+}
+
+#contact {
+	.city {
+		width: 50%;
+    	padding: 35% 0 0 0;
+    	background-position: bottom;
+
+    	.city-box-wrap {
+		    margin: 0 auto;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);	    		
+    	}
+		
+		.city-box {
+			width: 179px;
+			height: 179px;		
+		}
+
+		.city-box-border {
+			width: 179px;
+			height: 179px;		
+			top: 8px;
+			left: 8px;		
+			border: solid 3px #000;
+		}
+
+		.hover-city {
+			width: 30%;
+
+			li {
+				line-height: 1.1em;
+				font-size: 2.625em;
+				margin-bottom: 5px;
+			}
+		}
+
+		.hover-content {
+			.inner {
+				top: 58%;
+			}
+		}
+
+		.contact-details {
+			width: 70%;
+
+			li {
+				font-size: 1.250em;
+				margin-bottom: 25px;
+			}
+		}
+	}
+
+	.letters {
+		li {
+			font-size: 2.250em;
+			margin-right: 8px;
+		}
+	}
+}
+
+#jobs {
+	h2.highlighter {
+		font-size: 34px;
+		letter-spacing: 5.36px;
+		padding-bottom: 180px;
+
+		span {
+			em {
+			    width: 102%;
+			    left: -4px;				
+				top: 16px;
+				height: 8px;
+			}
+		}	
+	}
+
+	.jobs-info {
+		.jobs-contact {
+			h3 {
+				font-size: 1.500em;
+				letter-spacing: 3.1px;			
+			}
+		}
+
+		p {
+			font-size: 18px;
+		}
+
+		.jobs-open-roles {
+			h3	{
+				font-size: 18px;
+				letter-spacing: 2px;
+			}
+
+			ul {
+				font-size: 18px;
+				letter-spacing: 1px;
+
+				li {
+					display: inline-block;
+					margin-right: 45px;
+				}
+			}
+		}
+	}
+}
+
 .footer {
+	background: #010101;
+	padding-top: 30px;
 	padding-bottom: 25px;
 
 	.footer-contact,
