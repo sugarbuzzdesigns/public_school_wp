@@ -135,7 +135,7 @@
 				  		<div class="inner" data-nav-id="team-member-pro-experience">
 					  		<div class="copy">
 					  			<h4>Previous Clients</h4>
-					  			<ul class="m-1of2">
+					  			<ul class="m-1of2 t-1of2 d-1of2">
 									<li>Turner Network</li>
 									<li>Coca-Cola</li>
 									<li>Red Bull</li>
@@ -145,7 +145,7 @@
 									<li>Reebok</li>
 								</ul>
 
-								<ul class="m-1of2">
+								<ul class="m-1of2 t-1of2 d-1of2">
 									<li>The Macallan</li>
 									<li>Toyota</li>
 									<li>Mercedes-Benz</li>
@@ -178,7 +178,7 @@
 				  		<div class="inner" data-nav-id="team-member-pro-experience">
 					  		<div class="copy">
 					  			<h4>Previous Clients</h4>
-					  			<ul class="m-1of2">
+					  			<ul class="m-1of2 t-1of2 d-1of2">
 									<li>Turner Network</li>
 									<li>Coca-Cola</li>
 									<li>Red Bull</li>
@@ -188,7 +188,7 @@
 									<li>Reebok</li>
 								</ul>
 
-								<ul class="m-1of2">
+								<ul class="m-1of2 t-1of2 d-1of2">
 									<li>The Macallan</li>
 									<li>Toyota</li>
 									<li>Mercedes-Benz</li>

@@ -19,10 +19,10 @@ var PS = PS || {};
                 nextSelector: '#slider-next',
                 prevSelector: '#slider-prev',
                 onSliderLoad: function(){
-                    console.log(this);
+
                 },
                 onSlideBefore: function(){
-                    _this.setContentHeights(_this.getCurrentSlideJquery(_this.teamSlider.getCurrentSlide()));
+
                 }
             };
 
@@ -76,16 +76,6 @@ var PS = PS || {};
 
         setActiveNavitem: function($li){
             $li.addClass('active').siblings().removeClass('active');
-        },
-
-        setContentHeights: function(slideToSet){
-            var $slides = slideToSet,
-                $content = $slides.find('.content'),
-                heights = [];
-                
-            $slides.find('.inner').each(function(i, inner){
-                console.log($(inner).height());
-            });
         },
 
         getCurrentSlideJquery: function(){

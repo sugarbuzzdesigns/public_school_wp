@@ -181,6 +181,82 @@ Section Specific styles
 	}
 }
 
+#team {
+	.team-slider {
+
+		header {
+
+		}
+
+		.team-member-name {
+
+		}
+
+		.job-title {
+
+		}
+
+		.team-member-photo {
+			width: 50%;
+			float: left;
+		}
+
+		.content {
+			width: 50%;
+			float: left;			
+			
+			img {
+
+			}
+
+			p {
+
+			}
+
+            .inner {
+
+                & + .inner {
+
+                }
+
+                li {
+
+                }
+            }
+
+            [data-nav-id="team-member-about"] {
+            	padding: 50px 0 0px;
+            }
+
+            [data-nav-id="team-member-side-hustle"] {
+    			padding: 110px 0 0;
+                
+                p {
+                
+                }
+            }
+
+            [data-nav-id="team-member-pro-experience"] {
+    			padding: 15% 0 0;
+
+                .copy {
+
+                    h4 {
+
+                    }
+                }
+            }
+		}
+	}
+
+    .content-nav {
+		width: 50%;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+    }    
+}
+
 #contact {
 	overflow: auto;
 
