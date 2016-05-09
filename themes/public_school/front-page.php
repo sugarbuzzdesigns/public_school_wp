@@ -64,18 +64,23 @@
 				<h2 class="middle centered">@bythepublic</h2>
 			</header>
 			<div class="image-grid">
-				<img class="tablet-placeholder" src="<?php bloginfo('template_url'); ?>/library/images/placeholders/instagram-grid-tablet.jpg" alt="">			
-				<img class="desktop-placeholder" src="<?php bloginfo('template_url'); ?>/library/images/placeholders/instagram-grid-desktop.jpg" alt="">			
-<!-- 				<div class="img"></div>
-				<div class="img light"></div>
-				<div class="img light"></div>
-				<div class="img"></div>
-				<div class="img"></div>
-				<div class="img light"></div>
+				<!-- <img class="tablet-placeholder" src="<?php bloginfo('template_url'); ?>/library/images/placeholders/instagram-grid-tablet.jpg" alt="">			 -->
+				<!-- <img class="desktop-placeholder" src="<?php bloginfo('template_url'); ?>/library/images/placeholders/instagram-grid-desktop.jpg" alt="">			 -->
+				
+				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Bball.jpg);"></div>
+				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Beltline.jpg);"></div>				
+
+				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Camera-Lens.jpg);"></div>				
+				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Chair.jpg);"></div>				
+
+				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Headphones.jpg);"></div>				
+				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Laptop.jpg);"></div>				
+				<!--
 				<div class="pentagon yellow">
 					<div class="top"></div>				
 					<div class="bottom"></div>
-				</div> -->
+				</div> 
+				-->
 			</div>	
 		</section>
 		
@@ -213,51 +218,34 @@
 		</section>
 		
 		<section class="full-height-mobile" id="contact">
-			<div class="atl city t-col-1of2 d-col-1of2">
-				<div class="city-box-wrap middle">
-					<div class="city-box">
-						<ul class="letters middle">
-							<li>a</li>
-							<li>t</li>
-							<li>l</li>
-						</ul>						
-					</div>
-					<div class="city-box-border"></div>
-				</div>
-				<div class="hover-content">
-					<div class="inner middle">
-						<ul class="hover-city letters-hover">
-							<li>a</li>
-							<li>t</li>
-							<li>l</li>
-						</ul>
-						<ul class="contact-details">
-							<li><i class="address"></i>
-								<span>Suite 7 Ponce City Market,</span> 
-								<span>Atlanta GA, 30030</span>
-							</li>
-							<li><i class="email"></i>atl@public-school.com</li>
-							<li><i class="phone"></i>404.382.2017</li>
-						</ul>
-					</div>					
-				</div>
+			<div class="atl city t-col-1of2 d-col-1of2">				
+				<div class="city-box middle"></div>	
+				<div class="city-box-border"></div>
+
+				<span class="letter-resting first">a</span>
+				<span class="letter-resting">t</span>
+				<span class="letter-resting last">l</span>
+
+				<div class="hover-letters">
+					<span class="letter-hover">a</span>
+					<span class="letter-hover">t</span>
+					<span class="letter-hover">l</span>
+				</div>	
 			</div>
 			<div class="la city t-col-1of2 d-col-1of2">
-				<div class="city-box-wrap middle">
-					<div class="city-box">
-						<ul class="letters middle">
-							<li>l</li>
-							<li>a</li>
-						</ul>						
-					</div>
-					<div class="city-box-border"></div>
-				</div>
+				<div class="city-box middle"></div>	
+				<div class="city-box-border"></div>
+				
+				<span class="letter-resting first">l</span>
+				<span class="letter-resting last">a</span>
+
+				<div class="hover-letters">
+					<span class="letter-hover">l</span>
+					<span class="letter-hover">a</span>
+					<span class="letter-hover"></span>
+				</div>	
 				<div class="hover-content">
-					<div class="inner middle">
-						<ul class="hover-city letters-hover">
-							<li>l</li>
-							<li>a</li>
-						</ul>	
+					<div class="inner middle">	
 						<ul class="contact-details">
 							<li><i class="address"></i>
 								<span>Suite 7 Ponce City Market,</span> 

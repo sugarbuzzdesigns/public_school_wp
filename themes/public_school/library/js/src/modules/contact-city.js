@@ -1,12 +1,13 @@
 var PS = PS || {};
 
 (function($) {
+    window.$ = $;
     PS.Contact = {
         init: function() {
-            this.startLetters = $('.letters span');
-            this.endLetters = $('.letters-hover li');
+            this.$lettersResting = $('.letter-resting');
+            this.$lettersHover = $('.letter-hover');
 
-            this.setLetterPositions();
+            this.setLetterPositionData();
             this.bindEvents();
         },
         bindEvents: function() {
@@ -14,18 +15,95 @@ var PS = PS || {};
                 
             });
         },
-        setLetterPositions: function() {
-             this.startLetters.each(function(i, letter){
-                $(letter).data('position', $(letter).offset());
+        setLetterPositionData: function() {
+            var _this = this;
+
+             this.$lettersResting.each(function(i, letter){
+                var $newLetter = null;
+                    pos = {
+                        top: 0,
+                        left: 0
+                    };
+
+                pos.top = $(letter).position().top;
+                pos.left = $(letter).position().left;
+
+                $(letter).attr('data-position-top', pos.top);
+                $(letter).attr('data-position-left', pos.left);
+
+                $(letter).data('full-position', pos);
+
+                $newLetter = $('<span class="letter-copy"></span>')
+                    .html($(letter).html())
+                    .appendTo($(letter).closest('.city'));
+
+                _this.moveLetters($newLetter, pos);
+
+                $('.letter-copy')
+                    .eq(i)
+                    .data('full-position', pos);
              });
 
-             this.endLetters.each(function(i, letter){
-                $(letter).data('position', $(letter).offset());
+             this.$lettersHover.each(function(i, letter){
+                var $newLetter = null;
+                    pos = {
+                        top: 0,
+                        left: 0
+                    };
+
+                pos.top = $(letter).offsetParent().position().top;    
+                pos.top += $(letter).position().top;
+                pos.left = $(letter).offsetParent().position().left;
+                pos.left += $(letter).position().left;
+
+                $(letter).attr('data-position-top', pos.top);
+                $(letter).attr('data-position-left', pos.left);
+
+                $(letter).data('full-position', pos);
+
+                $('.letter-copy')
+                    .eq(i)
+                    .data('full-position-hover', pos);
+             });
+
+             $('.city').click(function(){
+                if($(this).hasClass('hovered')){
+                    $('.letter-copy', $(this)).each(function(i, elm){
+                        $(elm).css({
+                            top: $(elm).data('fullPosition').top,
+                            left: $(elm).data('fullPosition').left
+                        });
+                    });   
+
+                    $(this).removeClass('hovered');
+                } else {
+                    $('.letter-copy', $(this)).each(function(i, elm){
+                        $(elm).css({
+                            top: $(elm).data('fullPositionHover').top,
+                            left: $(elm).data('fullPositionHover').left
+                        });
+                    }); 
+
+                    $(this).addClass('hovered');                   
+                }
              });             
+        },
+        moveLetters: function($letter, locObj){
+            var location = locObj || {};
+
+            $letter.css({
+                position: 'absolute',
+                top: locObj.top,
+                left: locObj.left
+            });
+
+
         }
     };
 
     $(function() {
-        PS.Contact.init();
+        setTimeout(function(){
+            PS.Contact.init();
+        }, 100);
     });
 })(jQuery);

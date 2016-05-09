@@ -1975,22 +1975,16 @@ Section Specific styles
   position: relative;
   height: 85%;
   background-color: #fff;
-  background-image: url(../../images/placeholders/instagram-grid.png);
-  background-size: cover;
 }
 #instagram .image-grid .tablet-placeholder,
 #instagram .image-grid .desktop-placeholder {
   display: none;
 }
-#instagram .image-grid .img {
-  display: none;
-  float: left;
-  width: 50%;
+#instagram .image-grid .ig-image {
+  padding: 0;
   height: calc(100%/3);
-  background-color: grey;
-}
-#instagram .image-grid .img.light {
-  background-color: #eee;
+  background-size: cover;
+  float: left;
 }
 
 #services {
@@ -2213,36 +2207,86 @@ Section Specific styles
   width: 126px;
   height: 126px;
 }
-#contact .letters {
-  margin: 0;
-  text-align: center;
-}
-#contact .letters li {
+#contact .letter-copy,
+#contact .letter-copy-hover {
   font-family: 'octin_collegeregular';
   font-size: 1.563em;
+  line-height: normal;
+  margin: 0;
+  width: 10px;
+  display: block;
+  z-index: 2;
+  transition: left 0.5s, top 0.5s;
+}
+#contact .letter-resting {
+  margin: 0;
+  position: absolute;
+  visibility: hidden;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'octin_collegeregular';
+  font-size: 1.563em;
+  line-height: normal;
+}
+#contact .letter-resting.first {
+  transform: translate(-185%, -50%);
+}
+#contact .letter-resting.last {
+  transform: translate(92%, -50%);
+}
+#contact .letter-resting li {
   margin: 0;
   text-align: center;
-  display: inline;
-  margin-right: 4px;
-}
-#contact .letters li:last-child {
+  display: inline-block;
   margin-right: 0;
+  background-color: red;
+}
+#contact .letter-resting li:last-child {
+  margin-right: 0;
+}
+#contact .letter-resting.resting {
+  top: 50%;
+  left: 50%;
+}
+#contact .letter-resting.hover {
+  top: 50%;
+  left: 0;
+}
+#contact .letter-resting.hover li {
+  display: block;
+  text-align: left;
+}
+#contact .hover-letters {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(0, -50%);
+}
+#contact .letter-hover {
+  display: block;
+  font-family: 'octin_collegeregular';
+  font-size: 1.563em;
+  line-height: normal;
+  visibility: hidden;
 }
 #contact .city-box {
   width: 118px;
   height: 118px;
   background-color: #0e0e0e;
-  position: relative;
+  z-index: 1;
 }
 #contact .city-box-border {
   position: absolute;
-  top: 6px;
-  left: 6px;
   display: block;
   box-sizing: border-box;
   width: 118px;
   height: 118px;
   border: solid 2px #000;
+  top: calc(50% + 6px);
+  left: calc(50% + 6px);
+  transform: translate(-50%, -50%);
 }
 #contact .hover-content {
   position: absolute;
@@ -2276,33 +2320,6 @@ Section Specific styles
 #contact .contact-details span {
   display: block;
   line-height: 18px;
-}
-#contact .hover-city {
-  margin: 0;
-  width: 24%;
-  float: left;
-  text-align: center;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s;
-}
-#contact .hover-city li {
-  font-family: 'octin_collegeregular';
-  font-size: 1.500em;
-  display: block;
-  margin: 0 0 4px 0;
-}
-#contact .city:hover .hover-content,
-#contact .city:focus .hover-content {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-#contact .city:hover .contact-details,
-#contact .city:focus .contact-details {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-#contact .city:hover .hover-city,
-#contact .city:focus .hover-city {
-  transform: translate(0, 0);
 }
 
 #jobs {

@@ -19,7 +19,9 @@ var PS = PS || {};
                 nextSelector: '#slider-next',
                 prevSelector: '#slider-prev',
                 onSliderLoad: function(){
+                    console.log('slider loaded');
 
+                    $('body').trigger('slider-loaded');
                 },
                 onSlideBefore: function(){
 
