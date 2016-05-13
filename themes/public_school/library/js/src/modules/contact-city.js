@@ -11,8 +11,25 @@ var PS = PS || {};
             this.bindEvents();
         },
         bindEvents: function() {
-            $('.city').mouseover(function(){
-                
+            var _this = this;
+
+            console.log(Waypoint);
+
+            $('.city').on('in-view-down', function(){
+                if(!$(this).hasClass('seen-once')){
+                    $(this).trigger('mouseover');
+                    setTimeout(function(){
+                        $(this).trigger('mouseout');
+                    }, 1000);
+                }
+            });
+
+            $('.city').hover(function(){
+                if($(this).hasClass('hovered')){
+                    _this.animateLettersReset($(this));
+                } else {
+                    _this.animateLettersHover($(this));
+                }
             });
         },
         setLetterPositionData: function() {
@@ -51,7 +68,7 @@ var PS = PS || {};
                         left: 0
                     };
 
-                pos.top = $(letter).offsetParent().position().top;    
+                pos.top = $(letter).offsetParent().position().top;
                 pos.top += $(letter).position().top;
                 pos.left = $(letter).offsetParent().position().left;
                 pos.left += $(letter).position().left;
@@ -65,28 +82,6 @@ var PS = PS || {};
                     .eq(i)
                     .data('full-position-hover', pos);
              });
-
-             $('.city').click(function(){
-                if($(this).hasClass('hovered')){
-                    $('.letter-copy', $(this)).each(function(i, elm){
-                        $(elm).css({
-                            top: $(elm).data('fullPosition').top,
-                            left: $(elm).data('fullPosition').left
-                        });
-                    });   
-
-                    $(this).removeClass('hovered');
-                } else {
-                    $('.letter-copy', $(this)).each(function(i, elm){
-                        $(elm).css({
-                            top: $(elm).data('fullPositionHover').top,
-                            left: $(elm).data('fullPositionHover').left
-                        });
-                    }); 
-
-                    $(this).addClass('hovered');                   
-                }
-             });             
         },
         moveLetters: function($letter, locObj){
             var location = locObj || {};
@@ -96,8 +91,26 @@ var PS = PS || {};
                 top: locObj.top,
                 left: locObj.left
             });
+        },
+        animateLettersHover: function($city){
+            $('.letter-copy', $city).each(function(i, elm){
+                $(elm).css({
+                    top: $(elm).data('fullPositionHover').top,
+                    left: $(elm).data('fullPositionHover').left
+                });
+            });
 
+            $city.addClass('hovered');
+        },
+        animateLettersReset: function($city){
+            $('.letter-copy', $city).each(function(i, elm){
+                $(elm).css({
+                    top: $(elm).data('fullPosition').top,
+                    left: $(elm).data('fullPosition').left
+                });
+            });
 
+            $city.removeClass('hovered');
         }
     };
 

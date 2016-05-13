@@ -15,32 +15,32 @@
 					go to
 					<mark data-gif="communicate.gif">communicate.</mark>
 					It’s a collective effort on the part of
-					<mark data-gif="strategists.gif">strategists,</mark> 
-					<mark data-gif="designers.gif">designers,</mark> 
-					<mark data-gif="writers.gif">writers,</mark> 
+					<mark data-gif="strategists.gif">strategists,</mark>
+					<mark data-gif="designers.gif">designers,</mark>
+					<mark data-gif="writers.gif">writers,</mark>
 					<mark data-gif="digital-mavens.gif">digital mavens</mark>
-					and 
+					and
 					<mark data-gif="pop-culture.gif">pop culture junkies</mark>.
 					Sometimes even
 					<mark data-gif="engineers.gif">engineers</mark>
-					and 
+					and
 					<mark data-gif="social.gif">social</mark>
 					innovators join the mix. The results are totally
 					<mark data-gif="inspiring.gif">inspiring.</mark>
 					In fact, you might say they’re
 					<mark data-gif="buck-naked.gif">buck naked wearing nothing but a straw hat.</mark>
-					Just thinking about it makes me want to 
+					Just thinking about it makes me want to
 					<mark data-gif="hug-a-mom.gif">hug a mom.</mark>
-					It's one of the many reasons people love to 
+					It's one of the many reasons people love to
 					<mark data-gif="collaborate.gif">collaborate.</mark>
-					Though, admittedly, it has less to do with 
+					Though, admittedly, it has less to do with
 					<mark data-gif="wardrobe-choices.gif">wardrobe choices</mark>
-					and more to do with the ability to 
+					and more to do with the ability to
 					<mark data-gif="greatest-potential.gif">reach our greatest potential</mark>
-					together.			
-				</div>	
-			</div>	
-			<div class="highlighter-sessions-label">highlighter session w/ ps #01</div>					
+					together.
+				</div>
+			</div>
+			<div class="highlighter-sessions-label">highlighter session w/ ps #01</div>
 			<div class="highlighter-sessions-toolbar">
 				<div><h2 class="centered">highlighter sessions <span>w/ ps #01</span></h2></div>
 				<div class="toggle-paper">
@@ -58,7 +58,7 @@
 				</header>
 			</div>
 		</section>
-		
+
 		<section class="full-height-mobile" id="instagram">
 			<header>
 				<h2 class="middle centered">@bythepublic</h2>
@@ -66,26 +66,26 @@
 			<div class="image-grid">
 				<!-- <img class="tablet-placeholder" src="<?php bloginfo('template_url'); ?>/library/images/placeholders/instagram-grid-tablet.jpg" alt="">			 -->
 				<!-- <img class="desktop-placeholder" src="<?php bloginfo('template_url'); ?>/library/images/placeholders/instagram-grid-desktop.jpg" alt="">			 -->
-				
+
 				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Bball.jpg);"></div>
-				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Beltline.jpg);"></div>				
+				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Beltline.jpg);"></div>
 
-				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Camera-Lens.jpg);"></div>				
-				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Chair.jpg);"></div>				
+				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Camera-Lens.jpg);"></div>
+				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Chair.jpg);"></div>
 
-				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Headphones.jpg);"></div>				
-				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Laptop.jpg);"></div>				
+				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Headphones.jpg);"></div>
+				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Laptop.jpg);"></div>
 				<!--
 				<div class="pentagon yellow">
-					<div class="top"></div>				
+					<div class="top"></div>
 					<div class="bottom"></div>
-				</div> 
+				</div>
 				-->
-			</div>	
+			</div>
 		</section>
-		
+
 		<section class="full-height-mobile" id="services">
-			<div class="middle">	
+			<div class="middle">
 				<header>
 					<h2 class="centered">creative services</h2>
 				</header>
@@ -96,13 +96,13 @@
 					<li>experiential</li>
 					<li>social</li>
 				</ul>
-			</div>	
+			</div>
 		</section>
-		
+
 		<section id="passion">
 			<header>
 				<h2 class="highlighter">
-					<span>reach</span> 
+					<span>reach</span>
 					<span><span class="highlight-text">your greatest</span><em></em></span>
 					<span>potential</span>
 				</h2>
@@ -113,13 +113,13 @@
 			<div class="copy t-col-1of2 d-col-1of2">
 				<p>Sure, if we need to be technical, we’re a brand engagement agency that’s hell-bent on building a brand’s value with ideas that stand up to the rigors of the real world.</p>
 				<p>But dig a little deeper and you’ll see a place where all walks of creative life gather & collaborate, create & curate, and strive to learn something new every day. We do all this with one common goal: to create something bigger, better and braver. You’ll have to excuse us for being presumptuous, but we happen to think brands may find something like that useful.</p>
-			</div>		
+			</div>
 		</section>
 
 		<section id="team">
 			<div class="team-slider-nav">
 			  <span id="slider-prev"></span><span id="slider-next"></span>
-			</div>		
+			</div>
 			<ul class="team-slider">
 			  	<li class="team-member" id="matt-berger">
 				  	<header>
@@ -133,10 +133,10 @@
 				  		<div class="inner" data-nav-id="team-member-about">
 					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/matt-berger-type.png" atl="">
 					  		<div class="copy">
-					  			<p>Once had to pitch an idea to a creative director during a ride to LaGuardia airport. The comical part: He wasn’t even traveling and had to hail a 
+					  			<p>Once had to pitch an idea to a creative director during a ride to LaGuardia airport. The comical part: He wasn’t even traveling and had to hail a
 								cab back to the ad agency in Manhattan.</p>
 					  		</div>
-						</div>	
+						</div>
 				  		<div class="inner" data-nav-id="team-member-pro-experience">
 					  		<div class="copy">
 					  			<h4>Previous Clients</h4>
@@ -154,16 +154,16 @@
 									<li>The Macallan</li>
 									<li>Toyota</li>
 									<li>Mercedes-Benz</li>
-								</ul>								
+								</ul>
 					  		</div>
-						</div>	
+						</div>
 				  		<div class="inner" data-nav-id="team-member-side-hustle">
 					  		<div class="copy">
 					  			<p>Once had to pitch an idea to a creative director during a ride to LaGuardia airport. The comical part: He wasn’t even traveling and had to hail a cab back to the ad agency in Manhattan.</p>
 					  		</div>
-						</div>														  		
-				  	</div>			  	
-			  	</li>		  
+						</div>
+				  	</div>
+			  	</li>
 			  	<li class="team-member" id="nat-bergers">
 				  	<header>
 				  		<h4 class="team-member-name">Matt Berger</h4>
@@ -176,10 +176,10 @@
 				  		<div class="inner" data-nav-id="team-member-about">
 					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/matt-berger-type.png" atl="">
 					  		<div class="copy">
-					  			<p>Once had to pitch an idea to a creative director during a ride to LaGuardia airport. The comical part: He wasn’t even traveling and had to hail a 
+					  			<p>Once had to pitch an idea to a creative director during a ride to LaGuardia airport. The comical part: He wasn’t even traveling and had to hail a
 								cab back to the ad agency in Manhattan.</p>
 					  		</div>
-						</div>	
+						</div>
 				  		<div class="inner" data-nav-id="team-member-pro-experience">
 					  		<div class="copy">
 					  			<h4>Previous Clients</h4>
@@ -197,16 +197,16 @@
 									<li>The Macallan</li>
 									<li>Toyota</li>
 									<li>Mercedes-Benz</li>
-								</ul>								
+								</ul>
 					  		</div>
-						</div>	
+						</div>
 				  		<div class="inner" data-nav-id="team-member-side-hustle">
 					  		<div class="copy">
 					  			<p>Once had to pitch an idea to a creative director during a ride to LaGuardia airport. The comical part: He wasn’t even traveling and had to hail a cab back to the ad agency in Manhattan.</p>
 					  		</div>
-						</div>														  		
-				  	</div>	
-			  	</li>				  	
+						</div>
+				  	</div>
+			  	</li>
 			</ul>
 	  		<nav class="content-nav">
 	  			<ul>
@@ -214,12 +214,12 @@
 					<li class="pro-experience" data-about-navitem="team-member-pro-experience">pro experience</li>
 					<li class="side-hustle" data-about-navitem="team-member-side-hustle">side hustle</li>
 	  			</ul>
-	  		</nav>							
+	  		</nav>
 		</section>
-		
+
 		<section class="full-height-mobile" id="contact">
-			<div class="atl city t-col-1of2 d-col-1of2">				
-				<div class="city-box middle"></div>	
+			<div class="atl city t-col-1of2 d-col-1of2">
+				<div class="city-box middle"></div>
 				<div class="city-box-border"></div>
 
 				<span class="letter-resting first">a</span>
@@ -230,12 +230,24 @@
 					<span class="letter-hover">a</span>
 					<span class="letter-hover">t</span>
 					<span class="letter-hover">l</span>
-				</div>	
+				</div>
+				<div class="hover-content">
+					<div class="inner middle">
+						<ul class="contact-details">
+							<li><i class="address"></i>
+								<span>Suite 7 Ponce City Market,</span>
+								<span>Atlanta GA, 30030</span>
+							</li>
+							<li><i class="email"></i>atl@public-school.com</li>
+							<li><i class="phone"></i>404.382.2017</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div class="la city t-col-1of2 d-col-1of2">
-				<div class="city-box middle"></div>	
+				<div class="city-box middle"></div>
 				<div class="city-box-border"></div>
-				
+
 				<span class="letter-resting first">l</span>
 				<span class="letter-resting last">a</span>
 
@@ -243,22 +255,22 @@
 					<span class="letter-hover">l</span>
 					<span class="letter-hover">a</span>
 					<span class="letter-hover"></span>
-				</div>	
+				</div>
 				<div class="hover-content">
-					<div class="inner middle">	
+					<div class="inner middle">
 						<ul class="contact-details">
 							<li><i class="address"></i>
-								<span>Suite 7 Ponce City Market,</span> 
+								<span>Suite 7 Ponce City Market,</span>
 								<span>Atlanta GA, 30030</span>
 							</li>
 							<li><i class="email"></i>atl@public-school.com</li>
 							<li><i class="phone"></i>404.382.2017</li>
-						</ul>	
-					</div>		
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
-		
+
 		<section class="full-height-mobile" id="jobs">
 			<header>
 				<h2 class="centered highlighter">
@@ -271,8 +283,8 @@
 					<div class="jobs-contact t-col-1of2 d-col-1of2">
 						<h3>join public school</h3>
 						<p>Send skillz to <a href="mailto:jobs@public-school.com">jobs@public-school.com</a></p>
-					</div>	
-					
+					</div>
+
 					<div class="jobs-open-roles t-col-1of2 d-col-1of2">
 						<h3>open roles</h3>
 						<ul>
@@ -281,7 +293,7 @@
 							<li>Mid-Level Writer</li>
 						</ul>
 					</div>
-				</div>	
+				</div>
 			</div>
 		</section>
 
@@ -309,15 +321,15 @@
 							<a class="linkedin" href="" target="_blank"></a>
 						</li>
 					</ul>
-				</div>	
+				</div>
 			</div>
 		</footer>
-		
+
 		<div class="contact-butter-bar">
 			<a class="middle" href="mailto:hello@publicschool.com" target="_blank">hello@publicschool.com</a>
 		</div>
-	</div>	
+	</div>
 
-	<div id="loader"></div>	
+	<div id="loader"></div>
 
 <?php get_footer(); ?>

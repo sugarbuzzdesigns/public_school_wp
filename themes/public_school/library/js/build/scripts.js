@@ -69,14 +69,16 @@ var waitForFinalEvent = (function() {
     };
 })();
 
+PS.env = {
+    touch: $('html').hasClass('touch') ? true : false
+};
+
 // how long to wait before deciding the resize has stopped, in ms. Around 50-100 should work ok.
 var timeToWaitForLast = 100;
 
 $(window).on('resize', function(){
     console.log('resized');
 });
-
-var PS = {};
 
 setTimeout(function(){
     $('#loader').fadeOut();
@@ -278,8 +280,25 @@ setTimeout(function(){
             this.bindEvents();
         },
         bindEvents: function() {
-            $('.city').mouseover(function(){
-                
+            var _this = this;
+
+            console.log(Waypoint);
+
+            $('.city').on('in-view-down', function(){
+                if(!$(this).hasClass('seen-once')){
+                    $(this).trigger('mouseover');
+                    setTimeout(function(){
+                        $(this).trigger('mouseout');
+                    }, 1000);
+                }
+            });
+
+            $('.city').hover(function(){
+                if($(this).hasClass('hovered')){
+                    _this.animateLettersReset($(this));
+                } else {
+                    _this.animateLettersHover($(this));
+                }
             });
         },
         setLetterPositionData: function() {
@@ -318,7 +337,7 @@ setTimeout(function(){
                         left: 0
                     };
 
-                pos.top = $(letter).offsetParent().position().top;    
+                pos.top = $(letter).offsetParent().position().top;
                 pos.top += $(letter).position().top;
                 pos.left = $(letter).offsetParent().position().left;
                 pos.left += $(letter).position().left;
@@ -332,28 +351,6 @@ setTimeout(function(){
                     .eq(i)
                     .data('full-position-hover', pos);
              });
-
-             $('.city').click(function(){
-                if($(this).hasClass('hovered')){
-                    $('.letter-copy', $(this)).each(function(i, elm){
-                        $(elm).css({
-                            top: $(elm).data('fullPosition').top,
-                            left: $(elm).data('fullPosition').left
-                        });
-                    });   
-
-                    $(this).removeClass('hovered');
-                } else {
-                    $('.letter-copy', $(this)).each(function(i, elm){
-                        $(elm).css({
-                            top: $(elm).data('fullPositionHover').top,
-                            left: $(elm).data('fullPositionHover').left
-                        });
-                    }); 
-
-                    $(this).addClass('hovered');                   
-                }
-             });             
         },
         moveLetters: function($letter, locObj){
             var location = locObj || {};
@@ -363,8 +360,26 @@ setTimeout(function(){
                 top: locObj.top,
                 left: locObj.left
             });
+        },
+        animateLettersHover: function($city){
+            $('.letter-copy', $city).each(function(i, elm){
+                $(elm).css({
+                    top: $(elm).data('fullPositionHover').top,
+                    left: $(elm).data('fullPositionHover').left
+                });
+            });
 
+            $city.addClass('hovered');
+        },
+        animateLettersReset: function($city){
+            $('.letter-copy', $city).each(function(i, elm){
+                $(elm).css({
+                    top: $(elm).data('fullPosition').top,
+                    left: $(elm).data('fullPosition').left
+                });
+            });
 
+            $city.removeClass('hovered');
         }
     };
 
@@ -380,17 +395,26 @@ setTimeout(function(){
     PS.WaypointSetup = {
         init: function() {
         	this.bindEvents();
+
+        	this.waypointElements = [
+        		'#contact .city'
+        	];
+
+        	this.bindInViewWaypoints($('#contact .city'));
+        	this.bindOutOfViewWaypoints($('#contact .city'));
         },
         bindEvents: function() {
         	_this = this;
+
+        	// PS.env.touch/
         	// waypoint notification for each section
 			$('#overview').waypoint({
 			  	handler: function(direction) {
 			   		if(direction === 'down'){
         				$('.contact-butter-bar').addClass('show');
-        			} 
+        			}
 			  	},
-			  	offset: '85%;'
+			  	offset: '85%'
 			});
 
 			$('#header').waypoint({
@@ -400,35 +424,86 @@ setTimeout(function(){
 			  		}
 			  	},
 			  	offset: '-20%'
-			});	
+			});
 
 			$('.footer').waypoint({
 			  	handler: function(direction) {
 			  		if(direction === 'up'){
 						$('.contact-butter-bar').addClass('show');
 			  		} else {
-			  			$('.contact-butter-bar').removeClass('show');	
+			  			$('.contact-butter-bar').removeClass('show');
 			  		}
 			  	},
 			  	offset: '100%'
-			});		
+			});
+        },
 
-			// waypoint notification city elemnts are IN view
-			$('#contact .city').waypoint({
-			  	handler: function(direction) {
-			   		$(this.element).addClass('animate');
-			  	},
-			  	offset: $(window).height() - $('.city').height()/2
-			}); 
+        bindInViewWaypoints: function($elm){
+        	$(this.waypointElements).each(function(i, elm){
+        		var $elm = $(elm);
 
-			// waypoint notification city elemnts are OUT OF view
-			$('#contact .city').waypoint({
-			  	handler: function(direction) {
-			   		$(this.element).removeClass('animate');
-			  	},
-			  	offset: '-50%'
-			}); 						          
-        }
+				// waypoint notification city elemnts are IN OF view
+				$elm.waypoint({
+				  	handler: function(direction) {
+				  		if(direction === 'down'){
+				  			$(this.element).trigger('in-view-down');
+				  			$(this.element).addClass('in-view seen-once');
+				  		}
+				  	},
+					offset: function() {
+						// when the bottom of the element hits the bottom of the viewport
+						return Waypoint.viewportHeight() - this.element.clientHeight;
+					}
+				});
+
+				// waypoint notification city elemnts are IN OF view
+				$elm.waypoint({
+				  	handler: function(direction) {
+				  		if(direction === 'up'){
+				  			$(this.element).trigger('in-view-up');
+				  			$(this.element).addClass('in-view seen-once');
+				  		}
+				  	},
+					offset: function() {
+						// when the bottom of the element hits the bottom of the viewport
+						return -Waypoint.viewportHeight()/2 + this.element.clientHeight;
+					}
+				});
+			});
+        },
+        bindOutOfViewWaypoints: function(){
+        	$(this.waypointElements).each(function(i, elm){
+        		var $elm = $(elm);
+
+				// waypoint notification city elemnts are OUT OF view
+				$elm.waypoint({
+				  	handler: function(direction) {
+				  		if(direction === 'down'){
+				  			$(this.element).removeClass('in-view');
+				  			$(this.element).trigger('out-of-view-down');
+				  		}
+				  	},
+					offset: function() {
+						// when the bottom of the element hits the bottom of the viewport
+						return -Waypoint.viewportHeight() + this.element.clientHeight;
+					}
+				});
+
+				// waypoint notification city elemnts are OUT OF view
+				$elm.waypoint({
+				  	handler: function(direction) {
+				  		if(direction === 'up'){
+							$(this.element).removeClass('in-view');
+							$(this.element).trigger('out-of-view-up');
+				  		}
+				  	},
+					offset: function() {
+						// when the bottom of the element hits the bottom of the viewport
+						return Waypoint.viewportHeight();
+					}
+				});
+        	});
+        },
     };
 
     $(function() {

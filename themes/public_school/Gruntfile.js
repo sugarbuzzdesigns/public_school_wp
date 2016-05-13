@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		clean: {
 			all: [
-				'library/css/src', 
+				'library/css/src',
 				'library/css/build',
 				'library/css/dist',
 				'library/js/build',
@@ -22,10 +22,10 @@ module.exports = function(grunt) {
 			js: {
 				options: {
 					separator: '\n;',
-				},				
+				},
 				src: [
 						'library/js/src/scripts.js',
-						'library/js/src/modules/highlighter.js', 
+						'library/js/src/modules/highlighter.js',
 						'library/js/src/modules/contact-city.js',
 						'library/js/src/waypoints-setup.js',
 						'library/js/src/modules/slider.js'
@@ -52,12 +52,11 @@ module.exports = function(grunt) {
 					dest: 'library/js/dist'
 				}]
 			}
-		},			
+		},
 		sass: {
 			all: {                            // Target
 				options: {                       // Target options
-					style: 'expanded',
-					sourcemap: 'none'
+					style: 'expanded'
 				},
 				files: {                         // Dictionary of files
 					'library/css/src/style.css': 'library/scss/style.scss',
@@ -72,22 +71,22 @@ module.exports = function(grunt) {
 		copy: {
 			css: {
 				files: [{
-					expand: true, 
+					expand: true,
 					cwd: 'library/css/src',
-					src: ['*.css'], 
-					dest: 'library/css/build', 
+					src: ['*.css'],
+					dest: 'library/css/build',
 					filter: 'isFile'
 				}]
 			}
 			// ,
 			// js: {
 			// 	files: [{
-			// 		expand: true, 
+			// 		expand: true,
 			// 		cwd: 'library/js/src',
-			// 		src: ['**/*.js'], 
-			// 		dest: 'library/js/build', 
+			// 		src: ['**/*.js'],
+			// 		dest: 'library/js/build',
 			// 		filter: 'isFile'
-			// 	}]				
+			// 	}]
 			// }
 		},
 		cssmin: {
@@ -115,8 +114,8 @@ module.exports = function(grunt) {
 				options: {
 					spawn: false,
 				}
-			}			
-		}			
+			}
+		}
 	});
 
 	grunt.registerTask('js', ['jshint', 'concat', 'uglify']);

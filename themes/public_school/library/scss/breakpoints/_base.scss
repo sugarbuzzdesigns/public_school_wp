@@ -35,7 +35,7 @@ a {
 
 /**************************
 Site Loader
-***************************/		
+***************************/
 #loader {
 	position: fixed;
 	height: 100%;
@@ -100,7 +100,7 @@ Icons
         &:last-child {
             margin-right: 0;
         }
-		
+
 		a {
 			display: block;
 		    width: 20px;
@@ -125,7 +125,7 @@ Icons
 
 	        &.linkedin {
 	            background-position: -252px 0;
-	        }	        
+	        }
 		}
     }
 }
@@ -491,7 +491,7 @@ mark em {
 
 /**************************
 Mobile Contact Butter Bar
-***************************/		
+***************************/
 .contact-butter-bar {
 	position: fixed;
 	bottom: 0;
@@ -501,6 +501,7 @@ Mobile Contact Butter Bar
 	opacity: 0;
 	background-color: #171717;
 	transition: opacity 0.5s;
+    z-index: 4;
 
 	a {
 		font-size: 0.688em;
@@ -629,7 +630,7 @@ Section Specific styles
         color: #717171;
 
         // letter-spacing: 1.38px;
-   
+
     }
 }
 
@@ -701,7 +702,7 @@ Section Specific styles
     img.passion-paak {
 		width: 193px;
 		display: block;
-		margin: 60px auto 45px;  	
+		margin: 60px auto 45px;
     }
 
     p {
@@ -734,12 +735,12 @@ Section Specific styles
         top: 45px;
         overflow: auto;
 	}
-    
+
     #slider-prev,
     #slider-next {
         float: left;
         margin-left: 18px;
-    }   
+    }
 
     #slider-next {
         float: right;
@@ -787,7 +788,7 @@ Section Specific styles
 		.job-title {
 			font-size: 15px;
 			line-height: 21px;
-			letter-spacing: 2px;			
+			letter-spacing: 2px;
 			margin: 0;
 			font-family: 'eb_garamond12_italic';
 			color: #848484;
@@ -867,7 +868,7 @@ Section Specific styles
     .content-nav {
         background-color: #141414;
         position: relative;
-        z-index: 1;            
+        z-index: 1;
 
         ul {
             margin: 0;
@@ -892,29 +893,35 @@ Section Specific styles
                 }
             }
         }
-    }    
+    }
 }
 
 #contact {
-    .la {
+    .city {
         position: relative;
-        background-image: url(../../images/contact-la.jpg);
         background-size: cover;
+        transition: opacity 0.5s;
+
+        &.in-view {
+
+        }
+    }
+
+    .la {
+        background-image: url(../../images/contact-la.jpg);
+
     }
 
     .atl {
-        position: relative;
         background-image: url(../../images/contact-atl.jpg);
-        background-size: cover;
     }
 
     & > div {
         width: 100%;
         height: 50%;
-        background-color: red;
 
         & + div {
-            background-color: blue;
+
         }
     }
 
@@ -975,18 +982,17 @@ Section Specific styles
         &.resting {
             top: 50%;
             left: 50%;
-            // transform: translate(-50%, -50%);            
+            // transform: translate(-50%, -50%);
         }
 
         &.hover {
             top: 50%;
             left: 0;
-            // transform: translate(0, -50%); 
 
             li {
                 display: block;
                 text-align: left;
-            }           
+            }
         }
     }
 
@@ -997,12 +1003,19 @@ Section Specific styles
         transform: translate(0, -50%);
     }
 
+    .la .hover-letters {
+        transform: translate(0, -77%);
+    }
+
     .letter-hover {
         display: block;
         font-family: 'octin_collegeregular';
         font-size: 1.563em;
-        line-height: normal;   
-        visibility: hidden;     
+        margin-bottom: 12px;
+        line-height: normal;
+        visibility: hidden;
+        visibility: visible;
+        color: #000;
     }
 
     .city-box {
@@ -1022,11 +1035,13 @@ Section Specific styles
         border: solid 2px #000;
         top: calc(50% + 6px);
         left: calc(50% + 6px);
-        transform: translate(-50%, -50%);        
+        transform: translate(-50%, -50%);
     }
 
     .hover-content {
         position: absolute;
+        z-index: 1;
+        visibility: hidden;
         top: 0;
         left: 0;
         width: 100%;
@@ -1039,8 +1054,8 @@ Section Specific styles
         font-family: $serif;
         margin: 0;
         width: 76%;
-        float: left;
         opacity: 0;
+        padding-left: 20%;
         // transform: translate(0, -100%);
         transition: transform 0.5s, opacity 0.5s;
 
@@ -1062,23 +1077,35 @@ Section Specific styles
             display: block;
             line-height: 18px;
         }
-    }    
+    }
+}
 
-    // .city:hover,
-    // .city:focus {
-    // 	.hover-content {
-    // 		background-color: rgba(0, 0, 0, 0.9);
-    // 	}
+.no-touch {
+    #contact {
+        .city:hover {
+            .hover-content {
+                background-color: rgba(0, 0, 0, 0.9);
+                visibility: visible;
+            }
 
-    // 	.contact-details {
-	   //      opacity: 1;
-	   //      transform: translate(0, 0);    		
-    // 	}
+            .contact-details {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
 
-    // 	.hover-city {
-    // 		transform: translate(0, 0);
-    // 	}
-    // }    
+            .hover-city {
+                transform: translate(0, 0);
+            }
+        }
+    }
+}
+
+.touch {
+    #contact {
+        .in-view {
+
+        }
+    }
 }
 
 #jobs {
@@ -1111,8 +1138,8 @@ Section Specific styles
 	        	position: relative;
 	        	z-index: 2;
 	        }
-	    }        
-    }     
+	    }
+    }
 
     .jobs-info {
         position: relative;

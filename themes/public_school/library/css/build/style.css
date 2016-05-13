@@ -533,6 +533,7 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'blender_pro_boldbold';
   src: url("../../fonts/blenderpro-bold-webfont.eot");
@@ -540,6 +541,7 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'blender_promedium';
   src: url("../../fonts/blenderpro-medium-webfont.eot");
@@ -547,6 +549,7 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'blender_prothin';
   src: url("../../fonts/blenderpro-thin-webfont.eot");
@@ -554,6 +557,7 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'blender_probook';
   src: url("../../fonts/blenderpro-book-webfont.eot");
@@ -561,6 +565,7 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'tall_filmsregular';
   src: url("../../fonts/tall_film-webfont.eot");
@@ -568,6 +573,7 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'eb_garamond12_italic';
   src: url("../../fonts/ebgaramond12-italic-webfont.eot");
@@ -575,6 +581,7 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'octin_collegeregular';
   src: url("../../fonts/octin_college_rg-webfont.eot");
@@ -582,6 +589,7 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'GaramondFBText-Regular';
   src: url("../../fonts/GaramondFBText-Regular.eot");
@@ -589,6 +597,7 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'GaramondFBText-Light';
   src: url("../../fonts/GaramondFBText-Light.eot");
@@ -596,6 +605,7 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
+
 /******************************************************************
 Site Name:
 Author:
@@ -1027,7 +1037,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   position: relative;
   font-family: "blender_promedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
-  color: #fff;
+  color: white;
   font-size: 0.9em;
   font-size: 34px;
   line-height: 34px;
@@ -1040,7 +1050,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   transition: background-color 0.14s ease-in-out;
 }
 .blue-btn:hover, .blue-btn:focus {
-  color: #fff;
+  color: white;
   text-decoration: none;
   outline: none;
 }
@@ -1189,7 +1199,7 @@ textarea.is-invalid,
 .field.is-invalid {
   color: #fbe3e4;
   border-color: #fbe3e4;
-  background-color: #fff;
+  background-color: white;
   background-position: 99% center;
   background-repeat: no-repeat;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDREQkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDREQ0YwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ3ODRGRkE2RjA0QTExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERBRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+U8iT5wAAAedJREFUeNqk1U9I02Ecx/HtV3aIFAc1hcRDUoGXRAq0oNLA2CrsEFmHbikZu0iQYIFGYAiegkCpLipBxPpDEBMUzB0EhSG2LhG7hMR2GviPgUTvB57Bw8P3+U23B16HPX8+e/b8nt93wezZSMCnhXETF3AcB5BDCnH8Dq98ExcGHcFn8Ah3cdDni+fxnPDv9oAnTB7CKu6VCFXtChZy56LxUjt+jfuB8toSOth9wd7xWAWhqrUjYR/FRTwWJm+iIPT/w7bQf5ljiZnBg45dtKFX6H+LU8gIY8OEV6vgTkStwXWE8BPTGDHGPqNPz2mCfSOOYkA99TvCt1bhGPL68zMcwmncMuape10jrI+q4BbHi/FLn31S9z2x5tRhTc+1W506ipM+T3oRD4X+8+qtc4SqFvL0z/Fr14S+Szjis8bz9Lvvaq8cwS/wwGfdlqfPSWqTiFlX77o13u9Ym1PBs8JAytpRoy44X9Ft9E/gvbA+rYKn8NcaaMVc8UHgBw4b9/iqUQZ6hOAJFbyDcUflmsEX4a6+wTtHGfhAIUqa1U29Zc2BytouThD8x6xuN5CtMPi2CrXLZkZf/HyZoRFCP7n+QVR4PV7uI/AjGghN7OU/r1ilnqILtfpNC+o6vIFljBKYlhb/F2AAgaBsWR5wRiIAAAAASUVORK5CYII=);
@@ -1230,7 +1240,7 @@ textarea.is-valid,
 .field.is-valid {
   color: #e6efc2;
   border-color: #e6efc2;
-  background-color: #fff;
+  background-color: white;
   background-position: 99% center;
   background-repeat: no-repeat;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDRERkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDRFMEYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MzQ0NERERjA0QjExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERFRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+7olkTQAAAfhJREFUeNqklU9oE0EUhzdroWjw0tBeWlDxkEaIp55TsCU9VKIgCrHBelA8CQ1Kr1WPbZrQ3gqtQqvGqxpQc2jBk6BIIaAGD4qNCKURpDSKiPi98gLDsJt//uBjsztvfnk7895sIPAw6/joGMThFJyAXn2+A+9gA57/TaY/eU0OeBgfhGm4DiGnsb7DAszxBz/NAdcKjMJLuNWCqagHbsscN5+L+hmH4QkMOe1L5jzFfNA2PgT34ajTuY7AGuZB0/hmh5m+gS0r8xv1zRvg+gGCHZiOwnF4DP3iB3sQkYxPd2C6CWfhB9Xwlus5+K1j4jXuaq3a+gM1H9OPcAa+7q9lPidZJqHbiIm7Wg22rsEI7FrPSzAMX/T+ADyAKSsu7Fr1KplehLvwCs5DvfBf65p+MypqRbO1FXK9utH4/QKuaqYTsG3E3INJv00Q46px3+XxanJ/Ute2/vqP4FKDza2KcdljIKdnhS0xXYULTaqmLMZFn8FFSFtvt6x70ExFCS5oUXspq2ssa7oEl1swFa+CGFdgtkHgPDyDKy02zyxNU6lXRUZb1EuHYayNNs+Yh5B0WQo+/8fpJnNTZFuzz2OpjoQ2QruSOQlMy35fEGmEGMxY9e1brxobw7TkWA1h6xfckUPb+JhGoE/Hpfvew7qUld/H9J8AAwDpw3WYrxcZ3QAAAABJRU5ErkJggg==);
@@ -1551,7 +1561,7 @@ LINK STYLES
 *********************/
 a,
 a:visited {
-  color: #fff;
+  color: white;
   /* on hover */
   /* on click */
   /* mobile tap color */
@@ -1814,13 +1824,16 @@ mark em {
   0% {
     opacity: 1;
   }
+
   34% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .paper .highlighter {
   position: absolute;
   top: 50%;
@@ -1857,6 +1870,7 @@ Mobile Contact Butter Bar
   opacity: 0;
   background-color: #171717;
   transition: opacity 0.5s;
+  z-index: 4;
 }
 .contact-butter-bar a {
   font-size: 0.688em;
@@ -2184,23 +2198,20 @@ Section Specific styles
   color: #fff;
 }
 
-#contact .la {
+#contact .city {
   position: relative;
-  background-image: url(../../images/contact-la.jpg);
   background-size: cover;
+  transition: opacity 0.5s;
+}
+#contact .la {
+  background-image: url(../../images/contact-la.jpg);
 }
 #contact .atl {
-  position: relative;
   background-image: url(../../images/contact-atl.jpg);
-  background-size: cover;
 }
 #contact > div {
   width: 100%;
   height: 50%;
-  background-color: red;
-}
-#contact > div + div {
-  background-color: blue;
 }
 #contact .city-box-wrap {
   position: relative;
@@ -2264,12 +2275,18 @@ Section Specific styles
   left: 20px;
   transform: translate(0, -50%);
 }
+#contact .la .hover-letters {
+  transform: translate(0, -77%);
+}
 #contact .letter-hover {
   display: block;
   font-family: 'octin_collegeregular';
   font-size: 1.563em;
+  margin-bottom: 12px;
   line-height: normal;
   visibility: hidden;
+  visibility: visible;
+  color: #000;
 }
 #contact .city-box {
   width: 118px;
@@ -2290,19 +2307,21 @@ Section Specific styles
 }
 #contact .hover-content {
   position: absolute;
+  z-index: 1;
+  visibility: hidden;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   transition: background-color 0.5s;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
 #contact .contact-details {
   font-family: "GaramondFBText-Light", "Georgia", Cambria, Times New Roman, Times, serif;
   margin: 0;
   width: 76%;
-  float: left;
   opacity: 0;
+  padding-left: 20%;
   transition: transform 0.5s, opacity 0.5s;
 }
 #contact .contact-details li {
@@ -2320,6 +2339,18 @@ Section Specific styles
 #contact .contact-details span {
   display: block;
   line-height: 18px;
+}
+
+.no-touch #contact .city:hover .hover-content {
+  background-color: rgba(0, 0, 0, 0.9);
+  visibility: visible;
+}
+.no-touch #contact .city:hover .contact-details {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.no-touch #contact .city:hover .hover-city {
+  transform: translate(0, 0);
 }
 
 #jobs {
@@ -3106,7 +3137,8 @@ be set to display none.
 
   @page {
     margin: 0.5cm;
-  }
+}
+
   p, h2, h3 {
     orphans: 3;
     widows: 3;

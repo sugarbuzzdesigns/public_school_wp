@@ -69,14 +69,16 @@ var waitForFinalEvent = (function() {
     };
 })();
 
+PS.env = {
+    touch: $('html').hasClass('touch') ? true : false
+};
+
 // how long to wait before deciding the resize has stopped, in ms. Around 50-100 should work ok.
 var timeToWaitForLast = 100;
 
 $(window).on('resize', function(){
     console.log('resized');
 });
-
-var PS = {};
 
 setTimeout(function(){
     $('#loader').fadeOut();
