@@ -82,12 +82,6 @@
 
 				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Headphones.jpg);"></div>
 				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Laptop.jpg);"></div>
-				<!--
-				<div class="pentagon yellow">
-					<div class="top"></div>
-					<div class="bottom"></div>
-				</div>
-				-->
 			</div>
 		</section>
 
