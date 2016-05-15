@@ -71,7 +71,7 @@ module.exports = function(grunt) {
 		autoprefixer: {
 			dist: {
 				options: {
-					browsers: ['last 2 versions', 'ie 8', 'ie 9']
+					browsers: ['ios_saf']
 				},
 				src: 'library/css/src/style.css'
 			}
@@ -127,7 +127,7 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask('js', ['jshint', 'concat', 'uglify']);
-	grunt.registerTask('css', ['sass', 'autoprefixer', 'copy:css', 'cssmin']);
+	grunt.registerTask('css', ['sass', 'copy:css', 'cssmin']);
 
 	grunt.registerTask('default', ['clean', 'js', 'css']);
 };

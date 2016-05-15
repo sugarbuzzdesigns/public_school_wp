@@ -159,6 +159,7 @@ em,
  * Address differences between Firefox and other browsers.
  */
 hr {
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -169,8 +170,8 @@ hr {
 p {
   -webkit-hyphens: auto;
   -epub-hyphens: auto;
-  -ms-hyphens: auto;
-      hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 /*
@@ -408,6 +409,8 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box;
 }
@@ -453,6 +456,8 @@ table {
 }
 
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1031,6 +1036,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   border-radius: 4px;
   border: 0;
   cursor: pointer;
+  -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out;
 }
 .blue-btn:hover, .blue-btn:focus {
@@ -1109,6 +1115,7 @@ textarea,
   max-width: 400px;
   font-family: "blender_promedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #eaedf2;
+  -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out;
 }
 input[type="text"]:focus, input[type="text"]:active,
@@ -1440,8 +1447,7 @@ Icons
   left: 50%;
   width: 100%;
   height: 100%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   opacity: .7;
   background-image: url(../../images/icons/pentagon.png);
   background-repeat: no-repeat;
@@ -1516,8 +1522,7 @@ LAYOUT & GRID STYLES
   top: 50%;
   left: 50%;
   width: 100%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 header {
@@ -1672,8 +1677,7 @@ HEADER STYLES
   top: 50%;
   left: 50%;
   display: block;
-  -ms-transform: translate(-50%, -140%);
-      transform: translate(-50%, -140%);
+  transform: translate(-50%, -140%);
   text-align: center;
 }
 
@@ -1789,8 +1793,7 @@ mark em {
   height: 7px;
   content: '';
   transition: opacity .5s;
-  -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
   background: #FEE430;
 }
 
@@ -1824,8 +1827,7 @@ mark em {
   left: 0;
   width: 100%;
   height: 17px;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+  transform: translateY(-50%);
   background: #ffe700;
 }
 
@@ -1926,16 +1928,14 @@ Section Specific styles
   top: 50%;
   left: 50%;
   display: block;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 #header .highlighter-sessions-toolbar .close-icon-white {
   position: absolute;
   top: 50%;
   right: -50%;
   display: block;
-  -ms-transform: translate(50%, -50%);
-      transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
   opacity: 0;
 }
 #header .highlighter-sessions-toolbar .toggle-paper {
@@ -1993,8 +1993,7 @@ Section Specific styles
   position: absolute;
   top: 50%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #services {
@@ -2232,19 +2231,16 @@ Section Specific styles
   z-index: 2;
   top: 50%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-family: 'octin_collegeregular';
   font-size: 1.563em;
   line-height: normal;
 }
 #contact .letter-resting.first {
-  -ms-transform: translate(-185%, -50%);
-      transform: translate(-185%, -50%);
+  transform: translate(-185%, -50%);
 }
 #contact .letter-resting.last {
-  -ms-transform: translate(92%, -50%);
-      transform: translate(92%, -50%);
+  transform: translate(92%, -50%);
 }
 #contact .letter-resting li {
   margin: 0;
@@ -2269,23 +2265,19 @@ Section Specific styles
   text-align: left;
 }
 #contact .la .letter-resting.first {
-  -ms-transform: translate(-105%, -50%);
-      transform: translate(-105%, -50%);
+  transform: translate(-105%, -50%);
 }
 #contact .la .letter-resting.last {
-  -ms-transform: translate(44%, -50%);
-      transform: translate(44%, -50%);
+  transform: translate(44%, -50%);
 }
 #contact .hover-letters {
   position: absolute;
   top: 50%;
   left: 10%;
-  -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 #contact .la .hover-letters {
-  -ms-transform: translate(0, -77%);
-      transform: translate(0, -77%);
+  transform: translate(0, -77%);
 }
 #contact .letter-hover {
   display: block;
@@ -2310,8 +2302,7 @@ Section Specific styles
   border: solid 2px #000;
   top: calc(50% + 6px);
   left: calc(50% + 6px);
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 #contact .hover-content {
   position: absolute;
@@ -2342,8 +2333,7 @@ Section Specific styles
   position: absolute;
   left: 0;
   top: 50%;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 #contact .contact-details span {
   display: block;
@@ -2358,12 +2348,10 @@ Section Specific styles
 }
 .no-touch #contact .city:hover .contact-details {
   opacity: 1;
-  -ms-transform: translate(0, 0);
-      transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 .no-touch #contact .city:hover .hover-city {
-  -ms-transform: translate(0, 0);
-      transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 .touch #contact .in-view.hovered .hover-content {
@@ -2372,12 +2360,10 @@ Section Specific styles
 }
 .touch #contact .in-view.hovered .contact-details {
   opacity: 1;
-  -ms-transform: translate(0, 0);
-      transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 .touch #contact .in-view.hovered .hover-city {
-  -ms-transform: translate(0, 0);
-      transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 #jobs {
@@ -2393,8 +2379,7 @@ Section Specific styles
   left: 50%;
   width: 100%;
   padding: 0 25px;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: #2c2b2b;
   letter-spacing: 3.94px;
 }
@@ -2601,8 +2586,7 @@ you can add resource intensive styles.
   #contact .middle,
   #jobs .middle {
     position: static;
-    -ms-transform: translate(0, 0);
-        transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 
   #header {
@@ -2628,8 +2612,7 @@ you can add resource intensive styles.
 
   #header-logo {
     position: static;
-    -ms-transform: translate(0, 0);
-        transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 
   #overview {
@@ -2743,8 +2726,7 @@ you can add resource intensive styles.
   #contact .city .city-box .letters {
     position: absolute;
     top: 50%;
-    -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   #contact .city .city-box-border {
     position: absolute;
@@ -2766,8 +2748,7 @@ you can add resource intensive styles.
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   #jobs {
@@ -2799,8 +2780,7 @@ you can add resource intensive styles.
     font-size: 1.688em;
     letter-spacing: 4.26px;
     position: static;
-    -ms-transform: translate(0, 0);
-        transform: translate(0, 0);
+    transform: translate(0, 0);
     padding-top: 90px;
     padding-bottom: 80px;
   }
@@ -2956,8 +2936,7 @@ you can add resource intensive styles.
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   #contact .city .city-box {
     width: 179px;
@@ -3131,8 +3110,7 @@ be set to display none.
     background: transparent !important;
     color: black !important;
     text-shadow: none !important;
-    -webkit-filter: none !important;
-            filter: none !important;
+    filter: none !important;
     -ms-filter: none !important;
   }
 
@@ -3191,3 +3169,5 @@ be set to display none.
     display: none;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
