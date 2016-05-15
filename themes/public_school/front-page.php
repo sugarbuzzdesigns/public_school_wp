@@ -67,6 +67,13 @@
 				<!-- <img class="tablet-placeholder" src="<?php bloginfo('template_url'); ?>/library/images/placeholders/instagram-grid-tablet.jpg" alt="">			 -->
 				<!-- <img class="desktop-placeholder" src="<?php bloginfo('template_url'); ?>/library/images/placeholders/instagram-grid-desktop.jpg" alt="">			 -->
 
+
+				<div class="svg">
+					<svg width="277px" height="389px" viewBox="65 33 277 389" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					    <polygon id="Fill-1" stroke="none" fill="#FEE430" fill-rule="evenodd" style="mix-blend-mode: multiply;" points="65 33 65 287.550943 201.405706 420.15546 203.197814 421.865115 340.772287 288.11014 341.331839 287.535125 341.379788 33"></polygon>
+					</svg>
+				</div>	
+
 				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Bball.jpg);"></div>
 				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Beltline.jpg);"></div>
 
@@ -108,7 +115,7 @@
 				</h2>
 			</header>
 			<div class="image-wrap t-col-1of2 d-col-1of2">
-				<img class="passion-paak" src="<?php bloginfo('template_url'); ?>/library/images/placeholders/passion-paak-tablet.jpg" alt="">
+				<img class="passion-paak" src="<?php bloginfo('template_url'); ?>/library/images/crest-animation-bw-final_web.gif" alt="">
 			</div>
 			<div class="copy t-col-1of2 d-col-1of2">
 				<p>Sure, if we need to be technical, we’re a brand engagement agency that’s hell-bent on building a brand’s value with ideas that stand up to the rigors of the real world.</p>
@@ -123,11 +130,11 @@
 			<ul class="team-slider">
 			  	<li class="team-member" id="matt-berger">
 				  	<header>
-				  		<h4 class="team-member-name">Matt Berger</h4>
+				  		<h4 class="team-member-name">Becky</h4>
 				  		<p class="job-title">Creative Director</p>
 				  	</header>
 				  	<div class="team-member-photo">
-				  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/matt-berger.jpg" alt="">
+				  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/becky-resting.jpg" alt="">
 				  	</div>
 				  	<div class="content">
 				  		<div class="inner" data-nav-id="team-member-about">
@@ -164,13 +171,13 @@
 						</div>
 				  	</div>
 			  	</li>
-			  	<li class="team-member" id="nat-bergers">
+			  	<li class="team-member" id="arianna">
 				  	<header>
-				  		<h4 class="team-member-name">Matt Berger</h4>
-				  		<p class="job-title">Creative Director</p>
+				  		<h4 class="team-member-name">Arianna</h4>
+				  		<p class="job-title">Some Title</p>
 				  	</header>
 				  	<div class="team-member-photo">
-				  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/matt-berger.jpg" alt="">
+				  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/arianna-resting.jpg" alt="">
 				  	</div>
 				  	<div class="content">
 				  		<div class="inner" data-nav-id="team-member-about">
@@ -300,7 +307,7 @@
 		<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 			<div id="inner-footer" class="wrap cf">
-				<img class="centered full-width" id="footer-logo" src="<?php bloginfo('template_url'); ?>/library/images/logos/footer-logo.png" />
+				<img class="centered full-width" id="footer-logo" src="<?php bloginfo('template_url'); ?>/library/images/logos/C+C_YellowWhite_trimmed_web.gif" />
 
 				<div class="footer-bottom">
 					<div class="footer-contact d-col-1of2">

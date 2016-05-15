@@ -554,14 +554,17 @@ Section Specific styles
         div {
             position: relative;
             display: table-cell;
-            width: 80%;
             margin: 0;
-            padding: 9% 12%;
             vertical-align: middle;
         }
 
+        div:first-child {
+            width: 75%;
+            padding: 9% 0 9% 12%;
+        }
+
         div + div {
-            width: 20%;
+            width: 25%;
             background: #1b1b1b;
         }
 
@@ -656,6 +659,13 @@ Section Specific styles
             float: left;
         }
     }
+
+    .svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
 }
 
 #services {
@@ -700,9 +710,9 @@ Section Specific styles
     }
 
     img.passion-paak {
-		width: 193px;
+		width: 100%;
 		display: block;
-		margin: 60px auto 45px;
+		margin: 0 auto 45px;
     }
 
     p {
@@ -996,10 +1006,19 @@ Section Specific styles
         }
     }
 
+    .la {
+        .letter-resting.first {
+            transform: translate(-105%, -50%);
+        }
+        .letter-resting.last {
+            transform: translate(44%, -50%);
+        }        
+    }
+
     .hover-letters {
         position: absolute;
         top: 50%;
-        left: 20px;
+        left: 10%;
         transform: translate(0, -50%);
     }
 
@@ -1014,8 +1033,7 @@ Section Specific styles
         margin-bottom: 12px;
         line-height: normal;
         visibility: hidden;
-        visibility: visible;
-        color: #000;
+        // color: #000;
     }
 
     .city-box {
@@ -1041,22 +1059,21 @@ Section Specific styles
     .hover-content {
         position: absolute;
         z-index: 1;
-        visibility: hidden;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        transition: background-color 0.5s;
-        background-color: rgba(0, 0, 0, 0);
+        opacity: 0;
+        transition: opacity 0.5s;
+        background-color: rgba(0, 0, 0, 0.9);
     }
 
     .contact-details {
-        font-family: $serif;
+        font-family: 'GaramondFBText-Regular';
         margin: 0;
-        width: 76%;
+        width: 100%;
         opacity: 0;
-        padding-left: 20%;
-        // transform: translate(0, -100%);
+        padding-left: 24%;
         transition: transform 0.5s, opacity 0.5s;
 
         li {
@@ -1075,7 +1092,9 @@ Section Specific styles
 
         span {
             display: block;
-            line-height: 18px;
+            font-size: 0.875em;
+            color: #E0E0E0;
+            line-height: normal;
         }
     }
 }
@@ -1084,7 +1103,7 @@ Section Specific styles
     #contact {
         .city:hover {
             .hover-content {
-                background-color: rgba(0, 0, 0, 0.9);
+                opacity: 1;
                 visibility: visible;
             }
 
@@ -1102,8 +1121,20 @@ Section Specific styles
 
 .touch {
     #contact {
-        .in-view {
+        .in-view.hovered {
+            .hover-content {
+                opacity: 1;
+                visibility: visible;
+            }
 
+            .contact-details {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+
+            .hover-city {
+                transform: translate(0, 0);
+            }            
         }
     }
 }

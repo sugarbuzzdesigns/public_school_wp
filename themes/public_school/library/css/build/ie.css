@@ -62,7 +62,6 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'blender_pro_boldbold';
   src: url("../../fonts/blenderpro-bold-webfont.eot");
@@ -70,7 +69,6 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'blender_promedium';
   src: url("../../fonts/blenderpro-medium-webfont.eot");
@@ -78,7 +76,6 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'blender_prothin';
   src: url("../../fonts/blenderpro-thin-webfont.eot");
@@ -86,7 +83,6 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'blender_probook';
   src: url("../../fonts/blenderpro-book-webfont.eot");
@@ -94,7 +90,6 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'tall_filmsregular';
   src: url("../../fonts/tall_film-webfont.eot");
@@ -102,7 +97,6 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'eb_garamond12_italic';
   src: url("../../fonts/ebgaramond12-italic-webfont.eot");
@@ -110,7 +104,6 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'octin_collegeregular';
   src: url("../../fonts/octin_college_rg-webfont.eot");
@@ -118,7 +111,6 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'GaramondFBText-Regular';
   src: url("../../fonts/GaramondFBText-Regular.eot");
@@ -126,7 +118,6 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'GaramondFBText-Light';
   src: url("../../fonts/GaramondFBText-Light.eot");
@@ -134,7 +125,6 @@ http://alistapart.com/column/responsive-typography-is-a-physical-discipline
   font-weight: normal;
   font-style: normal;
 }
-
 /******************************************************************
 Site Name:
 Author:
@@ -780,3 +770,5 @@ header.php file to see what they are:
 .lt-ie8 .class { ... }
 
 */
+
+/*# sourceMappingURL=ie.css.map */

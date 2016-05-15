@@ -285,11 +285,14 @@ setTimeout(function(){
             console.log(Waypoint);
 
             $('.city').on('in-view-down', function(){
-                if(!$(this).hasClass('seen-once')){
-                    $(this).trigger('mouseover');
+                var $city = $(this);
+
+                if(!$city.hasClass('seen-once')){
+                    _this.animateLettersHover($city);
+
                     setTimeout(function(){
-                        $(this).trigger('mouseout');
-                    }, 1000);
+                        _this.animateLettersReset($city);
+                    }, 2000);
                 }
             });
 
@@ -372,6 +375,7 @@ setTimeout(function(){
             $city.addClass('hovered');
         },
         animateLettersReset: function($city){
+            console.log('reset letters');
             $('.letter-copy', $city).each(function(i, elm){
                 $(elm).css({
                     top: $(elm).data('fullPosition').top,
