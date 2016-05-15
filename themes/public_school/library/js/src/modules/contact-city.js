@@ -121,6 +121,6 @@ var PS = PS || {};
     $(function() {
         setTimeout(function(){
             PS.Contact.init();
-        }, 100);
+        }, 1000);
     });
 })(jQuery);

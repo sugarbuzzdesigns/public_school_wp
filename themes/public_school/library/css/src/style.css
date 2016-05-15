@@ -1447,6 +1447,7 @@ Icons
   left: 50%;
   width: 100%;
   height: 100%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: .7;
   background-image: url(../../images/icons/pentagon.png);
@@ -1522,6 +1523,7 @@ LAYOUT & GRID STYLES
   top: 50%;
   left: 50%;
   width: 100%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -1677,6 +1679,7 @@ HEADER STYLES
   top: 50%;
   left: 50%;
   display: block;
+  -webkit-transform: translate(-50%, -140%);
   transform: translate(-50%, -140%);
   text-align: center;
 }
@@ -1793,6 +1796,7 @@ mark em {
   height: 7px;
   content: '';
   transition: opacity .5s;
+  -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   background: #FEE430;
 }
@@ -1806,10 +1810,23 @@ mark em {
 
 .paper .highlight.flicker,
 .paper mark.flicker {
+  -webkit-animation-name: flicker;
   animation-name: flicker;
+  -webkit-animation-duration: 4s;
   animation-duration: 4s;
 }
 
+@-webkit-keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  34% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes flicker {
   0% {
     opacity: 1;
@@ -1827,6 +1844,7 @@ mark em {
   left: 0;
   width: 100%;
   height: 17px;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   background: #ffe700;
 }
@@ -1928,6 +1946,7 @@ Section Specific styles
   top: 50%;
   left: 50%;
   display: block;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 #header .highlighter-sessions-toolbar .close-icon-white {
@@ -1935,6 +1954,7 @@ Section Specific styles
   top: 50%;
   right: -50%;
   display: block;
+  -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
   opacity: 0;
 }
@@ -1993,6 +2013,7 @@ Section Specific styles
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -2231,15 +2252,18 @@ Section Specific styles
   z-index: 2;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-family: 'octin_collegeregular';
   font-size: 1.563em;
   line-height: normal;
 }
 #contact .letter-resting.first {
+  -webkit-transform: translate(-185%, -50%);
   transform: translate(-185%, -50%);
 }
 #contact .letter-resting.last {
+  -webkit-transform: translate(92%, -50%);
   transform: translate(92%, -50%);
 }
 #contact .letter-resting li {
@@ -2265,18 +2289,22 @@ Section Specific styles
   text-align: left;
 }
 #contact .la .letter-resting.first {
+  -webkit-transform: translate(-105%, -50%);
   transform: translate(-105%, -50%);
 }
 #contact .la .letter-resting.last {
+  -webkit-transform: translate(44%, -50%);
   transform: translate(44%, -50%);
 }
 #contact .hover-letters {
   position: absolute;
   top: 50%;
   left: 10%;
+  -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
 #contact .la .hover-letters {
+  -webkit-transform: translate(0, -77%);
   transform: translate(0, -77%);
 }
 #contact .letter-hover {
@@ -2302,6 +2330,7 @@ Section Specific styles
   border: solid 2px #000;
   top: calc(50% + 6px);
   left: calc(50% + 6px);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 #contact .hover-content {
@@ -2321,7 +2350,9 @@ Section Specific styles
   width: 100%;
   opacity: 0;
   padding-left: 24%;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 #contact .contact-details li {
   position: relative;
@@ -2333,6 +2364,7 @@ Section Specific styles
   position: absolute;
   left: 0;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 #contact .contact-details span {
@@ -2348,21 +2380,25 @@ Section Specific styles
 }
 .no-touch #contact .city:hover .contact-details {
   opacity: 1;
+  -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 .no-touch #contact .city:hover .hover-city {
+  -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 
-.touch #contact .in-view.hovered .hover-content {
+.touch #contact .hovered .hover-content {
   opacity: 1;
   visibility: visible;
 }
-.touch #contact .in-view.hovered .contact-details {
+.touch #contact .hovered .contact-details {
   opacity: 1;
+  -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-.touch #contact .in-view.hovered .hover-city {
+.touch #contact .hovered .hover-city {
+  -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 
@@ -2379,6 +2415,7 @@ Section Specific styles
   left: 50%;
   width: 100%;
   padding: 0 25px;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #2c2b2b;
   letter-spacing: 3.94px;

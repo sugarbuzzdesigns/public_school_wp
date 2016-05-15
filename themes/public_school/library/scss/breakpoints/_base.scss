@@ -30,26 +30,26 @@ p {
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 /**************************
 Site Loader
 ***************************/
 #loader {
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-image: url(../../images/PublicSchool_B.2.gif);
-	background-color: #080808;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	z-index: 100;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../../images/PublicSchool_B.2.gif);
+    background-color: #080808;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 100;
 }
 
 /**************************
@@ -74,13 +74,14 @@ Icons
 }
 
 .pentagon {
-	display: none;
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
     height: 100%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     opacity: .7;
     background-image: url(../../images/icons/pentagon.png);
     background-repeat: no-repeat;
@@ -101,32 +102,32 @@ Icons
             margin-right: 0;
         }
 
-		a {
-			display: block;
-		    width: 20px;
-		    height: 20px;
-		    text-decoration: none;
-	        background-image: url(../../images/icons/social-sprite.png);
-	        background-repeat: no-repeat;
-	        background-position: 0 0;
-	        background-size: 270px 19px;
+        a {
+            display: block;
+            width: 20px;
+            height: 20px;
+            text-decoration: none;
+            background-image: url(../../images/icons/social-sprite.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: 270px 19px;
 
-	        &.spotify {
-	            background-position: 0 0;
-	        }
+            &.spotify {
+                background-position: 0 0;
+            }
 
-	        &.instagram {
-	            background-position: -83px 0;
-	        }
+            &.instagram {
+                background-position: -83px 0;
+            }
 
-	        &.twitter {
-	            background-position: -168px 0;
-	        }
+            &.twitter {
+                background-position: -168px 0;
+            }
 
-	        &.linkedin {
-	            background-position: -252px 0;
-	        }
-		}
+            &.linkedin {
+                background-position: -252px 0;
+            }
+        }
     }
 }
 
@@ -143,10 +144,10 @@ i.phone {
 }
 
 i.email {
-	background-position: -40px 0;
+    background-position: -40px 0;
 }
 i.phone {
-	background-position: -79px 0;
+    background-position: -79px 0;
 }
 
 /*********************
@@ -163,7 +164,8 @@ LAYOUT & GRID STYLES
     top: 50%;
     left: 50%;
     width: 100%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 header {
@@ -250,7 +252,7 @@ h1,
 
 h2,
 .h2 {
-	font-family: 'blender_pro_boldbold';
+    font-family: 'blender_pro_boldbold';
     font-size: .935em;
     line-height: 1.2em;
     letter-spacing: 1.67px;
@@ -265,21 +267,21 @@ h2,
             display: block;
             position: relative;
 
-			em {
-				display: block;
-				width: 78%;
-				height: 6px;
-				background-color: #FEE430;
-				position: absolute;
-				top: 9px;
-				left: 0;
-				z-index: 1;
-			}
+            em {
+                display: block;
+                width: 78%;
+                height: 6px;
+                background-color: #FEE430;
+                position: absolute;
+                top: 9px;
+                left: 0;
+                z-index: 1;
+            }
         }
 
         .highlight-text {
-        	position: relative;
-        	z-index: 2;
+            position: relative;
+            z-index: 2;
         }
     }
 }
@@ -312,7 +314,8 @@ HEADER STYLES
     top: 50%;
     left: 50%;
     display: block;
-    transform: translate(-50%, -140%);
+    -webkit-transform: translate(-50%, -140%);
+            transform: translate(-50%, -140%);
     text-align: center;
 }
 
@@ -434,7 +437,8 @@ mark em {
     height: 7px;
     content: '';
     transition: opacity .5s;
-    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
     background: #FEE430;
 }
 
@@ -447,8 +451,24 @@ mark em {
 
 .paper .highlight.flicker,
 .paper mark.flicker {
-    animation-name: flicker;
-    animation-duration: 4s;
+    -webkit-animation-name: flicker;
+            animation-name: flicker;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+}
+
+@-webkit-keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    34% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes flicker {
@@ -471,7 +491,8 @@ mark em {
     left: 0;
     width: 100%;
     height: 17px;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     background: #ffe700;
 }
 
@@ -493,28 +514,28 @@ mark em {
 Mobile Contact Butter Bar
 ***************************/
 .contact-butter-bar {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	height: 55px;
-	width: 100%;
-	opacity: 0;
-	background-color: #171717;
-	transition: opacity 0.5s;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 55px;
+    width: 100%;
+    opacity: 0;
+    background-color: #171717;
+    transition: opacity 0.5s;
     z-index: 4;
 
-	a {
-		font-size: 0.688em;
-		letter-spacing: 1.65px;
-		text-transform: uppercase;
-		font-family: 'blender_promedium';
-		display: block;
-		text-align: center;
-	}
+    a {
+        font-size: 0.688em;
+        letter-spacing: 1.65px;
+        text-transform: uppercase;
+        font-family: 'blender_promedium';
+        display: block;
+        text-align: center;
+    }
 
-	&.show {
-		opacity: 1;
-	}
+    &.show {
+        opacity: 1;
+    }
 }
 
 /**************************
@@ -536,9 +557,9 @@ Section Specific styles
         background-color: #080808;
     }
 
-	.highlighter-sessions-label {
-		display: none;
-	}
+    .highlighter-sessions-label {
+        display: none;
+    }
 
     .highlighter-sessions-toolbar {
         position: absolute;
@@ -581,7 +602,8 @@ Section Specific styles
             top: 50%;
             left: 50%;
             display: block;
-            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
         }
 
         .close-icon-white {
@@ -589,7 +611,8 @@ Section Specific styles
             top: 50%;
             right: -50%;
             display: block;
-            transform: translate(50%, -50%);
+            -webkit-transform: translate(50%, -50%);
+                    transform: translate(50%, -50%);
             opacity: 0;
         }
 
@@ -649,7 +672,7 @@ Section Specific styles
 
         .tablet-placeholder,
         .desktop-placeholder {
-        	display: none;
+            display: none;
         }
 
         .ig-image {
@@ -664,7 +687,8 @@ Section Specific styles
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
     }
 }
 
@@ -678,7 +702,7 @@ Section Specific styles
     }
 
     ul {
-    	margin: 0;
+        margin: 0;
 
         li {
             font-family: 'octin_collegeregular';
@@ -710,9 +734,9 @@ Section Specific styles
     }
 
     img.passion-paak {
-		width: 100%;
-		display: block;
-		margin: 0 auto 45px;
+        width: 100%;
+        display: block;
+        margin: 0 auto 45px;
     }
 
     p {
@@ -730,21 +754,21 @@ Section Specific styles
 }
 
 #team {
-	position: relative;
-	background-color: #1B1B1B;
+    position: relative;
+    background-color: #1B1B1B;
 
     .bx-viewport {
         transition: height 0.5s;
     }
 
-	.team-slider-nav {
-		position: absolute;
-		width: 100%;
-		text-align: center;
+    .team-slider-nav {
+        position: absolute;
+        width: 100%;
+        text-align: center;
         z-index: 1;
         top: 45px;
         overflow: auto;
-	}
+    }
 
     #slider-prev,
     #slider-next {
@@ -772,9 +796,9 @@ Section Specific styles
         background-position: -42px 0;
     }
 
-	.team-slider {
-		margin: 0;
-		height: 100%;
+    .team-slider {
+        margin: 0;
+        height: 100%;
         opacity: 0;
         transition: opacity 0.6s;
 
@@ -782,53 +806,53 @@ Section Specific styles
             opacity: 1;
         }
 
-		header {
-			position: relative;
-			text-align: center;
-			padding: 35px 0 22px;
-		}
+        header {
+            position: relative;
+            text-align: center;
+            padding: 35px 0 22px;
+        }
 
-		.team-member-name {
-			color: #FFFFFF;
-			font-size: 15px;
-			line-height: 21px;
-			letter-spacing: 2.92px;
-		}
+        .team-member-name {
+            color: #FFFFFF;
+            font-size: 15px;
+            line-height: 21px;
+            letter-spacing: 2.92px;
+        }
 
-		.job-title {
-			font-size: 15px;
-			line-height: 21px;
-			letter-spacing: 2px;
-			margin: 0;
-			font-family: 'eb_garamond12_italic';
-			color: #848484;
-		}
+        .job-title {
+            font-size: 15px;
+            line-height: 21px;
+            letter-spacing: 2px;
+            margin: 0;
+            font-family: 'eb_garamond12_italic';
+            color: #848484;
+        }
 
-		.team-member-photo {
+        .team-member-photo {
 
-		}
+        }
 
-		.content {
+        .content {
             position: relative;
             height: 365px;
             // transition: height 0.5s;
 
-			img {
-				display: block;
-				margin: 0 auto;
-				width: 38%;
-			}
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 38%;
+            }
 
-			p {
-				color: #fff;
-				font-family: 'GaramondFBText-Light';
-				font-size: 13px;
-				line-height: 22px;
-				letter-spacing: 1px;
-				width: 75%;
+            p {
+                color: #fff;
+                font-family: 'GaramondFBText-Light';
+                font-size: 13px;
+                line-height: 22px;
+                letter-spacing: 1px;
+                width: 75%;
                 margin: 26px auto 0;
-				text-align: center;
-			}
+                text-align: center;
+            }
 
             .inner {
                 width: 100%;
@@ -872,8 +896,8 @@ Section Specific styles
                     }
                 }
             }
-		}
-	}
+        }
+    }
 
     .content-nav {
         background-color: #141414;
@@ -955,7 +979,7 @@ Section Specific styles
     }
 
     .letter-resting {
-    	margin: 0;
+        margin: 0;
         position: absolute;
         visibility: hidden;
         z-index: 2;
@@ -963,30 +987,33 @@ Section Specific styles
         left: 50%;
         // height: 50px;
         // width: 50px;
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
         font-family: 'octin_collegeregular';
         font-size: 1.563em;
         line-height: normal;
 
         &.first {
-            transform: translate(-185%, -50%);
+            -webkit-transform: translate(-185%, -50%);
+                    transform: translate(-185%, -50%);
         }
 
         &.last {
-            transform: translate(92%, -50%);
+            -webkit-transform: translate(92%, -50%);
+                    transform: translate(92%, -50%);
         }
 
-    	li {
+        li {
 
-			margin: 0;
-			text-align: center;
-			display: inline-block;
-			margin-right: 0;
+            margin: 0;
+            text-align: center;
+            display: inline-block;
+            margin-right: 0;
             background-color: red;
 
-			&:last-child {
-				margin-right: 0;
-			}
+            &:last-child {
+                margin-right: 0;
+            }
         }
 
         &.resting {
@@ -1008,10 +1035,12 @@ Section Specific styles
 
     .la {
         .letter-resting.first {
-            transform: translate(-105%, -50%);
+            -webkit-transform: translate(-105%, -50%);
+                    transform: translate(-105%, -50%);
         }
         .letter-resting.last {
-            transform: translate(44%, -50%);
+            -webkit-transform: translate(44%, -50%);
+                    transform: translate(44%, -50%);
         }        
     }
 
@@ -1019,11 +1048,13 @@ Section Specific styles
         position: absolute;
         top: 50%;
         left: 10%;
-        transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+                transform: translate(0, -50%);
     }
 
     .la .hover-letters {
-        transform: translate(0, -77%);
+        -webkit-transform: translate(0, -77%);
+                transform: translate(0, -77%);
     }
 
     .letter-hover {
@@ -1053,7 +1084,8 @@ Section Specific styles
         border: solid 2px #000;
         top: calc(50% + 6px);
         left: calc(50% + 6px);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
     }
 
     .hover-content {
@@ -1074,20 +1106,23 @@ Section Specific styles
         width: 100%;
         opacity: 0;
         padding-left: 24%;
+        transition: opacity 0.5s, -webkit-transform 0.5s;
         transition: transform 0.5s, opacity 0.5s;
+        transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 
         li {
-        	position: relative;
-        	padding-left: 34px;
-        	margin-bottom: 15px;
-        	color: #E0E0E0;
+            position: relative;
+            padding-left: 34px;
+            margin-bottom: 15px;
+            color: #E0E0E0;
 
-        	i {
-        		position: absolute;
-        		left: 0;
-        		top: 50%;
-        		transform: translateY(-50%);
-        	}
+            i {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+            }
         }
 
         span {
@@ -1109,11 +1144,13 @@ Section Specific styles
 
             .contact-details {
                 opacity: 1;
-                transform: translate(0, 0);
+                -webkit-transform: translate(0, 0);
+                        transform: translate(0, 0);
             }
 
             .hover-city {
-                transform: translate(0, 0);
+                -webkit-transform: translate(0, 0);
+                        transform: translate(0, 0);
             }
         }
     }
@@ -1121,7 +1158,7 @@ Section Specific styles
 
 .touch {
     #contact {
-        .in-view.hovered {
+        .hovered {
             .hover-content {
                 opacity: 1;
                 visibility: visible;
@@ -1129,11 +1166,13 @@ Section Specific styles
 
             .contact-details {
                 opacity: 1;
-                transform: translate(0, 0);
+                -webkit-transform: translate(0, 0);
+                        transform: translate(0, 0);
             }
 
             .hover-city {
-                transform: translate(0, 0);
+                -webkit-transform: translate(0, 0);
+                        transform: translate(0, 0);
             }            
         }
     }
@@ -1153,23 +1192,24 @@ Section Specific styles
         left: 50%;
         width: 100%;
         padding: 0 25px;
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
         color: #2c2b2b;
         letter-spacing: 3.94px;
 
-		&.highlighter {
-	        span {
-				em {
-					width: 89%;
-					left: 14px;
-				}
-	        }
+        &.highlighter {
+            span {
+                em {
+                    width: 89%;
+                    left: 14px;
+                }
+            }
 
-	        .highlight-text {
-	        	position: relative;
-	        	z-index: 2;
-	        }
-	    }
+            .highlight-text {
+                position: relative;
+                z-index: 2;
+            }
+        }
     }
 
     .jobs-info {
@@ -1187,7 +1227,7 @@ Section Specific styles
         }
 
         h3 {
-        	font-family: 'blender_pro_boldbold';
+            font-family: 'blender_pro_boldbold';
             font-size: .938em;
             margin-bottom: 7px;
             letter-spacing: 1.9px;
@@ -1203,7 +1243,7 @@ Section Specific styles
         }
 
         p {
-        	font-family: 'GaramondFBText-Regular';
+            font-family: 'GaramondFBText-Regular';
             font-size: .938em;
             margin: 0;
             letter-spacing: 0.83px;
