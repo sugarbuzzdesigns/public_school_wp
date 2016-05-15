@@ -22,6 +22,12 @@ var PS = PS || {};
                     console.log('slider loaded');
 
                     $('body').trigger('slider-loaded');
+
+                    // if
+                        $('.content-nav').css({
+                            opacity: 1,
+                            top: $('.team-member-photo').position().top + $('.team-member-photo').height()
+                        });
                 },
                 onSlideBefore: function(){
 
@@ -89,10 +95,3 @@ var PS = PS || {};
         PS.TeamSlider.init();      
     });
 })(jQuery);
-
-
-
-
-
-
-

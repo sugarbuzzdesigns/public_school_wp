@@ -661,6 +661,8 @@ Section Specific styles
 }
 
 #instagram {
+    background-color: #080808;
+
     header {
         height: 15%;
     }
@@ -668,7 +670,6 @@ Section Specific styles
     .image-grid {
         position: relative;
         height: 85%;
-        background-color: #fff;
 
         .tablet-placeholder,
         .desktop-placeholder {
@@ -677,7 +678,7 @@ Section Specific styles
 
         .ig-image {
             padding: 0;
-            height: calc(100%/3);
+            height: calc(100% / 3);
             background-size: cover;
             float: left;
         }
@@ -903,6 +904,9 @@ Section Specific styles
         background-color: #141414;
         position: relative;
         z-index: 1;
+        position: absolute;
+        width: 100%;
+        opacity: 0;
 
         ul {
             margin: 0;
