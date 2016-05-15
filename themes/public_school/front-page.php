@@ -255,7 +255,6 @@
 				<div class="hover-letters">
 					<span class="letter-hover">l</span>
 					<span class="letter-hover">a</span>
-					<span class="letter-hover"></span>
 				</div>
 				<div class="hover-content">
 					<div class="inner middle">

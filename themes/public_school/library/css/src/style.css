@@ -1641,7 +1641,7 @@ h2.highlighter span em,
   height: 6px;
   background-color: #FEE430;
   position: absolute;
-  top: 9px;
+  top: 12px;
   left: 0;
   z-index: 1;
 }
@@ -2304,8 +2304,8 @@ Section Specific styles
   transform: translate(0, -50%);
 }
 #contact .la .hover-letters {
-  -webkit-transform: translate(0, -77%);
-  transform: translate(0, -77%);
+  -webkit-transform: translate(0, -75%);
+  transform: translate(0, -75%);
 }
 #contact .letter-hover {
   display: block;
