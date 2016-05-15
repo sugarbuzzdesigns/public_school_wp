@@ -82,4 +82,4 @@ $(window).on('resize', function(){
 
 setTimeout(function(){
     $('#loader').fadeOut();
-}, 0);
+}, 1500);
