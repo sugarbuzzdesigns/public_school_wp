@@ -394,12 +394,13 @@ Section Specific styles
 #passion header {
   margin-bottom: 47px;
 }
-#passion h2 {
+#passion h2.highlighter {
   font-size: 27px;
   line-height: 33px;
   letter-spacing: 4px;
+  padding: 0 0 0 12%;
 }
-#passion h2 span em {
+#passion h2.highlighter span em {
   width: 240px;
   top: 14px;
   left: -6px;
@@ -412,10 +413,15 @@ Section Specific styles
   width: 100%;
   margin: 0 auto;
 }
+#passion .copy {
+  padding: 0 0 0 12%;
+}
 #passion .copy p {
+  width: 70%;
   font-size: 1em;
   line-height: 27px;
   letter-spacing: 0.8px;
+  margin: 0 0 30px 0;
 }
 
 #team .team-slider .team-member-photo {
@@ -643,8 +649,11 @@ Section Specific styles
   width: 290px;
 }
 #passion .image-wrap img {
-  width: 360px;
   margin-top: -100px;
+}
+#passion p {
+  width: 50%;
+  margin: 0 auto 30px;
 }
 
 #contact .city {

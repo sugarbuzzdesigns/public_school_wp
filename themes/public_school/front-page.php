@@ -103,7 +103,7 @@
 
 		<section id="passion">
 			<header>
-				<h2 class="highlighter">
+				<h2 class="highlighter t-col-1of2 d-col-1of2">
 					<span>reach</span>
 					<span><span class="highlight-text">your greatest</span><em></em></span>
 					<span>potential</span>

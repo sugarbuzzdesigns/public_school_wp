@@ -144,9 +144,13 @@ Section Specific styles
 
 	.image-wrap {
 		img {
-			width: 360px;
 			margin-top: -100px;
 		}
+	}
+
+	p {
+		width: 50%;
+    	margin: 0 auto 30px;
 	}
 }
 

@@ -733,6 +733,10 @@ Section Specific styles
     color: #7b7b7b;
     background-color: #fff;
 
+    header {
+        overflow: hidden;        
+    }
+
     h2 {
         font-size: 25px;
         line-height: 29px;
