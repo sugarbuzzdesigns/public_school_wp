@@ -201,11 +201,10 @@ Section Specific styles
 		}
 	}
 
-	.letters {
-		li {
-			font-size: 2.250em;
-			margin-right: 8px;
-		}
+	.letter-resting,
+	.letter-copy,
+	.letter-copy-hover {
+		font-size: 1.938em;
 	}
 }
 

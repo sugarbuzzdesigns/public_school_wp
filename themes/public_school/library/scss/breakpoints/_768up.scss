@@ -267,22 +267,16 @@ Section Specific styles
     	padding: 45% 0 0 0;
     	
 	    .city-box {
-	        width: 92px;
-	        height: 92px;    
-
-	        .letters {
-	        	position: absolute;
-	        	top: 50%;
-				transform: translate(-50%, -50%);
-	        }		
+	        width: 96px;
+	        height: 96px;	
 	    }
 	    
 	    .city-box-border {
 	        position: absolute;
 	        display: block;
 	        box-sizing: border-box;
-	        width: 92px;
-	        height: 92px;
+	        width: 96px;
+	        height: 96px;
 	        border: solid 2px #000;
 	    }	    
 
@@ -300,6 +294,12 @@ Section Specific styles
 				transform: translate(-50%, -50%);			
 			}
 		}
+	}
+
+	.letter-resting,
+	.letter-copy,
+	.letter-copy-hover {
+		font-size: 1.188em;
 	}
 }
 
