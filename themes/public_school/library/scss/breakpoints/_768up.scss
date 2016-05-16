@@ -51,7 +51,6 @@ Section Specific styles
 #overview .middle,
 #services .middle,
 #instagram .middle,
-#contact .middle,
 #jobs .middle {
 	position: static;
 	transform: translate(0,0);
@@ -112,19 +111,21 @@ Section Specific styles
 	}
 	
 	.image-grid {
-		.desktop-placeholder {
-			display: none;
-		}
-		.tablet-placeholder {
-			display: block;
-		}
+		overflow: hidden;
 
-		background-image: none;
-        
-        img {
-        	display: block;
-        	width: 100%;
-     	} 	
+        .ig-image {
+            padding-top: calc(100% / 3);
+            height: calc(100% / 3);
+            width: calc(100% / 3);
+            background-size: cover;
+            float: left;
+        }	
+
+		.svg {
+		    svg {
+		        width: 300px;
+		    }
+		}        
 	}	
 }
 
@@ -165,9 +166,10 @@ Section Specific styles
 
 	.image-wrap {
 		float: right;
+		margin-top: -57px;
 
 		img {
-			width: 220px;
+			width: 100%;
 			margin: 0 auto;
 		}
 	}
@@ -262,7 +264,7 @@ Section Specific styles
 
 	.city {
 		width: 50%;
-    	padding: 100px 0;	
+    	padding: 45% 0 0 0;
     	
 	    .city-box {
 	        width: 92px;
@@ -277,8 +279,6 @@ Section Specific styles
 	    
 	    .city-box-border {
 	        position: absolute;
-	        top: 4px;
-	        left: 4px;
 	        display: block;
 	        box-sizing: border-box;
 	        width: 92px;

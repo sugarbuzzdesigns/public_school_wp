@@ -163,8 +163,6 @@ function bones_scripts_and_styles() {
 		wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 		// register our version of jquery in the libs folder
 		wp_register_script( 'jquery', get_stylesheet_directory_uri() . '/library/js/libs/jquery-2.2.3.min.js', array(), '', true );		
-		// register our version of jquery in the libs folder
-		wp_register_script( 'wurfl', get_stylesheet_directory_uri() . '/library/js/libs/wurfl.min.js', array('jquery'), '', true );
 		// Waypoints for section on screen detection
 		wp_register_script( 'waypoints', get_stylesheet_directory_uri() . '/library/js/libs/jquery.waypoints.min.js', array('jquery'), '', true );			
 		// bxslider 

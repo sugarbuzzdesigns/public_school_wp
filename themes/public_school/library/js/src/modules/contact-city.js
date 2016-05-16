@@ -15,17 +15,19 @@ var PS = PS || {};
 
             console.log(Waypoint);
 
-            $('.city').on('in-view-down', function(){
-                var $city = $(this);
+            if(PS.env.touch){
+                $('.city').on('in-view-down', function(){
+                    var $city = $(this);
 
-                if(!$city.hasClass('seen-once')){
-                    _this.animateLettersHover($city);
+                    if(!$city.hasClass('seen-once')){
+                        _this.animateLettersHover($city);
 
-                    setTimeout(function(){
-                        _this.animateLettersReset($city);
-                    }, 2000);
-                }
-            });
+                        setTimeout(function(){
+                            _this.animateLettersReset($city);
+                        }, 2000);
+                    }
+                });
+            } 
 
             $('.city').hover(function(){
                 if($(this).hasClass('hovered')){

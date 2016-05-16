@@ -37,6 +37,7 @@
 
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
+		<script src="//wurfl.io/wurfl.js"></script>
 
 	</head>
 

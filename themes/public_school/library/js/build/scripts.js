@@ -77,12 +77,15 @@ PS.env = {
 var timeToWaitForLast = 100;
 
 $(window).on('resize', function(){
-    console.log('resized');
 });
 
 setTimeout(function(){
     $('#loader').fadeOut();
 }, 1500);
+
+if (window.matchMedia('(max-width: 768px)').matches){
+
+}
 ;var PS = PS || {};
 
 (function($) {
@@ -284,17 +287,19 @@ setTimeout(function(){
 
             console.log(Waypoint);
 
-            $('.city').on('in-view-down', function(){
-                var $city = $(this);
+            if(PS.env.touch){
+                $('.city').on('in-view-down', function(){
+                    var $city = $(this);
 
-                if(!$city.hasClass('seen-once')){
-                    _this.animateLettersHover($city);
+                    if(!$city.hasClass('seen-once')){
+                        _this.animateLettersHover($city);
 
-                    setTimeout(function(){
-                        _this.animateLettersReset($city);
-                    }, 2000);
-                }
-            });
+                        setTimeout(function(){
+                            _this.animateLettersReset($city);
+                        }, 2000);
+                    }
+                });
+            } 
 
             $('.city').hover(function(){
                 if($(this).hasClass('hovered')){
@@ -535,15 +540,18 @@ var PS = PS || {};
                 nextSelector: '#slider-next',
                 prevSelector: '#slider-prev',
                 onSliderLoad: function(){
-                    console.log('slider loaded');
-
                     $('body').trigger('slider-loaded');
 
-                    // if
+                    if(Waypoint.viewportWidth() < 768){
                         $('.content-nav').css({
-                            opacity: 1,
+                            position: 'absolute',
                             top: $('.team-member-photo').position().top + $('.team-member-photo').height()
                         });
+                    }
+
+                    $('.content-nav').css({
+                        opacity: 1,
+                    });
                 },
                 onSlideBefore: function(){
 

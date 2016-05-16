@@ -19,15 +19,18 @@ var PS = PS || {};
                 nextSelector: '#slider-next',
                 prevSelector: '#slider-prev',
                 onSliderLoad: function(){
-                    console.log('slider loaded');
-
                     $('body').trigger('slider-loaded');
 
-                    // if
+                    if(Waypoint.viewportWidth() < 768){
                         $('.content-nav').css({
-                            opacity: 1,
+                            position: 'absolute',
                             top: $('.team-member-photo').position().top + $('.team-member-photo').height()
                         });
+                    }
+
+                    $('.content-nav').css({
+                        opacity: 1,
+                    });
                 },
                 onSlideBefore: function(){
 

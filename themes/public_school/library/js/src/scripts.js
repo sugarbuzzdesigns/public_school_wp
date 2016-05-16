@@ -77,9 +77,12 @@ PS.env = {
 var timeToWaitForLast = 100;
 
 $(window).on('resize', function(){
-    console.log('resized');
 });
 
 setTimeout(function(){
     $('#loader').fadeOut();
 }, 1500);
+
+if (window.matchMedia('(max-width: 768px)').matches){
+
+}

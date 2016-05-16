@@ -313,7 +313,6 @@ Section Specific styles
 #overview .middle,
 #services .middle,
 #instagram .middle,
-#contact .middle,
 #jobs .middle {
   position: static;
   transform: translate(0, 0);
@@ -366,17 +365,17 @@ Section Specific styles
   letter-spacing: 2px;
 }
 #instagram .image-grid {
-  background-image: none;
+  overflow: hidden;
 }
-#instagram .image-grid .desktop-placeholder {
-  display: none;
+#instagram .image-grid .ig-image {
+  padding-top: calc(100% / 3);
+  height: calc(100% / 3);
+  width: calc(100% / 3);
+  background-size: cover;
+  float: left;
 }
-#instagram .image-grid .tablet-placeholder {
-  display: block;
-}
-#instagram .image-grid img {
-  display: block;
-  width: 100%;
+#instagram .image-grid .svg svg {
+  width: 300px;
 }
 
 #services {
@@ -407,9 +406,10 @@ Section Specific styles
 }
 #passion .image-wrap {
   float: right;
+  margin-top: -57px;
 }
 #passion .image-wrap img {
-  width: 220px;
+  width: 100%;
   margin: 0 auto;
 }
 #passion .copy p {
@@ -447,7 +447,7 @@ Section Specific styles
 }
 #contact .city {
   width: 50%;
-  padding: 100px 0;
+  padding: 45% 0 0 0;
 }
 #contact .city .city-box {
   width: 92px;
@@ -460,8 +460,6 @@ Section Specific styles
 }
 #contact .city .city-box-border {
   position: absolute;
-  top: 4px;
-  left: 4px;
   display: block;
   box-sizing: border-box;
   width: 92px;
@@ -626,11 +624,11 @@ Section Specific styles
 #instagram header {
   padding: 45px 0 37px;
 }
-#instagram .image-grid .desktop-placeholder {
-  display: block;
+#instagram .image-grid {
+  overflow: hidden;
 }
-#instagram .image-grid .tablet-placeholder {
-  display: none;
+#instagram .image-grid .svg svg {
+  width: 400px;
 }
 
 #passion h2.highlighter {
@@ -668,8 +666,6 @@ Section Specific styles
 #contact .city .city-box-border {
   width: 179px;
   height: 179px;
-  top: 8px;
-  left: 8px;
   border: solid 3px #000;
 }
 #contact .city .hover-city {

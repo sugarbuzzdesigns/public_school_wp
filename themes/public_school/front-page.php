@@ -69,7 +69,8 @@
 
 
 				<div class="svg">
-					<svg width="277px" height="389px" viewBox="65 33 277 389" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<!-- width="277px" height="389px" -->
+					<svg viewBox="65 33 277 389" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" preserveAspectRatio="xMinYMid">
 					    <polygon id="Fill-1" stroke="none" fill="#FEE430" fill-rule="evenodd" style="mix-blend-mode: multiply;" points="65 33 65 287.550943 201.405706 420.15546 203.197814 421.865115 340.772287 288.11014 341.331839 287.535125 341.379788 33"></polygon>
 					</svg>
 				</div>	
@@ -221,7 +222,7 @@
 		<section class="full-height-mobile" id="contact">
 			<div class="atl city t-col-1of2 d-col-1of2">
 				<div class="city-box middle"></div>
-				<div class="city-box-border"></div>
+				<div class="city-box-border middle"></div>
 
 				<span class="letter-resting first">a</span>
 				<span class="letter-resting">t</span>
@@ -247,7 +248,7 @@
 			</div>
 			<div class="la city t-col-1of2 d-col-1of2">
 				<div class="city-box middle"></div>
-				<div class="city-box-border"></div>
+				<div class="city-box-border middle"></div>
 
 				<span class="letter-resting first">l</span>
 				<span class="letter-resting last">a</span>

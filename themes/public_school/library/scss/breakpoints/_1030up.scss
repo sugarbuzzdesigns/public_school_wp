@@ -110,12 +110,21 @@ Section Specific styles
 	}
 
 	.image-grid {
-		.desktop-placeholder {
-			display: block;
-		}
-		.tablet-placeholder {
-			display: none;
-		}	
+		overflow: hidden;
+
+        .ig-image {
+            // padding-top: calc(100% / 3);
+            // height: calc(100% / 3);
+            // width: calc(100% / 3);
+            // background-size: cover;
+            // float: left;
+        }	
+
+		.svg {
+		    svg {
+		        width: 400px;
+		    }
+		}        	
 	}		
 }
 
@@ -163,8 +172,6 @@ Section Specific styles
 		.city-box-border {
 			width: 179px;
 			height: 179px;		
-			top: 8px;
-			left: 8px;		
 			border: solid 3px #000;
 		}
 
