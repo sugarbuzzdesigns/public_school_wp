@@ -166,7 +166,9 @@ function bones_scripts_and_styles() {
 		// Waypoints for section on screen detection
 		wp_register_script( 'waypoints', get_stylesheet_directory_uri() . '/library/js/libs/jquery.waypoints.min.js', array('jquery'), '', true );			
 		// bxslider 
-		wp_register_script( 'bxslider', get_stylesheet_directory_uri() . '/library/js/libs/jquery.bxslider.min.js', array('jquery'), '', true );		
+		wp_register_script( 'bxslider', get_stylesheet_directory_uri() . '/library/js/libs/jquery.bxslider.min.js', array('jquery'), '', true );
+		// typed.js for adding typewriter like effects
+		wp_register_script( 'typed', get_stylesheet_directory_uri() . '/library/js/libs/typed.min.js', array('jquery'), '', true );				
 		// register main stylesheet
 		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/'. $dir .'/style'. $ext .'.css', array(), '', 'all' );
 
@@ -183,6 +185,7 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'wurfl' );
 		wp_enqueue_script( 'waypoints' );
 		wp_enqueue_script( 'bxslider' );
+		wp_enqueue_script( 'typed' );
 		wp_enqueue_style( 'bones-stylesheet' );
 		wp_enqueue_style( 'bxslider-css' );
 		wp_enqueue_style( 'bones-ie-only' );

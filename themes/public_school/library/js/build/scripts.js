@@ -77,15 +77,15 @@ PS.env = {
 var timeToWaitForLast = 100;
 
 $(window).on('resize', function(){
+    waitForFinalEvent(function(){
+      $(window).trigger('resize-done');
+      //...
+    }, 500, "some unique string");
 });
 
 setTimeout(function(){
     $('#loader').fadeOut();
 }, 1500);
-
-if (window.matchMedia('(max-width: 768px)').matches){
-
-}
 ;var PS = PS || {};
 
 (function($) {
@@ -278,26 +278,31 @@ if (window.matchMedia('(max-width: 768px)').matches){
         init: function() {
             this.$lettersResting = $('.letter-resting');
             this.$lettersHover = $('.letter-hover');
+            this.$lettersCopy = $([]);
 
-            this.setLetterPositionData();
+            this.createRestingLetters();
+
+            this.setLetterPositionRestingData();
+            this.setLetterPositionHoverData();
+
+            this.setInitialLetterPosition();
+
             this.bindEvents();
         },
         bindEvents: function() {
             var _this = this;
 
-            console.log(Waypoint);
-
             if(PS.env.touch){
                 $('.city').on('in-view-down', function(){
-                    var $city = $(this);
+                    // var $city = $(this);
 
-                    if(!$city.hasClass('seen-once')){
-                        _this.animateLettersHover($city);
+                    // if(!$city.hasClass('seen-once')){
+                    //     _this.animateLettersHover($city);
 
-                        setTimeout(function(){
-                            _this.animateLettersReset($city);
-                        }, 2000);
-                    }
+                    //     setTimeout(function(){
+                    //         _this.animateLettersReset($city);
+                    //     }, 2000);
+                    // }
                 });
             } 
 
@@ -308,13 +313,16 @@ if (window.matchMedia('(max-width: 768px)').matches){
                     _this.animateLettersHover($(this));
                 }
             });
+
+            $(window).on('resize-done', function(){
+                PS.Contact.resetLettersOnResize()
+            });
         },
-        setLetterPositionData: function() {
+        setLetterPositionRestingData: function() {
             var _this = this;
 
              this.$lettersResting.each(function(i, letter){
-                var $newLetter = null;
-                    pos = {
+                var pos = {
                         top: 0,
                         left: 0
                     };
@@ -327,16 +335,11 @@ if (window.matchMedia('(max-width: 768px)').matches){
 
                 $(letter).data('full-position', pos);
 
-                $newLetter = $('<span class="letter-copy"></span>')
-                    .html($(letter).html())
-                    .appendTo($(letter).closest('.city'));
-
-                _this.moveLetters($newLetter, pos);
-
-                $('.letter-copy')
-                    .eq(i)
-                    .data('full-position', pos);
+                $('.letter-copy').eq(i).data('full-position', pos);
              });
+        },
+        setLetterPositionHoverData: function(){
+            var _this = this;
 
              this.$lettersHover.each(function(i, letter){
                 var $newLetter = null;
@@ -355,10 +358,31 @@ if (window.matchMedia('(max-width: 768px)').matches){
 
                 $(letter).data('full-position', pos);
 
-                $('.letter-copy')
-                    .eq(i)
-                    .data('full-position-hover', pos);
+                $('.letter-copy').eq(i).data('full-position-hover', pos);
              });
+        },        
+        createRestingLetters: function(){
+            var _this = this,
+                pos;
+
+            this.$lettersResting.each(function(i, letter){
+                pos = $(letter).data('full-position');
+
+                $newLetter = $('<span class="letter-copy"></span>')
+                    .html($(letter).html())
+                    .appendTo($(letter).closest('.city'));
+
+                _this.$lettersCopy.push($newLetter);
+            });        
+        },
+        setInitialLetterPosition: function(){
+            var posObj, _this = this;
+
+            $('.letter-copy').each(function(i, letter){
+                posObj = $(letter).data('full-position');
+
+                _this.moveLetters($(letter), posObj);
+            });
         },
         moveLetters: function($letter, locObj){
             var location = locObj || {};
@@ -368,6 +392,11 @@ if (window.matchMedia('(max-width: 768px)').matches){
                 top: locObj.top,
                 left: locObj.left
             });
+        },
+        resetLettersOnResize: function(){
+            this.setLetterPositionRestingData();
+            this.setLetterPositionHoverData();
+            this.setInitialLetterPosition();
         },
         animateLettersHover: function($city){
             $('.letter-copy', $city).each(function(i, elm){
@@ -380,7 +409,6 @@ if (window.matchMedia('(max-width: 768px)').matches){
             $city.addClass('hovered');
         },
         animateLettersReset: function($city){
-            console.log('reset letters');
             $('.letter-copy', $city).each(function(i, elm){
                 $(elm).css({
                     top: $(elm).data('fullPosition').top,
@@ -395,6 +423,7 @@ if (window.matchMedia('(max-width: 768px)').matches){
     $(function() {
         setTimeout(function(){
             PS.Contact.init();
+            PS.Contact.resetLettersOnResize();
         }, 1000);
     });
 })(jQuery);
@@ -409,8 +438,8 @@ if (window.matchMedia('(max-width: 768px)').matches){
         		'#contact .city'
         	];
 
-        	this.bindInViewWaypoints($('#contact .city'));
-        	this.bindOutOfViewWaypoints($('#contact .city'));
+        	this.bindInViewWaypoints();
+        	this.bindOutOfViewWaypoints();    	
         },
         bindEvents: function() {
         	_this = this;
@@ -445,6 +474,19 @@ if (window.matchMedia('(max-width: 768px)').matches){
 			  	},
 			  	offset: '100%'
 			});
+
+			$('#jobs').waypoint({
+			  	handler: function(direction) {
+			  		if(direction === 'down'){
+			  			$('#jobs').trigger('in-view-down');
+						console.log('down to jobs');
+			  		}
+			  	},
+				offset: function() {
+					// when the bottom of the element hits the bottom of the viewport
+					return Waypoint.viewportHeight() - Waypoint.viewportHeight()/2;
+				}
+			});			
         },
 
         bindInViewWaypoints: function($elm){
@@ -488,8 +530,8 @@ if (window.matchMedia('(max-width: 768px)').matches){
 				$elm.waypoint({
 				  	handler: function(direction) {
 				  		if(direction === 'down'){
-				  			$(this.element).removeClass('in-view');
 				  			$(this.element).trigger('out-of-view-down');
+				  			$(this.element).removeClass('in-view');
 				  		}
 				  	},
 					offset: function() {
@@ -502,8 +544,8 @@ if (window.matchMedia('(max-width: 768px)').matches){
 				$elm.waypoint({
 				  	handler: function(direction) {
 				  		if(direction === 'up'){
+				  			$(this.element).trigger('out-of-view-up');
 							$(this.element).removeClass('in-view');
-							$(this.element).trigger('out-of-view-up');
 				  		}
 				  	},
 					offset: function() {
@@ -617,5 +659,37 @@ var PS = PS || {};
 
     $(function() {
         PS.TeamSlider.init();      
+    });
+})(jQuery);
+;var PS = PS || {};
+
+(function($) {
+    PS.Typer = {
+        init: function(){
+            console.log('init');
+            $('#jobs').on('in-view-down', function(){
+                $("#jobs h2 span:first").typed({
+                    strings: ['are you'],
+                    contentType: 'text',
+                    showCursor: false,
+                    typeSpeed: 50,
+                    callback: function(){
+                        $("#jobs h2 .highlight-text").typed({
+                            strings: ['always a student?'],
+                            contentType: 'text',
+                            showCursor: false,
+                            typeSpeed: 100,
+                            callback: function(){
+                                $("#jobs h2 em").addClass('highlight');
+                            }
+                        });                
+                    }
+                });                
+            });
+        }
+    }
+
+    $(function() {
+        PS.Typer.init();      
     });
 })(jQuery);

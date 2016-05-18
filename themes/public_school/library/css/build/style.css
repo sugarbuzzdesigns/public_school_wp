@@ -1394,6 +1394,9 @@ body {
 
 p {
   font-family: "GaramondFBText-Light", "Georgia", Cambria, Times New Roman, Times, serif;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
 }
 
 a {
@@ -1631,13 +1634,13 @@ h2.highlighter,
 }
 h2.highlighter span,
 .h2.highlighter span {
-  display: block;
+  display: inline-block;
   position: relative;
 }
 h2.highlighter span em,
 .h2.highlighter span em {
   display: block;
-  width: 78%;
+  width: 100%;
   height: 6px;
   background-color: #FEE430;
   position: absolute;
@@ -1878,7 +1881,7 @@ Mobile Contact Butter Bar
   z-index: 4;
 }
 .contact-butter-bar a {
-  font-size: 0.688em;
+  font-size: .938em;
   letter-spacing: 1.65px;
   text-transform: uppercase;
   font-family: 'blender_promedium';
@@ -2218,7 +2221,8 @@ Section Specific styles
   text-transform: uppercase;
   display: inline-block;
   margin-right: 10%;
-  padding: 14px 0;
+  padding: 16px 0;
+  cursor: pointer;
 }
 #team .content-nav ul li:last-child {
   margin-right: 0;
@@ -2434,8 +2438,11 @@ Section Specific styles
   letter-spacing: 3.94px;
 }
 #jobs h2.highlighter span em {
-  width: 89%;
-  left: 14px;
+  width: 0;
+  transition: width .5s ease-in;
+}
+#jobs h2.highlighter span em.highlight {
+  width: 100%;
 }
 #jobs h2.highlighter .highlight-text {
   position: relative;
@@ -2719,11 +2726,6 @@ you can add resource intensive styles.
     line-height: 33px;
     letter-spacing: 4px;
     padding: 0 0 0 12%;
-  }
-  #passion h2.highlighter span em {
-    width: 240px;
-    top: 14px;
-    left: -6px;
   }
   #passion .image-wrap {
     float: right;
@@ -3034,8 +3036,6 @@ you can add resource intensive styles.
     padding-bottom: 180px;
   }
   #jobs h2.highlighter span em {
-    width: 102%;
-    left: -4px;
     top: 16px;
     height: 8px;
   }

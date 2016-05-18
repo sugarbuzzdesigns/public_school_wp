@@ -14,7 +14,6 @@ and will be used across all viewports.
 /*********************
 GENERAL STYLES
 *********************/
-
 body {
     font-family: $sans-serif;
     font-size: 100%;
@@ -27,6 +26,9 @@ body {
 
 p {
     font-family: $serif;
+    -webkit-hyphens: none;
+       -moz-hyphens: none;
+            hyphens: none;    
 }
 
 a {
@@ -264,12 +266,12 @@ h2,
         padding: 0 50px;
 
         span {
-            display: block;
+            display: inline-block;
             position: relative;
 
             em {
                 display: block;
-                width: 78%;
+                width: 100%;
                 height: 6px;
                 background-color: #FEE430;
                 position: absolute;
@@ -525,7 +527,7 @@ Mobile Contact Butter Bar
     z-index: 4;
 
     a {
-        font-size: 0.688em;
+        font-size: .938em;
         letter-spacing: 1.65px;
         text-transform: uppercase;
         font-family: 'blender_promedium';
@@ -930,7 +932,8 @@ Section Specific styles
                 text-transform: uppercase;
                 display: inline-block;
                 margin-right: 10%;
-                padding: 14px 0;
+                padding: 16px 0;
+                cursor: pointer;
 
                 &:last-child {
                     margin-right: 0;
@@ -1214,8 +1217,12 @@ Section Specific styles
         &.highlighter {
             span {
                 em {
-                    width: 89%;
-                    left: 14px;
+                    width: 0;
+                    transition: width .5s ease-in;
+
+                    &.highlight {
+                        width: 100%;
+                    }
                 }
             }
 

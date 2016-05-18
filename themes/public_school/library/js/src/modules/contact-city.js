@@ -6,26 +6,31 @@ var PS = PS || {};
         init: function() {
             this.$lettersResting = $('.letter-resting');
             this.$lettersHover = $('.letter-hover');
+            this.$lettersCopy = $([]);
 
-            this.setLetterPositionData();
+            this.createRestingLetters();
+
+            this.setLetterPositionRestingData();
+            this.setLetterPositionHoverData();
+
+            this.setInitialLetterPosition();
+
             this.bindEvents();
         },
         bindEvents: function() {
             var _this = this;
 
-            console.log(Waypoint);
-
             if(PS.env.touch){
                 $('.city').on('in-view-down', function(){
-                    var $city = $(this);
+                    // var $city = $(this);
 
-                    if(!$city.hasClass('seen-once')){
-                        _this.animateLettersHover($city);
+                    // if(!$city.hasClass('seen-once')){
+                    //     _this.animateLettersHover($city);
 
-                        setTimeout(function(){
-                            _this.animateLettersReset($city);
-                        }, 2000);
-                    }
+                    //     setTimeout(function(){
+                    //         _this.animateLettersReset($city);
+                    //     }, 2000);
+                    // }
                 });
             } 
 
@@ -36,13 +41,16 @@ var PS = PS || {};
                     _this.animateLettersHover($(this));
                 }
             });
+
+            $(window).on('resize-done', function(){
+                PS.Contact.resetLettersOnResize()
+            });
         },
-        setLetterPositionData: function() {
+        setLetterPositionRestingData: function() {
             var _this = this;
 
              this.$lettersResting.each(function(i, letter){
-                var $newLetter = null;
-                    pos = {
+                var pos = {
                         top: 0,
                         left: 0
                     };
@@ -55,16 +63,11 @@ var PS = PS || {};
 
                 $(letter).data('full-position', pos);
 
-                $newLetter = $('<span class="letter-copy"></span>')
-                    .html($(letter).html())
-                    .appendTo($(letter).closest('.city'));
-
-                _this.moveLetters($newLetter, pos);
-
-                $('.letter-copy')
-                    .eq(i)
-                    .data('full-position', pos);
+                $('.letter-copy').eq(i).data('full-position', pos);
              });
+        },
+        setLetterPositionHoverData: function(){
+            var _this = this;
 
              this.$lettersHover.each(function(i, letter){
                 var $newLetter = null;
@@ -83,10 +86,31 @@ var PS = PS || {};
 
                 $(letter).data('full-position', pos);
 
-                $('.letter-copy')
-                    .eq(i)
-                    .data('full-position-hover', pos);
+                $('.letter-copy').eq(i).data('full-position-hover', pos);
              });
+        },        
+        createRestingLetters: function(){
+            var _this = this,
+                pos;
+
+            this.$lettersResting.each(function(i, letter){
+                pos = $(letter).data('full-position');
+
+                $newLetter = $('<span class="letter-copy"></span>')
+                    .html($(letter).html())
+                    .appendTo($(letter).closest('.city'));
+
+                _this.$lettersCopy.push($newLetter);
+            });        
+        },
+        setInitialLetterPosition: function(){
+            var posObj, _this = this;
+
+            $('.letter-copy').each(function(i, letter){
+                posObj = $(letter).data('full-position');
+
+                _this.moveLetters($(letter), posObj);
+            });
         },
         moveLetters: function($letter, locObj){
             var location = locObj || {};
@@ -96,6 +120,11 @@ var PS = PS || {};
                 top: locObj.top,
                 left: locObj.left
             });
+        },
+        resetLettersOnResize: function(){
+            this.setLetterPositionRestingData();
+            this.setLetterPositionHoverData();
+            this.setInitialLetterPosition();
         },
         animateLettersHover: function($city){
             $('.letter-copy', $city).each(function(i, elm){
@@ -108,7 +137,6 @@ var PS = PS || {};
             $city.addClass('hovered');
         },
         animateLettersReset: function($city){
-            console.log('reset letters');
             $('.letter-copy', $city).each(function(i, elm){
                 $(elm).css({
                     top: $(elm).data('fullPosition').top,
@@ -123,6 +151,7 @@ var PS = PS || {};
     $(function() {
         setTimeout(function(){
             PS.Contact.init();
+            PS.Contact.resetLettersOnResize();
         }, 1000);
     });
 })(jQuery);

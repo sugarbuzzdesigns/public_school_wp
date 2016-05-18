@@ -77,12 +77,12 @@ PS.env = {
 var timeToWaitForLast = 100;
 
 $(window).on('resize', function(){
+    waitForFinalEvent(function(){
+      $(window).trigger('resize-done');
+      //...
+    }, 500, "some unique string");
 });
 
 setTimeout(function(){
     $('#loader').fadeOut();
 }, 1500);
-
-if (window.matchMedia('(max-width: 768px)').matches){
-
-}

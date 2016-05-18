@@ -400,11 +400,6 @@ Section Specific styles
   letter-spacing: 4px;
   padding: 0 0 0 12%;
 }
-#passion h2.highlighter span em {
-  width: 240px;
-  top: 14px;
-  left: -6px;
-}
 #passion .image-wrap {
   float: right;
   margin-top: -57px;
@@ -707,8 +702,6 @@ Section Specific styles
   padding-bottom: 180px;
 }
 #jobs h2.highlighter span em {
-  width: 102%;
-  left: -4px;
   top: 16px;
   height: 8px;
 }

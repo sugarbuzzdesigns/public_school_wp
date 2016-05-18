@@ -9,8 +9,8 @@ var PS = PS || {};
         		'#contact .city'
         	];
 
-        	this.bindInViewWaypoints($('#contact .city'));
-        	this.bindOutOfViewWaypoints($('#contact .city'));
+        	this.bindInViewWaypoints();
+        	this.bindOutOfViewWaypoints();    	
         },
         bindEvents: function() {
         	_this = this;
@@ -45,6 +45,19 @@ var PS = PS || {};
 			  	},
 			  	offset: '100%'
 			});
+
+			$('#jobs').waypoint({
+			  	handler: function(direction) {
+			  		if(direction === 'down'){
+			  			$('#jobs').trigger('in-view-down');
+						console.log('down to jobs');
+			  		}
+			  	},
+				offset: function() {
+					// when the bottom of the element hits the bottom of the viewport
+					return Waypoint.viewportHeight() - Waypoint.viewportHeight()/2;
+				}
+			});			
         },
 
         bindInViewWaypoints: function($elm){
@@ -88,8 +101,8 @@ var PS = PS || {};
 				$elm.waypoint({
 				  	handler: function(direction) {
 				  		if(direction === 'down'){
-				  			$(this.element).removeClass('in-view');
 				  			$(this.element).trigger('out-of-view-down');
+				  			$(this.element).removeClass('in-view');
 				  		}
 				  	},
 					offset: function() {
@@ -102,8 +115,8 @@ var PS = PS || {};
 				$elm.waypoint({
 				  	handler: function(direction) {
 				  		if(direction === 'up'){
+				  			$(this.element).trigger('out-of-view-up');
 							$(this.element).removeClass('in-view');
-							$(this.element).trigger('out-of-view-up');
 				  		}
 				  	},
 					offset: function() {

@@ -4,7 +4,7 @@
 
 		<section class="header full-height-mobile" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 			<a id="header-logo" href="<?php echo home_url(); ?>" rel="nofollow">
-				<img class="centered" height="34" width="236" src="<?php bloginfo('template_url'); ?>/library/images/logos/header-logo.png" />
+				<img class="centered" height="34" width="236" src="<?php bloginfo('template_url'); ?>/library/images/logos/PublicSchool_B.2_trimmed.gif" />
 			</a>
 			<div class="cover"></div>
 			<div class="paper-wrap">
@@ -104,8 +104,8 @@
 		<section id="passion">
 			<header>
 				<h2 class="highlighter t-col-1of2 d-col-1of2">
-					<span>reach</span>
-					<span><span class="highlight-text">your greatest</span><em></em></span>
+					<span>reach</span><br>
+					<span><span class="highlight-text">your greatest</span><em></em></span><br>
 					<span>potential</span>
 				</h2>
 			</header>
@@ -275,8 +275,8 @@
 		<section class="full-height-mobile" id="jobs">
 			<header>
 				<h2 class="centered highlighter">
-					<span>are you</span>
-					<span><span class="highlight-text">always a student?</span><em></em></span>
+					<span></span><br>
+					<span><span class="highlight-text"></span><em></em></span>
 				</h2>
 			</header>
 			<div class="jobs-info">
@@ -331,6 +331,6 @@
 		</div>
 	</div>
 
-	<div id="loader"></div>
+	<!-- <div id="loader"></div> -->
 
 <?php get_footer(); ?>
