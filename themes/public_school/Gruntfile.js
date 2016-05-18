@@ -72,7 +72,7 @@ module.exports = function(grunt) {
 		autoprefixer: {
 			dist: {
 				options: {
-					browsers: ['ios_saf']
+					browsers: ['last 2 versions', 'ie 8', 'ie 9', 'iOS 7']
 				},
 				src: 'library/css/src/style.css'
 			}

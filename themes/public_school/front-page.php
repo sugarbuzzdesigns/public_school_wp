@@ -218,7 +218,9 @@
 	  			</ul>
 	  		</nav>
 		</section>
-
+		<section id="contact-banner">
+			<h2>contact public school</h2>
+		</section>
 		<section class="full-height-mobile" id="contact">
 			<div class="atl city t-col-1of2 d-col-1of2">
 				<div class="city-box middle"></div>
@@ -228,20 +230,25 @@
 				<span class="letter-resting">t</span>
 				<span class="letter-resting last">l</span>
 
-				<div class="hover-letters">
-					<span class="letter-hover">a</span>
-					<span class="letter-hover">t</span>
-					<span class="letter-hover">l</span>
-				</div>
 				<div class="hover-content">
 					<div class="inner middle">
 						<ul class="contact-details">
-							<li><i class="address"></i>
-								<span>Suite 7 Ponce City Market,</span>
-								<span>Atlanta GA, 30030</span>
+							<li>
+								<span class="letter-hover">a</span>
+								<i class="address"></i>
+								<p>
+									<span>Suite 7 Ponce City Market,</span>
+									<span>Atlanta GA, 30030</span>
+								</p>	
 							</li>
-							<li><i class="email"></i>atl@public-school.com</li>
-							<li><i class="phone"></i>404.382.2017</li>
+							<li>
+								<span class="letter-hover">t</span>
+								<i class="email"></i>atl@public-school.com
+							</li>
+							<li>
+								<span class="letter-hover">l</span>
+								<i class="phone"></i>404.382.2017
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -253,19 +260,23 @@
 				<span class="letter-resting first">l</span>
 				<span class="letter-resting last">a</span>
 
-				<div class="hover-letters">
-					<span class="letter-hover">l</span>
-					<span class="letter-hover">a</span>
-				</div>
 				<div class="hover-content">
 					<div class="inner middle">
 						<ul class="contact-details">
-							<li><i class="address"></i>
-								<span>Suite 7 Ponce City Market,</span>
-								<span>Atlanta GA, 30030</span>
+							<li>
+								<span class="letter-hover">l</span>
+								<i class="address"></i>
+								<p>
+									<span>Suite 7 Ponce City Market,</span>
+									<span>Atlanta GA, 30030</span>
+								</p>
+							<li>
+								<span class="letter-hover">a</span>
+								<i class="email"></i>atl@public-school.com
 							</li>
-							<li><i class="email"></i>atl@public-school.com</li>
-							<li><i class="phone"></i>404.382.2017</li>
+							<li>
+								<i class="phone"></i>404.382.2017
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -275,8 +286,8 @@
 		<section class="full-height-mobile" id="jobs">
 			<header>
 				<h2 class="centered highlighter">
-					<span></span><br>
-					<span><span class="highlight-text"></span><em></em></span>
+					<span><i style="visibility:hidden;">PLACEHOLDER</i></span><br>
+					<span><span class="highlight-text"><i style="visibility:hidden;">PLACEHOLDER</i></span><em></em></span>
 				</h2>
 			</header>
 			<div class="jobs-info">

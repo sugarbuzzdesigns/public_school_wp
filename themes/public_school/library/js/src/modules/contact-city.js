@@ -8,6 +8,8 @@ var PS = PS || {};
             this.$lettersHover = $('.letter-hover');
             this.$lettersCopy = $([]);
 
+            this.setOrigHoverLetters();
+
             this.createRestingLetters();
 
             this.setLetterPositionRestingData();
@@ -46,6 +48,15 @@ var PS = PS || {};
                 PS.Contact.resetLettersOnResize()
             });
         },
+        setOrigHoverLetters: function(){
+            $('.city').each(function(i, city){
+                var posTop = $(city).find('.hover-content .inner').position().top;
+
+                $('.hover-letters', $(city)).css({
+                    top: posTop
+                });
+            });
+        },
         setLetterPositionRestingData: function() {
             var _this = this;
 
@@ -54,6 +65,8 @@ var PS = PS || {};
                         top: 0,
                         left: 0
                     };
+
+                $(letter).attr('id', 'rest-letter-' + i);    
 
                 pos.top = $(letter).position().top;
                 pos.left = $(letter).position().left;
@@ -76,10 +89,15 @@ var PS = PS || {};
                         left: 0
                     };
 
-                pos.top = $(letter).offsetParent().position().top;
-                pos.top += $(letter).position().top;
-                pos.left = $(letter).offsetParent().position().left;
-                pos.left += $(letter).position().left;
+                $(letter).attr('id', 'hov-letter-' + i);
+
+                pos.top = $(letter).position().top;
+                pos.top += $(letter).offsetParent().position().top;
+                pos.top += $(letter).offsetParent().offsetParent().position().top;
+
+                pos.left = $(letter).position().left;
+                pos.left += $(letter).offsetParent().position().left;
+                pos.left += $(letter).offsetParent().offsetParent().position().left;
 
                 $(letter).attr('data-position-top', pos.top);
                 $(letter).attr('data-position-left', pos.left);
@@ -122,6 +140,7 @@ var PS = PS || {};
             });
         },
         resetLettersOnResize: function(){
+            this.setOrigHoverLetters();
             this.setLetterPositionRestingData();
             this.setLetterPositionHoverData();
             this.setInitialLetterPosition();

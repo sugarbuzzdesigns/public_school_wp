@@ -154,7 +154,25 @@ Section Specific styles
 	}
 }
 
+#contact-banner {
+    h2 {
+        font-size: 18px;
+    }
+}
+
 #contact {
+	.atl {
+		.hover-letters {
+			// transform: translate(0, -34%);
+		}
+	}
+
+	.la {
+		.hover-letters {
+			// transform: translate(0, -47%);
+		}
+	}
+
 	.city {
 		width: 50%;
     	padding: 35% 0 0 0;
@@ -203,12 +221,22 @@ Section Specific styles
 				margin-bottom: 25px;
 			}
 		}
+
+		.letter-hover {
+			font-size: 42px;
+		}
+
+		&.hovered {
+			.letter-copy {
+				font-size: 2.625em;
+			}
+		}		
 	}
 
 	.letter-resting,
 	.letter-copy,
 	.letter-copy-hover {
-		font-size: 1.938em;
+		font-size: 2em;
 	}
 }
 

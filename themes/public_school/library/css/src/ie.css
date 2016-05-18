@@ -443,6 +443,10 @@ Section Specific styles
   right: 0;
 }
 
+#contact-banner h2 {
+  font-size: 16px;
+}
+
 #contact {
   overflow: auto;
 }
@@ -473,6 +477,12 @@ Section Specific styles
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+#contact .city .letter-hover {
+  font-size: 1.688em;
+}
+#contact .city.hovered .letter-copy {
+  font-size: 1.688em;
 }
 #contact .letter-resting,
 #contact .letter-copy,
@@ -512,6 +522,9 @@ Section Specific styles
   transform: translate(0, 0);
   padding-top: 90px;
   padding-bottom: 80px;
+}
+#jobs h2 br {
+  display: none;
 }
 #jobs h2 span {
   display: inline;
@@ -651,6 +664,10 @@ Section Specific styles
   margin: 0 auto 30px;
 }
 
+#contact-banner h2 {
+  font-size: 18px;
+}
+
 #contact .city {
   width: 50%;
   padding: 35% 0 0 0;
@@ -690,10 +707,16 @@ Section Specific styles
   font-size: 1.250em;
   margin-bottom: 25px;
 }
+#contact .city .letter-hover {
+  font-size: 42px;
+}
+#contact .city.hovered .letter-copy {
+  font-size: 2.625em;
+}
 #contact .letter-resting,
 #contact .letter-copy,
 #contact .letter-copy-hover {
-  font-size: 1.938em;
+  font-size: 2em;
 }
 
 #jobs h2.highlighter {

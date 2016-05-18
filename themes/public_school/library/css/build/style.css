@@ -1695,7 +1695,7 @@ FOOTER STYLES
   padding: 70px 0 100px;
   text-align: center;
   color: #f8f9fa;
-  background: #0b0a0a;
+  background: #040403;
 }
 .footer .footer-contact {
   font-family: 'blender_pro_boldbold';
@@ -2231,6 +2231,24 @@ Section Specific styles
   color: #fff;
 }
 
+#contact-banner {
+  height: 100px;
+  background: #EBEBEB;
+  position: relative;
+}
+#contact-banner h2 {
+  font-size: 15px;
+  font-family: blender_pro_boldbold;
+  color: #000;
+  text-align: center;
+  letter-spacing: 1.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
 #contact .city {
   position: relative;
   background-size: cover;
@@ -2257,10 +2275,9 @@ Section Specific styles
   font-size: 1.563em;
   line-height: normal;
   margin: 0;
-  width: 10px;
   display: block;
   z-index: 2;
-  transition: left 0.5s, top 0.5s;
+  transition: left 0.5s, top 0.5s, font-size 0.5s;
 }
 #contact .letter-resting {
   margin: 0;
@@ -2313,25 +2330,6 @@ Section Specific styles
   -webkit-transform: translate(44%, -50%);
   transform: translate(44%, -50%);
 }
-#contact .hover-letters {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-}
-#contact .la .hover-letters {
-  -webkit-transform: translate(0, -75%);
-  transform: translate(0, -75%);
-}
-#contact .letter-hover {
-  display: block;
-  font-family: 'octin_collegeregular';
-  font-size: 1.563em;
-  margin-bottom: 12px;
-  line-height: normal;
-  visibility: hidden;
-}
 #contact .city-box {
   width: 118px;
   height: 118px;
@@ -2366,29 +2364,49 @@ Section Specific styles
   margin: 0;
   width: 100%;
   opacity: 0;
-  padding-left: 24%;
+  padding-left: 10%;
   transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
   transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 #contact .contact-details li {
   position: relative;
-  padding-left: 34px;
+  padding-left: 54px;
   margin-bottom: 15px;
   color: #E0E0E0;
 }
+#contact .contact-details li p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+#contact .contact-details li p span {
+  display: block;
+}
 #contact .contact-details li i {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  margin-top: 4px;
 }
 #contact .contact-details span {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   font-size: 0.875em;
   color: #E0E0E0;
   line-height: normal;
+}
+#contact .contact-details .letter-hover {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  vertical-align: middle;
+  font-family: 'octin_collegeregular';
+  font-size: 24px;
+  line-height: normal;
+  visibility: hidden;
 }
 
 .no-touch #contact .city:hover .hover-content {
@@ -2770,6 +2788,10 @@ you can add resource intensive styles.
     right: 0;
   }
 
+  #contact-banner h2 {
+    font-size: 16px;
+  }
+
   #contact {
     overflow: auto;
   }
@@ -2800,6 +2822,12 @@ you can add resource intensive styles.
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  #contact .city .letter-hover {
+    font-size: 1.688em;
+  }
+  #contact .city.hovered .letter-copy {
+    font-size: 1.688em;
   }
   #contact .letter-resting,
   #contact .letter-copy,
@@ -2839,6 +2867,9 @@ you can add resource intensive styles.
     transform: translate(0, 0);
     padding-top: 90px;
     padding-bottom: 80px;
+  }
+  #jobs h2 br {
+    display: none;
   }
   #jobs h2 span {
     display: inline;
@@ -2985,6 +3016,10 @@ you can add resource intensive styles.
     margin: 0 auto 30px;
   }
 
+  #contact-banner h2 {
+    font-size: 18px;
+  }
+
   #contact .city {
     width: 50%;
     padding: 35% 0 0 0;
@@ -3024,10 +3059,16 @@ you can add resource intensive styles.
     font-size: 1.250em;
     margin-bottom: 25px;
   }
+  #contact .city .letter-hover {
+    font-size: 42px;
+  }
+  #contact .city.hovered .letter-copy {
+    font-size: 2.625em;
+  }
   #contact .letter-resting,
   #contact .letter-copy,
   #contact .letter-copy-hover {
-    font-size: 1.938em;
+    font-size: 2em;
   }
 
   #jobs h2.highlighter {
