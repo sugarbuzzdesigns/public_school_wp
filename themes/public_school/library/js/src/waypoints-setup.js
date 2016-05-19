@@ -46,7 +46,7 @@ var PS = PS || {};
 			  	offset: '100%'
 			});
 
-			$('#jobs').waypoint({
+			$('#jobs .highlight-text').waypoint({
 			  	handler: function(direction) {
 			  		if(direction === 'down'){
 			  			$('#jobs').trigger('in-view-down');
@@ -55,7 +55,7 @@ var PS = PS || {};
 			  	},
 				offset: function() {
 					// when the bottom of the element hits the bottom of the viewport
-					return Waypoint.viewportHeight() - Waypoint.viewportHeight()/2;
+					return Waypoint.viewportHeight() - $('#jobs .highlight-text').height();
 				}
 			});			
         },

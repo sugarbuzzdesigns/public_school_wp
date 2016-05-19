@@ -286,7 +286,6 @@
 		<section class="full-height-mobile" id="jobs">
 			<header>
 				<h2 class="centered highlighter">
-					<span><i style="visibility:hidden;">PLACEHOLDER</i></span><br>
 					<span><span class="highlight-text"><i style="visibility:hidden;">PLACEHOLDER</i></span><em></em></span>
 				</h2>
 			</header>

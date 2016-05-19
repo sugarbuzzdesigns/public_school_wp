@@ -494,7 +494,7 @@ setTimeout(function(){
 			  	offset: '100%'
 			});
 
-			$('#jobs').waypoint({
+			$('#jobs .highlight-text').waypoint({
 			  	handler: function(direction) {
 			  		if(direction === 'down'){
 			  			$('#jobs').trigger('in-view-down');
@@ -503,7 +503,7 @@ setTimeout(function(){
 			  	},
 				offset: function() {
 					// when the bottom of the element hits the bottom of the viewport
-					return Waypoint.viewportHeight() - Waypoint.viewportHeight()/2;
+					return Waypoint.viewportHeight() - $('#jobs .highlight-text').height();
 				}
 			});			
         },
@@ -687,23 +687,15 @@ var PS = PS || {};
         init: function(){
             console.log('init');
             $('#jobs').on('in-view-down', function(){
-                $("#jobs h2 span:first").typed({
-                    strings: ['are you'],
+                $("#jobs h2 .highlight-text").typed({
+                    strings: ['join public school'],
                     contentType: 'text',
                     showCursor: false,
-                    typeSpeed: 50,
+                    typeSpeed: 100,
                     callback: function(){
-                        $("#jobs h2 .highlight-text").typed({
-                            strings: ['always a student?'],
-                            contentType: 'text',
-                            showCursor: false,
-                            typeSpeed: 100,
-                            callback: function(){
-                                $("#jobs h2 em").addClass('highlight');
-                            }
-                        });                
+                        $("#jobs h2 em").addClass('highlight');
                     }
-                });                
+                });              
             });
         }
     }
