@@ -3035,6 +3035,7 @@ you can add resource intensive styles.
   }
   #passion .image-wrap img {
     margin-top: -100px;
+    margin-left: -10%;
   }
   #passion p {
     width: 50%;
