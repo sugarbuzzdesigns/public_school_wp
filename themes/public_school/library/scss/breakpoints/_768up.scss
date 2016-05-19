@@ -145,6 +145,7 @@ Section Specific styles
 
 #passion {
 	overflow: auto;
+	padding: 52px 0 100px;
 
 	header {
 		margin-bottom: 47px;
@@ -185,7 +186,18 @@ Section Specific styles
 }
 
 #team {
-	.team-slider {
+    .team-slider-nav {
+	    position: absolute;
+	    width: 85%;
+	    text-align: center;
+	    z-index: 1;
+	    top: 45px;
+	    overflow: auto;
+	    left: 50%;
+	    transform: translate(-50%, 0);
+	}	
+
+	.team-slider {	
 
 		header {
 
@@ -339,11 +351,11 @@ Section Specific styles
 		}
 
 		.jobs-open-roles {
-			padding-left: 5%;
+			padding-right: 5%;
 
 			h3 {
-				font-size: 1.125em;
-				letter-spacing: 2px;
+				font-size: 1.250em;
+				letter-spacing: 2.58px;	
 			}
 		}
 

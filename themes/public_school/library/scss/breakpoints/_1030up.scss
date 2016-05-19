@@ -136,6 +136,8 @@ Section Specific styles
 }
 
 #passion {
+	padding: 60px 0 100px;
+
 	h2.highlighter {
 		font-size: 34px;
 		letter-spacing: 5px;
@@ -262,6 +264,11 @@ Section Specific styles
 	}
 
 	.jobs-info {
+
+		a {
+			font-size: 18px;
+		}
+
 		.jobs-contact {
 			h3 {
 				font-size: 1.500em;
@@ -275,8 +282,8 @@ Section Specific styles
 
 		.jobs-open-roles {
 			h3	{
-				font-size: 18px;
-				letter-spacing: 2px;
+				font-size: 1.500em;
+				letter-spacing: 3.1px;		
 			}
 
 			ul {

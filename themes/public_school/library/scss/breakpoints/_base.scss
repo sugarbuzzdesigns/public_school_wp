@@ -320,6 +320,11 @@ HEADER STYLES
     -webkit-transform: translate(-50%, -140%);
             transform: translate(-50%, -140%);
     text-align: center;
+
+
+    img {
+        transform: scale(1.1);
+    }
 }
 
 /*********************

@@ -1408,6 +1408,7 @@ Site Loader
 ***************************/
 #loader {
   position: fixed;
+  display: none;
   height: 100%;
   width: 100%;
   top: 0;
@@ -1685,6 +1686,9 @@ HEADER STYLES
   -webkit-transform: translate(-50%, -140%);
   transform: translate(-50%, -140%);
   text-align: center;
+}
+#header-logo img {
+  transform: scale(1.1);
 }
 
 /*********************
@@ -2735,6 +2739,7 @@ you can add resource intensive styles.
 
   #passion {
     overflow: auto;
+    padding: 52px 0 100px;
   }
   #passion header {
     margin-bottom: 47px;
@@ -2764,6 +2769,16 @@ you can add resource intensive styles.
     margin: 0 0 30px 0;
   }
 
+  #team .team-slider-nav {
+    position: absolute;
+    width: 85%;
+    text-align: center;
+    z-index: 1;
+    top: 45px;
+    overflow: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
   #team .team-slider .team-member-photo {
     width: 50%;
     float: left;
@@ -2850,11 +2865,11 @@ you can add resource intensive styles.
     letter-spacing: 2.58px;
   }
   #jobs .jobs-info .jobs-open-roles {
-    padding-left: 5%;
+    padding-right: 5%;
   }
   #jobs .jobs-info .jobs-open-roles h3 {
-    font-size: 1.125em;
-    letter-spacing: 2px;
+    font-size: 1.250em;
+    letter-spacing: 2.58px;
   }
   #jobs .jobs-info p {
     font-size: 1em;
@@ -2900,6 +2915,13 @@ you can add resource intensive styles.
   .d-col-1of2 {
     width: 50%;
     float: left;
+  }
+
+  /**************************
+  Site Loader
+  ***************************/
+  #loader {
+    display: block;
   }
 
   /**************************
@@ -2997,6 +3019,9 @@ you can add resource intensive styles.
     width: 400px;
   }
 
+  #passion {
+    padding: 60px 0 100px;
+  }
   #passion h2.highlighter {
     font-size: 34px;
     letter-spacing: 5px;
@@ -3080,6 +3105,9 @@ you can add resource intensive styles.
     top: 16px;
     height: 8px;
   }
+  #jobs .jobs-info a {
+    font-size: 18px;
+  }
   #jobs .jobs-info .jobs-contact h3 {
     font-size: 1.500em;
     letter-spacing: 3.1px;
@@ -3088,8 +3116,8 @@ you can add resource intensive styles.
     font-size: 18px;
   }
   #jobs .jobs-info .jobs-open-roles h3 {
-    font-size: 18px;
-    letter-spacing: 2px;
+    font-size: 1.500em;
+    letter-spacing: 3.1px;
   }
   #jobs .jobs-info .jobs-open-roles ul {
     font-size: 18px;

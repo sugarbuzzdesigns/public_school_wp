@@ -390,6 +390,7 @@ Section Specific styles
 
 #passion {
   overflow: auto;
+  padding: 52px 0 100px;
 }
 #passion header {
   margin-bottom: 47px;
@@ -419,6 +420,16 @@ Section Specific styles
   margin: 0 0 30px 0;
 }
 
+#team .team-slider-nav {
+  position: absolute;
+  width: 85%;
+  text-align: center;
+  z-index: 1;
+  top: 45px;
+  overflow: auto;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
 #team .team-slider .team-member-photo {
   width: 50%;
   float: left;
@@ -505,11 +516,11 @@ Section Specific styles
   letter-spacing: 2.58px;
 }
 #jobs .jobs-info .jobs-open-roles {
-  padding-left: 5%;
+  padding-right: 5%;
 }
 #jobs .jobs-info .jobs-open-roles h3 {
-  font-size: 1.125em;
-  letter-spacing: 2px;
+  font-size: 1.250em;
+  letter-spacing: 2.58px;
 }
 #jobs .jobs-info p {
   font-size: 1em;
@@ -548,6 +559,13 @@ be seen on the Desktop.
 .d-col-1of2 {
   width: 50%;
   float: left;
+}
+
+/**************************
+Site Loader
+***************************/
+#loader {
+  display: block;
 }
 
 /**************************
@@ -645,6 +663,9 @@ Section Specific styles
   width: 400px;
 }
 
+#passion {
+  padding: 60px 0 100px;
+}
 #passion h2.highlighter {
   font-size: 34px;
   letter-spacing: 5px;
@@ -728,6 +749,9 @@ Section Specific styles
   top: 16px;
   height: 8px;
 }
+#jobs .jobs-info a {
+  font-size: 18px;
+}
 #jobs .jobs-info .jobs-contact h3 {
   font-size: 1.500em;
   letter-spacing: 3.1px;
@@ -736,8 +760,8 @@ Section Specific styles
   font-size: 18px;
 }
 #jobs .jobs-info .jobs-open-roles h3 {
-  font-size: 18px;
-  letter-spacing: 2px;
+  font-size: 1.500em;
+  letter-spacing: 3.1px;
 }
 #jobs .jobs-info .jobs-open-roles ul {
   font-size: 18px;
