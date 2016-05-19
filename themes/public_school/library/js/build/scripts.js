@@ -85,7 +85,7 @@ $(window).on('resize', function(){
 
 setTimeout(function(){
     $('#loader').fadeOut();
-}, 1500);
+}, 3000);
 ;var PS = PS || {};
 
 (function($) {

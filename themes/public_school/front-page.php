@@ -342,6 +342,6 @@
 		</div>
 	</div>
 
-	<!-- <div id="loader"></div> -->
+	<div id="loader"></div>
 
 <?php get_footer(); ?>
