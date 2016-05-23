@@ -53,56 +53,58 @@
 		<section class="full-height-mobile" id="overview">
 			<div class="middle">
 				<header>
-					<h2 class="centered">we are public school</h2>
-					<p>a team of passionate creators representing all walks of creative life. From strategists to writers, photographers to designers, digital mavens to social innovators — we are as diverse as the problems clients face today.</p>
+					<h2 class="centered scroll-waypoint waypoint-opacity waypoint-bottom-up">we are public school</h2>
+					<p class="scroll-waypoint waypoint-opacity waypoint-bottom-up">a team of passionate creators representing all walks of creative life. From strategists to writers, photographers to designers, digital mavens to social innovators — we are as diverse as the problems clients face today.</p>
 				</header>
 			</div>
 		</section>
 
 		<section class="full-height-mobile" id="instagram">
 			<header>
-				<h2 class="middle centered">@bythepublic</h2>
+				<h2 class="middle centered"><span class="scroll-waypoint waypoint-opacity waypoint-bottom-up">@bythepublic</span></h2>
 			</header>
 			<div class="image-grid">
 				<!-- <img class="tablet-placeholder" src="<?php bloginfo('template_url'); ?>/library/images/placeholders/instagram-grid-tablet.jpg" alt="">			 -->
 				<!-- <img class="desktop-placeholder" src="<?php bloginfo('template_url'); ?>/library/images/placeholders/instagram-grid-desktop.jpg" alt="">			 -->
 
 
-				<div class="svg">
+				<div class="svg scroll-waypoint waypoint-opacity">
 				<!-- width="277px" height="389px" -->
 					<svg viewBox="65 33 277 389" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" preserveAspectRatio="xMinYMid">
-					    <polygon id="Fill-1" stroke="none" fill="#FEE430" fill-rule="evenodd" style="mix-blend-mode: multiply;" points="65 33 65 287.550943 201.405706 420.15546 203.197814 421.865115 340.772287 288.11014 341.331839 287.535125 341.379788 33"></polygon>
+					    <polygon id="Fill-1" stroke="none" fill="#FEE430" fill-rule="evenodd" points="65 33 65 287.550943 201.405706 420.15546 203.197814 421.865115 340.772287 288.11014 341.331839 287.535125 341.379788 33"></polygon>
 					</svg>
 				</div>	
 
-				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Bball.jpg);"></div>
-				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Beltline.jpg);"></div>
+				<div class="image-wrap scroll-waypoint waypoint-opacity">
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Bball.jpg);"></div>
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Beltline.jpg);"></div>
 
-				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Camera-Lens.jpg);"></div>
-				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Chair.jpg);"></div>
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Camera-Lens.jpg);"></div>
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Chair.jpg);"></div>
 
-				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Headphones.jpg);"></div>
-				<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Laptop.jpg);"></div>
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Headphones.jpg);"></div>
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Laptop.jpg);"></div>
+				</div>	
 			</div>
 		</section>
 
 		<section class="full-height-mobile" id="services">
 			<div class="middle">
-				<header>
+				<header class="scroll-waypoint">
 					<h2 class="centered">creative services</h2>
 				</header>
 				<ul>
-					<li>advertising</li>
-					<li>branding</li>
-					<li>digital</li>
-					<li>experiential</li>
-					<li>social</li>
+					<li class="scroll-waypoint">advertising</li>
+					<li class="scroll-waypoint">branding</li>
+					<li class="scroll-waypoint">digital</li>
+					<li class="scroll-waypoint">experiential</li>
+					<li class="scroll-waypoint">social</li>
 				</ul>
 			</div>
 		</section>
 
 		<section id="passion">
-			<header>
+			<header class="scroll-waypoint">
 				<h2 class="highlighter t-col-1of2 d-col-1of2">
 					<span>reach</span><br>
 					<span><span class="highlight-text">your greatest</span><em></em></span><br>
@@ -110,11 +112,11 @@
 				</h2>
 			</header>
 			<div class="image-wrap t-col-1of2 d-col-1of2">
-				<img class="passion-paak" src="<?php bloginfo('template_url'); ?>/library/images/crest-animation-bw-final_web.gif" alt="">
+				<img class="passion-paak scroll-waypoint" src="<?php bloginfo('template_url'); ?>/library/images/crest-animation-bw-final_web.gif" alt="">
 			</div>
 			<div class="copy t-col-1of2 d-col-1of2">
-				<p>Sure, if we need to be technical, we’re a brand engagement agency that’s hell-bent on building a brand’s value with ideas that stand up to the rigors of the real world.</p>
-				<p>But dig a little deeper and you’ll see a place where all walks of creative life gather & collaborate, create & curate, and strive to learn something new every day. We do all this with one common goal: to create something bigger, better and braver. You’ll have to excuse us for being presumptuous, but we happen to think brands may find something like that useful.</p>
+				<p class="scroll-waypoint">Sure, if we need to be technical, we’re a brand engagement agency that’s hell-bent on building a brand’s value with ideas that stand up to the rigors of the real world.</p>
+				<p class="scroll-waypoint">But dig a little deeper and you’ll see a place where all walks of creative life gather & collaborate, create & curate, and strive to learn something new every day. We do all this with one common goal: to create something bigger, better and braver. You’ll have to excuse us for being presumptuous, but we happen to think brands may find something like that useful.</p>
 			</div>
 		</section>
 

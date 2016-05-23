@@ -1530,6 +1530,9 @@ LAYOUT & GRID STYLES
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.middle span {
+  display: inline-block;
+}
 
 header {
   position: relative;
@@ -1645,7 +1648,7 @@ h2.highlighter span em,
   height: 6px;
   background-color: #FEE430;
   position: absolute;
-  top: 12px;
+  top: 11px;
   left: 0;
   z-index: 1;
 }
@@ -1871,6 +1874,27 @@ mark em {
 }
 
 /**************************
+Default Animations
+***************************/
+.scroll-waypoint {
+  transition: opacity 0.7s, transform 0.9s;
+}
+
+.waypoint-opacity {
+  opacity: 0;
+}
+.waypoint-opacity.show-me {
+  opacity: 1;
+}
+
+.waypoint-bottom-up {
+  transform: translate(0, 50px);
+}
+.waypoint-bottom-up.show-me {
+  transform: translate(0, 0);
+}
+
+/**************************
 Mobile Contact Butter Bar
 ***************************/
 .contact-butter-bar {
@@ -2020,7 +2044,15 @@ Section Specific styles
   background-size: cover;
   float: left;
 }
+#instagram .image-wrap {
+  overflow: hidden;
+  height: 100%;
+}
 #instagram .svg {
+  mix-blend-mode: multiply;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-delay: 0.8s;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2033,6 +2065,12 @@ Section Specific styles
 
 #services {
   position: relative;
+}
+#services header {
+  opacity: 0;
+}
+#services header.show-me {
+  opacity: 1;
 }
 #services h2 {
   font-family: 'blender_pro_boldbold';
@@ -2051,6 +2089,12 @@ Section Specific styles
   text-transform: uppercase;
   border-top: solid 2px #222;
   padding: 17px 0 12px 0;
+  transform: translate(-10%, 0);
+  opacity: 0;
+}
+#services ul li.show-me {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 #services ul li:last-child {
   border-bottom: solid 2px #222;
@@ -2063,6 +2107,13 @@ Section Specific styles
 }
 #passion header {
   overflow: hidden;
+  opacity: 0;
+  transform: translate(50px, 0);
+  transition-delay: 0.2s;
+}
+#passion header.show-me {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 #passion h2 {
   font-size: 25px;
@@ -2074,6 +2125,12 @@ Section Specific styles
   width: 100%;
   display: block;
   margin: 0 auto 45px;
+  opacity: 0;
+  transform: translate(0, 40px);
+}
+#passion img.passion-paak.show-me {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 #passion p {
   font-family: "GaramondFBText-Light", "Georgia", Cambria, Times New Roman, Times, serif;
@@ -2082,6 +2139,11 @@ Section Specific styles
   line-height: 24px;
   width: 75%;
   margin: 0 auto 30px;
+  opacity: 0;
+  transition-duration: 1s;
+}
+#passion p.show-me {
+  opacity: 1;
 }
 #passion p:last-child {
   margin-bottom: 0;

@@ -57,7 +57,17 @@ var PS = PS || {};
 					// when the bottom of the element hits the bottom of the viewport
 					return Waypoint.viewportHeight() - $('#jobs .highlight-text').height();
 				}
-			});			
+			});
+
+			$('.scroll-waypoint').waypoint({
+			  	handler: function(direction) {
+			  		$(this.element).addClass('show-me');
+			  	},
+				offset: function() {
+					// when the bottom of the element hits the bottom of the viewport
+					return Waypoint.viewportHeight() - $('.contact-butter-bar').height();
+				}			  	
+			});
         },
 
         bindInViewWaypoints: function($elm){
