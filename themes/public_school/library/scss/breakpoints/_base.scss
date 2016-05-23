@@ -28,7 +28,7 @@ p {
     font-family: $serif;
     -webkit-hyphens: none;
        -moz-hyphens: none;
-            hyphens: none;    
+            hyphens: none;
 }
 
 a {
@@ -772,7 +772,7 @@ Section Specific styles
             text-transform: uppercase;
             border-top: solid 2px #222;
             padding: 17px 0 12px 0;
-            transform: translate(-10%, 0);
+            transform: translate3d(0, 30px, 0);
             opacity: 0;
 
             &.show-me {
@@ -793,9 +793,9 @@ Section Specific styles
     background-color: #fff;
 
     header {
-        overflow: hidden; 
+        overflow: hidden;
         opacity: 0;
-        transform: translate(50px,0); 
+        transform: translate(50px,0);
         transition-delay: 0.2s;
 
         &.show-me {
@@ -816,7 +816,7 @@ Section Specific styles
         display: block;
         margin: 0 auto 45px;
         opacity: 0;
-        transform: translate(0,40px); 
+        transform: translate(0,40px);
 
         &.show-me {
             opacity: 1;
@@ -845,6 +845,8 @@ Section Specific styles
 }
 
 #team {
+    transition-delay: 0.5s;
+    transition-duration: 0.7s;
     position: relative;
     background-color: #1B1B1B;
 
@@ -1040,7 +1042,13 @@ Section Specific styles
         top: 50%;
         left: 50%;
         width: 100%;
-        transform: translate(-50%, -50%);
+        opacity: 0;
+        transform: translate3d(-50%, 0, 0);
+
+        &.show-me {
+            opacity: 1;
+            transform: translate3d(-50%, -50%, 0);
+        }
     }
 }
 
@@ -1153,7 +1161,7 @@ Section Specific styles
         .letter-resting.last {
             -webkit-transform: translate(44%, -50%);
                     transform: translate(44%, -50%);
-        }        
+        }
     }
 
     // .hover-letters {
@@ -1172,6 +1180,12 @@ Section Specific styles
         background-color: #0e0e0e;
         z-index: 1;
 
+        transform: translate3d(-60%, -60%, 0);
+
+        &.show-me {
+            // opacity: 1;
+            transform: translate3d(-50%, -50%, 0);
+        }
     }
 
     .city-box-border {
@@ -1183,8 +1197,14 @@ Section Specific styles
         border: solid 2px #000;
         top: calc(50% + 6px);
         left: calc(50% + 6px);
-        -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
+        transform: translate3d(-40%, -40%, 0);
+
+
+
+        &.show-me {
+            // opacity: 1;
+            transform: translate3d(-50%, -50%, 0);
+        }
     }
 
     .hover-content {
@@ -1253,7 +1273,7 @@ Section Specific styles
             line-height: normal;
             visibility: hidden;
             // color: #000;
-        }        
+        }
     }
 }
 
@@ -1296,7 +1316,7 @@ Section Specific styles
             .hover-city {
                 -webkit-transform: translate(0, 0);
                         transform: translate(0, 0);
-            }            
+            }
         }
     }
 }
@@ -1314,27 +1334,35 @@ Section Specific styles
         top: 50%;
         left: 50%;
         width: 100%;
-        padding: 0 25px;
-        -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
+        padding: 0;
+        transform: translate3d(-50%, 0, 0);
+        opacity: 0;
         color: #2c2b2b;
         letter-spacing: 3.94px;
 
         &.highlighter {
-            span {
-                em {
-                    width: 0;
-                    transition: width .5s ease-in;
+            em {
+                width: 0;
+                transition: width .5s ease-in;
+                transition-delay: 0.7s;
 
-                    &.highlight {
-                        width: 100%;
-                    }
+                &.highlight {
+                    width: 100%;
                 }
             }
 
             .highlight-text {
                 position: relative;
                 z-index: 2;
+            }
+        }
+
+        &.show-me {
+            opacity: 1;
+            transform: translate3d(-50%, -50%, 0);
+
+            em {
+                width: 100%;
             }
         }
     }

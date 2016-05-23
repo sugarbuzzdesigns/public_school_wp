@@ -458,7 +458,7 @@ setTimeout(function(){
         	];
 
         	this.bindInViewWaypoints();
-        	this.bindOutOfViewWaypoints();    	
+        	this.bindOutOfViewWaypoints();
         },
         bindEvents: function() {
         	_this = this;
@@ -513,8 +513,8 @@ setTimeout(function(){
 			  	},
 				offset: function() {
 					// when the bottom of the element hits the bottom of the viewport
-					return Waypoint.viewportHeight() - $('.contact-butter-bar').height();
-				}			  	
+					return Waypoint.viewportHeight() - $('.contact-butter-bar').height() - 20;
+				}
 			});
         },
 
@@ -688,29 +688,5 @@ var PS = PS || {};
 
     $(function() {
         PS.TeamSlider.init();      
-    });
-})(jQuery);
-;var PS = PS || {};
-
-(function($) {
-    PS.Typer = {
-        init: function(){
-            console.log('init');
-            $('#jobs').on('in-view-down', function(){
-                $("#jobs h2 .highlight-text").typed({
-                    strings: ['join public school'],
-                    contentType: 'text',
-                    showCursor: false,
-                    typeSpeed: 100,
-                    callback: function(){
-                        $("#jobs h2 em").addClass('highlight');
-                    }
-                });              
-            });
-        }
-    }
-
-    $(function() {
-        PS.Typer.init();      
     });
 })(jQuery);

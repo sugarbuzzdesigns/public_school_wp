@@ -74,6 +74,26 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 @import "breakpoints/base";
 
 /*********************
+MOBILE iPhone 6 Size
+*********************/
+@media only screen and (min-width: 375px) {
+
+	// styles in 375up.scss
+	@import "breakpoints/375up";
+
+} // end of media query
+
+/*********************
+MOBILE iPhone 6+ Size
+*********************/
+@media only screen and (min-width: 414px) {
+
+	// styles in 414up.scss
+	@import "breakpoints/414up";
+
+} // end of media query
+
+/*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them

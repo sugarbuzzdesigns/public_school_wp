@@ -28,9 +28,7 @@ module.exports = function(grunt) {
 						'library/js/src/modules/highlighter.js',
 						'library/js/src/modules/contact-city.js',
 						'library/js/src/waypoints-setup.js',
-						'library/js/src/modules/slider.js',
-						'library/js/src/modules/typer.js'
-
+						'library/js/src/modules/slider.js'
 					],
 				dest: 'library/js/build/scripts.js',
 			}
@@ -76,7 +74,7 @@ module.exports = function(grunt) {
 				},
 				src: 'library/css/src/style.css'
 			}
-		},		
+		},
 		copy: {
 			css: {
 				files: [{

@@ -162,17 +162,17 @@ function bones_scripts_and_styles() {
 		// modernizr (without media query polyfill)
 		wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 		// register our version of jquery in the libs folder
-		wp_register_script( 'jquery', get_stylesheet_directory_uri() . '/library/js/libs/jquery-2.2.3.min.js', array(), '', true );		
+		wp_register_script( 'jquery', get_stylesheet_directory_uri() . '/library/js/libs/jquery-2.2.3.min.js', array(), '', true );
 		// Waypoints for section on screen detection
-		wp_register_script( 'waypoints', get_stylesheet_directory_uri() . '/library/js/libs/jquery.waypoints.min.js', array('jquery'), '', true );			
-		// bxslider 
+		wp_register_script( 'waypoints', get_stylesheet_directory_uri() . '/library/js/libs/jquery.waypoints.min.js', array('jquery'), '', true );
+		// bxslider
 		wp_register_script( 'bxslider', get_stylesheet_directory_uri() . '/library/js/libs/jquery.bxslider.min.js', array('jquery'), '', true );
 		// typed.js for adding typewriter like effects
-		wp_register_script( 'typed', get_stylesheet_directory_uri() . '/library/js/libs/typed.min.js', array('jquery'), '', true );				
+		wp_register_script( 'typed', get_stylesheet_directory_uri() . '/library/js/libs/typed.min.js', array('jquery'), '', true );
 		// register main stylesheet
 		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/'. $dir .'/style'. $ext .'.css', array(), '', 'all' );
 
-		wp_register_style( 'bxslider-css', get_stylesheet_directory_uri() . '/library/css/dist/bxslider.min.css', array(), '', 'all' );		
+		wp_register_style( 'bxslider-css', get_stylesheet_directory_uri() . '/library/css/dist/bxslider.min.css', array(), '', 'all' );
 
 		// ie-only style sheet
 		wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/'. $dir .'/ie'. $ext .'.css', array(), '' );
@@ -198,7 +198,6 @@ function bones_scripts_and_styles() {
 		and your site will load faster.
 		*/
 		wp_enqueue_script( 'bones-js' );
-
 	}
 }
 /*********************

@@ -10,7 +10,7 @@ var PS = PS || {};
         	];
 
         	this.bindInViewWaypoints();
-        	this.bindOutOfViewWaypoints();    	
+        	this.bindOutOfViewWaypoints();
         },
         bindEvents: function() {
         	_this = this;
@@ -65,8 +65,8 @@ var PS = PS || {};
 			  	},
 				offset: function() {
 					// when the bottom of the element hits the bottom of the viewport
-					return Waypoint.viewportHeight() - $('.contact-butter-bar').height();
-				}			  	
+					return Waypoint.viewportHeight() - $('.contact-butter-bar').height() - 20;
+				}
 			});
         },
 

@@ -73,7 +73,7 @@
 					<svg viewBox="65 33 277 389" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" preserveAspectRatio="xMinYMid">
 					    <polygon id="Fill-1" stroke="none" fill="#FEE430" fill-rule="evenodd" points="65 33 65 287.550943 201.405706 420.15546 203.197814 421.865115 340.772287 288.11014 341.331839 287.535125 341.379788 33"></polygon>
 					</svg>
-				</div>	
+				</div>
 
 				<div class="image-wrap scroll-waypoint waypoint-opacity">
 					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Bball.jpg);"></div>
@@ -84,7 +84,7 @@
 
 					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Headphones.jpg);"></div>
 					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Laptop.jpg);"></div>
-				</div>	
+				</div>
 			</div>
 		</section>
 
@@ -120,7 +120,7 @@
 			</div>
 		</section>
 
-		<section id="team">
+		<section id="team" class="scroll-waypoint waypoint-opacity">
 			<div class="team-slider-nav">
 			  <span id="slider-prev"></span><span id="slider-next"></span>
 			</div>
@@ -221,12 +221,12 @@
 	  		</nav>
 		</section>
 		<section id="contact-banner">
-			<h2>contact public school</h2>
+			<h2 class="scroll-waypoint">contact public school</h2>
 		</section>
 		<section class="full-height-mobile" id="contact">
 			<div class="atl city t-col-1of2 d-col-1of2">
-				<div class="city-box middle"></div>
-				<div class="city-box-border middle"></div>
+				<div class="city-box scroll-waypoint middle"></div>
+				<div class="city-box-border scroll-waypoint middle"></div>
 
 				<span class="letter-resting first">a</span>
 				<span class="letter-resting">t</span>
@@ -241,7 +241,7 @@
 								<p>
 									<span>Suite 7 Ponce City Market,</span>
 									<span>Atlanta GA, 30030</span>
-								</p>	
+								</p>
 							</li>
 							<li>
 								<span class="letter-hover">t</span>
@@ -256,8 +256,8 @@
 				</div>
 			</div>
 			<div class="la city t-col-1of2 d-col-1of2">
-				<div class="city-box middle"></div>
-				<div class="city-box-border middle"></div>
+				<div class="city-box scroll-waypoint middle"></div>
+				<div class="city-box-border scroll-waypoint middle"></div>
 
 				<span class="letter-resting first">l</span>
 				<span class="letter-resting last">a</span>
@@ -287,18 +287,18 @@
 
 		<section class="full-height-mobile" id="jobs">
 			<header>
-				<h2 class="centered highlighter">
-					<span><span class="highlight-text"><i style="visibility:hidden;">PLACEHOLDER</i></span><em></em></span>
+				<h2 class="centered highlighter scroll-waypoint">
+					<span><span class="highlight-text">join public school</span><em></em></span>
 				</h2>
 			</header>
 			<div class="jobs-info">
 				<div class="middle">
-					<div class="jobs-contact t-col-1of2 d-col-1of2">
+					<div class="jobs-contact t-col-1of2 d-col-1of2 scroll-waypoint waypoint-opacity">
 						<h3>join public school</h3>
 						<p>Send skillz to <a href="mailto:jobs@public-school.com">jobs@public-school.com</a></p>
 					</div>
 
-					<div class="jobs-open-roles t-col-1of2 d-col-1of2">
+					<div class="jobs-open-roles t-col-1of2 d-col-1of2 scroll-waypoint waypoint-opacity">
 						<h3>open roles</h3>
 						<ul>
 							<li>Associate Creative Director</li>

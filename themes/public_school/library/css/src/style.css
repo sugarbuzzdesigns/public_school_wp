@@ -2089,7 +2089,7 @@ Section Specific styles
   text-transform: uppercase;
   border-top: solid 2px #222;
   padding: 17px 0 12px 0;
-  transform: translate(-10%, 0);
+  transform: translate3d(0, 30px, 0);
   opacity: 0;
 }
 #services ul li.show-me {
@@ -2150,6 +2150,8 @@ Section Specific styles
 }
 
 #team {
+  transition-delay: 0.5s;
+  transition-duration: 0.7s;
   position: relative;
   background-color: #1B1B1B;
 }
@@ -2312,7 +2314,12 @@ Section Specific styles
   top: 50%;
   left: 50%;
   width: 100%;
-  transform: translate(-50%, -50%);
+  opacity: 0;
+  transform: translate3d(-50%, 0, 0);
+}
+#contact-banner h2.show-me {
+  opacity: 1;
+  transform: translate3d(-50%, -50%, 0);
 }
 
 #contact .city {
@@ -2401,6 +2408,10 @@ Section Specific styles
   height: 118px;
   background-color: #0e0e0e;
   z-index: 1;
+  transform: translate3d(-60%, -60%, 0);
+}
+#contact .city-box.show-me {
+  transform: translate3d(-50%, -50%, 0);
 }
 #contact .city-box-border {
   position: absolute;
@@ -2411,8 +2422,10 @@ Section Specific styles
   border: solid 2px #000;
   top: calc(50% + 6px);
   left: calc(50% + 6px);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate3d(-40%, -40%, 0);
+}
+#contact .city-box-border.show-me {
+  transform: translate3d(-50%, -50%, 0);
 }
 #contact .hover-content {
   position: absolute;
@@ -2515,22 +2528,30 @@ Section Specific styles
   top: 50%;
   left: 50%;
   width: 100%;
-  padding: 0 25px;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  padding: 0;
+  transform: translate3d(-50%, 0, 0);
+  opacity: 0;
   color: #2c2b2b;
   letter-spacing: 3.94px;
 }
-#jobs h2.highlighter span em {
+#jobs h2.highlighter em {
   width: 0;
   transition: width .5s ease-in;
+  transition-delay: 0.7s;
 }
-#jobs h2.highlighter span em.highlight {
+#jobs h2.highlighter em.highlight {
   width: 100%;
 }
 #jobs h2.highlighter .highlight-text {
   position: relative;
   z-index: 2;
+}
+#jobs h2.show-me {
+  opacity: 1;
+  transform: translate3d(-50%, -50%, 0);
+}
+#jobs h2.show-me em {
+  width: 100%;
 }
 #jobs .jobs-info {
   position: relative;
@@ -2577,6 +2598,99 @@ Section Specific styles
   margin-bottom: 0;
 }
 
+/*********************
+MOBILE iPhone 6 Size
+*********************/
+@media only screen and (min-width: 375px) {
+  /******************************************************************
+  Stylesheet: 375px and Up Stylesheet
+  ******************************************************************/
+}
+/*********************
+MOBILE iPhone 6+ Size
+*********************/
+@media only screen and (min-width: 414px) {
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: 481px and Up Stylesheet
+  
+  This stylesheet is loaded for larger devices. It's set to
+  481px because at 480px it would load on a landscaped iPhone.
+  This isn't ideal because then you would be loading all those
+  extra styles on that same mobile connection.
+  
+  A word of warning. This size COULD be a larger mobile device,
+  so you still want to keep it pretty light and simply expand
+  upon your base.scss styles.
+  
+  ******************************************************************/
+  /*
+  IMPORTANT NOTE ABOUT SASS 3.3 & UP
+  You can't use @extend within media queries
+  anymore, so just be aware that if you drop
+  them in here, they won't work.
+  */
+  /*********************
+  NAVIGATION STYLES
+  *********************/
+  /* .menu is clearfixed inside mixins.scss */
+  .menu {
+    /* end .menu ul */
+  }
+  .menu ul {
+    /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */
+  }
+  .menu ul li {
+    /*
+    plan your menus and drop-downs wisely.
+    */
+  }
+  .menu ul li a {
+    /*
+    you can use hover styles here even though this size
+    has the possibility of being a mobile device.
+    */
+  }
+
+  /* end .menu */
+  /*********************
+  POSTS & CONTENT STYLES
+  *********************/
+  /* entry content */
+  .entry-content {
+    /* at this larger size, we can start to align images */
+  }
+  .entry-content .alignleft, .entry-content img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left;
+  }
+  .entry-content .alignright, .entry-content img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+    float: right;
+  }
+  .entry-content .aligncenter, .entry-content img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+  }
+
+  /* end .entry-content */
+  /*********************
+  FOOTER STYLES
+  *********************/
+  /*
+  check your menus here. do they look good?
+  do they need tweaking?
+  */
+  /* end .footer-links */
+}
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
