@@ -452,6 +452,7 @@ Section Specific styles
 #team .team-slider .content p {
   width: 75%;
   text-align: center;
+  font-size: 14px;
 }
 #team .team-slider .content [data-nav-id="team-member-about"] {
   padding: 50px 0 0px;
@@ -714,6 +715,35 @@ Section Specific styles
 #passion p {
   width: 50%;
   margin: 0 auto 30px;
+}
+
+#team .team-slider-nav {
+  position: absolute;
+  width: 85%;
+  text-align: center;
+  z-index: 1;
+  top: 45px;
+  overflow: auto;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#team .team-slider .content p {
+  font-size: 19px;
+  line-height: 31px;
+  width: 62%;
+}
+#team .team-slider .content .inner li {
+  font-size: 18px;
+  line-height: 27px;
+}
+#team .team-slider .content [data-nav-id="team-member-about"] {
+  padding: 20% 0 0px;
+}
+#team .team-slider .content [data-nav-id="team-member-pro-experience"] {
+  padding: 31% 0 0;
+}
+#team .team-slider .content [data-nav-id="team-member-side-hustle"] {
+  padding: 41% 0 0;
 }
 
 #contact-banner h2 {

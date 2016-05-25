@@ -173,6 +173,96 @@ Section Specific styles
 	}
 }
 
+#team {
+    .team-slider-nav {
+	    position: absolute;
+	    width: 85%;
+	    text-align: center;
+	    z-index: 1;
+	    top: 45px;
+	    overflow: auto;
+	    left: 50%;
+	    transform: translate(-50%, 0);
+	}
+
+	.team-slider {
+
+		header {
+
+		}
+
+		.team-member-name {
+
+		}
+
+		.job-title {
+
+		}
+
+		.team-member-photo {
+
+		}
+
+		.content {
+
+			img {
+
+			}
+
+			p {
+				font-size: 19px;
+				line-height: 31px;
+				width: 62%;
+			}
+
+            .inner {
+
+                & + .inner {
+
+                }
+
+                li {
+					font-size: 18px;
+					line-height: 27px;
+                }
+            }
+
+            [data-nav-id="team-member-about"] {
+            	padding: 20% 0 0px;
+            }
+
+            [data-nav-id="team-member-pro-experience"] {
+    			padding: 31% 0 0;
+
+                .copy {
+
+                    h4 {
+
+                    }
+                }
+            }
+
+            [data-nav-id="team-member-side-hustle"] {
+    			padding: 41% 0 0;
+
+    			ul {
+    				li {
+
+    				}
+    			}
+
+                p {
+
+                }
+            }
+		}
+	}
+
+    .content-nav {
+
+    }
+}
+
 #contact-banner {
     h2 {
         font-size: 18px;
