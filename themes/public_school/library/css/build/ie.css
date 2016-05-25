@@ -454,6 +454,9 @@ Section Specific styles
   text-align: center;
   font-size: 14px;
 }
+#team .team-slider .content .inner li {
+  margin-bottom: 6px;
+}
 #team .team-slider .content [data-nav-id="team-member-about"] {
   padding: 50px 0 0px;
 }
@@ -734,7 +737,8 @@ Section Specific styles
 }
 #team .team-slider .content .inner li {
   font-size: 18px;
-  line-height: 27px;
+  line-height: normal;
+  margin-bottom: 8px;
 }
 #team .team-slider .content [data-nav-id="team-member-about"] {
   padding: 20% 0 0px;
@@ -783,7 +787,7 @@ Section Specific styles
   top: 58%;
 }
 #contact .city .contact-details {
-  width: 70%;
+  width: 90%;
 }
 #contact .city .contact-details li {
   font-size: 1.250em;

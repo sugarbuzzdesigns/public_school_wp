@@ -2270,7 +2270,8 @@ Section Specific styles
 #team .team-slider .content .inner li {
   font-family: 'GaramondFBText-Regular';
   font-size: 13px;
-  line-height: 22px;
+  line-height: normal;
+  margin-bottom: 5px;
   letter-spacing: 0.65px;
 }
 #team .team-slider .content [data-nav-id="team-member-about"] {
@@ -3018,6 +3019,9 @@ you can add resource intensive styles.
     text-align: center;
     font-size: 14px;
   }
+  #team .team-slider .content .inner li {
+    margin-bottom: 6px;
+  }
   #team .team-slider .content [data-nav-id="team-member-about"] {
     padding: 50px 0 0px;
   }
@@ -3305,7 +3309,8 @@ you can add resource intensive styles.
   }
   #team .team-slider .content .inner li {
     font-size: 18px;
-    line-height: 27px;
+    line-height: normal;
+    margin-bottom: 8px;
   }
   #team .team-slider .content [data-nav-id="team-member-about"] {
     padding: 20% 0 0px;
@@ -3354,7 +3359,7 @@ you can add resource intensive styles.
     top: 58%;
   }
   #contact .city .contact-details {
-    width: 70%;
+    width: 90%;
   }
   #contact .city .contact-details li {
     font-size: 1.250em;

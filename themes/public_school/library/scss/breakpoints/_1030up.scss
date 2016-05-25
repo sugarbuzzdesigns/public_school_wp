@@ -223,7 +223,8 @@ Section Specific styles
 
                 li {
 					font-size: 18px;
-					line-height: 27px;
+					line-height: normal;
+					margin-bottom: 8px;
                 }
             }
 
@@ -323,7 +324,7 @@ Section Specific styles
 		}
 
 		.contact-details {
-			width: 70%;
+			width: 90%;
 
 			li {
 				font-size: 1.250em;

@@ -994,7 +994,8 @@ Section Specific styles
                 li {
                     font-family: 'GaramondFBText-Regular';
                     font-size: 13px;
-                    line-height: 22px;
+                    line-height: normal;
+                    margin-bottom: 5px;
                     letter-spacing: 0.65px;
                 }
             }
