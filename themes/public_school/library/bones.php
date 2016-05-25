@@ -171,9 +171,8 @@ function bones_scripts_and_styles() {
 		wp_register_script( 'typed', get_stylesheet_directory_uri() . '/library/js/libs/typed.min.js', array('jquery'), '', true );
 		// register main stylesheet
 		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/'. $dir .'/style'. $ext .'.css', array(), '', 'all' );
-
+		// css for bx slider
 		wp_register_style( 'bxslider-css', get_stylesheet_directory_uri() . '/library/css/dist/bxslider.min.css', array(), '', 'all' );
-
 		// ie-only style sheet
 		wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/'. $dir .'/ie'. $ext .'.css', array(), '' );
 

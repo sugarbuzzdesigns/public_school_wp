@@ -1,3 +1,34 @@
+/**
+ * transition end event listener
+ *
+ */
+
+var transEndEventNames = {
+  "WebkitTransition" : "webkitTransitionEnd",
+  "MozTransition"    : "transitionend",
+  "OTransition"      : "oTransitionEnd",
+  "msTransition"     : "MSTransitionEnd",
+  "transition"       : "transitionend"
+},
+transEndEventName = transEndEventNames[ Modernizr.prefixed('transition') ];
+
+/**
+ * animation iteration event listener
+ *
+ */
+
+var animIterationEventNames = {
+  "WebkitAnimation" : "webkitAnimationIteration",
+  "MozAnimation"    : "animationiteration",
+  "OAnimation"      : "oAnimationIteration",
+  "msAnimation"     : "MSAnimationIteration",
+  "animation"       : "animationiteration"
+},
+animIterationEventName = animIterationEventNames[ Modernizr.prefixed('animation') ];
+// document.querySelector("#el").addEventListener( animIterationEventName, function() {
+//   // code here runs after each animation iteration of #el
+// });
+
 /*
  * Bones Scripts File
  * Author: Eddie Machado
@@ -83,9 +114,26 @@ $(window).on('resize', function(){
     }, 500, "some unique string");
 });
 
+$(function(){
+    $('#loader').css({backgroundImage: 'url('+ templateUrl +'/library/images/PublicSchool_B.2.gif)'});
+});
+
+
 setTimeout(function(){
-    $('#loader').fadeOut();
+    $('#loader').css({
+        opacity: 0
+    });
 }, 2400);
+
+var loader = document.getElementById("loader");
+loader.addEventListener( transEndEventName, function() {
+    console.log('done transitioing');
+    $('#loader').trigger('faded-out');
+}, false);
+
+$(function(){
+    $('#header-logo img').attr('src', $('#header-logo img').data('src')).show();
+});
 ;var PS = PS || {};
 
 (function($) {
@@ -105,14 +153,14 @@ setTimeout(function(){
             this.bindEvents();
             this.initPaper();
 
-            if (this.mobile && WURFL.form_factor != 'Tablet') {
+            if (Waypoint.viewportWidth() >= 768) {
                 this.runExample();
             }
         },
         bindEvents: function() {
             var _this = this;
 
-            if (_this.mobile && WURFL.form_factor != 'Tablet') {
+            if (WURFL.is_mobile) {
                 $('mark').click(function() {
                     if ($(this).is('.show-phrase')) {
                         _this.resetPhrase(this);
@@ -172,7 +220,7 @@ setTimeout(function(){
                 });
             });
 
-            if (this.mobile && WURFL.form_factor != 'Tablet') {
+            if (Waypoint.viewportWidth() < 768) {
                 $('.paper').css({
                     top: this.winHeight - $('.paper').outerHeight()
                 });
@@ -196,7 +244,7 @@ setTimeout(function(){
                     _this.$paper.removeClass('example');
                 }, 500);
             }, 1000);
-        },  
+        },
         togglePaper: function(){
             if($('.paper').hasClass('show-me')){
                 $('.toggle-paper').removeClass('open');
@@ -206,7 +254,7 @@ setTimeout(function(){
 
                 this.$paperWrap.css({
                     'top': this.winHeight - $('.paper').outerHeight()
-                });      
+                });
             } else {
                 $('.toggle-paper').addClass('open');
                 $('.paper').addClass('show-me');
@@ -214,8 +262,8 @@ setTimeout(function(){
                 $('section').not('#header').hide();
 
                 this.$paperWrap.css({
-                    'top': $('.highlighter-sessions-toolbar').offset().top + $('.highlighter-sessions-toolbar').height() 
-                });            
+                    'top': $('.highlighter-sessions-toolbar').offset().top + $('.highlighter-sessions-toolbar').height()
+                });
 
                 $('body, html').animate({
                     scrollTop: $('.highlighter-sessions-toolbar').offset().top
@@ -267,7 +315,7 @@ setTimeout(function(){
     };
 
     $(function() {
-        PS.Highlighter.init();      
+        PS.Highlighter.init();
     });
 })(jQuery);
 ;var PS = PS || {};
@@ -306,7 +354,7 @@ setTimeout(function(){
                     //     }, 2000);
                     // }
                 });
-            } 
+            }
 
             $('.city').hover(function(){
                 if($(this).hasClass('hovered')){
@@ -338,7 +386,7 @@ setTimeout(function(){
                         left: 0
                     };
 
-                $(letter).attr('id', 'rest-letter-' + i);    
+                $(letter).attr('id', 'rest-letter-' + i);
 
                 pos.top = $(letter).position().top;
                 pos.left = $(letter).position().left;
@@ -378,7 +426,7 @@ setTimeout(function(){
 
                 $('.letter-copy').eq(i).data('full-position-hover', pos);
              });
-        },        
+        },
         createRestingLetters: function(){
             var _this = this,
                 pos;
@@ -391,7 +439,7 @@ setTimeout(function(){
                     .appendTo($(letter).closest('.city'));
 
                 _this.$lettersCopy.push($newLetter);
-            });        
+            });
         },
         setInitialLetterPosition: function(){
             var posObj, _this = this;
@@ -410,6 +458,8 @@ setTimeout(function(){
                 top: locObj.top,
                 left: locObj.left
             });
+
+            $letter.addClass('loaded');
         },
         resetLettersOnResize: function(){
             this.setOrigHoverLetters();
@@ -587,7 +637,13 @@ setTimeout(function(){
     };
 
     $(function() {
-        PS.WaypointSetup.init();
+	    if(Waypoint.viewportWidth() >= 768){
+	   		$('#loader').on('faded-out', function(){
+	   			PS.WaypointSetup.init();
+	   		});
+	    } else {
+	    	PS.WaypointSetup.init();
+	    }
     });
 })(jQuery);
 ;// Homepage Slider for Team Members

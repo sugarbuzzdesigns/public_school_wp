@@ -34,7 +34,7 @@ var PS = PS || {};
                     //     }, 2000);
                     // }
                 });
-            } 
+            }
 
             $('.city').hover(function(){
                 if($(this).hasClass('hovered')){
@@ -66,7 +66,7 @@ var PS = PS || {};
                         left: 0
                     };
 
-                $(letter).attr('id', 'rest-letter-' + i);    
+                $(letter).attr('id', 'rest-letter-' + i);
 
                 pos.top = $(letter).position().top;
                 pos.left = $(letter).position().left;
@@ -106,7 +106,7 @@ var PS = PS || {};
 
                 $('.letter-copy').eq(i).data('full-position-hover', pos);
              });
-        },        
+        },
         createRestingLetters: function(){
             var _this = this,
                 pos;
@@ -119,7 +119,7 @@ var PS = PS || {};
                     .appendTo($(letter).closest('.city'));
 
                 _this.$lettersCopy.push($newLetter);
-            });        
+            });
         },
         setInitialLetterPosition: function(){
             var posObj, _this = this;
@@ -138,6 +138,8 @@ var PS = PS || {};
                 top: locObj.top,
                 left: locObj.left
             });
+
+            $letter.addClass('loaded');
         },
         resetLettersOnResize: function(){
             this.setOrigHoverLetters();

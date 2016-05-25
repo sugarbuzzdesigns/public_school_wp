@@ -139,6 +139,12 @@ var PS = PS || {};
     };
 
     $(function() {
-        PS.WaypointSetup.init();
+	    if(Waypoint.viewportWidth() >= 768){
+	   		$('#loader').on('faded-out', function(){
+	   			PS.WaypointSetup.init();
+	   		});
+	    } else {
+	    	PS.WaypointSetup.init();
+	    }
     });
 })(jQuery);

@@ -17,14 +17,14 @@ var PS = PS || {};
             this.bindEvents();
             this.initPaper();
 
-            if (this.mobile && WURFL.form_factor != 'Tablet') {
+            if (Waypoint.viewportWidth() >= 768) {
                 this.runExample();
             }
         },
         bindEvents: function() {
             var _this = this;
 
-            if (_this.mobile && WURFL.form_factor != 'Tablet') {
+            if (WURFL.is_mobile) {
                 $('mark').click(function() {
                     if ($(this).is('.show-phrase')) {
                         _this.resetPhrase(this);
@@ -84,7 +84,7 @@ var PS = PS || {};
                 });
             });
 
-            if (this.mobile && WURFL.form_factor != 'Tablet') {
+            if (Waypoint.viewportWidth() < 768) {
                 $('.paper').css({
                     top: this.winHeight - $('.paper').outerHeight()
                 });
@@ -108,7 +108,7 @@ var PS = PS || {};
                     _this.$paper.removeClass('example');
                 }, 500);
             }, 1000);
-        },  
+        },
         togglePaper: function(){
             if($('.paper').hasClass('show-me')){
                 $('.toggle-paper').removeClass('open');
@@ -118,7 +118,7 @@ var PS = PS || {};
 
                 this.$paperWrap.css({
                     'top': this.winHeight - $('.paper').outerHeight()
-                });      
+                });
             } else {
                 $('.toggle-paper').addClass('open');
                 $('.paper').addClass('show-me');
@@ -126,8 +126,8 @@ var PS = PS || {};
                 $('section').not('#header').hide();
 
                 this.$paperWrap.css({
-                    'top': $('.highlighter-sessions-toolbar').offset().top + $('.highlighter-sessions-toolbar').height() 
-                });            
+                    'top': $('.highlighter-sessions-toolbar').offset().top + $('.highlighter-sessions-toolbar').height()
+                });
 
                 $('body, html').animate({
                     scrollTop: $('.highlighter-sessions-toolbar').offset().top
@@ -179,6 +179,6 @@ var PS = PS || {};
     };
 
     $(function() {
-        PS.Highlighter.init();      
+        PS.Highlighter.init();
     });
 })(jQuery);

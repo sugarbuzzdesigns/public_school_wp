@@ -1,3 +1,34 @@
+/**
+ * transition end event listener
+ *
+ */
+
+var transEndEventNames = {
+  "WebkitTransition" : "webkitTransitionEnd",
+  "MozTransition"    : "transitionend",
+  "OTransition"      : "oTransitionEnd",
+  "msTransition"     : "MSTransitionEnd",
+  "transition"       : "transitionend"
+},
+transEndEventName = transEndEventNames[ Modernizr.prefixed('transition') ];
+
+/**
+ * animation iteration event listener
+ *
+ */
+
+var animIterationEventNames = {
+  "WebkitAnimation" : "webkitAnimationIteration",
+  "MozAnimation"    : "animationiteration",
+  "OAnimation"      : "oAnimationIteration",
+  "msAnimation"     : "MSAnimationIteration",
+  "animation"       : "animationiteration"
+},
+animIterationEventName = animIterationEventNames[ Modernizr.prefixed('animation') ];
+// document.querySelector("#el").addEventListener( animIterationEventName, function() {
+//   // code here runs after each animation iteration of #el
+// });
+
 /*
  * Bones Scripts File
  * Author: Eddie Machado
@@ -83,6 +114,23 @@ $(window).on('resize', function(){
     }, 500, "some unique string");
 });
 
+$(function(){
+    $('#loader').css({backgroundImage: 'url('+ templateUrl +'/library/images/PublicSchool_B.2.gif)'});
+});
+
+
 setTimeout(function(){
-    $('#loader').fadeOut();
+    $('#loader').css({
+        opacity: 0
+    });
 }, 2400);
+
+var loader = document.getElementById("loader");
+loader.addEventListener( transEndEventName, function() {
+    console.log('done transitioing');
+    $('#loader').trigger('faded-out');
+}, false);
+
+$(function(){
+    $('#header-logo img').attr('src', $('#header-logo img').data('src')).show();
+});

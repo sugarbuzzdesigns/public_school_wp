@@ -40,14 +40,14 @@ Site Loader
 ***************************/
 #loader {
     position: fixed;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(../../images/PublicSchool_B.2.gif);
     background-color: #080808;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,6 +114,11 @@ Icons
             background-repeat: no-repeat;
             background-position: 0 0;
             background-size: 270px 19px;
+            transition: opacity 0.3s;
+
+            &:hover {
+                opacity: 0.7;
+            }
 
             &.spotify {
                 background-position: 0 0;
@@ -328,6 +333,7 @@ HEADER STYLES
 
     img {
         transform: scale(1.1);
+        display: none;
     }
 }
 
@@ -718,6 +724,10 @@ Section Specific styles
             width: 50%;
             background-size: cover;
             float: left;
+
+            &:nth-child(n+7) {
+                display: none;
+            }
         }
     }
 
@@ -735,11 +745,11 @@ Section Specific styles
         position: absolute;
         top: 50%;
         left: 50%;
-        -webkit-transform: translate(-50%,-50%);
-                transform: translate(-50%,-50%);
+        width: 75%;
+        transform: translate3d(-50%,-50%,0);
 
         svg {
-            width: 275px;
+            width: 100%;
         }
     }
 }
@@ -795,7 +805,7 @@ Section Specific styles
     header {
         overflow: hidden;
         opacity: 0;
-        transform: translate(50px,0);
+        transform: translate(-50px,0);
         transition-delay: 0.2s;
 
         &.show-me {
@@ -922,7 +932,33 @@ Section Specific styles
         }
 
         .team-member-photo {
+            position: relative;
+            cursor: pointer;
 
+            img {
+                transition: opacity 0.2s ease-out;
+            }
+
+            .resting {
+
+            }
+
+            .hover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+
+            &:hover {
+                .resting {
+                    // opacity: 0;
+                }
+
+                .hover {
+                    opacity: 1;
+                }
+            }
         }
 
         .content {
@@ -1087,6 +1123,14 @@ Section Specific styles
         height: 126px;
     }
 
+    .letter-copy {
+        opacity: 0;
+
+        &.loaded {
+            opacity: 1;
+        }
+    }
+
     .letter-copy,
     .letter-copy-hover {
         font-family: 'octin_collegeregular';
@@ -1095,7 +1139,7 @@ Section Specific styles
         margin: 0;
         display: block;
         z-index: 2;
-        transition: left 0.5s, top 0.5s, font-size 0.5s;
+        transition: left 0.5s, top 0.5s, font-size 0.5s, opacity 0.5s;
     }
 
     .letter-resting {

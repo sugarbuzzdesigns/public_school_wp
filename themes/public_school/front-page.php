@@ -1,10 +1,13 @@
 <?php get_header(); ?>
+	<script type="text/javascript">
+	var templateUrl = '<?= get_bloginfo("template_url"); ?>';
+	</script>
 
 	<div id="container">
 
 		<section class="header full-height-mobile" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 			<a id="header-logo" href="<?php echo home_url(); ?>" rel="nofollow">
-				<img class="centered" height="34" width="236" src="<?php bloginfo('template_url'); ?>/library/images/logos/PublicSchool_B.2_trimmed.gif" />
+				<img class="centered" height="34" width="236" data-src="<?php bloginfo('template_url'); ?>/library/images/logos/PublicSchool_B.2_trimmed.gif"/>
 			</a>
 			<div class="cover"></div>
 			<div class="paper-wrap">
@@ -76,14 +79,23 @@
 				</div>
 
 				<div class="image-wrap scroll-waypoint waypoint-opacity">
-					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Bball.jpg);"></div>
-					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Beltline.jpg);"></div>
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/new/B_Records.jpg);"></div>
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/new/C_Headphones.jpg);"></div>
 
-					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Camera-Lens.jpg);"></div>
-					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Chair.jpg);"></div>
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/new/C_MeganHuntz.jpg);"></div>
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/new/H_Chair.jpg);"></div>
 
-					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Headphones.jpg);"></div>
-					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/Laptop.jpg);"></div>
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/new/I_Pop.jpg);"></div>
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/new/L_Laptop.jpg);"></div>
+
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/new/L_Skate.jpg);"></div>
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/new/O_Bball.jpg);"></div>
+
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/new/O_Jeremiah.jpg);"></div>
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/new/P_PCM.jpg);"></div>
+
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/new/S_Shoes.jpg);"></div>
+					<div class="ig-image m-1of2" style="background-image:url(<?php bloginfo('template_url'); ?>/library/images/ig/new/U_Maude.jpg);"></div>
 				</div>
 			</div>
 		</section>
@@ -125,17 +137,18 @@
 			  <span id="slider-prev"></span><span id="slider-next"></span>
 			</div>
 			<ul class="team-slider">
-			  	<li class="team-member" id="matt-berger">
+			  	<li class="team-member" id="ariana">
 				  	<header>
-				  		<h4 class="team-member-name">Becky</h4>
+				  		<h4 class="team-member-name">Ariana</h4>
 				  		<p class="job-title">Creative Director</p>
 				  	</header>
 				  	<div class="team-member-photo">
-				  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/becky-resting.jpg" alt="">
+				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/01_Arianna.jpg" alt="">
+				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/01_Arianna_hover.jpg" alt="">
 				  	</div>
 				  	<div class="content">
 				  		<div class="inner" data-nav-id="team-member-about">
-					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/matt-berger-type.png" atl="">
+					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/All-Walks.png" atl="">
 					  		<div class="copy">
 					  			<p>Once had to pitch an idea to a creative director during a ride to LaGuardia airport. The comical part: He wasn’t even traveling and had to hail a
 								cab back to the ad agency in Manhattan.</p>
@@ -168,17 +181,62 @@
 						</div>
 				  	</div>
 			  	</li>
-			  	<li class="team-member" id="arianna">
+			  	<li class="team-member" id="becky">
 				  	<header>
-				  		<h4 class="team-member-name">Arianna</h4>
+				  		<h4 class="team-member-name">Becky</h4>
 				  		<p class="job-title">Some Title</p>
 				  	</header>
 				  	<div class="team-member-photo">
-				  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/arianna-resting.jpg" alt="">
+				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/02_Becky.jpg" alt="">
+				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/02_Becky_hover.jpg" alt="">
 				  	</div>
 				  	<div class="content">
 				  		<div class="inner" data-nav-id="team-member-about">
-					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/matt-berger-type.png" atl="">
+					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Always-Student.png" atl="">
+					  		<div class="copy">
+					  			<p>Once had to pitch an idea to a creative director during a ride to LaGuardia airport. The comical part: He wasn’t even traveling and had to hail a
+								cab back to the ad agency in Manhattan.</p>
+					  		</div>
+						</div>
+				  		<div class="inner" data-nav-id="team-member-pro-experience">
+					  		<div class="copy">
+					  			<h4>Previous Clients</h4>
+					  			<ul class="m-1of2 t-1of2 d-1of2">
+									<li>Turner Network</li>
+									<li>Coca-Cola</li>
+									<li>Red Bull</li>
+									<li>XM Satellite Radio</li>
+									<li>Baskin Robbins</li>
+									<li>Greenlaw.org</li>
+									<li>Reebok</li>
+								</ul>
+
+								<ul class="m-1of2 t-1of2 d-1of2">
+									<li>The Macallan</li>
+									<li>Toyota</li>
+									<li>Mercedes-Benz</li>
+								</ul>
+					  		</div>
+						</div>
+				  		<div class="inner" data-nav-id="team-member-side-hustle">
+					  		<div class="copy">
+					  			<p>Once had to pitch an idea to a creative director during a ride to LaGuardia airport. The comical part: He wasn’t even traveling and had to hail a cab back to the ad agency in Manhattan.</p>
+					  		</div>
+						</div>
+				  	</div>
+			  	</li>
+			  	<li class="team-member" id="lindsay">
+				  	<header>
+				  		<h4 class="team-member-name">Lindsay</h4>
+				  		<p class="job-title">Some Title</p>
+				  	</header>
+				  	<div class="team-member-photo">
+				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/03_Lindsay.jpg" alt="">
+				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/03_Lindsay_hover.jpg" alt="">
+				  	</div>
+				  	<div class="content">
+				  		<div class="inner" data-nav-id="team-member-about">
+					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/be-present.png" atl="">
 					  		<div class="copy">
 					  			<p>Once had to pitch an idea to a creative director during a ride to LaGuardia airport. The comical part: He wasn’t even traveling and had to hail a
 								cab back to the ad agency in Manhattan.</p>
@@ -313,7 +371,7 @@
 		<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 			<div id="inner-footer" class="wrap cf">
-				<img class="centered full-width" id="footer-logo" src="<?php bloginfo('template_url'); ?>/library/images/logos/C+C_YellowWhite_trimmed_web.gif" />
+				<img class="centered full-width" id="footer-logo" src="<?php bloginfo('template_url'); ?>/library/images/logos/neon-flicker_web.gif" />
 
 				<div class="footer-bottom">
 					<div class="footer-contact d-col-1of2">

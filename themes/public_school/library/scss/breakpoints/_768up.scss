@@ -4,8 +4,17 @@ Stylesheet: Tablet & Small Desktop Stylesheet
 
 ******************************************************************/
 /**************************
+Site Loader
+***************************/
+#loader {
+	display: block;
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+
+/**************************
 Coloumns
-***************************/		
+***************************/
 .t-col-1of2 {
 	width: 50%;
 	float: left;
@@ -21,7 +30,7 @@ h2, .h2 {
 
 /**************************
 Mobile Contact Butter Bar
-***************************/		
+***************************/
 .contact-butter-bar {
 	display: none;
 }
@@ -109,24 +118,29 @@ Section Specific styles
 			letter-spacing: 2px;
 		}
 	}
-	
+
 	.image-grid {
 		overflow: hidden;
 
         .ig-image {
-            padding-top: calc(100% / 3);
-            height: calc(100% / 3);
-            width: calc(100% / 3);
+            padding-top: calc(100%/3);
+            width: calc(100%/3);
             background-size: cover;
             float: left;
-        }	
+
+            &:nth-child(n+7) {
+                display: none;
+            }
+        }
 
 		.svg {
+			width: 39%;
+
 		    svg {
-		        width: 300px;
+
 		    }
-		}        
-	}	
+		}
+	}
 }
 
 #services {
@@ -140,7 +154,7 @@ Section Specific styles
             letter-spacing: 4.39px;
             padding: 21px 0 15px 0;
         }
-    }	
+    }
 }
 
 #passion {
@@ -174,7 +188,7 @@ Section Specific styles
 	}
 
 	.copy {
-        padding: 0 0 0 12%;        
+        padding: 0 0 0 12%;
 		p {
 			width: 70%;
 			font-size: 1em;
@@ -195,9 +209,9 @@ Section Specific styles
 	    overflow: auto;
 	    left: 50%;
 	    transform: translate(-50%, 0);
-	}	
+	}
 
-	.team-slider {	
+	.team-slider {
 
 		header {
 
@@ -218,8 +232,8 @@ Section Specific styles
 
 		.content {
 			width: 50%;
-			float: left;			
-			
+			float: left;
+
 			img {
 
 			}
@@ -245,9 +259,9 @@ Section Specific styles
 
             [data-nav-id="team-member-side-hustle"] {
     			padding: 110px 0 0;
-                
+
                 p {
-                
+
                 }
             }
 
@@ -269,7 +283,7 @@ Section Specific styles
 		position: absolute;
 		bottom: 0;
 		right: 0;
-    }    
+    }
 }
 
 #contact-banner {
@@ -284,12 +298,12 @@ Section Specific styles
 	.city {
 		width: 50%;
     	padding: 45% 0 0 0;
-    	
+
 	    .city-box {
 	        width: 96px;
-	        height: 96px;	
+	        height: 96px;
 	    }
-	    
+
 	    .city-box-border {
 	        position: absolute;
 	        display: block;
@@ -297,7 +311,7 @@ Section Specific styles
 	        width: 96px;
 	        height: 96px;
 	        border: solid 2px #000;
-	    }	    
+	    }
 
 		.city-box-wrap {
 			margin: 0 auto;
@@ -310,7 +324,7 @@ Section Specific styles
 	        	position: absolute;
 	        	top: 50%;
 	        	left: 50%;
-				transform: translate(-50%, -50%);			
+				transform: translate(-50%, -50%);
 			}
 		}
 
@@ -322,7 +336,7 @@ Section Specific styles
 			.letter-copy {
 				font-size: 1.688em;
 			}
-		}		
+		}
 	}
 
 	.letter-resting,
@@ -347,7 +361,7 @@ Section Specific styles
 			h3 {
 				font-size: 1.250em;
 				letter-spacing: 2.58px;
-			}			
+			}
 		}
 
 		.jobs-open-roles {
@@ -355,27 +369,31 @@ Section Specific styles
 
 			h3 {
 				font-size: 1.250em;
-				letter-spacing: 2.58px;	
+				letter-spacing: 2.58px;
 			}
 		}
 
 		p {
 			font-size: 1em;
 			letter-spacing: 0.89px;
-		}		
+		}
 	}
 
 	h2 {
 		font-size: 1.688em;
 		letter-spacing: 4.26px;
 		position: static;
-		transform: translate(0,0);
+		transform: translate3d(0,50%,0);
 		padding-top: 90px;
 		padding-bottom: 80px;
 
+		&.show-me {
+			transform: translate3d(0,0,0);
+		}
+
 		br {
 			display: none;
-		}		
+		}
 
 		span {
 			display: inline;

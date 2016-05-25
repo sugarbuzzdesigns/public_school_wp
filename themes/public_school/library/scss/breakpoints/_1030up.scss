@@ -18,7 +18,7 @@ Site Loader
 
 /**************************
 Icons
-***************************/		
+***************************/
 i.address,
 i.email,
 i.phone {
@@ -39,7 +39,7 @@ i.phone {
 }
 
 .social {
-    li {	
+    li {
         margin-right: 13%;
 
 		a {
@@ -64,7 +64,7 @@ i.phone {
 
 	        &.linkedin {
 	            background-position: -338px 0;
-	        }	        
+	        }
 		}
     }
 }
@@ -79,7 +79,7 @@ Section Specific styles
         font-size: 13px;
         margin-top: 100px;
         margin-bottom: 100px;
-    }    
+    }
 }
 
 /**************************
@@ -113,26 +113,35 @@ Section Specific styles
 
 #instagram {
 	header {
-		padding: 45px 0 37px; 
+		padding: 45px 0 37px;
 	}
 
 	.image-grid {
 		overflow: hidden;
 
         .ig-image {
-            // padding-top: calc(100% / 3);
-            // height: calc(100% / 3);
-            // width: calc(100% / 3);
-            // background-size: cover;
-            // float: left;
-        }	
+            padding-top: 20%;
+            width: 20%;
+            background-size: cover;
+            float: left;
+
+            &:nth-child(n+7) {
+                display: block;
+            }
+
+            &:nth-child(n+11) {
+                display: none;
+            }
+        }
 
 		.svg {
+			width: 24%;
+
 		    svg {
-		        width: 400px;
+
 		    }
-		}        	
-	}		
+		}
+	}
 }
 
 #passion {
@@ -147,8 +156,8 @@ Section Specific styles
 			left: -5px;
 			height: 8px;
 		    top: 16px;
-		    width: 290px;			
-		}	
+		    width: 290px;
+		}
 	}
 
 	.image-wrap {
@@ -193,17 +202,17 @@ Section Specific styles
 		    position: absolute;
 		    top: 50%;
 		    left: 50%;
-		    transform: translate(-50%, -50%);	    		
+		    transform: translate(-50%, -50%);
     	}
-		
+
 		.city-box {
 			width: 179px;
-			height: 179px;		
+			height: 179px;
 		}
 
 		.city-box-border {
 			width: 179px;
-			height: 179px;		
+			height: 179px;
 			border: solid 3px #000;
 		}
 
@@ -240,7 +249,7 @@ Section Specific styles
 			.letter-copy {
 				font-size: 2.625em;
 			}
-		}		
+		}
 	}
 
 	.letter-resting,
@@ -257,11 +266,11 @@ Section Specific styles
 		padding-bottom: 180px;
 
 		span {
-			em {			
+			em {
 				top: 16px;
 				height: 8px;
 			}
-		}	
+		}
 	}
 
 	.jobs-info {
@@ -273,7 +282,7 @@ Section Specific styles
 		.jobs-contact {
 			h3 {
 				font-size: 1.500em;
-				letter-spacing: 3.1px;			
+				letter-spacing: 3.1px;
 			}
 		}
 
@@ -284,7 +293,7 @@ Section Specific styles
 		.jobs-open-roles {
 			h3	{
 				font-size: 1.500em;
-				letter-spacing: 3.1px;		
+				letter-spacing: 3.1px;
 			}
 
 			ul {
