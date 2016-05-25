@@ -637,13 +637,13 @@ $(function(){
     };
 
     $(function() {
-	    // if(Waypoint.viewportWidth() >= 768){
-	   	// 	$('#loader').on('faded-out', function(){
-	   	// 		PS.WaypointSetup.init();
-	   	// 	});
-	    // } else {
+	    if(Waypoint.viewportWidth() >= 768){
+	   		$('#loader').on('faded-out', function(){
+	   			PS.WaypointSetup.init();
+	   		});
+	    } else {
 	    	PS.WaypointSetup.init();
-	    // }
+	    }
     });
 })(jQuery);
 ;// Homepage Slider for Team Members
