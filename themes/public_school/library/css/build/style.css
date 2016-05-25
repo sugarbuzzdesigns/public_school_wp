@@ -1723,6 +1723,7 @@ FOOTER STYLES
 .footer .footer-contact a {
   text-decoration: none;
   color: #fff;
+  font-size: 18px;
 }
 
 /**************************
@@ -2242,7 +2243,6 @@ Section Specific styles
 }
 #team .team-slider .content {
   position: relative;
-  height: 365px;
 }
 #team .team-slider .content img {
   display: block;
@@ -2255,9 +2255,11 @@ Section Specific styles
   font-size: 13px;
   line-height: 22px;
   letter-spacing: 1px;
-  width: 62%;
+  width: 80%;
   margin: 26px auto 0;
-  text-align: center;
+  text-align: justify;
+  text-align-last: center;
+  -moz-text-align-last: center;
 }
 #team .team-slider .content .inner {
   width: 100%;
@@ -2272,7 +2274,7 @@ Section Specific styles
   letter-spacing: 0.65px;
 }
 #team .team-slider .content [data-nav-id="team-member-about"] {
-  padding: 90px 0 70px;
+  padding: 130px 0 50px;
 }
 #team .team-slider .content [data-nav-id="team-member-side-hustle"] {
   padding: 100px 0 70px;
@@ -2287,6 +2289,13 @@ Section Specific styles
   width: 75%;
   margin: 0 auto;
   overflow: auto;
+}
+#team .team-slider .content [data-nav-id="team-member-pro-experience"] .copy ul {
+  width: 46%;
+  margin-right: 8%;
+}
+#team .team-slider .content [data-nav-id="team-member-pro-experience"] .copy ul + ul {
+  margin-right: 0;
 }
 #team .team-slider .content [data-nav-id="team-member-pro-experience"] .copy h4 {
   font-family: 'blender_pro_boldbold';
@@ -3003,6 +3012,10 @@ you can add resource intensive styles.
   #team .team-slider .content {
     width: 50%;
     float: left;
+  }
+  #team .team-slider .content p {
+    width: 75%;
+    text-align: center;
   }
   #team .team-slider .content [data-nav-id="team-member-about"] {
     padding: 50px 0 0px;

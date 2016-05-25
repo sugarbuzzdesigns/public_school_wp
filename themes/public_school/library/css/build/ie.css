@@ -449,6 +449,10 @@ Section Specific styles
   width: 50%;
   float: left;
 }
+#team .team-slider .content p {
+  width: 75%;
+  text-align: center;
+}
 #team .team-slider .content [data-nav-id="team-member-about"] {
   padding: 50px 0 0px;
 }

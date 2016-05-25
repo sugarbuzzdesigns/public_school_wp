@@ -44,23 +44,24 @@ var PS = PS || {};
         setupSlider: function(){
             var _this = this;
 
-            this.teamSlider = this.$sliderContainer.bxSlider(this.sliderOptions);   
+            this.teamSlider = this.$sliderContainer.bxSlider(this.sliderOptions);
 
             this.$sliderContainer.addClass('loaded');
 
             setTimeout(function(){
                 _this.teamSlider.redrawSlider();
 
-            }, 100); 
+            }, 400);
         },
 
         bindEvents: function(){
             var _this = this;
-            
+
             _this.$contentNavItems.on('click', function(){
                 var slideToShow = $(this).data('about-navitem');
-                
+
                 _this.setActiveNavitem($(this));
+
                 _this.updateCopySlide(slideToShow);
             });
         },
@@ -70,19 +71,21 @@ var PS = PS || {};
             var $curSlide = this.getCurrentSlideJquery(),
                 slideToShow = '[data-nav-id="'+slideToShow+'"]';
 
-            $('.content', $curSlide).css({
-                height: $(slideToShow, $curSlide).outerHeight()
-            });
+            if(Waypoint.viewportWidth() < 768){
+                $('.content', $curSlide).css({
+                    height: $(slideToShow, $curSlide).outerHeight()
+                });
+            }
 
             $(slideToShow, $curSlide)
                 .siblings()
                 .not('nav')
                 .hide();
 
-            $(slideToShow, $curSlide).fadeIn();   
+            $(slideToShow, $curSlide).fadeIn();
 
             _this.teamSlider.redrawSlider();
-                
+
         },
 
         setActiveNavitem: function($li){
@@ -95,6 +98,6 @@ var PS = PS || {};
     }
 
     $(function() {
-        PS.TeamSlider.init();      
+        PS.TeamSlider.init();
     });
 })(jQuery);
