@@ -115,7 +115,7 @@ $(window).on('resize', function(){
 });
 
 $(function(){
-    $('#loader').css({backgroundImage: 'url('+ templateUrl +'/library/images/PublicSchool_B.2.gif)'});
+    $('#loader').css({backgroundImage: 'url('+ templateUrl +'/library/images/PublicSchool_B.2.gif?'+ Math.floor(Date.now() / 1000) +')'});
 });
 
 
