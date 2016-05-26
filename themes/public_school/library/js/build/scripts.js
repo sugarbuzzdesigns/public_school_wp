@@ -132,7 +132,7 @@ loader.addEventListener( transEndEventName, function() {
 }, false);
 
 $(function(){
-    $('#header-logo img').attr('src', $('#header-logo img').data('src')).show();
+    $('#header-logo img').attr('src', $('#header-logo img').data('src') + '?' + Math.floor(Date.now() / 1000)).show();
 });
 ;var PS = PS || {};
 
