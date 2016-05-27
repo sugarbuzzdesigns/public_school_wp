@@ -144,7 +144,7 @@
 				  	</header>
 				  	<div class="team-member-photo">
 				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/Lindsay.jpg" alt="">
-				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Lindsay_hover.jpg" alt="">
+				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Lindsay_Hover.jpg" alt="">
 				  	</div>
 				  	<div class="content">
 				  		<div class="inner" data-nav-id="team-member-about">
@@ -187,7 +187,7 @@
 				  	</header>
 				  	<div class="team-member-photo">
 				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/Matt.jpg" alt="">
-				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Matt_hover.jpg" alt="">
+				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Matt_Hover.jpg" alt="">
 				  	</div>
 				  	<div class="content">
 				  		<div class="inner" data-nav-id="team-member-about">
@@ -230,7 +230,7 @@
 				  	</header>
 				  	<div class="team-member-photo">
 				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/Becky.jpg" alt="">
-				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Becky_hover.jpg" alt="">
+				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Becky_Hover.jpg" alt="">
 				  	</div>
 				  	<div class="content">
 				  		<div class="inner" data-nav-id="team-member-about">
@@ -271,7 +271,7 @@
 				  	</header>
 				  	<div class="team-member-photo">
 				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/Rob.jpg" alt="">
-				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Rob_hover.jpg" alt="">
+				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Rob_Hover.jpg" alt="">
 				  	</div>
 				  	<div class="content">
 				  		<div class="inner" data-nav-id="team-member-about">
@@ -314,7 +314,7 @@
 				  	</header>
 				  	<div class="team-member-photo">
 				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/Mel.jpg" alt="">
-				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Mel_hover.jpg" alt="">
+				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Mel_Hover.jpg" alt="">
 				  	</div>
 				  	<div class="content">
 				  		<div class="inner" data-nav-id="team-member-about">
@@ -354,7 +354,7 @@
 				  	</header>
 				  	<div class="team-member-photo">
 				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/Sean.jpg" alt="">
-				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Sean_hover.jpg" alt="">
+				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Sean_Hover.jpg" alt="">
 				  	</div>
 				  	<div class="content">
 				  		<div class="inner" data-nav-id="team-member-about">
@@ -405,7 +405,7 @@
 				  	</header>
 				  	<div class="team-member-photo">
 				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/Rel.jpg" alt="">
-				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Rel_hover.jpg" alt="">
+				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Rel_Hover.jpg" alt="">
 				  	</div>
 				  	<div class="content">
 				  		<div class="inner" data-nav-id="team-member-about">
@@ -447,7 +447,7 @@
 				  	</header>
 				  	<div class="team-member-photo">
 				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/Arianna.jpg" alt="">
-				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Arianna_hover.jpg" alt="">
+				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Arianna_Hover.jpg" alt="">
 				  	</div>
 				  	<div class="content">
 				  		<div class="inner" data-nav-id="team-member-about">
