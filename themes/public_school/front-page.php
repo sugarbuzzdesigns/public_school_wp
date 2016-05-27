@@ -451,7 +451,7 @@
 				  	</div>
 				  	<div class="content">
 				  		<div class="inner" data-nav-id="team-member-about">
-					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Nothing-textbook.png" atl="">
+					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Nothing-Textbook.png" atl="">
 					  		<div class="copy">
 					  			<p>Graduated from Pepperdine at 20 years old. She conquered the workplace while others her age were conquering the bar scene.</p>
 					  		</div>
