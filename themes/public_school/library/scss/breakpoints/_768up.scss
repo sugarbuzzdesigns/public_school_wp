@@ -225,13 +225,19 @@ Section Specific styles
 
 		}
 
+		section {
+    		height: 50vw;
+		}
+
 		.team-member-photo {
-			width: 50%;
 			float: left;
+			width: 50%;
+			height: 100%;
 		}
 
 		.content {
 			width: 50%;
+			height: 100%;
 			float: left;
 
 			img {
@@ -245,6 +251,11 @@ Section Specific styles
 			}
 
             .inner {
+            	position: absolute;
+            	top: 50%;
+            	left: 50%;
+            	transform: translate3d(-50%, calc(-50% - 24px), 0);
+            	padding: 0;
 
                 & + .inner {
 
@@ -256,11 +267,11 @@ Section Specific styles
             }
 
             [data-nav-id="team-member-about"] {
-            	padding: 50px 0 0px;
+
             }
 
             [data-nav-id="team-member-side-hustle"] {
-    			padding: 110px 0 0;
+
 
                 p {
 
@@ -268,7 +279,7 @@ Section Specific styles
             }
 
             [data-nav-id="team-member-pro-experience"] {
-    			padding: 15% 0 0;
+
 
                 .copy {
 

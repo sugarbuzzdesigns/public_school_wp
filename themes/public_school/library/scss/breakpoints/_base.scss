@@ -932,12 +932,24 @@ Section Specific styles
             color: #848484;
         }
 
+        section {
+            width: 100%;
+        }
+
         .team-member-photo {
             position: relative;
             cursor: pointer;
+            height: 100vw;
+            width: 100%;
 
-            img {
+            div {
                 transition: opacity 0.2s ease-out;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-size: cover;
             }
 
             .resting {
@@ -945,9 +957,6 @@ Section Specific styles
             }
 
             .hover {
-                position: absolute;
-                top: 0;
-                left: 0;
                 opacity: 0;
             }
 
@@ -991,6 +1000,10 @@ Section Specific styles
                     display: none;
                 }
 
+                ul {
+                    margin-bottom: 0;
+                }
+
                 li {
                     font-family: 'GaramondFBText-Regular';
                     font-size: 13px;
@@ -1001,7 +1014,7 @@ Section Specific styles
             }
 
             [data-nav-id="team-member-about"] {
-                padding: 130px 0 50px;
+                padding: 130px 0 100px;
             }
 
             [data-nav-id="team-member-side-hustle"] {

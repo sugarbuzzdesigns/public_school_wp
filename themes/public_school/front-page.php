@@ -142,345 +142,369 @@
 				  		<h4 class="team-member-name">Lindsay Gaddis</h4>
 				  		<p class="job-title">Creative Strategist</p>
 				  	</header>
-				  	<div class="team-member-photo">
-				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/Lindsay.jpg" alt="">
-				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Lindsay_Hover.jpg" alt="">
-				  	</div>
-				  	<div class="content">
-				  		<div class="inner" data-nav-id="team-member-about">
-					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/be-present.png" atl="">
-					  		<div class="copy">
-					  			<p>Take the time to actually observe the craziness around you and you'll find amazing stories, discover brilliant conversations, and unique talents. listen. observe. be respectful.</p>
-					  		</div>
-						</div>
-				  		<div class="inner" data-nav-id="team-member-pro-experience">
-					  		<div class="copy">
-					  			<h4>Previous Clients</h4>
-					  			<ul class="m-1of2 t-1of2 d-1of2">
-									<li>Derek Lam</li>
-									<li>Max Azria</li>
-									<li>Mercedes-Benz</li>
-									<li>MINI</li>
-									<li>Porsche</li>
-									<li>Tesla</li>
-									<li>Krug</li>
-								</ul>
 
-								<ul class="m-1of2 t-1of2 d-1of2">
-									<li>Intel</li>
-									<li>Reebok</li>
-									<li>Maud Heline</li>
-								</ul>
-					  		</div>
-						</div>
-				  		<div class="inner" data-nav-id="team-member-side-hustle">
-					  		<div class="copy">
-					  			<p>A relentless entrepreneur who's developing a beverage, branding a restaurant and marketing a friend's clothing collection.</p>
-					  		</div>
-						</div>
-				  	</div>
+				  	<section>
+					  	<div class="team-member-photo">
+					  		<div class="resting" style="background-image: url(<?php bloginfo('template_url'); ?>/library/images/employees/Lindsay.jpg);"></div>
+					  		<div class="hover" style="background-image: url(<?php bloginfo('template_url'); ?>/library/images/employees/Lindsay_Hover.jpg);"></div>
+					  	</div>
+					  	<div class="content">
+					  		<div class="inner" data-nav-id="team-member-about">
+						  		<div class="copy">
+						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/be-present.png" atl="">
+						  			<p>Take the time to actually observe the craziness around you and you'll find amazing stories, discover brilliant conversations, and unique talents. listen. observe. be respectful.</p>
+						  		</div>
+							</div>
+					  		<div class="inner" data-nav-id="team-member-pro-experience">
+						  		<div class="copy">
+						  			<h4>Previous Clients</h4>
+						  			<ul class="m-1of2 t-1of2 d-1of2">
+										<li>Derek Lam</li>
+										<li>Max Azria</li>
+										<li>Mercedes-Benz</li>
+										<li>MINI</li>
+										<li>Porsche</li>
+										<li>Tesla</li>
+										<li>Krug</li>
+									</ul>
+
+									<ul class="m-1of2 t-1of2 d-1of2">
+										<li>Intel</li>
+										<li>Reebok</li>
+										<li>Maud Heline</li>
+									</ul>
+						  		</div>
+							</div>
+					  		<div class="inner" data-nav-id="team-member-side-hustle">
+						  		<div class="copy">
+						  			<p>A relentless entrepreneur who's developing a beverage, branding a restaurant and marketing a friend's clothing collection.</p>
+						  		</div>
+							</div>
+					  	</div>
+					</section>
 			  	</li>
 			  	<li class="team-member" id="matt-berger">
 				  	<header>
 				  		<h4 class="team-member-name">Matt Berger</h4>
 				  		<p class="job-title">Director of Creative</p>
 				  	</header>
-				  	<div class="team-member-photo">
-				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/Matt.jpg" alt="">
-				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Matt_Hover.jpg" alt="">
-				  	</div>
-				  	<div class="content">
-				  		<div class="inner" data-nav-id="team-member-about">
-					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/All-Walks.png" atl="">
-					  		<div class="copy">
-					  			<p>Matt realized he had a passion for stories when he needed a good one for crashing his brother's go-kart into a tree. He's been creating them ever since.</p>
-					  		</div>
-						</div>
-				  		<div class="inner" data-nav-id="team-member-pro-experience">
-					  		<div class="copy">
-					  			<h4>Previous Clients</h4>
-					  			<ul class="m-1of2 t-1of2 d-1of2">
-									<li>Baskin-Robbins</li>
-									<li>Buffalo Wild Wings</li>
-									<li>The Coca-Cola Company</li>
-									<li>Greenlaw.org</li>
-									<li>Marine Corps</li>
-									<li>Mercedes-Benz</li>
-									<li>NVRQT.org Pediatric Cancer Research Foundation</li>
-								</ul>
 
-								<ul class="m-1of2 t-1of2 d-1of2">
-									<li>Red Bull</li>
-									<li>Travis Manion 9/11 Heroes Fund</li>
-									<li>XM Satellite Radio</li>
-								</ul>
-					  		</div>
-						</div>
-				  		<div class="inner" data-nav-id="team-member-side-hustle">
-					  		<div class="copy">
-					  			<p>Writes fiction for young readers. Has written two novels to date. <a href="https://twitter.com/mattjackberger">Follow his publishing journey.</a></p>
-					  		</div>
-						</div>
-				  	</div>
+				  	<section>
+					  	<div class="team-member-photo">
+					  		<div class="resting" style="background-image: url(<?php bloginfo('template_url'); ?>/library/images/employees/Matt.jpg);"></div>
+					  		<div class="hover" style="background-image: url(<?php bloginfo('template_url'); ?>/library/images/employees/Matt_Hover.jpg);"></div>
+					  	</div>
+					  	<div class="content">
+					  		<div class="inner" data-nav-id="team-member-about">
+						  		<div class="copy">
+						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/All-Walks.png" atl="">
+						  			<p>Matt realized he had a passion for stories when he needed a good one for crashing his brother's go-kart into a tree. He's been creating them ever since.</p>
+						  		</div>
+							</div>
+					  		<div class="inner" data-nav-id="team-member-pro-experience">
+						  		<div class="copy">
+						  			<h4>Previous Clients</h4>
+						  			<ul class="m-1of2 t-1of2 d-1of2">
+										<li>Baskin-Robbins</li>
+										<li>Buffalo Wild Wings</li>
+										<li>The Coca-Cola Company</li>
+										<li>Greenlaw.org</li>
+										<li>Marine Corps</li>
+										<li>Mercedes-Benz</li>
+										<li>NVRQT.org Pediatric Cancer Research Foundation</li>
+									</ul>
+
+									<ul class="m-1of2 t-1of2 d-1of2">
+										<li>Red Bull</li>
+										<li>Travis Manion 9/11 Heroes Fund</li>
+										<li>XM Satellite Radio</li>
+									</ul>
+						  		</div>
+							</div>
+					  		<div class="inner" data-nav-id="team-member-side-hustle">
+						  		<div class="copy">
+						  			<p>Writes fiction for young readers. Has written two novels to date. <a href="https://twitter.com/mattjackberger">Follow his publishing journey.</a></p>
+						  		</div>
+							</div>
+					  	</div>
+					</section>
 			  	</li>
 			  	<li class="team-member" id="becky-read">
 				  	<header>
 				  		<h4 class="team-member-name">Becky Read</h4>
 				  		<p class="job-title">Business Development</p>
 				  	</header>
-				  	<div class="team-member-photo">
-				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/Becky.jpg" alt="">
-				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Becky_Hover.jpg" alt="">
-				  	</div>
-				  	<div class="content">
-				  		<div class="inner" data-nav-id="team-member-about">
-					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Make-time.png" atl="">
-					  		<div class="copy">
-					  			<p>Enjoys riding electric bikes with her boyfriend and sampling great restaurants - at the same time.</p>
-					  		</div>
-						</div>
-				  		<div class="inner" data-nav-id="team-member-pro-experience">
-					  		<div class="copy">
-					  			<h4>Previous Clients</h4>
-					  			<ul class="m-1of2 t-1of2 d-1of2">
-									<li>Adult Swim</li>
-									<li>Cartoon Network</li>
-									<li>The Coca-Cola Company</li>
-									<li>Cox Communications</li>
-									<li>Intercontinental Hotels Group</li>
-									<li>Janssen Pharmaceutical</li>
-									<li>Lowe's Homebuilders</li>
-									<li>Porsche Cars North America</li>
-								</ul>
 
-								<ul class="m-1of2 t-1of2 d-1of2">
-								</ul>
-					  		</div>
-						</div>
-				  		<div class="inner" data-nav-id="team-member-side-hustle">
-					  		<div class="copy">
-					  			<p>Becky was born into a life of activism.  She has worked on countless community projects - from fundraising to protecting parks and greenspace, chairing multiple public school events and tutoring at the local elementary.</p>
-					  		</div>
-						</div>
-				  	</div>
+				  	<section>
+					  	<div class="team-member-photo">
+					  		<div class="resting" style="background-image: url(<?php bloginfo('template_url'); ?>/library/images/employees/Becky.jpg);"></div>
+					  		<div class="hover" style="background-image: url(<?php bloginfo('template_url'); ?>/library/images/employees/Becky_Hover.jpg);"></div>
+					  	</div>
+					  	<div class="content">
+					  		<div class="inner" data-nav-id="team-member-about">
+						  		<div class="copy">
+						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Make-time.png" atl="">
+						  			<p>Enjoys riding electric bikes with her boyfriend and sampling great restaurants - at the same time.</p>
+						  		</div>
+							</div>
+					  		<div class="inner" data-nav-id="team-member-pro-experience">
+						  		<div class="copy">
+						  			<h4>Previous Clients</h4>
+						  			<ul class="m-1of2 t-1of2 d-1of2">
+										<li>Adult Swim</li>
+										<li>Cartoon Network</li>
+										<li>The Coca-Cola Company</li>
+										<li>Cox Communications</li>
+										<li>Intercontinental Hotels Group</li>
+										<li>Janssen Pharmaceutical</li>
+										<li>Lowe's Homebuilders</li>
+										<li>Porsche Cars North America</li>
+									</ul>
+
+									<ul class="m-1of2 t-1of2 d-1of2">
+									</ul>
+						  		</div>
+							</div>
+					  		<div class="inner" data-nav-id="team-member-side-hustle">
+						  		<div class="copy">
+						  			<p>Becky was born into a life of activism.  She has worked on countless community projects - from fundraising to protecting parks and greenspace, chairing multiple public school events and tutoring at the local elementary.</p>
+						  		</div>
+							</div>
+					  	</div>
+					</section>
 			  	</li>
 			  	<li class="team-member" id="rob-blasko">
 				  	<header>
 				  		<h4 class="team-member-name">Rob Blasko</h4>
 				  		<p class="job-title">Director of Production</p>
 				  	</header>
-				  	<div class="team-member-photo">
-				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/Rob.jpg" alt="">
-				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Rob_Hover.jpg" alt="">
-				  	</div>
-				  	<div class="content">
-				  		<div class="inner" data-nav-id="team-member-about">
-					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/All-Walks.png" atl="">
-					  		<div class="copy">
-					  			<p>An actor in his early life - performing in everything from live theatre to national commercials - who eventually opted for running the whole damn show.</p>
-					  		</div>
-						</div>
-				  		<div class="inner" data-nav-id="team-member-pro-experience">
-					  		<div class="copy">
-					  			<h4>Previous Clients</h4>
-					  			<ul class="m-1of2 t-1of2 d-1of2">
-									<li>DreamWorks</li>
-									<li>International Olympic Committee</li>
-									<li>JetBlue</li>
-									<li>Keurig</li>
-									<li>Maker Studios</li>
-									<li>Pac-12 Conference</li>
-									<li>Panasonic</li>
-								</ul>
 
-								<ul class="m-1of2 t-1of2 d-1of2">
-									<li>Sephora</li>
-									<li>Universal Studios</li>
-									<li>Walt Disney Company</li>
-								</ul>
-					  		</div>
-						</div>
-				  		<div class="inner" data-nav-id="team-member-side-hustle">
-					  		<div class="copy">
-					  			<p>In development on several immersive entertainment experiences for the masses.</p>
-					  		</div>
-						</div>
-				  	</div>
+				  	<section>
+					  	<div class="team-member-photo">
+					  		<div class="resting" style="background-image: url(<?php bloginfo('template_url'); ?>/library/images/employees/Rob.jpg);"></div>
+					  		<div class="hover" style="background-image: url(<?php bloginfo('template_url'); ?>/library/images/employees/Rob_Hover.jpg);"></div>
+					  	</div>
+					  	<div class="content">
+					  		<div class="inner" data-nav-id="team-member-about">
+						  		<div class="copy">
+						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/All-Walks.png" atl="">
+						  			<p>An actor in his early life - performing in everything from live theatre to national commercials - who eventually opted for running the whole damn show.</p>
+						  		</div>
+							</div>
+					  		<div class="inner" data-nav-id="team-member-pro-experience">
+						  		<div class="copy">
+						  			<h4>Previous Clients</h4>
+						  			<ul class="m-1of2 t-1of2 d-1of2">
+										<li>DreamWorks</li>
+										<li>International Olympic Committee</li>
+										<li>JetBlue</li>
+										<li>Keurig</li>
+										<li>Maker Studios</li>
+										<li>Pac-12 Conference</li>
+										<li>Panasonic</li>
+									</ul>
+
+									<ul class="m-1of2 t-1of2 d-1of2">
+										<li>Sephora</li>
+										<li>Universal Studios</li>
+										<li>Walt Disney Company</li>
+									</ul>
+						  		</div>
+							</div>
+					  		<div class="inner" data-nav-id="team-member-side-hustle">
+						  		<div class="copy">
+						  			<p>In development on several immersive entertainment experiences for the masses.</p>
+						  		</div>
+							</div>
+					  	</div>
+					</section>
 			  	</li>
 			  	<li class="team-member" id="melissa-withorn">
 				  	<header>
 				  		<h4 class="team-member-name">Melissa Withorn</h4>
 				  		<p class="job-title">Associate Creative Director</p>
 				  	</header>
-				  	<div class="team-member-photo">
-				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/Mel.jpg" alt="">
-				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Mel_Hover.jpg" alt="">
-				  	</div>
-				  	<div class="content">
-				  		<div class="inner" data-nav-id="team-member-about">
-					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Make-time.png" atl="">
-					  		<div class="copy">
-					  			<p>Loves the great outdoors. Amateur yogi, professional foodie and brewery enthusiast. Constantly craving adventure, preferably of the global variety.</p>
-					  		</div>
-						</div>
-				  		<div class="inner" data-nav-id="team-member-pro-experience">
-					  		<div class="copy">
-					  			<h4>Previous Clients</h4>
-					  			<ul class="m-1of2 t-1of2 d-1of2">
-									<li>Adidas</li>
-									<li>Krug</li>
-									<li>McLaren</li>
-									<li>Mercedes-Benz</li>
-									<li>Reebok</li>
-									<li>Sundance Channel</li>
-									<li>Tesla</li>
-								</ul>
-								<ul class="m-1of2 t-1of2 d-1of2">
 
-								</ul>
-					  		</div>
-						</div>
-				  		<div class="inner" data-nav-id="team-member-side-hustle">
-					  		<div class="copy">
-					  			<p>Designs her own jewelry line, including necklaces and earrings made of hand-painted and hand-formed clay. Brews her own kombucha.</p>
-					  		</div>
-						</div>
-				  	</div>
+				  	<section>
+					  	<div class="team-member-photo">
+					  		<div class="resting" style="background-image: url(<?php bloginfo('template_url'); ?>/library/images/employees/Mel.jpg);"></div>
+					  		<div class="hover" style="background-image: url(<?php bloginfo('template_url'); ?>/library/images/employees/Mel_Hover.jpg);"></div>
+					  	</div>
+					  	<div class="content">
+					  		<div class="inner" data-nav-id="team-member-about">
+						  		<div class="copy">
+						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Make-time.png" atl="">
+						  			<p>Loves the great outdoors. Amateur yogi, professional foodie and brewery enthusiast. Constantly craving adventure, preferably of the global variety.</p>
+						  		</div>
+							</div>
+					  		<div class="inner" data-nav-id="team-member-pro-experience">
+						  		<div class="copy">
+						  			<h4>Previous Clients</h4>
+						  			<ul class="m-1of2 t-1of2 d-1of2">
+										<li>Adidas</li>
+										<li>Krug</li>
+										<li>McLaren</li>
+										<li>Mercedes-Benz</li>
+										<li>Reebok</li>
+										<li>Sundance Channel</li>
+										<li>Tesla</li>
+									</ul>
+									<ul class="m-1of2 t-1of2 d-1of2">
+
+									</ul>
+						  		</div>
+							</div>
+					  		<div class="inner" data-nav-id="team-member-side-hustle">
+						  		<div class="copy">
+						  			<p>Designs her own jewelry line, including necklaces and earrings made of hand-painted and hand-formed clay. Brews her own kombucha.</p>
+						  		</div>
+							</div>
+					  	</div>
+					</section>
 			  	</li>
 			  	<li class="team-member" id="sean-metcalf">
 				  	<header>
 				  		<h4 class="team-member-name">Sean Metcalf</h4>
 				  		<p class="job-title">Director of Design</p>
 				  	</header>
-				  	<div class="team-member-photo">
-				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/Sean.jpg" alt="">
-				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Sean_Hover.jpg" alt="">
-				  	</div>
-				  	<div class="content">
-				  		<div class="inner" data-nav-id="team-member-about">
-					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Create-Curate.png" atl="">
-					  		<div class="copy">
-					  			<p>Captures the uniqueness in everyday life through photography. Shares his inspiration via VSCO, Instagram and Tumblr.</p>
-					  		</div>
-						</div>
-				  		<div class="inner" data-nav-id="team-member-pro-experience">
-					  		<div class="copy">
-					  			<h4>Previous Clients</h4>
-					  			<ul class="m-1of2 t-1of2 d-1of2">
-									<li>Apple</li>
-									<li>ABC</li>
-									<li>AT&T</li>
-									<li>Cisco</li>
-									<li>FX</li>
-									<li>Google</li>
-									<li>Homepolish</li>
-								</ul>
-								<ul class="m-1of2 t-1of2 d-1of2">
-									<li>Levis</li>
-									<li>Lexus</li>
-									<li>Lifetime</li>
-									<li>NFL</li>
-									<li>Netflix</li>
-									<li>Plantronics</li>
-									<li>WIX</li>
-								</ul>
-					  		</div>
-						</div>
-				  		<div class="inner" data-nav-id="team-member-side-hustle">
-					  		<div class="copy">
-					  			<p>
-					  				Photography (<a href="http://vsco.co/seanmetcalf/grid/1">iphone</a> + <a href="http://metcalfphoto.tumblr.com/">SLR</a>)<br>
-									<a href="http://seanametcalf.com/#/work-hard-be-kind/">Illustration</a>/<a href="http://seanametcalf.com/#/jon-lily/">side projects</a><br>
-									Chasing the PGA tour.<br>
-									Building <a href="http://www.youngandunited.com/">Young&United</a><br>
-								</p>
-					  		</div>
-						</div>
-				  	</div>
+
+				  	<section>
+					  	<div class="team-member-photo">
+					  		<div class="resting" style="background-image: url(<?php bloginfo('template_url'); ?>/library/images/employees/Sean.jpg);"></div>
+					  		<div class="hover" style="background-image: url(<?php bloginfo('template_url'); ?>/library/images/employees/Sean_Hover.jpg);"></div>
+					  	</div>
+					  	<div class="content">
+					  		<div class="inner" data-nav-id="team-member-about">
+						  		<div class="copy">
+						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Create-Curate.png" atl="">
+						  			<p>Captures the uniqueness in everyday life through photography. Shares his inspiration via VSCO, Instagram and Tumblr.</p>
+						  		</div>
+							</div>
+					  		<div class="inner" data-nav-id="team-member-pro-experience">
+						  		<div class="copy">
+						  			<h4>Previous Clients</h4>
+						  			<ul class="m-1of2 t-1of2 d-1of2">
+										<li>Apple</li>
+										<li>ABC</li>
+										<li>AT&T</li>
+										<li>Cisco</li>
+										<li>FX</li>
+										<li>Google</li>
+										<li>Homepolish</li>
+									</ul>
+									<ul class="m-1of2 t-1of2 d-1of2">
+										<li>Levis</li>
+										<li>Lexus</li>
+										<li>Lifetime</li>
+										<li>NFL</li>
+										<li>Netflix</li>
+										<li>Plantronics</li>
+										<li>WIX</li>
+									</ul>
+						  		</div>
+							</div>
+					  		<div class="inner" data-nav-id="team-member-side-hustle">
+						  		<div class="copy">
+						  			<p>
+						  				Photography (<a href="http://vsco.co/seanmetcalf/grid/1">iphone</a> + <a href="http://metcalfphoto.tumblr.com/">SLR</a>)<br>
+										<a href="http://seanametcalf.com/#/work-hard-be-kind/">Illustration</a>/<a href="http://seanametcalf.com/#/jon-lily/">side projects</a><br>
+										Chasing the PGA tour.<br>
+										Building <a href="http://www.youngandunited.com/">Young&United</a><br>
+									</p>
+						  		</div>
+							</div>
+					  	</div>
+					</section>
 			  	</li>
 			  	<li class="team-member" id="ariel-aurellano">
 				  	<header>
 				  		<h4 class="team-member-name">Ariel Aurellano</h4>
 				  		<p class="job-title">Senior Designer</p>
 				  	</header>
-				  	<div class="team-member-photo">
-				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/Rel.jpg" alt="">
-				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Rel_Hover.jpg" alt="">
-				  	</div>
-				  	<div class="content">
-				  		<div class="inner" data-nav-id="team-member-about">
-					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Never-Stop-Learning.png" atl="">
-					  		<div class="copy">
-					  			<p>No space is safe. Ariel reimagines every environment he ever steps foot in. Whether basketball arenas or music venue. His first question: how would I have designed this space?</p>
-					  		</div>
-						</div>
-				  		<div class="inner" data-nav-id="team-member-pro-experience">
-					  		<div class="copy">
-					  			<h4>Previous Clients</h4>
-					  			<ul class="m-1of2 t-1of2 d-1of2">
-									<li>BET Networks</li>
-									<li>Cartoon Network</li>
-									<li>The Coca-Cola Company</li>
-									<li>McLaren</li>
-									<li>Mercedes-Benz</li>
-									<li>Porsche</li>
-									<li>Qatar Airways</li>
-								</ul>
-								<ul class="m-1of2 t-1of2 d-1of2">
-									<li>Reebok</li>
-									<li>Sundance Channel</li>
-									<li>Roy Hibbert</li>
-								</ul>
-					  		</div>
-						</div>
-				  		<div class="inner" data-nav-id="team-member-side-hustle">
-					  		<div class="copy">
-					  			<p>Illustrating portraits, rebranding sports teams/players, and various art projects</p>
-					  		</div>
-						</div>
-				  	</div>
+
+				  	<section>
+					  	<div class="team-member-photo">
+					  		<div class="resting" style="background-image: url(<?php bloginfo('template_url'); ?>/library/images/employees/Rel.jpg);"></div>
+					  		<div class="hover" style="background-image: url(<?php bloginfo('template_url'); ?>/library/images/employees/Rel_Hover.jpg);"></div>
+					  	</div>
+					  	<div class="content">
+					  		<div class="inner" data-nav-id="team-member-about">
+						  		<div class="copy">
+						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Never-Stop-Learning.png" atl="">
+						  			<p>No space is safe. Ariel reimagines every environment he ever steps foot in. Whether basketball arenas or music venue. His first question: how would I have designed this space?</p>
+						  		</div>
+							</div>
+					  		<div class="inner" data-nav-id="team-member-pro-experience">
+						  		<div class="copy">
+						  			<h4>Previous Clients</h4>
+						  			<ul class="m-1of2 t-1of2 d-1of2">
+										<li>BET Networks</li>
+										<li>Cartoon Network</li>
+										<li>The Coca-Cola Company</li>
+										<li>McLaren</li>
+										<li>Mercedes-Benz</li>
+										<li>Porsche</li>
+										<li>Qatar Airways</li>
+									</ul>
+									<ul class="m-1of2 t-1of2 d-1of2">
+										<li>Reebok</li>
+										<li>Sundance Channel</li>
+										<li>Roy Hibbert</li>
+									</ul>
+						  		</div>
+							</div>
+					  		<div class="inner" data-nav-id="team-member-side-hustle">
+						  		<div class="copy">
+						  			<p>Illustrating portraits, rebranding sports teams/players, and various art projects</p>
+						  		</div>
+							</div>
+					  	</div>
+					</section>
 			  	</li>
 			  	<li class="team-member" id="arianna-zagnoni">
 				  	<header>
 				  		<h4 class="team-member-name">Arianna Zagnoni</h4>
 				  		<p class="job-title">Account Manager</p>
 				  	</header>
-				  	<div class="team-member-photo">
-				  		<img class="resting" src="<?php bloginfo('template_url'); ?>/library/images/employees/Arianna.jpg" alt="">
-				  		<img class="hover" src="<?php bloginfo('template_url'); ?>/library/images/employees/Arianna_Hover.jpg" alt="">
-				  	</div>
-				  	<div class="content">
-				  		<div class="inner" data-nav-id="team-member-about">
-					  		<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Nothing-Textbook.png" atl="">
-					  		<div class="copy">
-					  			<p>Graduated from Pepperdine at 20 years old. She conquered the workplace while others her age were conquering the bar scene.</p>
-					  		</div>
-						</div>
-				  		<div class="inner" data-nav-id="team-member-pro-experience">
-					  		<div class="copy">
-					  			<h4>Previous Clients</h4>
-					  			<ul class="m-1of2 t-1of2 d-1of2">
-									<li>Foster's Wine Estates</li>
-									<li>Krug Champagne</li>
-									<li>McLaren</li>
-									<li>Mercedes-Benz</li>
-									<li>Porsche </li>
-									<li>Qatar Airlines</li>
-									<li>Reebok</li>
-								</ul>
-								<ul class="m-1of2 t-1of2 d-1of2">
-									<li>Tesla</li>
-									<li>USTA</li>
-									<li>WWD</li>
-								</ul>
-					  		</div>
-						</div>
-				  		<div class="inner" data-nav-id="team-member-side-hustle">
-					  		<div class="copy">
-					  			<p>Ari's family runs an online fashion school and is in the Italian wine distribution business.</p>
-					  		</div>
-						</div>
-				  	</div>
+
+				  	<section>
+					  	<div class="team-member-photo">
+					  		<div class="resting" style="background-image: url(<?php bloginfo('template_url'); ?>/library/images/employees/Arianna.jpg);"></div>
+					  		<div class="hover" style="background-image: url(<?php bloginfo('template_url'); ?>/library/images/employees/Arianna_Hover.jpg);"></div>
+					  	</div>
+					  	<div class="content">
+					  		<div class="inner" data-nav-id="team-member-about">
+						  		<div class="copy">
+						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Nothing-Textbook.png" atl="">
+						  			<p>Graduated from Pepperdine at 20 years old. She conquered the workplace while others her age were conquering the bar scene.</p>
+						  		</div>
+							</div>
+					  		<div class="inner" data-nav-id="team-member-pro-experience">
+						  		<div class="copy">
+						  			<h4>Previous Clients</h4>
+						  			<ul class="m-1of2 t-1of2 d-1of2">
+										<li>Foster's Wine Estates</li>
+										<li>Krug Champagne</li>
+										<li>McLaren</li>
+										<li>Mercedes-Benz</li>
+										<li>Porsche </li>
+										<li>Qatar Airlines</li>
+										<li>Reebok</li>
+									</ul>
+									<ul class="m-1of2 t-1of2 d-1of2">
+										<li>Tesla</li>
+										<li>USTA</li>
+										<li>WWD</li>
+									</ul>
+						  		</div>
+							</div>
+					  		<div class="inner" data-nav-id="team-member-side-hustle">
+						  		<div class="copy">
+						  			<p>Ari's family runs an online fashion school and is in the Italian wine distribution business.</p>
+						  		</div>
+							</div>
+					  	</div>
+					</section>
 			  	</li>
 			</ul>
 	  		<nav class="content-nav">

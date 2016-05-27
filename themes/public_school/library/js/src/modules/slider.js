@@ -21,11 +21,16 @@ var PS = PS || {};
                 onSliderLoad: function(){
                     $('body').trigger('slider-loaded');
 
+                    _this.$firstTeamPhoto = $('.team-member').eq(0);
+                    _this.teamPhotoHeight = _this.$firstTeamPhoto.height();
+
                     if(Waypoint.viewportWidth() < 768){
                         $('.content-nav').css({
                             position: 'absolute',
                             top: $('.team-member-photo').position().top + $('.team-member-photo').height()
                         });
+                    } else {
+                        // _this.setContentHeight();
                     }
 
                     $('.content-nav').css({
@@ -39,6 +44,18 @@ var PS = PS || {};
 
             this.setupSlider();
             this.bindEvents();
+        },
+
+        updateContentHeight: function(){
+            this.teamPhotoHeight = this.$firstTeamPhoto.height();
+        },
+
+        setContentHeight: function(){
+            var _this = this;
+
+            $('.team-member').each(function(){
+                $(this).find('.content').css('height', _this.teamPhotoHeight);
+            });
         },
 
         setupSlider: function(){

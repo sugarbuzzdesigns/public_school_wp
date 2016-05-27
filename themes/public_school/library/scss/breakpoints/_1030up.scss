@@ -216,6 +216,8 @@ Section Specific styles
 			}
 
             .inner {
+            	height: 100%;
+            	width: 100%;
 
                 & + .inner {
 
@@ -226,16 +228,25 @@ Section Specific styles
 					line-height: normal;
 					margin-bottom: 8px;
                 }
+
+                .copy {
+                	position: absolute;
+                	top: 50%;
+                	left: 50%;
+                	width: 100%;
+                	transform: translate3d(-50%,-50%,0);
+                }
             }
 
             [data-nav-id="team-member-about"] {
-            	padding: 20% 0 0px;
+            	padding: 0;
             }
 
             [data-nav-id="team-member-pro-experience"] {
-    			padding: 31% 0 0;
+    			padding: 0;
 
                 .copy {
+                	padding: 0 12%;
 
                     h4 {
 
@@ -244,7 +255,7 @@ Section Specific styles
             }
 
             [data-nav-id="team-member-side-hustle"] {
-    			padding: 41% 0 0;
+    			padding: 0;
 
     			ul {
     				li {

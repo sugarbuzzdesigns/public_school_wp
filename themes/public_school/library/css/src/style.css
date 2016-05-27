@@ -2225,17 +2225,25 @@ Section Specific styles
   font-family: 'eb_garamond12_italic';
   color: #848484;
 }
+#team .team-slider section {
+  width: 100%;
+}
 #team .team-slider .team-member-photo {
   position: relative;
   cursor: pointer;
+  height: 100vw;
+  width: 100%;
 }
-#team .team-slider .team-member-photo img {
+#team .team-slider .team-member-photo div {
   transition: opacity 0.2s ease-out;
-}
-#team .team-slider .team-member-photo .hover {
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  background-size: cover;
+}
+#team .team-slider .team-member-photo .hover {
   opacity: 0;
 }
 #team .team-slider .team-member-photo:hover .hover {
@@ -2267,6 +2275,9 @@ Section Specific styles
 #team .team-slider .content .inner + .inner {
   display: none;
 }
+#team .team-slider .content .inner ul {
+  margin-bottom: 0;
+}
 #team .team-slider .content .inner li {
   font-family: 'GaramondFBText-Regular';
   font-size: 13px;
@@ -2275,7 +2286,7 @@ Section Specific styles
   letter-spacing: 0.65px;
 }
 #team .team-slider .content [data-nav-id="team-member-about"] {
-  padding: 130px 0 50px;
+  padding: 130px 0 100px;
 }
 #team .team-slider .content [data-nav-id="team-member-side-hustle"] {
   padding: 100px 0 70px;
@@ -3006,12 +3017,17 @@ you can add resource intensive styles.
     left: 50%;
     transform: translate(-50%, 0);
   }
+  #team .team-slider section {
+    height: 50vw;
+  }
   #team .team-slider .team-member-photo {
-    width: 50%;
     float: left;
+    width: 50%;
+    height: 100%;
   }
   #team .team-slider .content {
     width: 50%;
+    height: 100%;
     float: left;
   }
   #team .team-slider .content p {
@@ -3019,17 +3035,15 @@ you can add resource intensive styles.
     text-align: center;
     font-size: 14px;
   }
+  #team .team-slider .content .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, calc(-50% - 24px), 0);
+    padding: 0;
+  }
   #team .team-slider .content .inner li {
     margin-bottom: 6px;
-  }
-  #team .team-slider .content [data-nav-id="team-member-about"] {
-    padding: 50px 0 0px;
-  }
-  #team .team-slider .content [data-nav-id="team-member-side-hustle"] {
-    padding: 110px 0 0;
-  }
-  #team .team-slider .content [data-nav-id="team-member-pro-experience"] {
-    padding: 15% 0 0;
   }
   #team .content-nav {
     width: 50%;
@@ -3307,19 +3321,33 @@ you can add resource intensive styles.
     line-height: 31px;
     width: 62%;
   }
+  #team .team-slider .content .inner {
+    height: 100%;
+    width: 100%;
+  }
   #team .team-slider .content .inner li {
     font-size: 18px;
     line-height: normal;
     margin-bottom: 8px;
   }
+  #team .team-slider .content .inner .copy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate3d(-50%, -50%, 0);
+  }
   #team .team-slider .content [data-nav-id="team-member-about"] {
-    padding: 20% 0 0px;
+    padding: 0;
   }
   #team .team-slider .content [data-nav-id="team-member-pro-experience"] {
-    padding: 31% 0 0;
+    padding: 0;
+  }
+  #team .team-slider .content [data-nav-id="team-member-pro-experience"] .copy {
+    padding: 0 12%;
   }
   #team .team-slider .content [data-nav-id="team-member-side-hustle"] {
-    padding: 41% 0 0;
+    padding: 0;
   }
 
   #contact-banner h2 {
