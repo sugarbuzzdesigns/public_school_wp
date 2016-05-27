@@ -256,12 +256,12 @@
 										<li>The Coca-Cola Company</li>
 										<li>Cox Communications</li>
 										<li>Intercontinental Hotels Group</li>
-										<li>Janssen Pharmaceutical</li>
-										<li>Lowe's Homebuilders</li>
-										<li>Porsche Cars North America</li>
 									</ul>
 
 									<ul class="m-1of2 t-1of2 d-1of2">
+										<li>Janssen Pharmaceutical</li>
+										<li>Lowe's Homebuilders</li>
+										<li>Porsche Cars North America</li>
 									</ul>
 						  		</div>
 							</div>
