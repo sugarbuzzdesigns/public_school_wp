@@ -835,22 +835,24 @@ Section Specific styles
         }
     }
 
-    p {
-        font-family: $serif;
-        font-size: 15px;
-        font-weight: lighter;
-        line-height: 24px;
-        width: 75%;
-        margin: 0 auto 30px;
-        opacity: 0;
-        transition-duration: 1s;
+    .copy {
+        p {
+            font-family: $serif;
+            font-size: 15px;
+            font-weight: lighter;
+            line-height: 24px;
+            width: 75%;
+            margin: 0 auto 30px;
+            opacity: 0;
+            transition-duration: 1s;
 
-        &.show-me {
-            opacity: 1;
-        }
+            &.show-me {
+                opacity: 1;
+            }
 
-        &:last-child {
-            margin-bottom: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }

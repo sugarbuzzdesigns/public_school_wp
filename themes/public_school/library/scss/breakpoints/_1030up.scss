@@ -151,6 +151,7 @@ Section Specific styles
 		font-size: 34px;
 		letter-spacing: 5px;
 		line-height: 41px;
+		padding: 0 0 0 14%;
 
 		em {
 			left: -5px;
@@ -162,15 +163,21 @@ Section Specific styles
 
 	.image-wrap {
 		img {
-			margin-top: -100px;
-			margin-left: -10%;
+			margin-top: -130px;
+			margin-left: -5%;
 		}
 	}
 
-	p {
-		width: 50%;
-    	margin: 0 auto 30px;
+	.copy {
+		padding: 0 0 0 14%;
+
+		p {
+			font-size: 19px;
+			line-height: 27px;
+			width: 80%;
+		}
 	}
+
 }
 
 #team {
@@ -206,12 +213,12 @@ Section Specific styles
 		.content {
 
 			img {
-
+				width: 34%;
 			}
 
 			p {
-				font-size: 19px;
-				line-height: 31px;
+				font-size: 1.1em;
+				line-height: 26px;
 				width: 62%;
 			}
 
@@ -271,7 +278,11 @@ Section Specific styles
 	}
 
     .content-nav {
-
+    	ul {
+    		li {
+    			font-size: 13px;
+    		}
+    	}
     }
 }
 
@@ -368,10 +379,21 @@ Section Specific styles
 		padding-bottom: 180px;
 
 		span {
+			display: inline-block;
+
+			&:first-child {
+				display: block;
+			}
+
 			em {
 				top: 16px;
 				height: 8px;
 			}
+		}
+
+		.highlight-text {
+			display: inline-block;
+			position: relative;
 		}
 	}
 
@@ -393,6 +415,8 @@ Section Specific styles
 		}
 
 		.jobs-open-roles {
+			padding-left: 0;
+
 			h3	{
 				font-size: 1.500em;
 				letter-spacing: 3.1px;
@@ -401,6 +425,7 @@ Section Specific styles
 			ul {
 				font-size: 18px;
 				letter-spacing: 1px;
+				width: 80%;
 
 				li {
 					display: inline-block;

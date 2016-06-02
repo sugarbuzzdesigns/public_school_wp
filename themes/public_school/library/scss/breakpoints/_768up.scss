@@ -182,7 +182,7 @@ Section Specific styles
 		margin-top: -57px;
 
 		img {
-			width: 100%;
+			width: 87%;
 			margin: 0 auto;
 		}
 	}
@@ -379,10 +379,18 @@ Section Specific styles
 
 		.jobs-open-roles {
 			padding-right: 5%;
+			padding-left: 5%;
 
 			h3 {
 				font-size: 1.250em;
 				letter-spacing: 2.58px;
+			}
+
+			ul {
+				li {
+					display: inline-block;
+					margin-right: 35px;
+				}
 			}
 		}
 
@@ -409,7 +417,11 @@ Section Specific styles
 		}
 
 		span {
-			display: inline;
+			display: inline-block;
+
+			&:first-child {
+				display: block;
+			}
 
 			em {
 			    width: 104%;

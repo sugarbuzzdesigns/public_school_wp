@@ -152,7 +152,7 @@
 					  		<div class="inner" data-nav-id="team-member-about">
 						  		<div class="copy">
 						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/be-present.png" atl="">
-						  			<p>Take the time to actually observe the craziness around you and you'll find amazing stories, discover brilliant conversations, and unique talents. listen. observe. be respectful.</p>
+						  			<p>I've mastered the art of being in the moment. College induced insomnia with a healthy mix of OCD - I once was able to stay awake + focused for 72 continuous hours for a project. Hyper-present.</p>
 						  		</div>
 							</div>
 					  		<div class="inner" data-nav-id="team-member-pro-experience">
@@ -585,22 +585,23 @@
 		<section class="full-height-mobile" id="jobs">
 			<header>
 				<h2 class="centered highlighter scroll-waypoint">
-					<span><span class="highlight-text">join public school</span><em></em></span>
+					<span>We’re looking for</span>
+					<span><span class="highlight-text">well-rounded people</span><em></em></span>
 				</h2>
 			</header>
 			<div class="jobs-info">
 				<div class="middle">
 					<div class="jobs-contact t-col-1of2 d-col-1of2 scroll-waypoint waypoint-opacity">
 						<h3>join public school</h3>
-						<p>Send skillz to <a href="mailto:jobs@public-school.com">jobs@public-school.com</a></p>
+						<p>Send links, work samples, resumes and other relevant info to <a href="talent@public-school.com">talent@public-school.com</a></p>
 					</div>
 
 					<div class="jobs-open-roles t-col-1of2 d-col-1of2 scroll-waypoint waypoint-opacity">
-						<h3>open roles</h3>
+						<h3>Open Roles</h3>
 						<ul>
-							<li>Associate Creative Director</li>
 							<li>Account Manager</li>
 							<li>Mid-Level Writer</li>
+							<li>Creative Engineer</li>
 						</ul>
 					</div>
 				</div>

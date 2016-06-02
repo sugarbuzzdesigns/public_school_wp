@@ -417,7 +417,7 @@ Section Specific styles
   margin-top: -57px;
 }
 #passion .image-wrap img {
-  width: 100%;
+  width: 87%;
   margin: 0 auto;
 }
 #passion .copy {
@@ -539,10 +539,15 @@ Section Specific styles
 }
 #jobs .jobs-info .jobs-open-roles {
   padding-right: 5%;
+  padding-left: 5%;
 }
 #jobs .jobs-info .jobs-open-roles h3 {
   font-size: 1.250em;
   letter-spacing: 2.58px;
+}
+#jobs .jobs-info .jobs-open-roles ul li {
+  display: inline-block;
+  margin-right: 35px;
 }
 #jobs .jobs-info p {
   font-size: 1em;
@@ -563,7 +568,10 @@ Section Specific styles
   display: none;
 }
 #jobs h2 span {
-  display: inline;
+  display: inline-block;
+}
+#jobs h2 span:first-child {
+  display: block;
 }
 #jobs h2 span em {
   width: 104%;
@@ -707,6 +715,7 @@ Section Specific styles
   font-size: 34px;
   letter-spacing: 5px;
   line-height: 41px;
+  padding: 0 0 0 14%;
 }
 #passion h2.highlighter em {
   left: -5px;
@@ -715,12 +724,16 @@ Section Specific styles
   width: 290px;
 }
 #passion .image-wrap img {
-  margin-top: -100px;
-  margin-left: -10%;
+  margin-top: -130px;
+  margin-left: -5%;
 }
-#passion p {
-  width: 50%;
-  margin: 0 auto 30px;
+#passion .copy {
+  padding: 0 0 0 14%;
+}
+#passion .copy p {
+  font-size: 19px;
+  line-height: 27px;
+  width: 80%;
 }
 
 #team .team-slider-nav {
@@ -733,9 +746,12 @@ Section Specific styles
   left: 50%;
   transform: translate(-50%, 0);
 }
+#team .team-slider .content img {
+  width: 34%;
+}
 #team .team-slider .content p {
-  font-size: 19px;
-  line-height: 31px;
+  font-size: 1.1em;
+  line-height: 26px;
   width: 62%;
 }
 #team .team-slider .content .inner {
@@ -765,6 +781,9 @@ Section Specific styles
 }
 #team .team-slider .content [data-nav-id="team-member-side-hustle"] {
   padding: 0;
+}
+#team .content-nav ul li {
+  font-size: 13px;
 }
 
 #contact-banner h2 {
@@ -827,9 +846,19 @@ Section Specific styles
   letter-spacing: 5.36px;
   padding-bottom: 180px;
 }
+#jobs h2.highlighter span {
+  display: inline-block;
+}
+#jobs h2.highlighter span:first-child {
+  display: block;
+}
 #jobs h2.highlighter span em {
   top: 16px;
   height: 8px;
+}
+#jobs h2.highlighter .highlight-text {
+  display: inline-block;
+  position: relative;
 }
 #jobs .jobs-info a {
   font-size: 18px;
@@ -841,6 +870,9 @@ Section Specific styles
 #jobs .jobs-info p {
   font-size: 18px;
 }
+#jobs .jobs-info .jobs-open-roles {
+  padding-left: 0;
+}
 #jobs .jobs-info .jobs-open-roles h3 {
   font-size: 1.500em;
   letter-spacing: 3.1px;
@@ -848,6 +880,7 @@ Section Specific styles
 #jobs .jobs-info .jobs-open-roles ul {
   font-size: 18px;
   letter-spacing: 1px;
+  width: 80%;
 }
 #jobs .jobs-info .jobs-open-roles ul li {
   display: inline-block;
