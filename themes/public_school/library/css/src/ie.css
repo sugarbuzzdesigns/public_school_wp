@@ -302,8 +302,9 @@ Mobile Contact Butter Bar
 Highlighter Sessions Styles
 ***************************/
 .paper-wrap {
-  position: static;
+  position: relative;
   padding-top: 85px;
+  background-color: transparent;
 }
 
 .paper {
@@ -314,6 +315,7 @@ Highlighter Sessions Styles
   text-align: left;
   letter-spacing: 2.27px;
   opacity: 0;
+  background-color: transparent;
 }
 
 /**************************
@@ -349,8 +351,16 @@ Section Specific styles
 }
 
 #header-logo {
-  position: static;
+  position: relative;
   transform: translate(0, 0);
+  top: auto;
+  left: auto;
+}
+#header-logo .png {
+  display: block;
+}
+#header-logo .gif {
+  display: none !important;
 }
 
 #overview {
@@ -418,7 +428,7 @@ Section Specific styles
 }
 #passion .image-wrap img {
   width: 87%;
-  margin: 0 auto;
+  margin: 16px auto 0;
 }
 #passion .copy {
   padding: 0 0 0 12%;
@@ -709,7 +719,7 @@ Section Specific styles
 }
 
 #passion {
-  padding: 60px 0 100px;
+  padding: 140px 0 100px;
 }
 #passion h2.highlighter {
   font-size: 34px;
@@ -724,7 +734,7 @@ Section Specific styles
   width: 290px;
 }
 #passion .image-wrap img {
-  margin-top: -130px;
+  margin-top: -175px;
   margin-left: -5%;
 }
 #passion .copy {
@@ -831,6 +841,9 @@ Section Specific styles
 }
 #contact .city .letter-hover {
   font-size: 42px;
+}
+#contact .city .letter-t {
+  margin-top: -10px;
 }
 #contact .city.hovered .letter-copy {
   font-size: 2.625em;

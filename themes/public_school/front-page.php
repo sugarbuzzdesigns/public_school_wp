@@ -4,17 +4,18 @@
 	</script>
 
 	<div id="container">
-
 		<section class="header full-height-mobile" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 			<a id="header-logo" href="<?php echo home_url(); ?>" rel="nofollow">
-				<img class="centered" height="34" width="236" data-src="<?php bloginfo('template_url'); ?>/library/images/logos/PublicSchool_B.2_trimmed.gif"/>
+				<img class="centered gif" height="34" width="236" data-src="<?php bloginfo('template_url'); ?>/library/images/logos/PublicSchool_B.2_trimmed.gif"/>
+				<img class="centered png" height="34" width="236" src="<?php bloginfo('template_url'); ?>/library/images/logos/header-logo.png"/>
 			</a>
 			<div class="cover"></div>
+			<div class="giffify"></div>
 			<div class="paper-wrap">
 				<div class="paper">
-					<mark data-gif="public_school.gif">Public School</mark>
+					<mark data-gif="crest-animation-2.gif">Public School</mark>
 					is where
-					<mark data-gif="brands.gif">brands</mark>
+					<mark data-gif="Pop-Culture-Junkie.mp4">brands</mark>
 					go to
 					<mark data-gif="communicate.gif">communicate.</mark>
 					It's a collective effort on the part of
@@ -540,7 +541,7 @@
 								</p>
 							</li>
 							<li>
-								<span class="letter-hover">t</span>
+								<span class="letter-hover letter-t">t</span>
 								<i class="email"></i>atl@public-school.com
 							</li>
 							<li>

@@ -145,18 +145,31 @@ var PS = PS || {};
             var _this = this,
                 $phrase = $(phrase),
                 $highlight = $('mark', $phrase),
-                gifDir = window.location.href + '/images/gifs/',
+                gifDir = templateUrl + '/library/images/gifs/',
                 gifUrl = gifDir + $phrase.data('gif');
+
+            var ext = $phrase.data('gif').split('.').pop();
 
             $phrase.addClass('show-phrase');
 
-            if (_this.mobile && WURFL.form_factor != 'Tablet') {
-                console.log('tablet or desktop');
+            if (Waypoint.viewportWidth() < 768) {
+                console.log('mobile size');
             } else {
-                $('.giffify').css({
-                    'background-image': 'url(' + gifUrl + ')',
-                    'opacity': 0.5
-                });
+                console.log(ext);
+                if(ext === 'gif'){
+                    $('.giffify').css({
+                        'background-image': 'url(' + gifUrl + ')',
+                        'opacity': 0.5
+                    });
+                } else {
+                    $('<video autoplay controls loop><source></source></video>').appendTo('.giffify');
+                    $('.giffify').find('video source').attr('src', gifUrl);
+
+                    $('.giffify').css({
+                        'background-image': '',
+                        'opacity': 0.5
+                    });
+                }
             }
         },
         resetPhrase: function(phrase) {
@@ -164,6 +177,8 @@ var PS = PS || {};
                 $phrase = $(phrase);
 
             $phrase.removeClass('show-phrase');
+
+            $('.giffify').find('video').remove();
 
             $('.giffify').css({
                 'opacity': 0

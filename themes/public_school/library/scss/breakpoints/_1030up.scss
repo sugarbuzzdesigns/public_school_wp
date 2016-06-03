@@ -145,7 +145,7 @@ Section Specific styles
 }
 
 #passion {
-	padding: 60px 0 100px;
+	padding: 140px 0 100px;
 
 	h2.highlighter {
 		font-size: 34px;
@@ -163,7 +163,7 @@ Section Specific styles
 
 	.image-wrap {
 		img {
-			margin-top: -130px;
+			margin-top: -175px;
 			margin-left: -5%;
 		}
 	}
@@ -356,6 +356,10 @@ Section Specific styles
 
 		.letter-hover {
 			font-size: 42px;
+		}
+
+		.letter-t {
+			margin-top: -10px;
 		}
 
 		&.hovered {

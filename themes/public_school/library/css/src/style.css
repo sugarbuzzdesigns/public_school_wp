@@ -1698,6 +1698,12 @@ HEADER STYLES
   transform: scale(1.1);
   display: none;
 }
+#header-logo .png {
+  display: none;
+}
+#header-logo .gif {
+  display: none;
+}
 
 /*********************
 FOOTER STYLES
@@ -1742,6 +1748,46 @@ mark em {
   font-style: normal;
   opacity: 0;
   transition: opacity 0.5s;
+}
+
+.giffify {
+  opacity: 0;
+  transition: opacity 0.5s;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  pointer-events: none;
+}
+.giffify video {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.giffify.show-gif {
+  opacity: 1;
+}
+
+.giffify:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .paper-wrap {
@@ -2878,8 +2924,9 @@ you can add resource intensive styles.
   Highlighter Sessions Styles
   ***************************/
   .paper-wrap {
-    position: static;
+    position: relative;
     padding-top: 85px;
+    background-color: transparent;
   }
 
   .paper {
@@ -2890,6 +2937,7 @@ you can add resource intensive styles.
     text-align: left;
     letter-spacing: 2.27px;
     opacity: 0;
+    background-color: transparent;
   }
 
   /**************************
@@ -2925,8 +2973,16 @@ you can add resource intensive styles.
   }
 
   #header-logo {
-    position: static;
+    position: relative;
     transform: translate(0, 0);
+    top: auto;
+    left: auto;
+  }
+  #header-logo .png {
+    display: block;
+  }
+  #header-logo .gif {
+    display: none !important;
   }
 
   #overview {
@@ -2994,7 +3050,7 @@ you can add resource intensive styles.
   }
   #passion .image-wrap img {
     width: 87%;
-    margin: 0 auto;
+    margin: 16px auto 0;
   }
   #passion .copy {
     padding: 0 0 0 12%;
@@ -3292,7 +3348,7 @@ you can add resource intensive styles.
   }
 
   #passion {
-    padding: 60px 0 100px;
+    padding: 140px 0 100px;
   }
   #passion h2.highlighter {
     font-size: 34px;
@@ -3307,7 +3363,7 @@ you can add resource intensive styles.
     width: 290px;
   }
   #passion .image-wrap img {
-    margin-top: -130px;
+    margin-top: -175px;
     margin-left: -5%;
   }
   #passion .copy {
@@ -3414,6 +3470,9 @@ you can add resource intensive styles.
   }
   #contact .city .letter-hover {
     font-size: 42px;
+  }
+  #contact .city .letter-t {
+    margin-top: -10px;
   }
   #contact .city.hovered .letter-copy {
     font-size: 2.625em;
