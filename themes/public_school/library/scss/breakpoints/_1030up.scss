@@ -153,11 +153,28 @@ Section Specific styles
 		line-height: 41px;
 		padding: 0 0 0 14%;
 
-		em {
-			left: -5px;
-			height: 8px;
-		    top: 16px;
-		    width: 290px;
+		span {
+			em {
+				left: -5px;
+				height: 8px;
+			    top: 16px;
+			}
+		}
+	}
+
+	header {
+		.hightlighter {
+			em {
+				width: 0;
+			}
+		}
+
+		&.show-me {
+			.hightlighter {
+				em {
+					width: 290px;
+				}
+			}
 		}
 	}
 
@@ -380,7 +397,7 @@ Section Specific styles
 	h2.highlighter {
 		font-size: 34px;
 		letter-spacing: 5.36px;
-		padding-bottom: 180px;
+		padding: 135px 0 130px;
 
 		span {
 			display: inline-block;
@@ -402,6 +419,7 @@ Section Specific styles
 	}
 
 	.jobs-info {
+		padding: 100px 0 90px;
 
 		a {
 			font-size: 18px;
@@ -441,7 +459,7 @@ Section Specific styles
 }
 
 .footer {
-	background: #010101;
+	background: #000;
 	padding-top: 30px;
 	padding-bottom: 25px;
 

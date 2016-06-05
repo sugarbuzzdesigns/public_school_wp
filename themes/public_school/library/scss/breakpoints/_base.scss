@@ -858,9 +858,22 @@ Section Specific styles
         transform: translate(-50px,0);
         transition-delay: 0.2s;
 
+        .highlighter {
+            em {
+                transition: width 0.5s .7s;
+                width: 0;
+            }
+        }
+
         &.show-me {
             opacity: 1;
             transform: translate(0,0);
+
+            .highlighter {
+                em {
+                    width: 100%;
+                }
+            }
         }
     }
 

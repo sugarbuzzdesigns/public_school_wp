@@ -2166,9 +2166,16 @@ Section Specific styles
   transform: translate(-50px, 0);
   transition-delay: 0.2s;
 }
+#passion header .highlighter em {
+  transition: width 0.5s .7s;
+  width: 0;
+}
 #passion header.show-me {
   opacity: 1;
   transform: translate(0, 0);
+}
+#passion header.show-me .highlighter em {
+  width: 100%;
 }
 #passion h2 {
   font-size: 25px;
@@ -2991,6 +2998,9 @@ you can add resource intensive styles.
     letter-spacing: 4px;
     padding: 0 0 0 12%;
   }
+  #passion h2.highlighter span em {
+    top: 14px;
+  }
   #passion .image-wrap {
     float: right;
     margin-top: -57px;
@@ -3021,7 +3031,7 @@ you can add resource intensive styles.
     transform: translate(-50%, 0);
   }
   #team .team-slider section {
-    height: 50vw;
+    height: calc(50vw - 51px);
   }
   #team .team-slider .team-member-photo {
     float: left;
@@ -3104,13 +3114,16 @@ you can add resource intensive styles.
 
   #jobs {
     overflow: auto;
-    padding-bottom: 79px;
+  }
+  #jobs .jobs-info {
+    overflow: auto;
+    padding: 90px 0 44px;
   }
   #jobs .jobs-info .middle {
     padding: 0;
   }
   #jobs .jobs-info .jobs-contact {
-    padding-left: 5%;
+    padding: 0 5%;
   }
   #jobs .jobs-info .jobs-contact h3 {
     font-size: 1.250em;
@@ -3303,10 +3316,15 @@ you can add resource intensive styles.
     line-height: 41px;
     padding: 0 0 0 14%;
   }
-  #passion h2.highlighter em {
+  #passion h2.highlighter span em {
     left: -5px;
     height: 8px;
     top: 16px;
+  }
+  #passion header .hightlighter em {
+    width: 0;
+  }
+  #passion header.show-me .hightlighter em {
     width: 290px;
   }
   #passion .image-wrap img {
@@ -3439,7 +3457,7 @@ you can add resource intensive styles.
   #jobs h2.highlighter {
     font-size: 34px;
     letter-spacing: 5.36px;
-    padding-bottom: 180px;
+    padding: 135px 0 130px;
   }
   #jobs h2.highlighter span {
     display: inline-block;
@@ -3454,6 +3472,9 @@ you can add resource intensive styles.
   #jobs h2.highlighter .highlight-text {
     display: inline-block;
     position: relative;
+  }
+  #jobs .jobs-info {
+    padding: 100px 0 90px;
   }
   #jobs .jobs-info a {
     font-size: 18px;
@@ -3483,7 +3504,7 @@ you can add resource intensive styles.
   }
 
   .footer {
-    background: #010101;
+    background: #000;
     padding-top: 30px;
     padding-bottom: 25px;
   }

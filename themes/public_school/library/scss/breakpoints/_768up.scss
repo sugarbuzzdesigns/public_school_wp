@@ -185,6 +185,7 @@ Section Specific styles
 
 		span {
 			em {
+				top: 14px;
 			}
 		}
 	}
@@ -238,7 +239,7 @@ Section Specific styles
 		}
 
 		section {
-    		height: 50vw;
+    		height: calc(50vw - 51px);
 		}
 
 		.team-member-photo {
@@ -373,15 +374,17 @@ Section Specific styles
 
 #jobs {
 	overflow: auto;
-	padding-bottom: 79px;
 
 	.jobs-info {
+		overflow: auto;
+    	padding: 90px 0 44px;
+
 		.middle {
 			padding: 0;
 		}
 
 		.jobs-contact {
-			padding-left: 5%;
+			padding: 0 5%;
 
 			h3 {
 				font-size: 1.250em;

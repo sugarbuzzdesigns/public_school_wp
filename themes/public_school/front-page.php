@@ -65,7 +65,7 @@
 
 		<section class="full-height-mobile" id="instagram">
 			<header>
-				<h2 class="middle centered"><span class="scroll-waypoint waypoint-opacity waypoint-bottom-up">@bythepublic</span></h2>
+				<h2 class="middle centered"><span class="scroll-waypoint waypoint-opacity waypoint-bottom-up"><a href="http://www.instagram.com/bythepublic" target="_blank">@bythepublic</a></span></h2>
 			</header>
 			<div class="image-grid">
 				<!-- <img class="tablet-placeholder" src="<?php bloginfo('template_url'); ?>/library/images/placeholders/instagram-grid-tablet.jpg" alt="">			 -->
@@ -73,10 +73,11 @@
 
 
 				<div class="svg scroll-waypoint waypoint-opacity">
-				<!-- width="277px" height="389px" -->
-					<svg viewBox="65 33 277 389" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" preserveAspectRatio="xMinYMid">
-					    <polygon id="Fill-1" stroke="none" fill="#FEE430" fill-rule="evenodd" points="65 33 65 287.550943 201.405706 420.15546 203.197814 421.865115 340.772287 288.11014 341.331839 287.535125 341.379788 33"></polygon>
-					</svg>
+					<a href="http://www.instagram.com/bythepublic" target="_blank">
+						<svg viewBox="65 33 277 389" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" preserveAspectRatio="xMinYMid">
+						    <polygon id="Fill-1" stroke="none" fill="#FEE430" fill-rule="evenodd" points="65 33 65 287.550943 201.405706 420.15546 203.197814 421.865115 340.772287 288.11014 341.331839 287.535125 341.379788 33"></polygon>
+						</svg>
+					</a>
 				</div>
 
 				<div class="image-wrap scroll-waypoint waypoint-opacity">
@@ -546,10 +547,10 @@
 								</p>
 							</li>
 							<li>
-								<i class="email"></i>atl@public-school.com
+								<i class="email"></i><a href="mailto:atl@public-school.com">atl@public-school.com</a>
 							</li>
 							<li>
-								<i class="phone"></i>404.382.2017
+								<i class="phone"></i><a href="tel:404-382-2017">404.382.2017</a>
 							</li>
 						</ul>
 					</div>
@@ -573,15 +574,15 @@
 							<li>
 								<i class="address"></i>
 								<p>
-									<span>Neuehouse Hollywood</span>
-									<span>6121 Sunset Blvd 3rd floor</span>
+									<span>NeueHouse Hollywood</span>
+									<span>6121 Sunset Blvd, 3rd Floor</span>
 									<span>Los Angeles, CA 90028</span>
 								</p>
 							<li>
-								<i class="email"></i>la@public-school.com
+								<i class="email"></i><a href="mailto:la@public-school.com">la@public-school.com</a>
 							</li>
 							<li>
-								<i class="phone"></i>404.382.2017
+								<i class="phone"></i><a href="tel:404-382-2017">404.382.2017</a>
 							</li>
 						</ul>
 					</div>
@@ -626,17 +627,17 @@
 					</div>
 
 					<ul class="social d-col-1of2">
-						<li>
+<!-- 						<li>
 							<a class="spotify" href="" target="_blank"></a>
+						</li> -->
+						<li>
+							<a class="instagram" href="http://www.instagram.com/bythepublic" target="_blank"></a>
 						</li>
 						<li>
-							<a class="instagram" href="" target="_blank"></a>
+							<a class="twitter" href="http://www.twitter.com/bythepublic" target="_blank"></a>
 						</li>
 						<li>
-							<a class="twitter" href="" target="_blank"></a>
-						</li>
-						<li>
-							<a class="linkedin" href="" target="_blank"></a>
+							<a class="linkedin" href="https://www.linkedin.com/company/7930688?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A7930688%2Cidx%3A2-1-2%2CtarId%3A1464966705565%2Ctas%3Apublic%20school%20a%20creat" target="_blank"></a>
 						</li>
 					</ul>
 				</div>
