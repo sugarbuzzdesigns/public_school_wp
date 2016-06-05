@@ -36,7 +36,14 @@ var PS = PS || {};
                 $('mark').hover(function() {
                     _this.showPhrase(this);
                 }, function() {
-                    _this.resetPhrase(this);
+                    if($(this).data('gif') === 'engineers'){
+                        setTimeout(function(){
+                            _this.resetPhrase(this);
+                            $('#bones-stylesheet-css')[0].disabled = false;
+                        }, 2000);
+                    } else {
+                        _this.resetPhrase(this);
+                    }
                 });
             }
 
@@ -155,20 +162,27 @@ var PS = PS || {};
             if (Waypoint.viewportWidth() < 768) {
                 console.log('mobile size');
             } else {
-                console.log(ext);
+                if(ext === ''){
+                    return;
+                }
+
                 if(ext === 'gif'){
                     $('.giffify').css({
                         'background-image': 'url(' + gifUrl + ')',
                         'opacity': 0.5
                     });
                 } else {
-                    $('<video autoplay controls loop><source></source></video>').appendTo('.giffify');
-                    $('.giffify').find('video source').attr('src', gifUrl);
+                    if(ext === 'engineers'){
+                        $('#bones-stylesheet-css')[0].disabled = true;
+                    } else {
+                        $('<video autoplay loop><source></source></video>').appendTo('.giffify');
+                        $('.giffify').find('video source').attr('src', gifUrl);
 
-                    $('.giffify').css({
-                        'background-image': '',
-                        'opacity': 0.5
-                    });
+                        $('.giffify').css({
+                            'background-image': '',
+                            'opacity': 0.5
+                        });
+                    }
                 }
             }
         },

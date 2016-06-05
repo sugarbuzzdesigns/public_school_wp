@@ -15,32 +15,32 @@
 				<div class="paper">
 					<mark data-gif="crest-animation-2.gif">Public School</mark>
 					is where
-					<mark data-gif="Pop-Culture-Junkie.mp4">brands</mark>
+					<mark data-gif="BRANDS_NeonLight.gif">brands</mark>
 					go to
-					<mark data-gif="communicate.gif">communicate.</mark>
+					<mark data-gif="communicate.mp4">communicate.</mark>
 					It's a collective effort on the part of
-					<mark data-gif="strategists.gif">strategists,</mark>
-					<mark data-gif="designers.gif">designers,</mark>
+					<mark data-gif="strategists_480res.mp4">strategists,</mark>
+					<mark data-gif="Be_Present_highres.mp4">designers,</mark>
 					<mark data-gif="writers.gif">writers,</mark>
-					<mark data-gif="digital-mavens.gif">digital mavens</mark>
+					<mark data-gif="">digital mavens</mark>
 					and
-					<mark data-gif="pop-culture.gif">pop culture junkies</mark>.
+					<mark data-gif="pop_culture_junkies.mp4">pop culture junkies</mark>.
 					Sometimes even
-					<mark data-gif="engineers.gif">engineers</mark>
+					<mark data-gif="engineers">engineers</mark>
 					and
-					<mark data-gif="social.gif">social</mark>
+					<mark data-gif="social.mp4">social</mark>
 					innovators join the mix. The results are totally
-					<mark data-gif="inspiring.gif">inspiring.</mark>
+					<mark data-gif="inspiration.mp4">inspiring.</mark>
 					In fact, you might say they're
-					<mark data-gif="buck-naked.gif">buck naked wearing nothing but a straw hat.</mark>
+					<mark data-gif="buck_naked.mp4">buck naked wearing nothing but a straw hat.</mark>
 					Just thinking about it makes me want to
-					<mark data-gif="hug-a-mom.gif">hug a mom.</mark>
+					<mark data-gif="hug_a_mom.mp4">hug a mom.</mark>
 					It's one of the many reasons people love to
-					<mark data-gif="collaborate.gif">collaborate.</mark>
+					<mark data-gif="">collaborate.</mark>
 					Though, admittedly, it has less to do with
-					<mark data-gif="wardrobe-choices.gif">wardrobe choices</mark>
+					<mark data-gif="wardrobe_choice.mp4">wardrobe choices</mark>
 					and more to do with the ability to
-					<mark data-gif="greatest-potential.gif">reach our greatest potential</mark>
+					<mark data-gif="reach_our_greatest_potential.mp4">reach our greatest potential</mark>
 					together.
 				</div>
 			</div>
