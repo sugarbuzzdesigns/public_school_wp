@@ -173,7 +173,9 @@ var PS = PS || {};
                     });
                 } else {
                     if(ext === 'engineers'){
-                        $('#bones-stylesheet-css')[0].disabled = true;
+                        setTimeout(function(){
+                            $('#bones-stylesheet-css')[0].disabled = true;
+                        }, 2000);
                     } else {
                         $('<video autoplay loop><source></source></video>').appendTo('.giffify');
                         $('.giffify').find('video source').attr('src', gifUrl);
