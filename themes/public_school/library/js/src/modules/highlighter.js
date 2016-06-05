@@ -37,9 +37,10 @@ var PS = PS || {};
                     _this.showPhrase(this);
                 }, function() {
                     if($(this).data('gif') === 'engineers'){
+                        var phrase = this;
                         setTimeout(function(){
-                            _this.resetPhrase(this);
                             $('#bones-stylesheet-css')[0].disabled = false;
+                            _this.resetPhrase(phrase);
                         }, 2000);
                     } else {
                         _this.resetPhrase(this);
