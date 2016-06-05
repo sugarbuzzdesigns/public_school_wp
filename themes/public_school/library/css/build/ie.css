@@ -800,6 +800,15 @@ Section Specific styles
   font-size: 18px;
 }
 
+#contact .hover-letters {
+  left: 8%;
+}
+#contact .atl .hover-letters {
+  top: 59%;
+}
+#contact .la .hover-letters {
+  top: 53%;
+}
 #contact .city {
   width: 50%;
   padding: 35% 0 0 0;
@@ -841,9 +850,6 @@ Section Specific styles
 }
 #contact .city .letter-hover {
   font-size: 42px;
-}
-#contact .city .letter-t {
-  margin-top: -10px;
 }
 #contact .city.hovered .letter-copy {
   font-size: 2.625em;

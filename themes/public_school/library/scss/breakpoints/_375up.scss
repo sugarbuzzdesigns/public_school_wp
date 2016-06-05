@@ -6,3 +6,20 @@ Stylesheet: 375px and Up Stylesheet
 
 }
 
+#contact {
+    .hover-letters {
+        top: 52%;
+    }
+
+    .la .hover-letters {
+        top: 47%;
+    }
+
+    .la .hover-letters .letter-hover {
+        margin-bottom: 21px;
+    }
+
+    .contact-details {
+    	padding-left: 10%;
+    }
+}

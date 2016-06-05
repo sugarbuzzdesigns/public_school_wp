@@ -1416,7 +1416,7 @@ Site Loader
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #080808;
+  background-color: #000;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -1713,7 +1713,7 @@ FOOTER STYLES
   padding: 70px 0 100px;
   text-align: center;
   color: #f8f9fa;
-  background: #040403;
+  background: #000000;
 }
 .footer .footer-contact {
   font-family: 'blender_pro_boldbold';
@@ -2440,14 +2440,20 @@ Section Specific styles
   opacity: 1;
 }
 #contact .letter-copy,
-#contact .letter-copy-hover {
+#contact .letter-copy-hover,
+#contact .letter-hover {
   font-family: 'octin_collegeregular';
-  font-size: 1.563em;
+  font-size: 1.438em;
   line-height: normal;
   margin: 0;
   display: block;
   z-index: 2;
   transition: left 0.5s, top 0.5s, font-size 0.5s, opacity 0.5s;
+}
+#contact .letter-hover {
+  font-size: 1.563em;
+  margin-bottom: 17px;
+  opacity: 0;
 }
 #contact .letter-resting {
   margin: 0;
@@ -2459,7 +2465,7 @@ Section Specific styles
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-family: 'octin_collegeregular';
-  font-size: 1.563em;
+  font-size: 1.438em;
   line-height: normal;
 }
 #contact .letter-resting.first {
@@ -2499,6 +2505,22 @@ Section Specific styles
 #contact .la .letter-resting.last {
   -webkit-transform: translate(44%, -50%);
   transform: translate(44%, -50%);
+}
+#contact .hover-letters {
+  position: absolute;
+  left: 10%;
+  z-index: 100;
+  top: 53%;
+  transform: translate(0, -50%);
+}
+#contact .la .hover-letters {
+  top: 46%;
+}
+#contact .la .hover-letters .letter-hover {
+  margin-bottom: 19px;
+}
+#contact .city.hovered .letter-copy {
+  font-size: 1.563em;
 }
 #contact .city-box {
   width: 118px;
@@ -2540,7 +2562,7 @@ Section Specific styles
   margin: 0;
   width: 100%;
   opacity: 0;
-  padding-left: 10%;
+  padding-left: 5%;
   transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
   transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
@@ -2571,18 +2593,6 @@ Section Specific styles
   font-size: 0.875em;
   color: #E0E0E0;
   line-height: normal;
-}
-#contact .contact-details .letter-hover {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
-  vertical-align: middle;
-  font-family: 'octin_collegeregular';
-  font-size: 24px;
-  line-height: normal;
-  visibility: hidden;
 }
 
 .no-touch #contact .city:hover .hover-content {
@@ -2702,91 +2712,28 @@ MOBILE iPhone 6 Size
   /******************************************************************
   Stylesheet: 375px and Up Stylesheet
   ******************************************************************/
+  #contact .hover-letters {
+    top: 52%;
+  }
+  #contact .la .hover-letters {
+    top: 47%;
+  }
+  #contact .la .hover-letters .letter-hover {
+    margin-bottom: 21px;
+  }
+  #contact .contact-details {
+    padding-left: 10%;
+  }
 }
 /*********************
 MOBILE iPhone 6+ Size
 *********************/
 @media only screen and (min-width: 414px) {
   /******************************************************************
-  Site Name:
-  Author:
   
-  Stylesheet: 481px and Up Stylesheet
-  
-  This stylesheet is loaded for larger devices. It's set to
-  481px because at 480px it would load on a landscaped iPhone.
-  This isn't ideal because then you would be loading all those
-  extra styles on that same mobile connection.
-  
-  A word of warning. This size COULD be a larger mobile device,
-  so you still want to keep it pretty light and simply expand
-  upon your base.scss styles.
+  Stylesheet: 414px and Up Stylesheet iphone 6+ and large phones
   
   ******************************************************************/
-  /*
-  IMPORTANT NOTE ABOUT SASS 3.3 & UP
-  You can't use @extend within media queries
-  anymore, so just be aware that if you drop
-  them in here, they won't work.
-  */
-  /*********************
-  NAVIGATION STYLES
-  *********************/
-  /* .menu is clearfixed inside mixins.scss */
-  .menu {
-    /* end .menu ul */
-  }
-  .menu ul {
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */
-  }
-  .menu ul li {
-    /*
-    plan your menus and drop-downs wisely.
-    */
-  }
-  .menu ul li a {
-    /*
-    you can use hover styles here even though this size
-    has the possibility of being a mobile device.
-    */
-  }
-
-  /* end .menu */
-  /*********************
-  POSTS & CONTENT STYLES
-  *********************/
-  /* entry content */
-  .entry-content {
-    /* at this larger size, we can start to align images */
-  }
-  .entry-content .alignleft, .entry-content img.alignleft {
-    margin-right: 1.5em;
-    display: inline;
-    float: left;
-  }
-  .entry-content .alignright, .entry-content img.alignright {
-    margin-left: 1.5em;
-    display: inline;
-    float: right;
-  }
-  .entry-content .aligncenter, .entry-content img.aligncenter {
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    clear: both;
-  }
-
-  /* end .entry-content */
-  /*********************
-  FOOTER STYLES
-  *********************/
-  /*
-  check your menus here. do they look good?
-  do they need tweaking?
-  */
-  /* end .footer-links */
 }
 /*********************
 LARGER MOBILE DEVICES
@@ -3429,6 +3376,15 @@ you can add resource intensive styles.
     font-size: 18px;
   }
 
+  #contact .hover-letters {
+    left: 8%;
+  }
+  #contact .atl .hover-letters {
+    top: 59%;
+  }
+  #contact .la .hover-letters {
+    top: 53%;
+  }
   #contact .city {
     width: 50%;
     padding: 35% 0 0 0;
@@ -3470,9 +3426,6 @@ you can add resource intensive styles.
   }
   #contact .city .letter-hover {
     font-size: 42px;
-  }
-  #contact .city .letter-t {
-    margin-top: -10px;
   }
   #contact .city.hovered .letter-copy {
     font-size: 2.625em;

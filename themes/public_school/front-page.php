@@ -152,7 +152,7 @@
 					  	<div class="content">
 					  		<div class="inner" data-nav-id="team-member-about">
 						  		<div class="copy">
-						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/be-present.png" atl="">
+						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/be-present.png" alt="">
 						  			<p>I've mastered the art of being in the moment. College induced insomnia with a healthy mix of OCD - I once was able to stay awake + focused for 72 continuous hours for a project. Hyper-present.</p>
 						  		</div>
 							</div>
@@ -198,7 +198,7 @@
 					  	<div class="content">
 					  		<div class="inner" data-nav-id="team-member-about">
 						  		<div class="copy">
-						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/All-Walks.png" atl="">
+						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/All-Walks.png" alt="">
 						  			<p>Matt realized he had a passion for stories when he needed a good one for crashing his brother's go-kart into a tree. He's been creating them ever since.</p>
 						  		</div>
 							</div>
@@ -244,7 +244,7 @@
 					  	<div class="content">
 					  		<div class="inner" data-nav-id="team-member-about">
 						  		<div class="copy">
-						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Make-time.png" atl="">
+						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Make-time.png" alt="">
 						  			<p>Enjoys riding electric bikes with her boyfriend and sampling great restaurants - at the same time.</p>
 						  		</div>
 							</div>
@@ -288,7 +288,7 @@
 					  	<div class="content">
 					  		<div class="inner" data-nav-id="team-member-about">
 						  		<div class="copy">
-						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/All-Walks.png" atl="">
+						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/All-Walks.png" alt="">
 						  			<p>An actor in his early life - performing in everything from live theatre to national commercials - who eventually opted for running the whole damn show.</p>
 						  		</div>
 							</div>
@@ -334,7 +334,7 @@
 					  	<div class="content">
 					  		<div class="inner" data-nav-id="team-member-about">
 						  		<div class="copy">
-						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Make-time.png" atl="">
+						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Make-time.png" alt="">
 						  			<p>Loves the great outdoors. Amateur yogi, professional foodie and brewery enthusiast. Constantly craving adventure, preferably of the global variety.</p>
 						  		</div>
 							</div>
@@ -377,7 +377,7 @@
 					  	<div class="content">
 					  		<div class="inner" data-nav-id="team-member-about">
 						  		<div class="copy">
-						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Create-Curate.png" atl="">
+						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Create-Curate.png" alt="">
 						  			<p>Captures the uniqueness in everyday life through photography. Shares his inspiration via VSCO, Instagram and Tumblr.</p>
 						  		</div>
 							</div>
@@ -431,7 +431,7 @@
 					  	<div class="content">
 					  		<div class="inner" data-nav-id="team-member-about">
 						  		<div class="copy">
-						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Never-Stop-Learning.png" atl="">
+						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Never-Stop-Learning.png" alt="">
 						  			<p>No space is safe. Ariel reimagines every environment he ever steps foot in. Whether basketball arenas or music venue. His first question: how would I have designed this space?</p>
 						  		</div>
 							</div>
@@ -476,7 +476,7 @@
 					  	<div class="content">
 					  		<div class="inner" data-nav-id="team-member-about">
 						  		<div class="copy">
-						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Nothing-Textbook.png" atl="">
+						  			<img src="<?php bloginfo('template_url'); ?>/library/images/employees/text/Nothing-Textbook.png" alt="">
 						  			<p>Graduated from Pepperdine at 20 years old. She conquered the workplace while others her age were conquering the bar scene.</p>
 						  		</div>
 							</div>
@@ -528,24 +528,27 @@
 				<span class="letter-resting">t</span>
 				<span class="letter-resting last">l</span>
 
+				<div class="hover-letters">
+					<span class="letter-hover">a</span>
+					<span class="letter-hover letter-t">t</span>
+					<span class="letter-hover">l</span>
+				</div>
+
 				<div class="hover-content">
 					<div class="inner middle">
 						<ul class="contact-details">
 							<li>
-								<span class="letter-hover">a</span>
 								<i class="address"></i>
 								<p>
 									<span>Ponce City Market</span>
-									<spam>675 Ponce De Leon Ave NE #8500</span>
+									<span>675 Ponce De Leon Ave NE #8500</span>
 									<span>Atlanta, GA 30308</span>
 								</p>
 							</li>
 							<li>
-								<span class="letter-hover letter-t">t</span>
 								<i class="email"></i>atl@public-school.com
 							</li>
 							<li>
-								<span class="letter-hover">l</span>
 								<i class="phone"></i>404.382.2017
 							</li>
 						</ul>
@@ -559,11 +562,15 @@
 				<span class="letter-resting first">l</span>
 				<span class="letter-resting last">a</span>
 
+				<div class="hover-letters">
+					<span class="letter-hover">l</span>
+					<span class="letter-hover">a</span>
+				</div>
+
 				<div class="hover-content">
 					<div class="inner middle">
 						<ul class="contact-details">
 							<li>
-								<span class="letter-hover">l</span>
 								<i class="address"></i>
 								<p>
 									<span>Neuehouse Hollywood</span>
@@ -571,7 +578,6 @@
 									<span>Los Angeles, CA 90028</span>
 								</p>
 							<li>
-								<span class="letter-hover">a</span>
 								<i class="email"></i>la@public-school.com
 							</li>
 							<li>

@@ -387,9 +387,9 @@ $(function(){
             $('.city').each(function(i, city){
                 var posTop = $(city).find('.hover-content .inner').position().top;
 
-                $('.hover-letters', $(city)).css({
-                    top: posTop
-                });
+                // $('.hover-letters', $(city)).css({
+                //     top: posTop
+                // });
             });
         },
         setLetterPositionRestingData: function() {
@@ -428,11 +428,11 @@ $(function(){
 
                 pos.top = $(letter).position().top;
                 pos.top += $(letter).offsetParent().position().top;
-                pos.top += $(letter).offsetParent().offsetParent().position().top;
+                // pos.top += $(letter).offsetParent().offsetParent().position().top;
 
                 pos.left = $(letter).position().left;
                 pos.left += $(letter).offsetParent().position().left;
-                pos.left += $(letter).offsetParent().offsetParent().position().left;
+                // pos.left += $(letter).offsetParent().offsetParent().position().left;
 
                 $(letter).attr('data-position-top', pos.top);
                 $(letter).attr('data-position-left', pos.left);
