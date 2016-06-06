@@ -461,6 +461,7 @@ mark em {
     background-repeat: repeat, repeat-y;
     background-position: 0 0, 76px 0;
     background-size: 100vw 50px, 32px 32px;
+    transition: opacity 0.3s;
 
     &.show-me {
         display: block;

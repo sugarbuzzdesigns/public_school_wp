@@ -3,6 +3,11 @@
 	var templateUrl = '<?= get_bloginfo("template_url"); ?>';
 	</script>
 
+	<video preload style="display:none;" src="<?php bloginfo('template_url'); ?>/library/images/gifs/communicate.mp4"></video>
+	<video preload style="display:none;" src="<?php bloginfo('template_url'); ?>/library/images/gifs/strategists_480res.mp4"></video>
+	<video preload style="display:none;" src="<?php bloginfo('template_url'); ?>/library/images/gifs/Be_Present_highres.mp4"></video>
+	<video preload style="display:none;" src="<?php bloginfo('template_url'); ?>/library/images/gifs/pop_culture_junkies.mp4"></video>
+
 	<div id="container">
 		<section class="header full-height-mobile" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 			<a id="header-logo" href="<?php echo home_url(); ?>" rel="nofollow">

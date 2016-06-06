@@ -181,12 +181,20 @@ var PS = PS || {};
                         $('<video autoplay loop muted><source></source></video>').appendTo('.giffify');
                         $('.giffify').find('video source').attr('src', gifUrl);
 
+                        $('.giffify').find('video')[0].oncanplay = function() {
+                            alert("Can start playing video");
+                        };
+
                         $('.giffify').css({
                             'background-image': '',
                             'opacity': 0.5
                         });
                     }
                 }
+
+                $('.paper').css({
+                    opacity: 0.5
+                });
             }
         },
         resetPhrase: function(phrase) {
@@ -199,6 +207,10 @@ var PS = PS || {};
 
             $('.giffify').css({
                 'opacity': 0
+            });
+
+            $('.paper').css({
+                opacity: 1
             });
         },
         resetAllPhrases: function() {
