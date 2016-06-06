@@ -318,7 +318,7 @@ $(function(){
                         $('.giffify').find('video source').attr('src', gifUrl);
 
                         $('.giffify').find('video')[0].oncanplay = function() {
-                            alert("Can start playing video");
+                            console.log("Can start playing video");
                         };
 
                         $('.giffify').css({
