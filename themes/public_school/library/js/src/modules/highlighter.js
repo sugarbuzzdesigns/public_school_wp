@@ -193,7 +193,7 @@ var PS = PS || {};
                 }
 
                 $('.paper').css({
-                    opacity: 0.5
+                    opacity: 0.6
                 });
             }
         },
