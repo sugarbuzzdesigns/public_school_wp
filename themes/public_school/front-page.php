@@ -18,6 +18,7 @@
 			<div class="giffify"></div>
 			<div class="paper-wrap">
 				<div class="paper">
+				<!-- <div class="paper-bg"></div> -->
 					<mark data-gif="crest-animation-2.gif">Public School</mark>
 					is where
 					<mark data-gif="BRANDS_NeonLight.gif">brands</mark>

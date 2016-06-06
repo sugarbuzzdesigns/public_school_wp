@@ -192,9 +192,9 @@ var PS = PS || {};
                     }
                 }
 
-                $('.paper').css({
-                    opacity: 0.6
-                });
+                // $('.paper-bg').css({
+                //     opacity: 0.6
+                // });
             }
         },
         resetPhrase: function(phrase) {
@@ -209,9 +209,9 @@ var PS = PS || {};
                 'opacity': 0
             });
 
-            $('.paper').css({
-                opacity: 1
-            });
+            // $('.paper-bg').css({
+            //     opacity: 1
+            // });
         },
         resetAllPhrases: function() {
             $('show-phrase').removeClass('show-phrase');
