@@ -170,7 +170,7 @@ var PS = PS || {};
                 if(ext === 'gif'){
                     $('.giffify').css({
                         'background-image': 'url(' + gifUrl + ')',
-                        'opacity': 0.5
+                        'opacity': 0.2
                     });
                 } else {
                     if(ext === 'engineers'){
@@ -187,7 +187,7 @@ var PS = PS || {};
 
                         $('.giffify').css({
                             'background-image': '',
-                            'opacity': 0.5
+                            'opacity': 0.2
                         });
                     }
                 }

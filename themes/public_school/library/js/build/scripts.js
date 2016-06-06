@@ -306,7 +306,7 @@ $(function(){
                 if(ext === 'gif'){
                     $('.giffify').css({
                         'background-image': 'url(' + gifUrl + ')',
-                        'opacity': 0.5
+                        'opacity': 0.2
                     });
                 } else {
                     if(ext === 'engineers'){
@@ -323,7 +323,7 @@ $(function(){
 
                         $('.giffify').css({
                             'background-image': '',
-                            'opacity': 0.5
+                            'opacity': 0.2
                         });
                     }
                 }

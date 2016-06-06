@@ -1755,7 +1755,7 @@ mark em {
   transition: opacity 0.5s;
   background-size: cover;
   background-position: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
